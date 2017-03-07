@@ -6,4 +6,19 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Calendar -->
+
+    <dimen name="sum_crop_height_rectangle">120dp</dimen>
+
+    <dimen name="height_calendar_list">200dp</dimen>
+    <dimen name="height_calendar_title">40dp</dimen>
+    <dimen name="textsize_calendar_title">16sp</dimen>
+
+    <dimen name="margin_top_guilde_calendar">140dp</dimen>
+    <dimen name="margin_bottom_buttonok_guide_calendar">16dp</dimen>
+    <dimen name="height_today_button">40dp</dimen>
+
+
+    <dimen name="width_col_default">150dp</dimen>
 </resources>

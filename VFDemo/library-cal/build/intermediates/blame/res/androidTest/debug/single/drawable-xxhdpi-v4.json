@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_arrow_up_blue.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_arrow_up_blue.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_arrow_up_gray.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_arrow_up_gray.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_arrow_up_gray_soft.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_arrow_up_gray_soft.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_arrow_up_blue_soft.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/library-cal/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_arrow_up_blue_soft.png"
+    }
+]

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/ivTop"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mark_top"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/ivBottom"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/mark_bottom"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/frItem"
+        android:layout_centerHorizontal="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sum_crop_height_rectangle"
+
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frItem"
+        android:layout_below="@+id/ivTop"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivThumb"
+            android:scaleType="fitXY"/>
+    </FrameLayout>
+
+</RelativeLayout>
