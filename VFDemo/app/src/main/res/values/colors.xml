@@ -3,6 +3,7 @@
     <color name="white">#ffffff</color>
     <color name="gray">#cccccc</color>
 
+    <color name="gray_button">#4d818181</color>
 
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303F9F</color>

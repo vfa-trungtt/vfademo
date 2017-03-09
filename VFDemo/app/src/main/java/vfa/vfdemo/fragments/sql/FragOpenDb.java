@@ -1,6 +1,7 @@
 package vfa.vfdemo.fragments.sql;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -10,6 +11,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.VFSqliteDB;
 import vfa.vfdemo.dialogs.SelectFileDialog;
@@ -22,6 +24,7 @@ import vfa.vflib.utils.LogUtils;
  */
 
 public class FragOpenDb extends VFFragment {
+
     ListView lvTables;
     TextView tvDbPath;
 
@@ -47,9 +50,26 @@ public class FragOpenDb extends VFFragment {
             }
         });
 
+        lvTables.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String tableName = listTables.get(position);
+                FragBrowseTable fg = new FragBrowseTable();
+                fg.dbPath       = dbPath;
+                fg.tableName    = tableName;
+                pushFragment(fg);
+            }
+        });
 
+        if(!TextUtils.isEmpty(AppSettings.getCurrentDBPath(getContext()))){
+            dbPath = AppSettings.getCurrentDBPath(getContext());
+        }
+
+        loadTableName();
+    }
+
+    private void loadTableName(){
         File file = new File(dbPath);
-
         if(file.exists()){
             LogUtils.info("File exist.");
             listTables = VFSqliteDB.getListTables(getContext(),dbPath);
@@ -57,16 +77,6 @@ public class FragOpenDb extends VFFragment {
 
         DataAdapter adapter = new DataAdapter(getContext(),listTables);
         lvTables.setAdapter(adapter);
-
-        lvTables.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String tableName = listTables.get(position);
-                FragBrowseTable fg = new FragBrowseTable();
-                fg.tableName    = tableName;
-                pushFragment(fg);
-            }
-        });
     }
 
     public void selectFile(){
@@ -74,7 +84,11 @@ public class FragOpenDb extends VFFragment {
         dialog.setSelectFileListener(new SelectFileDialog.SelectFileListener() {
             @Override
             public void onSelectFile(String filePath) {
+                dbPath = filePath;
+                AppSettings.setCurrentDBPath(getContext(),dbPath);
+
                 tvDbPath.setText(filePath);
+                loadTableName();
             }
         });
         dialog.show();

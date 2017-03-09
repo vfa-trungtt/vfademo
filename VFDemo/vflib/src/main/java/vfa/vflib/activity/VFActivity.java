@@ -53,6 +53,11 @@ public class VFActivity extends AppCompatActivity {
         setRootFragment(fg,fragmentContainerId);
     }
 
+    public void setRootFragment(Class fgClass){
+        Fragment fg = Fragment.instantiate(this, fgClass.getName(), null);
+        setRootFragment(fg,fragmentContainerId);
+    }
+
     public void setRootFragment(Fragment fg,int frcontainerId){
         fragmentContainerId = frcontainerId;
 
@@ -61,6 +66,11 @@ public class VFActivity extends AppCompatActivity {
 
         fragmentTransaction.replace(fragmentContainerId, fg ,fg.getClass().getName());
         fragmentTransaction.commitAllowingStateLoss();
+    }
+
+    public void pushFragment(Class fgClass){
+        Fragment fg = Fragment.instantiate(this, fgClass.getName(), null);
+        pushFragment(fg);
     }
 
     public void pushFragment(Fragment fg){
@@ -72,6 +82,16 @@ public class VFActivity extends AppCompatActivity {
 
         fragmentTransaction.add(fragmentContainerId, fg, tag);
         fragmentTransaction.addToBackStack(tag);
+        fragmentTransaction.commitAllowingStateLoss();
+
+    }
+
+    public void startFragment(Fragment fg,int containerId){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        String tag = fg.getClass().getName();
+
+        fragmentTransaction.replace(containerId, fg, tag);
         fragmentTransaction.commitAllowingStateLoss();
 
     }

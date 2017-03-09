@@ -17,6 +17,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('keystore/release.keystore')
+            storePassword 'android'
+        }
+        release {
+            keyAlias 'おたよりBOX'
+            keyPassword 'D07KBCs'
+            storeFile file('keystore/アプリ名.keystore')
+            storePassword 'D07KBCs'
+        }
+    }
 }
 
 dependencies {
@@ -30,5 +45,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':vflib')
     compile project(':library-calendar')
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.android.gms:play-services:10.2.0'
     compile 'com.google.android.gms:play-services-maps:10.2.0'
+    compile 'com.google.android.gms:play-services-location:10.2.0'
 }

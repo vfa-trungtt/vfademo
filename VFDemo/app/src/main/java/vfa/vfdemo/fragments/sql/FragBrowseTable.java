@@ -1,7 +1,9 @@
 package vfa.vfdemo.fragments.sql;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.io.File;
@@ -18,7 +20,6 @@ import vfa.vflib.utils.LogUtils;
 public class FragBrowseTable extends VFFragment {
     String dbPath = "mnt/sdcard/db/sisetu_db.sqlite";
 
-
     ColumnView viewColumn;
     int columnCount = 0;
     List<String> listColumn = new ArrayList<>();
@@ -27,6 +28,11 @@ public class FragBrowseTable extends VFFragment {
     ListView lvData;
 
     List<RowEntity> _data = new ArrayList<>();
+    TableAdapter adapter;
+
+    private int maxColWidth;
+    private int minColWidth;
+
 
     @Override
     public int onGetRootLayoutId() {
@@ -38,28 +44,41 @@ public class FragBrowseTable extends VFFragment {
         viewColumn = (ColumnView) rootView.findViewById(R.id.viewColumn);
         lvData      = (ListView) rootView.findViewById(R.id.lvData);
 
+        lvData.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                FragRowDetail fg = new FragRowDetail();
+                fg.rowData  = _data.get(position);
+                fg.cols     = listColumn;
+                pushFragment(fg);
+            }
+        });
 
         reloadData();
-
-
     }
 
     public void reloadData(){
-        File file = new File(dbPath);
-//        if(!file.exists()) return;
+        new AsyncTask<Void, Void, Void>() {
+            @Override
+            protected Void doInBackground(Void... params) {
+                listColumn = VFSqliteDB.getColsTable(dbPath,tableName);
+                columnCount = listColumn.size();
 
-        List<String> cols = VFSqliteDB.getColsTable(dbPath,tableName);
-        for (String s:cols){
-            LogUtils.debug("colsView[]:"+s);
-        }
+                _data = VFSqliteDB.query(dbPath,tableName);
+                LogUtils.debug("data:"+_data.size());
+                adapter = new TableAdapter(getContext(),_data);
 
-        viewColumn.setColNameList(cols);
-        columnCount = cols.size();
+                return null;
+            }
 
-        _data = VFSqliteDB.query(dbPath,tableName);
-        LogUtils.debug("data:"+_data.size());
-        TableAdapter adapter = new TableAdapter(getContext(),_data);
-        lvData.setAdapter(adapter);
+            @Override
+            protected void onPostExecute(Void aVoid) {
+                super.onPostExecute(aVoid);
+                viewColumn.setColNameList(listColumn);
+                lvData.setAdapter(adapter);
+            }
+        }.execute();
+
     }
 
 
@@ -75,7 +94,6 @@ public class FragBrowseTable extends VFFragment {
 
         @Override
         public int onGetItemLayoutId() {
-//            return R.layout.item_row;
             return 0;
         }
 

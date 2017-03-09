@@ -44,7 +44,7 @@ public class SelectFileDialog extends Dialog {
         _listener = listener;
     }
 
-    String currentFolder = "/mnt/sdcard";
+    String currentFolder = "/mnt/sdcard/db";
     List<String> listFileName = new ArrayList<>();
 
     TextView tvPath;

@@ -30,6 +30,7 @@ public class VFSqliteDB {
 
     public static List<String> getListTables(Context context,String dbPath){
         List<String> list = new ArrayList<>();
+        list.add("sqlite_master");
         try{
             SQLiteDatabase db = SQLiteDatabase.openDatabase(dbPath,null,SQLiteDatabase.OPEN_READWRITE);
             String sql = "SELECT name FROM sqlite_master WHERE type='table'";

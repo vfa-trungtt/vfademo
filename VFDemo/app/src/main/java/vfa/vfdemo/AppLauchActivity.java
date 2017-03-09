@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import vfa.vfdemo.fragments.FragCalendarDemo;
+import vfa.vfdemo.fragments.FragDemoList;
 import vfa.vfdemo.fragments.FragPager;
+import vfa.vfdemo.fragments.FragPagerVertical;
 import vfa.vfdemo.fragments.FragSliter;
 import vfa.vfdemo.fragments.images.FragGallery;
 import vfa.vfdemo.fragments.map.FragMap;
@@ -18,15 +20,21 @@ public class AppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppSettings.imageLoader = new VFImageLoader(this);
         ScreenUtils.getDimensionScreen(this);
 
-        AppSettings.imageLoader = new VFImageLoader(this);
+//        startActivity(ActivitySlideMenu.class);
+//        startActivity(ActivityFileBrowser.class);
+//        finish();
+
+        setRootFragment(new FragDemoList());
 //        setRootFragment(new FragPager());
+//        setRootFragment(new FragPagerVertical());
 //        setRootFragment(new FragSliter());
 //        setRootFragment(new FragCalendarDemo());
 //        setRootFragment(new FragOpenDb());
 //        setRootFragment(new FragBrowseTable());
 //          setRootFragment(new FragMap());
-        setRootFragment(new FragGallery());
+//        setRootFragment(new FragGallery());
     }
 }

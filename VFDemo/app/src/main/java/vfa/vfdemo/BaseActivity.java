@@ -19,9 +19,6 @@ public class BaseActivity extends VFActivity {
         setHomeActionBar();
     }
 
-
-
-
     public void hideAcionBar(){
         getSupportActionBar().hide();
     }

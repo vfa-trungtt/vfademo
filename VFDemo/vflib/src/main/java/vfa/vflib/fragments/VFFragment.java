@@ -55,4 +55,12 @@ public abstract class VFFragment extends Fragment{
             act.pushFragment(fg);
         }
     }
+
+    public VFActivity getVFActivity(){
+        if(getActivity() instanceof VFActivity){
+            VFActivity act = (VFActivity)getActivity();
+            return act;
+        }
+        return null;
+    }
 }
