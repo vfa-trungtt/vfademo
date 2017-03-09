@@ -20,8 +20,6 @@ public class AppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AppSettings.imageLoader = new VFImageLoader(this);
-        ScreenUtils.getDimensionScreen(this);
 
 //        startActivity(ActivitySlideMenu.class);
 //        startActivity(ActivityFileBrowser.class);
