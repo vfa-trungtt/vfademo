@@ -33,8 +33,13 @@
         <activity android:name=".ActivitySQLiteManager"/>
         <activity android:name=".ActivityBookReader"/>
         <activity android:name=".ActivityFireBase"/>
-        <activity android:name=".ActivityMap"/>
+        <activity android:name=".fragments.map.ActivityMap"/>
         <activity android:name=".ActivityDrawing"/>
+        <activity android:name=".ActivityHDiApp"/>
+        <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
+        <activity android:name=".activity.nifty.ActivityNiftyMap"/>
+
+        <activity android:name=".activity.map.ActivityMapMarker"/>
 
         <activity android:name=".widgets.ActivityWifiSettings"></activity>
 

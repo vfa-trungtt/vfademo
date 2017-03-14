@@ -10,9 +10,11 @@ import java.util.List;
 import vfa.vfdemo.ActivityBookReader;
 import vfa.vfdemo.ActivityDrawing;
 import vfa.vfdemo.ActivityFileBrowser;
-import vfa.vfdemo.ActivityMap;
+import vfa.vfdemo.ActivityHDiApp;
 import vfa.vfdemo.ActivitySQLiteManager;
 import vfa.vfdemo.R;
+import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
+import vfa.vfdemo.fragments.map.FragMapDemoList;
 
 
 public class FragDemoList extends FragBaseListView<DemoEntity> {
@@ -31,6 +33,12 @@ public class FragDemoList extends FragBaseListView<DemoEntity> {
     public List<DemoEntity> getDataSource() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
+        demo.DemoTitle  = "Nifty App Demo";
+        demo.DemoDescription    = "A demo about feature in NiftyApp";
+        demo.LaucherDemoClass = ActivityNiftyDemo.class;
+        list.add(demo);
+
+        demo = new DemoEntity();
         demo.DemoTitle  = "SQLite Manager";
         demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
         demo.LaucherDemoClass = ActivitySQLiteManager.class;
@@ -66,6 +74,12 @@ public class FragDemoList extends FragBaseListView<DemoEntity> {
         demo.DemoDescription    = "A demo about network with socket connection";
         demo.LaucherDemoClass = ActivityDrawing.class;
         list.add(demo);
+
+        demo = new DemoEntity();
+        demo.DemoTitle  = "App Demo";
+        demo.DemoDescription    = "A demo for HDiApp use FireBase";
+        demo.LaucherDemoClass = ActivityHDiApp.class;
+        list.add(demo);
         return list;
     }
 
@@ -90,6 +104,7 @@ public class FragDemoList extends FragBaseListView<DemoEntity> {
 
         tvTitle.setText(entity.DemoTitle);
         tvDesc.setText(entity.DemoDescription);
+
     }
 
 }

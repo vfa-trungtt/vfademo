@@ -25,7 +25,7 @@ import vfa.vflib.utils.LogUtils;
 
 public class FragGetLastLocation extends VFFragment {
     GoogleApiClient mGoogleApiClient;
-    private GoogleMap mMap;
+//    private GoogleMap mMap;
 
     TextView tvLong;
     TextView tvLat;
@@ -37,7 +37,7 @@ public class FragGetLastLocation extends VFFragment {
 
     @Override
     public void onViewLoaded() {
-        MapHelper.getCurrentLocation(getContext());
+//        MapHelper.getCurrentLocation(getContext());
 
         tvLat   = (TextView) rootView.findViewById(R.id.tvLatValue);
         tvLong  = (TextView) rootView.findViewById(R.id.tvLongValue);
@@ -46,7 +46,7 @@ public class FragGetLastLocation extends VFFragment {
         rootView.findViewById(R.id.btReqestLocation).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                requestLocation();
             }
         });
     }
@@ -103,6 +103,8 @@ public class FragGetLastLocation extends VFFragment {
 
 
         }
+        mGoogleApiClient.stopAutoManage(getActivity());
+        mGoogleApiClient.disconnect();
 
         // Set the map's camera position to the current location of the device.
 //        if (mCameraPosition != null) {
@@ -118,4 +120,12 @@ public class FragGetLastLocation extends VFFragment {
 //        }
     }
 
+    @Override
+    public void onStop() {
+        super.onStop();
+        if(mGoogleApiClient != null){
+            mGoogleApiClient.stopAutoManage(getActivity());
+            mGoogleApiClient.disconnect();
+        }
+    }
 }

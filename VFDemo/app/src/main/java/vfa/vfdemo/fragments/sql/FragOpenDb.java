@@ -50,6 +50,13 @@ public class FragOpenDb extends VFFragment {
             }
         });
 
+        rootView.findViewById(R.id.btQuery).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pushFragment(new FragSqlQuery());
+            }
+        });
+
         lvTables.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

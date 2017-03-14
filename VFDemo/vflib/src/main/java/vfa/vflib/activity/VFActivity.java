@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.ViewGroup;
 
 import vfa.vflib.R;
@@ -16,6 +17,7 @@ import vfa.vflib.R;
 public class VFActivity extends AppCompatActivity {
 
     private int fragmentContainerId = 0;
+
 
     private Fragment _rootFragment;
 
@@ -96,6 +98,11 @@ public class VFActivity extends AppCompatActivity {
 
     }
 
+    public void addViewIntoFragmentContainer(View view){
+        if(fragmentContainerId == 0) return;
+        ViewGroup container = (ViewGroup) findViewById(fragmentContainerId);
+        container.addView(view);
+    }
 
     /*==== ACTIVITY METHODS=====*/
     public void startActivity(Class<?> act){

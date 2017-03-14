@@ -7,5 +7,5 @@
     <color name="day_disabled_text_color">#DEDEDE</color>
     <color name="selected_day_background">#03A7E9</color>
     <color name="current_day_of_month">#77543d</color>
-    <color name="bg_current_day_of_month">#FFC0CB</color>
+    <color name="bg_current_day_of_month">#ffc0cb</color>
 </resources>

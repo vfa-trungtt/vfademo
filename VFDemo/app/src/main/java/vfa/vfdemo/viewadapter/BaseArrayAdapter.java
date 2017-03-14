@@ -35,6 +35,9 @@ public abstract class BaseArrayAdapter<T> extends ArrayAdapter<T>{
             int itemLayoutId = onGetItemLayoutId();
             if(itemLayoutId == 0){
                 v =  getItemView();
+                if(v == null){
+                    v = new VFSimpleItemListView(getContext());
+                }
             }else {
                 v = mInflater.inflate(itemLayoutId, null);
             }
@@ -52,5 +55,9 @@ public abstract class BaseArrayAdapter<T> extends ArrayAdapter<T>{
         }
     }
 
+    private View getDefaultItemView(){
+        TextView v = new TextView(getContext());
+        return v;
+    }
 }
 

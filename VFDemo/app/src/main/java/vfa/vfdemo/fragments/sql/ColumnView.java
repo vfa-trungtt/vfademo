@@ -24,6 +24,8 @@ import vfa.vfdemo.utils.ViewHelper;
  */
 
 public class ColumnView extends LinearLayout {
+    public static final int defaultHeight = 10;
+
     public int colCount = 0;
     List<String> _cols = new ArrayList<>();
 

@@ -13,55 +13,70 @@
         android:layout_gravity="bottom"
         android:background="@color/gray"/>
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/viewActionBarContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/buttonMenu"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/sel_gray"
-            android:clickable="true"
-            android:gravity="center|left">
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/img_menu"
+            <LinearLayout
+                android:id="@+id/buttonMenu"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@android:color/transparent"
-                android:clickable="false"
-                android:src="@drawable/ic_menu_list"/>
+                android:layout_height="match_parent"
+                android:background="@drawable/sel_gray"
+                android:clickable="true"
+                android:gravity="center|left">
+
+                <ImageButton
+                    android:id="@+id/ivHomeActionBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:src="@drawable/ic_menu_list"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvActionBarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Android Demo"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"/>
+
+                <FrameLayout
+                    android:id="@+id/viewRightContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tvActionBarText"
+                    >
+
+                </FrameLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/tvActionBarText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="Android Demo"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                />
-
-        </RelativeLayout>
-
-    </LinearLayout>
+    </FrameLayout>
 
 </RelativeLayout>

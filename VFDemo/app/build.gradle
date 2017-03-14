@@ -32,6 +32,7 @@ android {
             storePassword 'D07KBCs'
         }
     }
+
 }
 
 dependencies {
@@ -46,7 +47,10 @@ dependencies {
     compile project(':vflib')
     compile project(':library-calendar')
     compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-database:10.2.0'
     compile 'com.google.android.gms:play-services:10.2.0'
     compile 'com.google.android.gms:play-services-maps:10.2.0'
     compile 'com.google.android.gms:play-services-location:10.2.0'
+    compile files('libs/NCMB.jar')
 }
+apply plugin: 'com.google.gms.google-services'

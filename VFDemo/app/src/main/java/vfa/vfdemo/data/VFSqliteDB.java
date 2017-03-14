@@ -62,8 +62,15 @@ public class VFSqliteDB {
             String sql = "SELECT * FROM "+tableName+" LIMIT 1";
 
             Cursor cursor = db.rawQuery(sql,null);
+
             for(int i = 0;i < cursor.getColumnCount();i++){
                 String col = cursor.getColumnName(i);
+
+//                Cursor typeCursor = db.rawQuery("select typeof (" + col + ") from " + tableName,null);
+//                typeCursor.moveToFirst();
+//                LogUtils.info(""+col+""+typeCursor.getString(0));
+
+
                 cols.add(col);
             }
             cursor.close();
@@ -94,6 +101,39 @@ public class VFSqliteDB {
                     }
                     data.add(row);
 
+
+                }while(cursor.moveToNext());
+            }
+
+
+            cursor.close();
+            db.close();
+
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+
+        return data;
+    }
+
+    public static List<RowEntity> querySQL(String dbPath, String sql){
+        List<RowEntity> data = new ArrayList<>();
+
+        try{
+
+            SQLiteDatabase db = SQLiteDatabase.openDatabase(dbPath,null,SQLiteDatabase.OPEN_READWRITE);
+//            String sql = "SELECT * FROM "+tableName+" LIMIT 50";
+
+            Cursor cursor = db.rawQuery(sql,null);
+            int colCount = cursor.getColumnCount();
+
+            if( cursor != null && cursor.moveToFirst() ) {
+                do {
+                    RowEntity row = new RowEntity();
+                    for(int i = 0;i < colCount;i++){
+                        row.dataRow.add(cursor.getString(i));
+                    }
+                    data.add(row);
 
                 }while(cursor.moveToNext());
             }

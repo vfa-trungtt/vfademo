@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/VFDemo.iml" filepath="$PROJECT_DIR$/VFDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hdilib/hdilib.iml" filepath="$PROJECT_DIR$/hdilib/hdilib.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-cal/library-calendar.iml" filepath="$PROJECT_DIR$/library-cal/library-calendar.iml" />
       <module fileurl="file://$PROJECT_DIR$/vflib/vflib.iml" filepath="$PROJECT_DIR$/vflib/vflib.iml" />
     </modules>

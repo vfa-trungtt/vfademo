@@ -49,11 +49,12 @@ public abstract class FragBaseListView<E> extends VFFragment{
         }
 
 
-
     }
 
 
     private void displayListView(){
+        if(_data == null) return;
+
         adapter = new BaseArrayAdapter(getContext(),_data) {
             @Override
             public int onGetItemLayoutId() {
@@ -93,6 +94,7 @@ public abstract class FragBaseListView<E> extends VFFragment{
 
     public void setDataSource(List<E> listData){
         _data = listData;
+        displayListView();
     }
 
     public void onClickItemList(int pos,E entity){

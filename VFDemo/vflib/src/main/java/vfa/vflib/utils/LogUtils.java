@@ -44,6 +44,12 @@ public class LogUtils {
 			Log.e(DEFAULT_TAG,msg);
 		}
 	}
+
+    public static void error(Exception e){
+        if(IS_DEBUG){
+            Log.e(DEFAULT_TAG,e.toString());
+        }
+    }
 	
 	public static void debug(String tag, String msg){
 		if(IS_DEBUG){

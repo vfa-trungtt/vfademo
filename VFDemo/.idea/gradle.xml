@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/hdilib" />
             <option value="$PROJECT_DIR$/library-cal" />
             <option value="$PROJECT_DIR$/vflib" />
           </set>
