@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".AppLauchActivity"
+            android:name=".AAppLauchActivity"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -36,6 +36,7 @@
         <activity android:name=".fragments.map.ActivityMap"/>
         <activity android:name=".ActivityDrawing"/>
         <activity android:name=".ActivityHDiApp"/>
+        <activity android:name=".ActivityCreateIcon"/>
         <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
         <activity android:name=".activity.nifty.ActivityNiftyMap"/>
 

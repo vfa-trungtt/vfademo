@@ -1,20 +1,14 @@
 package vfa.vfdemo;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import vfa.vfdemo.fragments.FragPager;
-import vfa.vfdemo.fragments.FragSlideMenu;
-import vfa.vfdemo.fragments.images.FragGallery;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vflib.activity.VFActivity;
 
@@ -24,6 +18,7 @@ public class ActivitySlideMenu extends VFActivity {
     private View viewMenuContainer;
 
     private ViewGroup viewActionBar;
+    private Fragment fragmentSlideMenu;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,6 +40,7 @@ public class ActivitySlideMenu extends VFActivity {
     }
 
     public void setSlideMenuFagment(Fragment fg){
+        fragmentSlideMenu = fg;
         startFragment(fg,R.id.fragMenuContainer);
     }
 
@@ -57,6 +53,8 @@ public class ActivitySlideMenu extends VFActivity {
     }
 
     public void toggSlideMenu(){
+        if(fragmentSlideMenu == null) return;
+
         if(drawerLayout.isDrawerOpen(viewMenuContainer)){
             drawerLayout.closeDrawer(viewMenuContainer);
         }else {
@@ -78,6 +76,7 @@ public class ActivitySlideMenu extends VFActivity {
         });
 
         setupActionBarView(viewActionBar);
+        setActionBarViewContent(R.id.viewActionBarContent);
     }
     public void setActionBarRightContent(View viewContent){
         ViewGroup viewRight = (ViewGroup) viewActionBar.findViewById(R.id.viewRightContent);
@@ -89,10 +88,23 @@ public class ActivitySlideMenu extends VFActivity {
 //        setHomeActionBar();
     }
 
+    public void setActionBarRightContent(int viewId){
+        ViewGroup viewContent = (ViewGroup) getLayoutInflater().inflate(viewId,null);
+        ViewGroup viewRight = (ViewGroup) viewActionBar.findViewById(R.id.viewRightContent);
+        viewRight.removeAllViews();
+        viewRight.addView(viewContent);
+    }
+
     public void setActionBarText(String text){
         TextView tvTitle = (TextView) viewActionBar.findViewById(R.id.tvActionBarText);
         if(tvTitle != null){
             tvTitle.setText(text);
         }
+    }
+
+    public void setActionBarOnClick(int viewId, View.OnClickListener onClick){
+        if(viewActionBar == null) return;
+        View v = viewActionBar.findViewById(viewId);
+        if(v != null) v.setOnClickListener(onClick);
     }
 }

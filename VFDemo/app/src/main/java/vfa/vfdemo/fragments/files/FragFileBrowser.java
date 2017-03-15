@@ -14,6 +14,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.ActivityFileBrowser;
+import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
 import vfa.vflib.fragments.VFFragment;
 import vfa.vflib.utils.LogUtils;
@@ -68,8 +70,12 @@ public class FragFileBrowser extends VFFragment {
                 recyclerView.setAdapter(adapter);
             }
         }.execute();
+    }
 
-
+    @Override
+    public void setUpActionBar() {
+        super.setUpActionBar();
+        ((ActivityFileBrowser)getVFActivity()).setupActionbar();
 
     }
 

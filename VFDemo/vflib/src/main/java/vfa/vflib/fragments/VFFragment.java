@@ -63,4 +63,20 @@ public abstract class VFFragment extends Fragment{
         }
         return null;
     }
+
+    public boolean onBackPress(){
+        return true;
+    }
+
+    public void addContentView(int viewId){
+
+    }
+
+    public void onFragmentVisible(){
+        setUpActionBar();
+    }
+    public void setUpActionBar(){
+
+    }
+
 }

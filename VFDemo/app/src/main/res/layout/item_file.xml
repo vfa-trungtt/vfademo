@@ -8,11 +8,27 @@
               android:orientation="horizontal"
               android:padding="5dp">
 
-    <ImageView
-        android:id="@+id/ivFile"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/bg_round_cyan"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_round_cyan"/>
+
+        <TextView
+            android:id="@+id/tvFileExt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:maxLines="1"
+            android:text=".jpg"
+            android:textStyle="bold"/>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/tvFileName"
@@ -21,4 +37,10 @@
         android:layout_marginLeft="10dp"
         android:layout_weight="1"
         android:text="TextView"/>
+
+    <CheckBox
+        android:id="@+id/chkSelectFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 </LinearLayout>

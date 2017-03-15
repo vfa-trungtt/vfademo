@@ -13,20 +13,47 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import vfa.vflib.R;
+import vfa.vflib.fragments.VFFragment;
 
 public class VFActivity extends AppCompatActivity {
 
     private int fragmentContainerId = 0;
-
-
     private Fragment _rootFragment;
+
+    private ViewGroup viewActionBar;
+    private ViewGroup viewActionBarRoot;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+
+            @Override
+            public void onBackStackChanged() {
+                Fragment fg = getCurrentFragment();
+                if(fg != null && fg instanceof VFFragment){
+                    ((VFFragment)fg).onFragmentVisible();
+                }
+            }
+
+        });
+    }
+
+    public void setActionBarViewContent(int viewId){
+        if(viewActionBar == null) return;
+        viewActionBarRoot = (ViewGroup) viewActionBar.findViewById(viewId);
+    }
+    public void replaceActionBar(int viewId){
+        if(viewActionBarRoot == null) return;
+        viewActionBarRoot.removeAllViews();
+        viewActionBarRoot.addView(getLayoutInflater().inflate(viewId,null));
+    }
+    public void setupActionBarView(int viewId) {
+        setupActionBarView((ViewGroup) getLayoutInflater().inflate(viewId,null));
     }
 
     public void setupActionBarView(ViewGroup view) {
+        viewActionBar = view;
         ActionBar actionBar = getSupportActionBar();
         actionBar.show();
 
@@ -47,7 +74,26 @@ public class VFActivity extends AppCompatActivity {
         parent.setPadding(0, 0, 0, 0);
     }
 
+    public void setActionBarOnClick(int viewId, View.OnClickListener onClick){
+        if(viewActionBar == null) return;
+        View v = viewActionBar.findViewById(viewId);
+        if(v != null) v.setOnClickListener(onClick);
+    }
     /*==== FRAGMENT METHODS=====*/
+    public Fragment getCurrentFragment(){
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        if(fragmentManager == null) return null;
+        if(fragmentManager.getBackStackEntryCount() == 0) return null;
+
+        String fragmentTag = fragmentManager.getBackStackEntryAt(fragmentManager.getBackStackEntryCount() - 1).getName();
+
+        Fragment currentFragment = getSupportFragmentManager().findFragmentByTag(fragmentTag);
+        return currentFragment;
+    }
+    public Fragment getRootFragment(){
+        return _rootFragment;
+    }
     public void setFragmentContainerId(int frcontainer){
         fragmentContainerId = frcontainer;
     }
@@ -57,14 +103,17 @@ public class VFActivity extends AppCompatActivity {
 
     public void setRootFragment(Class fgClass){
         Fragment fg = Fragment.instantiate(this, fgClass.getName(), null);
+        _rootFragment = fg;
         setRootFragment(fg,fragmentContainerId);
     }
 
     public void setRootFragment(Fragment fg,int frcontainerId){
+        _rootFragment = fg;
         fragmentContainerId = frcontainerId;
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.addToBackStack(fg.getClass().getName());
 
         fragmentTransaction.replace(fragmentContainerId, fg ,fg.getClass().getName());
         fragmentTransaction.commitAllowingStateLoss();
