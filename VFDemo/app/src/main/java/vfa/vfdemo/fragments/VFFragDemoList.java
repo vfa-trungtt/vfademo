@@ -1,5 +1,6 @@
 package vfa.vfdemo.fragments;
 
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.TextView;
 
@@ -37,6 +38,7 @@ public class VFFragDemoList extends FragBaseListView<DemoEntity> {
     @Override
     public void onClickItemList(int pos, DemoEntity entity) {
         if(entity != null){
+
             if(entity.LauchType == 0){
                 getVFActivity().pushActivity(entity.LaucherDemoClass);
             }else {

@@ -37,6 +37,7 @@
         <activity android:name=".ActivityDrawing"/>
         <activity android:name=".ActivityHDiApp"/>
         <activity android:name=".ActivityCreateIcon"/>
+        <activity android:name=".ActivityMusic"/>
         <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
         <activity android:name=".activity.nifty.ActivityNiftyMap"/>
 

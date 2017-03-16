@@ -18,6 +18,34 @@ import vfa.vflib.utils.LogUtils;
 
 public class VFSqliteDB {
 
+    String _dbPath;
+    public VFSqliteDB(String dbPath){
+
+    }
+
+    //delete a row in table by id
+    public void deleteRow(int id,String tableName){
+
+    }
+
+    //insert or update a row
+    public void saveRow(IDataEntity data,boolean isUpdate){
+        try{
+
+            SQLiteDatabase db = SQLiteDatabase.openDatabase(_dbPath,null,SQLiteDatabase.OPEN_READWRITE);
+            if(isUpdate){
+                db.update(data.getTableName(),data.getDataRowContent(),"",null);
+            }else {
+                db.insert(data.getTableName(),null,data.getDataRowContent());
+            }
+
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
+
+
+
     public static SQLiteDatabase openDb(Context context,String dbPath){
         try{
             SQLiteDatabase db = SQLiteDatabase.openDatabase(dbPath,null,SQLiteDatabase.OPEN_READWRITE);

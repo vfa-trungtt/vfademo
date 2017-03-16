@@ -37,7 +37,10 @@ public abstract class VFFragment extends Fragment{
             rootView = new FrameLayout(getActivity());
         }
 
-        rootView.setBackgroundColor(fragmentBGColor);
+        if(rootView.getBackground() == null){
+            rootView.setBackgroundColor(fragmentBGColor);
+        }
+
         rootView.setClickable(true);
 
         return rootView;

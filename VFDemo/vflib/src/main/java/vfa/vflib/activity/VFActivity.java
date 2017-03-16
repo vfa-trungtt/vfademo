@@ -39,6 +39,11 @@ public class VFActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
     public void setActionBarViewContent(int viewId){
         if(viewActionBar == null) return;
         viewActionBarRoot = (ViewGroup) viewActionBar.findViewById(viewId);

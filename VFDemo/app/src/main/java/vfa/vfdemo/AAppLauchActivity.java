@@ -70,7 +70,7 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "Musics";
         demo.DemoDescription    = "A demo about some feature in music.";
-        demo.LaucherDemoClass = ActivityBookReader.class;
+        demo.LaucherDemoClass = ActivityMusic.class;
         list.add(demo);
 
         demo = new DemoEntity();
