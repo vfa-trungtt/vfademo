@@ -7,12 +7,14 @@ import java.util.HashMap;
 import vfa.vfdemo.data.TableSchema;
 import vfa.vfdemo.data.VFDatabase;
 
-/**
- * Created by Vitalify on 3/16/17.
- */
 
 public class SongDB extends VFDatabase {
-    public static class DBSchema{
+
+    public static String DB_NAME        = "song_db.db";
+    public static int DBVersion         = 1;
+
+    public static class SongDBSchema {
+
         public static final String TBL_SONG = "tl_songs";
 
         public static String DBNAME = "song_db.db";
@@ -20,7 +22,7 @@ public class SongDB extends VFDatabase {
 
         HashMap<String,TableSchema> mapTable = new HashMap<>();
 
-        public DBSchema(){
+        public SongDBSchema(){
             TableSong tblSong = new TableSong();
             mapTable.put(tblSong.getTableName(),tblSong);
         }

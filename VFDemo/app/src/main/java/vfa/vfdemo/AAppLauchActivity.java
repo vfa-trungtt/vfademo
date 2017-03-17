@@ -16,22 +16,16 @@ public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        testing();
 
         VFFragDemoList fg = new VFFragDemoList();
         fg.setDemoListData(getDemoList());
+        setRootFragment(fg);
 
-//        startActivity(ActivitySlideMenu.class);
+    }
+    private void testing(){
 //        startActivity(ActivityFileBrowser.class);
 //        finish();
-
-        setRootFragment(fg);
-//        setRootFragment(new FragPager());
-//        setRootFragment(new FragPagerVertical());
-//        setRootFragment(new FragSliter());
-//        setRootFragment(new FragCalendarDemo());
-//        setRootFragment(new FragOpenDb());
-//        setRootFragment(new FragBrowseTable());
-//          setRootFragment(new FragMap());
 //        setRootFragment(new FragGallery());
     }
 
@@ -56,9 +50,9 @@ public class AAppLauchActivity extends BaseActivity {
         list.add(demo);
 
         demo = new DemoEntity();
-        demo.DemoTitle  = "Android UI Design";
+        demo.DemoTitle          = "Android UI Design";
         demo.DemoDescription    = "A demo about UI component.";
-        demo.LaucherDemoClass = ActivityFileBrowser.class;
+        demo.LaucherDemoClass   = ActivityUIDesign.class;
         list.add(demo);
 
         demo = new DemoEntity();

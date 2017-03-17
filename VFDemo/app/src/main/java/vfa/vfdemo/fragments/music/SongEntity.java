@@ -20,7 +20,7 @@ public class SongEntity implements IDataEntity<SongEntity>{
     @Override
     public ContentValues getDataRowContent() {
         ContentValues rowData = new ContentValues();
-        rowData.put(SongDB.DBSchema.TableSong.SONG_TITLE,title);
+        rowData.put(SongDB.SongDBSchema.TableSong.SONG_TITLE,title);
         return rowData;
     }
 
