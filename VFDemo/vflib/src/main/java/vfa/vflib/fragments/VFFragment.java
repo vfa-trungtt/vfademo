@@ -17,7 +17,9 @@ public abstract class VFFragment extends Fragment{
     private int _rootLayoutId = 0;
     private int fragmentBGColor = Color.WHITE;
 
-    public abstract int onGetRootLayoutId();
+    public int onGetRootLayoutId(){
+        return 0;
+    }
 
     public abstract void onViewLoaded();
 
@@ -72,7 +74,12 @@ public abstract class VFFragment extends Fragment{
     }
 
     public void addContentView(int viewId){
+//        View v = getI
+    }
 
+    public void addContentView(View view){
+//        rootView.removeAllViews();
+        rootView.addView(view);
     }
 
     public void onFragmentVisible(){

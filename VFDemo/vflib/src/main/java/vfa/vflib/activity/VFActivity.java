@@ -118,10 +118,14 @@ public class VFActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.addToBackStack(fg.getClass().getName());
+
+//        fragmentTransaction.addToBackStack(fg.getClass().getName());
 
         fragmentTransaction.replace(fragmentContainerId, fg ,fg.getClass().getName());
         fragmentTransaction.commitAllowingStateLoss();
+        if(fg instanceof VFFragment){
+
+        }
     }
 
     public void pushFragment(Class fgClass){

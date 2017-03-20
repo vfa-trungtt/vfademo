@@ -9,6 +9,7 @@ import java.util.List;
 import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
+import vfa.vfdemo.fragments.drawing.Frag3DDraw;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
 
 
@@ -18,15 +19,16 @@ public class AAppLauchActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         testing();
 
-        VFFragDemoList fg = new VFFragDemoList();
-        fg.setDemoListData(getDemoList());
-        setRootFragment(fg);
+//        VFFragDemoList fg = new VFFragDemoList();
+//        fg.setDemoListData(getDemoList());
+//        setRootFragment(fg);
 
     }
-    private void testing(){
-//        startActivity(ActivityFileBrowser.class);
-//        finish();
-//        setRootFragment(new FragGallery());
+    private boolean testing(){
+        startActivity(Activity3DDraw.class);
+        finish();
+//        setRootFragment(new Frag3DDraw());
+        return true;
     }
 
     public List<DemoEntity> getDemoList() {

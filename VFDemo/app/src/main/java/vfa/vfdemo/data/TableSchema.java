@@ -33,7 +33,7 @@ public abstract class TableSchema {
     public static final String F_CREATE_DATE = "date_created";
 
     public abstract String getTableName();
-    public abstract void setUpColumns();
+    public abstract void onCreateTable();
 
     private SQLiteDatabase _db;
 
@@ -104,7 +104,7 @@ public abstract class TableSchema {
         }
 
 
-        setUpColumns();
+        onCreateTable();
     }
 
     public void upgradeTable(SQLiteDatabase db,int newVesion){

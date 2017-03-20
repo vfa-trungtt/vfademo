@@ -8,57 +8,44 @@ import java.util.List;
 
 import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
-import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.drawing.Frag3DDraw;
-import vfa.vfdemo.fragments.drawing.FragBasicDraw;
-import vfa.vfdemo.fragments.drawing.FragColorPallete;
-import vfa.vfdemo.fragments.drawing.FragGradiantColor;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
+import vfa.vflib.activity.VFActivity;
 
-/**
- * Created by Vitalify on 3/8/17.
- */
 
-public class ActivityDrawing extends ActivitySlideMenu {
+public class Activity3DDraw extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        VFFragDemoList fg = new VFFragDemoList();
-        fg.setDemoListData(getDemoList());
-        setRootFragment(fg);
-
-//        setRootFragment(new FragBasicDraw());
+        getSupportActionBar().hide();
+        setRootFragment(new Frag3DDraw());
     }
 
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle  = "Draw object";
-        demo.DemoDescription    = "A demo about draw object";
-        demo.LaucherDemoClass = FragBasicDraw.class;
-        demo.LauchType          = 1;
+        demo.DemoTitle  = "Nifty App Demo";
+        demo.DemoDescription    = "A demo about feature in NiftyApp";
+        demo.LaucherDemoClass = ActivityNiftyDemo.class;
         list.add(demo);
 
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Color";
-        demo.DemoDescription    = "A demo about color pallete.";
-        demo.LaucherDemoClass = FragColorPallete.class;
-        demo.LauchType          = 1;
-        list.add(demo);
-
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Gradient color";
-        demo.DemoDescription    = "A demo about gradient color.";
-        demo.LaucherDemoClass = FragGradiantColor.class;
-        demo.LauchType          = 1;
-        list.add(demo);
-
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Android 3D graphic";
-        demo.DemoDescription    = "A demo about 3Dgraphics";
-        demo.LaucherDemoClass = Frag3DDraw.class;
-        demo.LauchType          = 1;
-        list.add(demo);
+//        demo = new DemoEntity();
+//        demo.DemoTitle  = "SQLite Manager";
+//        demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
+//        demo.LaucherDemoClass = ActivitySQLiteManager.class;
+//        list.add(demo);
+//
+//        demo = new DemoEntity();
+//        demo.DemoTitle  = "File Browser";
+//        demo.DemoDescription    = "A demo about file browser with basic function.";
+//        demo.LaucherDemoClass = ActivityFileBrowser.class;
+//        list.add(demo);
+//
+//        demo = new DemoEntity();
+//        demo.DemoTitle          = "Android UI Design";
+//        demo.DemoDescription    = "A demo about UI component.";
+//        demo.LaucherDemoClass   = ActivityUIDesign.class;
+//        list.add(demo);
 //
 //        demo = new DemoEntity();
 //        demo.DemoTitle  = "Android Icon";
