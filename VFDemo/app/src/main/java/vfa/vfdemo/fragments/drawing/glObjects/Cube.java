@@ -75,6 +75,10 @@ public class Cube extends BaseGLObject {
 
     @Override
     public void draw(GL10 gl) {
+
+        gl.glTranslatef(0.5f,0.5f,-0.5f);
+        gl.glScalef(0.3f, 0.3f, 0.1f);
+
         gl.glFrontFace(GL10.GL_CCW);    // Front face in counter-clockwise orientation
         gl.glEnable(GL10.GL_CULL_FACE); // Enable cull face
         gl.glCullFace(GL10.GL_BACK);    // Cull the back face (don't display)

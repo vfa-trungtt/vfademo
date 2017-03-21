@@ -1,13 +1,16 @@
 package vfa.vfdemo.fragments.drawing;
 
+import android.app.ActivityManager;
+import android.content.Context;
+import android.content.pm.ConfigurationInfo;
 import android.opengl.GLSurfaceView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
 import vfa.vfdemo.R;
-import vfa.vfdemo.fragments.drawing.glObjects.Cube;
-import vfa.vfdemo.fragments.drawing.glObjects.Plane;
+import vfa.vfdemo.fragments.drawing.glObjects.*;
+import vfa.vfdemo.fragments.drawing.glObjects.MyGLRenderer;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vflib.fragments.VFFragment;
 import vfa.vflib.utils.LogUtils;
@@ -19,7 +22,10 @@ import vfa.vflib.utils.LogUtils;
 public class Frag3DDraw extends VFFragment {
 
     private GLSurfaceView glView;
-    private MyGLRenderer glRender;
+//    private MyGLRenderer glRender;
+
+    private GL2Render glRender;
+
     Cube cube = new Cube();
     Plane plane = new Plane();
 
@@ -47,9 +53,33 @@ public class Frag3DDraw extends VFFragment {
     @Override
     public void onViewLoaded() {
 
-        glRender = new MyGLRenderer(getContext());
+//        glRender = new MyGLRenderer(getContext());
+//        glRender = new GL2Render();
         glView = new GLSurfaceView(getContext());           // Allocate a GLSurfaceView
-        glView.setRenderer(glRender); // Use a custom renderer
+
+//        glView.setRenderer(glRender); // Use a custom renderer
+        final ActivityManager activityManager = (ActivityManager) getActivity().getSystemService(Context.ACTIVITY_SERVICE);
+        final ConfigurationInfo configurationInfo = activityManager.getDeviceConfigurationInfo();
+        final boolean supportsEs2 = configurationInfo.reqGlEsVersion >= 0x20000;
+
+        if (supportsEs2)
+        {
+            // Request an OpenGL ES 2.0 compatible context.
+            glView.setEGLContextClientVersion(2);
+
+            // Set the renderer to our demo renderer, defined below.
+//            glView.setRenderer(new LessonOneRenderer());
+            glView.setRenderer(new GL2Render());
+//            glView.setRenderer(new MyGLRenderer());
+        }
+        else
+        {
+            // This is where you could create an OpenGL ES 1.x compatible
+            // renderer if you wanted to support both ES 1 and ES 2.
+            return;
+        }
+//        glView.setRenderer(new LessonOneRenderer()); // Use a custom renderer
+
         addContentView(glView);
 
         View v = ViewHelper.getView(getContext(), R.layout.view_3d_tool);
@@ -59,14 +89,15 @@ public class Frag3DDraw extends VFFragment {
             @Override
             public void onClick(View v) {
                 LogUtils.debug("camera");
-                glRender.zoom += -1.0f;
+//                glRender.zoom += -1.0f;
             }
         });
 
         rootView.findViewById(R.id.btRotate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                glRender.angleCube += 30f;
+//                glRender.angleCube += 30f;
+//                LogUtils.debug("rotate:"+glRender.angleCube);
             }
         });
 
@@ -78,9 +109,10 @@ public class Frag3DDraw extends VFFragment {
         });
 
 
-        glRender.addObject(cube);
-
+//        glRender.addObject(cube);
 //        glRender.addObject(plane);
+//        cube.setPosition(0,0,5);
+//        glRender.addObject(cube);
     }
 
     @Override

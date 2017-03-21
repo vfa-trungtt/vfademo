@@ -1,5 +1,7 @@
 package vfa.vfdemo.fragments.drawing.glObjects;
 
+import android.opengl.GLES20;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
@@ -13,6 +15,7 @@ import javax.microedition.khronos.opengles.GL10;
 public class Plane extends BaseGLObject {
     private FloatBuffer vertexBuffer;  // Buffer for vertex-array
 
+    private float[] colors = {};
     private float[] vertices = {  // Vertices for the square
             -1.0f, -1.0f,  0.0f,  // 0. left-bottom
             1.0f, -1.0f,  0.0f,  // 1. right-bottom
@@ -33,10 +36,21 @@ public class Plane extends BaseGLObject {
     // Render the shape
     public void draw(GL10 gl) {
         // Enable vertex-array and define its buffer
+        gl.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
         gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
         gl.glVertexPointer(3, GL10.GL_FLOAT, 0, vertexBuffer);
         // Draw the primitives from the vertex-array directly
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, vertices.length / 3);
         gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
+    }
+
+    @Override
+    public void draw2GL() {
+//        GLES20.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+//        GLES20.glEnableClientState(GL10.GL_VERTEX_ARRAY);
+//        GLES20.glVertexPointer(3, GL10.GL_FLOAT, 0, vertexBuffer);
+        // Draw the primitives from the vertex-array directly
+        GLES20.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, vertices.length / 3);
+//        GLES20.glDisableClientState(GL10.GL_VERTEX_ARRAY);
     }
 }
