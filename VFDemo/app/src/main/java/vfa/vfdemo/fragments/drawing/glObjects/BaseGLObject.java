@@ -8,6 +8,24 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class BaseGLObject {
 
+    //GL ES 2.0
+    public int mPositionHandle;
+    public int mColorHandle;
+    public int program;
+
+
+    /**
+     * Store the view matrix. This can be thought of as our camera. This matrix transforms world space to eye space;
+     * it positions things relative to our eye.
+     */
+    public float[] mViewMatrix = new float[16];
+    /** Store the projection matrix. This is used to project the scene onto a 2D viewport. */
+    public float[] mProjectionMatrix = new float[16];
+    /** Allocate storage for the final combined matrix. This will be passed into the shader program. */
+    public float[] mMVPMatrix = new float[16];
+
+    public final float[] modelMatrix = new float[16];
+
     private Postion3D _postion = new Postion3D();
 
     public void setPosition(float x,float y,float z){

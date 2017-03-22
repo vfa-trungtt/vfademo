@@ -70,6 +70,7 @@ public class Frag3DDraw extends VFFragment {
             // Set the renderer to our demo renderer, defined below.
 //            glView.setRenderer(new LessonOneRenderer());
             glView.setRenderer(new GL2Render());
+//            glView.setRenderer(new LessonTwoRenderer());
 //            glView.setRenderer(new MyGLRenderer());
         }
         else

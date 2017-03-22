@@ -3,11 +3,6 @@ package vfa.vfdemo.fragments.drawing.glObjects;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
-import android.os.SystemClock;
-
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.FloatBuffer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -18,44 +13,44 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class GL2Render implements GLSurfaceView.Renderer {
 
+    float eyeX = 0.0f;
+    float eyeY = 0.0f;
+    float eyeZ = -2.0f;
+
+    // We are looking toward the distance
+    float lookX = 0.0f;
+    float lookY = 0.0f;
+    float lookZ = 0.0f;
+
+    // Set our up vector. This is where our head would be pointing were we holding the camera.
+    float upX = 0.0f;
+    float upY = 1.0f;
+    float upZ = 0.0f;
 
     private final float[] mMVPMatrix = new float[16];
-    private final float[] mProjectionMatrix = new float[16];
-    private final float[] mViewMatrix = new float[16];
+
+    public static float[] ProjectionMatrix  = new float[16];
+    public static float[] ViewMatrix        = new float[16];
+
     private final float[] mRotationMatrix = new float[16];
 
     Square square;// = new Square();
+    Box box;
 
+    Cube2 cube;
+
+    public GLCamera glCamera = new GLCamera();
     public GL2Render(){
 
     }
-
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
         GLES20.glClearColor(0.5f, 0.5f, 0.5f, 0.5f);
-
-        // Position the eye behind the origin.
-        final float eyeX = 0.0f;
-        final float eyeY = 0.0f;
-        final float eyeZ = 1.5f;
-
-        // We are looking toward the distance
-        final float lookX = 0.0f;
-        final float lookY = 0.0f;
-        final float lookZ = -5.0f;
-
-        // Set our up vector. This is where our head would be pointing were we holding the camera.
-        final float upX = 0.0f;
-        final float upY = 1.0f;
-        final float upZ = 0.0f;
-
-        // Set the view matrix. This matrix can be said to represent the camera position.
-        // NOTE: In OpenGL 1, a ModelView matrix is used, which is a combination of a model and
-        // view matrix. In OpenGL 2, we can keep track of these matrices separately if we choose.
-//        Matrix.setLookAtM(mViewMatrix, 0, eyeX, eyeY, eyeZ, lookX, lookY, lookZ, upX, upY, upZ);
-        Matrix.setLookAtM(mViewMatrix, 0, 0, 0, -3, 0f, 0f, 0f, 0f, 1.0f, 0.0f);
         square = new Square();
+        square.setPosition(0,0,2.0f);
 
+        box = new Box();
+        cube = new Cube2();
     }
 
     @Override
@@ -78,21 +73,21 @@ public class GL2Render implements GLSurfaceView.Renderer {
 //        final float near = 1.0f;
 //        final float far = 10.0f;
 
-//        Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, near, far);
-
+//        Matrix.frustumM(ProjectionMatrix, 0, left, right, bottom, top, near, far);
 //        Setting the perspective projection
-//        Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 3, 7);
-        Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 2, 100);
-//        Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 3, 10);
+//        Matrix.frustumM(ProjectionMatrix, 0, -ratio, ratio, -1, 1, 3, 7);
+        Matrix.frustumM(ProjectionMatrix, 0, -ratio, ratio, -1, 1, 2, 100);
+//        Matrix.frustumM(ProjectionMatrix, 0, -ratio, ratio, -1, 1, 3, 10);
     }
 
     @Override
     public void onDrawFrame(GL10 gl) {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT);
+        glCamera.setUp(ViewMatrix);
+        square.draw2GL();
+//        box.draw2GL();
 
-
-        Matrix.multiplyMM(mMVPMatrix, 0, mProjectionMatrix, 0, mViewMatrix, 0);
-        square.draw(mMVPMatrix);
+        cube.draw2GL();
     }
 
 }
