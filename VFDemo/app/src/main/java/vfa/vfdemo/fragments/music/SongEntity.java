@@ -30,4 +30,9 @@ public class SongEntity implements IDataEntity<SongEntity>{
 //        entity.title      = get
         return entity;
     }
+
+    @Override
+    public SongEntity getEntity(ContentValues data) {
+        return null;
+    }
 }

@@ -1,6 +1,8 @@
 package vfa.vfdemo.fragments.drawing.glObjects;
 
+
 import android.opengl.GLES20;
+import android.support.v4.graphics.ColorUtils;
 import android.util.Log;
 
 import javax.microedition.khronos.opengles.GL10;
@@ -8,22 +10,20 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class BaseGLObject {
 
+    static final int COORDS_PER_VERTEX = 3;
     //GL ES 2.0
     public int mPositionHandle;
     public int mColorHandle;
     public int program;
 
 
-    /**
-     * Store the view matrix. This can be thought of as our camera. This matrix transforms world space to eye space;
-     * it positions things relative to our eye.
-     */
+    private float[] _color = {1,1,1,1};//default white
+
     public float[] mViewMatrix = new float[16];
     /** Store the projection matrix. This is used to project the scene onto a 2D viewport. */
     public float[] mProjectionMatrix = new float[16];
     /** Allocate storage for the final combined matrix. This will be passed into the shader program. */
     public float[] mMVPMatrix = new float[16];
-
     public final float[] modelMatrix = new float[16];
 
     private Postion3D _postion = new Postion3D();
@@ -34,8 +34,27 @@ public class BaseGLObject {
         _postion.z = z;
     }
 
-    public void setColor(int color){
+    public void setColor(int cl){
 
+    }
+
+    public void setColor(String clHex){
+
+    }
+
+    public void setColor(int r,int g,int b,int a){
+        _color[0] = r/255;
+        _color[1] = g/255;
+        _color[2] = b/255;
+        _color[3] = a/255;
+    }
+
+    public void setColor(float[] cl){
+        _color = cl;
+    }
+
+    public float[] getColor(){
+        return _color;
     }
 
     public void draw(GL10 gl) {

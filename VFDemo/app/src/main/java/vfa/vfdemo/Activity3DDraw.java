@@ -8,7 +8,9 @@ import java.util.List;
 
 import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
+import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.drawing.Frag3DDraw;
+import vfa.vfdemo.fragments.drawing.opengles.FragTriAngle;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
 import vfa.vflib.activity.VFActivity;
 
@@ -17,23 +19,30 @@ public class Activity3DDraw extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
-        setRootFragment(new Frag3DDraw());
+
+        VFFragDemoList fg = new VFFragDemoList();
+        fg.setDemoListData(getDemoList());
+        setRootFragment(fg);
+
+//        getSupportActionBar().hide();
+//        setRootFragment(new Frag3DDraw());
     }
 
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle  = "Nifty App Demo";
-        demo.DemoDescription    = "A demo about feature in NiftyApp";
-        demo.LaucherDemoClass = ActivityNiftyDemo.class;
+        demo.DemoTitle  = "Draw TriAngle";
+        demo.DemoDescription    = "A demo about draw 3D shape in openGLES 2.0";
+        demo.LauchType          = 1;
+        demo.LaucherDemoClass = FragTriAngle.class;
         list.add(demo);
 
-//        demo = new DemoEntity();
-//        demo.DemoTitle  = "SQLite Manager";
-//        demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
-//        demo.LaucherDemoClass = ActivitySQLiteManager.class;
-//        list.add(demo);
+        demo = new DemoEntity();
+        demo.DemoTitle  = "Draw Image";
+        demo.DemoDescription    = "A demo about draw image in openGLES 2.0.";
+        demo.LaucherDemoClass = ActivitySQLiteManager.class;
+        demo.LauchType          = 1;
+        list.add(demo);
 //
 //        demo = new DemoEntity();
 //        demo.DemoTitle  = "File Browser";

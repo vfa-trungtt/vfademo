@@ -1,5 +1,6 @@
 package vfa.vfdemo.data;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
@@ -21,4 +22,12 @@ public abstract class VFMasterDatabase extends SQLiteOpenHelper {
 //        }
     }
 
+    public void saveEntity(IDataEntity data){
+        SQLiteDatabase db = getWritableDatabase();
+        db.insert(data.getTableName(),null,data.getDataRowContent());
+    }
+
+    public void deleteEntity(){
+
+    }
 }

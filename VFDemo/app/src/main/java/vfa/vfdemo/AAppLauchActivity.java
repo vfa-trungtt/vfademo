@@ -25,7 +25,8 @@ public class AAppLauchActivity extends BaseActivity {
 
     }
     private boolean testing(){
-        startActivity(Activity3DDraw.class);
+//        startActivity(Activity3DDraw.class);
+        startActivity(ActivityOpenCVDemo.class);
         finish();
 //        setRootFragment(new Frag3DDraw());
         return true;
@@ -43,6 +44,12 @@ public class AAppLauchActivity extends BaseActivity {
         demo.DemoTitle  = "SQLite Manager";
         demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
         demo.LaucherDemoClass = ActivitySQLiteManager.class;
+        list.add(demo);
+
+        demo = new DemoEntity();
+        demo.DemoTitle  = "Open CVDemo";
+        demo.DemoDescription    = "A demo about opencv library";
+        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
         list.add(demo);
 
         demo = new DemoEntity();

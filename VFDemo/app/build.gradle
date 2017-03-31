@@ -52,5 +52,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:10.2.0'
     compile 'com.google.android.gms:play-services-location:10.2.0'
     compile files('libs/NCMB.jar')
+    compile project(':opencv')
 }
 apply plugin: 'com.google.gms.google-services'

@@ -41,6 +41,8 @@
         <activity android:name=".ActivityUIDesign"/>
         <activity android:name=".ActivityMusic"/>
         <activity android:name=".Activity3DDraw"/>
+        <activity android:name=".ActivityOpenCVDemo"/>
+
         <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
         <activity android:name=".activity.nifty.ActivityNiftyMap"/>
 

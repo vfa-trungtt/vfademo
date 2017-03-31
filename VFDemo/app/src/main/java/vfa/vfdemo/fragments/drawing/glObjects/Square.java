@@ -57,19 +57,17 @@ public class Square extends BaseGLObject{
     private int mColorHandle;
     private int mMVPMatrixHandle;
 
-    static final int COORDS_PER_VERTEX = 3;
 
-    private float squareCoords[] = {
-            -0.5f,  0.5f, 0.0f,   // top left
-            -0.5f, -0.5f, 0.0f,   // bottom left
-             0.5f, -0.5f, 0.0f,   // bottom right
-             0.5f,  0.5f, 0.0f }; // top right
 
+//    private float verticles[] = {
+//            -0.5f,  0.5f, 0.0f,   // top left
+//            -0.5f, -0.5f, 0.0f,   // bottom left
+//             0.5f, -0.5f, 0.0f,   // bottom right
+//             0.5f,  0.5f, 0.0f }; // top right
+//
     private short drawOrder[] = { 0, 1, 2, 0, 2, 3 }; // order to draw vertices
-
     private int vertexStride = COORDS_PER_VERTEX * 4; // 4 bytes per vertex
-
-    float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
+//    float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
 
     public Square(float size){
         prepareData();
@@ -89,14 +87,19 @@ public class Square extends BaseGLObject{
     }
 
     public void prepareData(){
-        //list of vertex
-        //color
-        //shader
         // initialize vertex byte buffer for shape coordinates
-        ByteBuffer bb = ByteBuffer.allocateDirect(squareCoords.length * 4);
+        float verticles[] = {
+                -0.5f,  0.5f, 0.0f,   // top left
+                -0.5f, -0.5f, 0.0f,   // bottom left
+                0.5f, -0.5f, 0.0f,   // bottom right
+                0.5f,  0.5f, 0.0f }; // top right
+
+        short drawOrder[] = { 0, 1, 2, 0, 2, 3 };
+
+        ByteBuffer bb = ByteBuffer.allocateDirect(verticles.length * 4);
         bb.order(ByteOrder.nativeOrder());
         vertexBuffer = bb.asFloatBuffer();
-        vertexBuffer.put(squareCoords);
+        vertexBuffer.put(verticles);
         vertexBuffer.position(0);
 
         // initialize byte buffer for the draw list
@@ -114,13 +117,14 @@ public class Square extends BaseGLObject{
         GLES20.glAttachShader(mProgram, vertexShader);   // add the vertex shader to program
         GLES20.glAttachShader(mProgram, fragmentShader); // add the fragment shader to program
         GLES20.glLinkProgram(mProgram);                  // create OpenGL program executables
+
+        setColor(new float[] { 0.2f, 0.709803922f, 0.898039216f, 1.0f });
+        setColor(new float[] { 0.2f, 0.7f, 0.2f, 1.0f });
     }
 
     private void getVertex(float size){
         this.size = size;
     }
-
-
 
     @Override
     public void draw2GL() {
@@ -140,7 +144,7 @@ public class Square extends BaseGLObject{
         // get handle to fragment shader's vColor member
         mColorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
         // Set color for drawing the triangle
-        GLES20.glUniform4fv(mColorHandle, 1, color, 0);
+        GLES20.glUniform4fv(mColorHandle, 1, getColor(), 0);
 
         // get handle to shape's transformation matrix
         mMVPMatrixHandle = GLES20.glGetUniformLocation(mProgram, "uMVPMatrix");

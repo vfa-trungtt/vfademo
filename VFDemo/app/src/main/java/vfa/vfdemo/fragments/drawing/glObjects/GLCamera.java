@@ -9,8 +9,8 @@ import android.opengl.Matrix;
 public class GLCamera {
 
     public float eyeX = 0.0f;
-    public float eyeY = 0.0f;
-    public float eyeZ = -5.0f;
+    public float eyeY = 1.0f;
+    public float eyeZ = -3.0f;
 
     // We are looking toward the distance
     public float lookX = 0.0f;

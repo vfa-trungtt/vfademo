@@ -1,2 +1,2 @@
-include ':app', ':vflib', ':library-calendar', ':hdilib'
+include ':app', ':vflib', ':library-calendar', ':hdilib', ':opencv'
 project(':library-calendar').projectDir = new File('library-cal')

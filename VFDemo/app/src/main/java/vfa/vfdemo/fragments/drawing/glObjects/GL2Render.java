@@ -13,31 +13,15 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class GL2Render implements GLSurfaceView.Renderer {
 
-    float eyeX = 0.0f;
-    float eyeY = 0.0f;
-    float eyeZ = -2.0f;
-
-    // We are looking toward the distance
-    float lookX = 0.0f;
-    float lookY = 0.0f;
-    float lookZ = 0.0f;
-
-    // Set our up vector. This is where our head would be pointing were we holding the camera.
-    float upX = 0.0f;
-    float upY = 1.0f;
-    float upZ = 0.0f;
-
     private final float[] mMVPMatrix = new float[16];
 
     public static float[] ProjectionMatrix  = new float[16];
     public static float[] ViewMatrix        = new float[16];
 
-    private final float[] mRotationMatrix = new float[16];
-
     Square square;// = new Square();
     Box box;
 
-    Cube2 cube;
+//    Cube2 cube;
 
     public GLCamera glCamera = new GLCamera();
     public GL2Render(){
@@ -50,7 +34,7 @@ public class GL2Render implements GLSurfaceView.Renderer {
         square.setPosition(0,0,2.0f);
 
         box = new Box();
-        cube = new Cube2();
+//        cube = new Cube2();
     }
 
     @Override
@@ -85,9 +69,9 @@ public class GL2Render implements GLSurfaceView.Renderer {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT);
         glCamera.setUp(ViewMatrix);
         square.draw2GL();
-//        box.draw2GL();
+        box.draw2GL();
 
-        cube.draw2GL();
+//        cube.draw2GL();
     }
 
 }

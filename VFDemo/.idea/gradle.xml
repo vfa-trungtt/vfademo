@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/hdilib" />
             <option value="$PROJECT_DIR$/library-cal" />
+            <option value="$PROJECT_DIR$/opencv" />
             <option value="$PROJECT_DIR$/vflib" />
           </set>
         </option>
