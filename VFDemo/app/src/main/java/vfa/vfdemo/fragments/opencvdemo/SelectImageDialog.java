@@ -12,12 +12,13 @@ import vfa.vfdemo.R;
  */
 
 public class SelectImageDialog extends Dialog{
-    GridView gridView;
+//    GridView gridView;
 
     public SelectImageDialog(@NonNull Context context) {
         super(context);
         setContentView(R.layout.dialog_select_image);
-        gridView = (GridView) findViewById(R.id.gridImages);
+//        gridView = (GridView) findViewById(R.id.gridImages);
+//        add
     }
 
 }

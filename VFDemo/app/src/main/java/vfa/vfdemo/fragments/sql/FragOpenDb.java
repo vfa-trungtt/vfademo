@@ -1,5 +1,7 @@
 package vfa.vfdemo.fragments.sql;
 
+import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.File;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,6 +75,27 @@ public class FragOpenDb extends VFFragment {
             dbPath = AppSettings.getCurrentDBPath(getContext());
         }
 
+        rootView.findViewById(R.id.buttonDate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog mDatePickerDialog = new DatePickerDialog(getActivity(), null, 2017, 8, 14);
+                try {
+                    Field nameField = AlertDialog.class.getDeclaredField("mAlert");
+                    nameField.setAccessible(true);
+                    Object alert = nameField.get(mDatePickerDialog);
+                    Field nameFieldText = alert.getClass().getDeclaredField("mButtonPositiveText");
+                    nameFieldText.setAccessible(true);
+                    nameFieldText.set(alert, "Set");
+                    nameFieldText = alert.getClass().getDeclaredField("mButtonNegativeText");
+                    nameFieldText.setAccessible(true);
+                    nameFieldText.set(alert,"Cancel");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                mDatePickerDialog.show();
+            }
+        });
         loadTableName();
     }
 

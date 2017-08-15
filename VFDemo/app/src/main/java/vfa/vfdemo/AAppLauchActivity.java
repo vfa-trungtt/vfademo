@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
@@ -17,11 +18,11 @@ public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        testing();
+//        testing();
 
-//        VFFragDemoList fg = new VFFragDemoList();
-//        fg.setDemoListData(getDemoList());
-//        setRootFragment(fg);
+        VFFragDemoList fg = new VFFragDemoList();
+        fg.setDemoListData(getDemoList());
+        setRootFragment(fg);
 
     }
     private boolean testing(){
@@ -37,7 +38,13 @@ public class AAppLauchActivity extends BaseActivity {
         DemoEntity demo = new DemoEntity();
         demo.DemoTitle  = "Nifty App Demo";
         demo.DemoDescription    = "A demo about feature in NiftyApp";
-        demo.LaucherDemoClass = ActivityNiftyDemo.class;
+        demo.LaucherDemoClass = FindMyServerActivity.class;
+        list.add(demo);
+
+        demo = new DemoEntity();
+        demo.DemoTitle  = "Find my server";
+        demo.DemoDescription    = "A demo for scan network";
+        demo.LaucherDemoClass = FindMyServerActivity.class;
         list.add(demo);
 
         demo = new DemoEntity();

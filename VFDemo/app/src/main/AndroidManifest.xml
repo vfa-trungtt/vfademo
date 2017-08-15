@@ -43,6 +43,7 @@
         <activity android:name=".Activity3DDraw"/>
         <activity android:name=".ActivityOpenCVDemo"/>
 
+        <activity android:name=".activity.FindMyServerActivity"/>
         <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
         <activity android:name=".activity.nifty.ActivityNiftyMap"/>
 

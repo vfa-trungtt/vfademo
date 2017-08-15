@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/gridImages"
+        android:layout_above="@+id/frContainer"
         android:orientation="horizontal">
 
         <Button
@@ -17,9 +17,13 @@
             android:text="Button"/>
     </LinearLayout>
 
-    <GridView
-        android:id="@+id/gridImages"
+
+    <FrameLayout
+        android:id="@+id/frContainer"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true">
+
+    </FrameLayout>
+
 </RelativeLayout>
