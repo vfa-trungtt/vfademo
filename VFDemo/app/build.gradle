@@ -1,17 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
+    compileSdkVersion 25
     buildToolsVersion '25.0.0'
     defaultConfig {
+        multiDexEnabled true
         applicationId "vfa.vfdemo"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug{
+
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -26,13 +30,24 @@ android {
             storePassword 'android'
         }
         release {
-            keyAlias 'おたよりBOX'
-            keyPassword 'D07KBCs'
-            storeFile file('keystore/アプリ名.keystore')
-            storePassword 'D07KBCs'
+            storeFile file('keystore/vfdemo.jks')
+            storePassword project.properties.storePassword
+            keyAlias project.properties.keyAlias
+            keyPassword project.properties.keyPassword
         }
     }
-
+    productFlavors {
+        staging {
+            dimension "env"
+        }
+        production {
+            dimension "env"
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
 }
 
 dependencies {
@@ -40,8 +55,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     testCompile 'junit:junit:4.12'
     compile project(':vflib')
@@ -54,5 +69,6 @@ dependencies {
     compile files('libs/NCMB.jar')
     compile project(':opencv')
     compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
 }
 apply plugin: 'com.google.gms.google-services'
