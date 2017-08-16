@@ -32,8 +32,8 @@ dependencies:
     
 test:
   override:
-    - ./gradlew assembleFreeStagingRelease -PdisablePreDex:
-        timeout: 1500
+    # - ./gradlew assembleFreeStagingRelease -PdisablePreDex:
+        # timeout: 1500
 deployment:
   # Deploy apk to deploygate
   staging:
