@@ -13,7 +13,6 @@ import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.drawing.Frag3DDraw;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
 
-
 public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,10 +25,8 @@ public class AAppLauchActivity extends BaseActivity {
 
     }
     private boolean testing(){
-//        startActivity(Activity3DDraw.class);
         startActivity(ActivityOpenCVDemo.class);
         finish();
-//        setRootFragment(new Frag3DDraw());
         return true;
     }
 
