@@ -2,6 +2,7 @@ package vfa.vfdemo.widgets;
 
 import java.util.List;
 
+import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -53,7 +54,8 @@ public class ActivityWifiSettings extends FragmentActivity{
 	}
 	
 	public void scanWifi(){
-		wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+
+		wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if (wifi.isWifiEnabled() == false)
         {
             Toast.makeText(getApplicationContext(), "wifi is disabled..making it enabled", Toast.LENGTH_LONG).show();
@@ -112,7 +114,7 @@ public class ActivityWifiSettings extends FragmentActivity{
 		conf.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE);
 		conf.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.WEP40); 
 		
-		WifiManager wifiManager = (WifiManager)getSystemService(Context.WIFI_SERVICE); 
+		WifiManager wifiManager = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		wifiManager.addNetwork(conf);
 		
 		List<WifiConfiguration> list = wifiManager.getConfiguredNetworks();

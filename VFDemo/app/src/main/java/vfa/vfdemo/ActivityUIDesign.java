@@ -11,6 +11,7 @@ import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
 import vfa.vfdemo.fragments.uidesign.FragButton;
+import vfa.vfdemo.fragments.uidesign.FragShapedButton;
 
 /**
  * Created by Vitalify on 3/17/17.
@@ -35,11 +36,12 @@ public class ActivityUIDesign extends ActivitySlideMenu {
         demo.LauchType          = 1;
         list.add(demo);
 
-//        demo = new DemoEntity();
-//        demo.DemoTitle  = "SQLite Manager";
-//        demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
-//        demo.LaucherDemoClass = ActivitySQLiteManager.class;
-//        list.add(demo);
+        demo = new DemoEntity();
+        demo.DemoTitle  = "Shaped Button";
+        demo.DemoDescription    = "A demo about shaped button.";
+        demo.LaucherDemoClass = FragShapedButton.class;
+        demo.LauchType          = 1;
+        list.add(demo);
 //
 //        demo = new DemoEntity();
 //        demo.DemoTitle  = "File Browser";

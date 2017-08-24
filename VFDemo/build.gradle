@@ -7,7 +7,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'com.google.gms:google-services:3.0.0'
-        classpath 'com.deploygate:gradle:0.6'
+        classpath 'com.deploygate:gradle:1.1.0'
     }
 }
 
@@ -27,9 +27,24 @@ deploygate {
     apks {
         debug {
             sourceFile = file("./app/build/outputs/apk/vfdemo-app.apk")
-//            message = getStagingDeployMessage()
+            message = getStagingDeployMessage()
         }
     }
+}
+
+def getStagingDeployMessage() {
+    def branch = ""
+    def proc = "git rev-parse --abbrev-ref HEAD".execute()
+    proc.in.eachLine { line -> branch = line }
+    proc.err.eachLine { line -> println line }
+    proc.waitFor()
+
+    def headHash = ""
+    def proc2 = "git rev-parse HEAD".execute()
+    proc2.in.eachLine { line -> headHash = line }
+    proc2.err.eachLine { line -> println line }
+    proc2.waitFor()
+    headHash + " at " + branch + " for staging"
 }
 
 task clean(type: Delete) {

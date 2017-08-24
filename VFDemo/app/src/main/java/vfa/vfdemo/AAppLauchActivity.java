@@ -3,6 +3,9 @@ package vfa.vfdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.asai24.golf.inputscore.ActivityGolf;
+import com.asai24.golf.inputscore.ActivitySearchCourse;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +39,12 @@ public class AAppLauchActivity extends BaseActivity {
         demo.DemoTitle  = "Nifty App Demo";
         demo.DemoDescription    = "A demo about feature in NiftyApp";
         demo.LaucherDemoClass = FindMyServerActivity.class;
+        list.add(demo);
+
+        demo = new DemoEntity();
+        demo.DemoTitle  = "Input GolfScore";
+        demo.DemoDescription    = "A demo for scan network";
+        demo.LaucherDemoClass = ActivityGolf.class;
         list.add(demo);
 
         demo = new DemoEntity();

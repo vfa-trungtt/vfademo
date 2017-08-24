@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="5dp"
+              android:paddingTop="8dp"
+              android:id="@+id/menu_bottom_score"
+              android:background="@color/menu_golf_top"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/score_menu_parent_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:background="@drawable/icon_menu_live"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/menu_my_play"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_menu_my_play"/>
+
+            <Button
+                android:id="@+id/menu_analytics"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/icon_menu_analytics"
+                android:scaleType="fitCenter"/>
+
+            <Button
+                android:id="@+id/menu_history"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/icon_menu_history"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/menu_golf_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/menu_drill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+</LinearLayout>

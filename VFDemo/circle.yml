@@ -17,12 +17,12 @@ dependencies:
   pre:
     # Install required components.
     # pre-install packages is here) https://circleci.com/docs/android
-    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository
+    # - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository
     # - echo yes | android update sdk --filter addon-google_apis-google-24 --no-ui --force > /dev/null
     # Android SDK Platform 24
-    - if [ ! -d "/usr/local/android-sdk-linux/platforms/android-25" ]; then echo y | android update sdk --no-ui --all --filter "android-25"; fi
+    # - if [ ! -d "/usr/local/android-sdk-linux/platforms/android-25" ]; then echo y | android update sdk --no-ui --all --filter "android-25"; fi
     # Android SDK Build-tools, revision 24.0.2
-    - if [ ! -d "/usr/local/android-sdk-linux/build-tools/25.0.0" ]; then echo y | android update sdk --no-ui --all --filter "build-tools-25.0.0"; fi
+    # - if [ ! -d "/usr/local/android-sdk-linux/build-tools/25.0.0" ]; then echo y | android update sdk --no-ui --all --filter "build-tools-25.0.0"; fi
     # Android Support Repository, revision 35 / Local Maven repository for Support Libraries
     # - if [ ! -d "/usr/local/android-sdk-linux/extras/android/m2repository/com/android/support/design/24.1.0" ]; then echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"; fi
 
@@ -32,6 +32,7 @@ dependencies:
     
 test:
   override:
+    - ./gradlew assembleDebug
     # - ./gradlew assembleFreeStagingRelease -PdisablePreDex:
         # timeout: 1500
 deployment:
