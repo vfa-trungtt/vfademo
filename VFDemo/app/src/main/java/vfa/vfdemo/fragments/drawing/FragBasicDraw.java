@@ -4,7 +4,8 @@ import android.view.View;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.ui.BaseDrawView;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragBasicDraw extends VFFragment {

@@ -6,7 +6,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 /**

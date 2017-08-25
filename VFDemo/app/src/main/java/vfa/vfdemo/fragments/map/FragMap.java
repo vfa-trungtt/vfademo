@@ -3,7 +3,8 @@ package vfa.vfdemo.fragments.map;
 import com.google.android.gms.maps.MapView;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/7/17.

@@ -12,7 +12,7 @@ import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.drawing.Frag3DDraw;
 import vfa.vfdemo.fragments.drawing.opengles.FragTriAngle;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
-import vfa.vflib.activity.VFActivity;
+
 
 
 public class Activity3DDraw extends BaseActivity {

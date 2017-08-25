@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vflib.activity.VFActivity;
+import vn.hdisoft.hdilib.activities.VFActivity;
 
 
 public class ActivitySlideMenu extends VFActivity {

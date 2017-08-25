@@ -9,7 +9,8 @@ import android.widget.RelativeLayout;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.ScreenUtils;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 

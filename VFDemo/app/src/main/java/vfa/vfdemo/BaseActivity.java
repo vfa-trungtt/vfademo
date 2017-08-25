@@ -7,7 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.ViewGroup;
 
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vflib.activity.VFActivity;
+import vn.hdisoft.hdilib.activities.VFActivity;
+
 
 public class BaseActivity extends VFActivity {
     @Override

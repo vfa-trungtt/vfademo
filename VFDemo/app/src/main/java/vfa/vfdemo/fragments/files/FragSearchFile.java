@@ -3,7 +3,7 @@ package vfa.vfdemo.fragments.files;
 import android.view.View;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragSearchFile extends VFFragment{

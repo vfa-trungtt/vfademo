@@ -24,7 +24,7 @@ import com.nostra13.universalimageloader.utils.L;
 
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
-import vfa.vflib.activity.VFActivity;
+
 
 
 

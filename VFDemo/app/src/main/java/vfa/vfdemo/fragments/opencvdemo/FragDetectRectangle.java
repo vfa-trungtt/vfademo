@@ -11,8 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.Vector;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
-
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragDetectRectangle extends VFFragment{

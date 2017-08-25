@@ -18,7 +18,6 @@
             <option value="$PROJECT_DIR$/modules/hdilib" />
             <option value="$PROJECT_DIR$/modules/hdisoftui" />
             <option value="$PROJECT_DIR$/opencv" />
-            <option value="$PROJECT_DIR$/vflib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

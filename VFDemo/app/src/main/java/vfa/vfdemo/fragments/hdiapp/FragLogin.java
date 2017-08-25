@@ -14,7 +14,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragLogin extends VFFragment {

@@ -12,7 +12,8 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.fragments.drawing.glObjects.*;
 import vfa.vfdemo.fragments.drawing.glObjects.MyGLRenderer;
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 /**

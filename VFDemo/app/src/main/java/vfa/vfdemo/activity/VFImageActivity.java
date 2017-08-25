@@ -5,7 +5,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import vfa.vflib.activity.VFActivity;
+
+import vn.hdisoft.hdilib.activities.VFActivity;
 
 public class VFImageActivity extends VFActivity {
 

@@ -14,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/modules/hdisoftui/hdisoftui.iml" filepath="$PROJECT_DIR$/modules/hdisoftui/hdisoftui.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-cal/library-calendar.iml" filepath="$PROJECT_DIR$/library-cal/library-calendar.iml" />
       <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vflib/vflib.iml" filepath="$PROJECT_DIR$/vflib/vflib.iml" />
     </modules>
   </component>
 </project>

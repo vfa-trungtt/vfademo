@@ -10,7 +10,7 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.ImageEntity;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 /**
  * Created by Vitalify on 3/1/17.

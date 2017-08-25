@@ -19,7 +19,7 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.data.VFSqliteDB;
 import vfa.vfdemo.dialogs.SelectFileDialog;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 /**

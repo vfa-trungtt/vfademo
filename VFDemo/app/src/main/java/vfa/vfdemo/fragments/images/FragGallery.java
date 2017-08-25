@@ -18,7 +18,8 @@ import java.util.List;
 import vfa.vfdemo.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 public class FragGallery extends VFFragment {
 

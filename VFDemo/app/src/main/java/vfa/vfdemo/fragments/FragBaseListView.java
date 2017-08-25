@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 public abstract class FragBaseListView<E> extends VFFragment{
 

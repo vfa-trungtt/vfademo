@@ -28,8 +28,8 @@ import vfa.vfdemo.ActivityFileBrowser;
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.RootUtils;
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vflib.fragments.VFFragment;
 
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragFileBrowserListView extends VFFragment {

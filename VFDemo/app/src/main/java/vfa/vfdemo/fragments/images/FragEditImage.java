@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import vfa.vfdemo.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.ui.TouchImageView;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragEditImage extends VFFragment {

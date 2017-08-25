@@ -14,7 +14,8 @@ import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import vfa.vfdemo.R;
-import vfa.vflib.activity.VFActivity;
+import vn.hdisoft.hdilib.activities.VFActivity;
+
 
 /**
  * Created by Vitalify on 3/10/17.

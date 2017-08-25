@@ -14,7 +14,8 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.data.ImageEntity;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 /**

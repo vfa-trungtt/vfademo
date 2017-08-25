@@ -4,7 +4,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 /**
  * Created by trungtt on 8/3/17.

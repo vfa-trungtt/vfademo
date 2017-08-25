@@ -5,7 +5,7 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.fragments.FragBaseListView;
-import vfa.vflib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/10/17.
