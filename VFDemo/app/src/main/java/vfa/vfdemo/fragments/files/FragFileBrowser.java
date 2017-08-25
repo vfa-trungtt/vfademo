@@ -18,7 +18,7 @@ import vfa.vfdemo.ActivityFileBrowser;
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
 import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class FragFileBrowser extends VFFragment {

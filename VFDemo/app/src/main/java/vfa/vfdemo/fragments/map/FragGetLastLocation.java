@@ -21,7 +21,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 import vfa.vfdemo.R;
 import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
 
 public class FragGetLastLocation extends VFFragment {
     GoogleApiClient mGoogleApiClient;
@@ -57,19 +57,19 @@ public class FragGetLastLocation extends VFFragment {
                         new GoogleApiClient.OnConnectionFailedListener() {
                             @Override
                             public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                                LogUtils.debug("map connect fails");
+//                                LogUtils.debug("map connect fails");
                             }
                         } )
                 .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
                     @Override
                     public void onConnected(@Nullable Bundle bundle) {
-                        LogUtils.debug("map connected");
+//                        LogUtils.debug("map connected");
                         getDeviceLocation();
                     }
 
                     @Override
                     public void onConnectionSuspended(int i) {
-                        LogUtils.debug("map connect supspended");
+//                        LogUtils.debug("map connect supspended");
                     }
                 })
                 .addApi(LocationServices.API)
@@ -95,8 +95,8 @@ public class FragGetLastLocation extends VFFragment {
         if (mLocationPermissionGranted) {
             mLastKnownLocation = LocationServices.FusedLocationApi
                     .getLastLocation(mGoogleApiClient);
-            LogUtils.debug("==Long:"+mLastKnownLocation.getLongitude());
-            LogUtils.debug("==Long:"+mLastKnownLocation.getLatitude());
+//            LogUtils.debug("==Long:"+mLastKnownLocation.getLongitude());
+//            LogUtils.debug("==Long:"+mLastKnownLocation.getLatitude());
 
             tvLong.setText("Long:"+mLastKnownLocation.getLongitude());
             tvLat.setText("Lat:"+mLastKnownLocation.getLatitude());

@@ -18,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import vfa.vfdemo.R;
-import vfa.vflib.utils.LogUtils;
 
 public class ActivityWifiSettings extends FragmentActivity{
 
@@ -67,15 +66,15 @@ public class ActivityWifiSettings extends FragmentActivity{
 			@Override
 			public void onReceive(Context context, Intent intent) {
 				// TODO Auto-generated method stub
-				LogUtils.info("onReceive:"+intent.getAction());
+//				LogUtils.info("onReceive:"+intent.getAction());
 				String action = intent.getAction();
 
 				if(action.equalsIgnoreCase("android.net.wifi.SCAN_RESULTS")){
 					results = wifi.getScanResults();
 					for(ScanResult result:results){
-						LogUtils.debug(""+result.SSID);
+//						LogUtils.debug(""+result.SSID);
 						if(result.SSID.equalsIgnoreCase(wifiName)){
-							LogUtils.info("Found target:"+wifiName);
+//							LogUtils.info("Found target:"+wifiName);
 							connectWifi(wifiName, wifiPass);
 							break;
 						}
@@ -101,7 +100,7 @@ public class ActivityWifiSettings extends FragmentActivity{
 	}
 	
 	public void connectWifi(String ssid,String pass){
-		LogUtils.debug("connect to :"+ssid);
+//		LogUtils.debug("connect to :"+ssid);
 		String networkSSID = ssid;
 		String networkPass = pass;
 

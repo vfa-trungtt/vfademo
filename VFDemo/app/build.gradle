@@ -103,5 +103,6 @@ dependencies {
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.android.support:multidex:1.0.1'
     compile project(':opencv')
+    compile project(':hdilib')
 }
 apply plugin: 'com.google.gms.google-services'

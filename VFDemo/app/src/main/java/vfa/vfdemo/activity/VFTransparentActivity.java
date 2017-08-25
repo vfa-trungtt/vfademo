@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-import vfa.vflib.utils.LogUtils;
+
 
 /**
  * Created by Vitalify on 11/25/16.
@@ -27,7 +27,7 @@ public class VFTransparentActivity extends AppCompatActivity{
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        LogUtils.debug("touch..");
+
         return false;
     }
 }

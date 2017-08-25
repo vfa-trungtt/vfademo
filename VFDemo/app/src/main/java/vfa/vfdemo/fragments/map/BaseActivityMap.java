@@ -28,8 +28,9 @@ import com.google.android.gms.maps.model.LatLng;
 
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
-import vfa.vflib.activity.VFActivity;
-import vfa.vflib.utils.LogUtils;
+
+
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class BaseActivityMap extends ActivitySlideMenu {

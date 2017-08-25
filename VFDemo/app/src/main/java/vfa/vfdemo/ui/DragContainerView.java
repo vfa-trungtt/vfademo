@@ -24,7 +24,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import vfa.vfdemo.R;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.utils.LogUtils;
+
 
 public class DragContainerView extends FrameLayout{
 

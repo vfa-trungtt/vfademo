@@ -12,7 +12,7 @@ import java.util.List;
 
 import vfa.vfdemo.fragments.FragBaseListView;
 import vfa.vfdemo.viewadapter.VFSimpleItemListView;
-import vfa.vflib.utils.LogUtils;
+
 
 
 public class FragListPublicSchool extends FragBaseListView<SchoolEntity> {
@@ -37,13 +37,13 @@ public class FragListPublicSchool extends FragBaseListView<SchoolEntity> {
             @Override
             public void done(List<NCMBObject> list, NCMBException e) {
                 if(e == null){
-                    LogUtils.debug("found:"+list.size()+" public school");
+//                    LogUtils.debug("found:"+list.size()+" public school");
                     schools = SchoolEntity.getListFromQuery(list);
                     setDataSource(schools);
 
                 }else {
 
-                    LogUtils.error(e);
+//                    LogUtils.error(e);
                 }
             }
         });

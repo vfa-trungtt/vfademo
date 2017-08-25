@@ -1,14 +1,14 @@
 package vfa.vfdemo;
 
+import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
 import vfa.vfdemo.utils.ScreenUtils;
 import vfa.vfdemo.utils.VFImageLoader;
-import vfa.vflib.VFApplication;
 
 
-public class VFApplicationDemo extends VFApplication {
+public class VFApplicationDemo extends Application {
 
     @Override
     public void onCreate() {

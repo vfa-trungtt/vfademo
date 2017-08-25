@@ -9,7 +9,8 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.utils.LogUtils;
+
 
 /**
  * Created by Vitalify on 3/20/17.

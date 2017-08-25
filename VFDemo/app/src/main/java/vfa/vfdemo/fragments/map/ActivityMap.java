@@ -25,7 +25,7 @@ import com.nostra13.universalimageloader.utils.L;
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
 import vfa.vflib.activity.VFActivity;
-import vfa.vflib.utils.LogUtils;
+
 
 
 public class ActivityMap extends ActivitySlideMenu implements OnMapReadyCallback,GoogleMap.OnCameraIdleListener,GoogleMap.OnCameraMoveListener {
@@ -62,13 +62,13 @@ public class ActivityMap extends ActivitySlideMenu implements OnMapReadyCallback
                         new GoogleApiClient.OnConnectionFailedListener() {
                             @Override
                             public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                                LogUtils.debug("map connect fails");
+//                                LogUtils.debug("map connect fails");
                             }
                         } )
                 .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
                     @Override
                     public void onConnected(@Nullable Bundle bundle) {
-                        LogUtils.debug("map connected");
+//                        LogUtils.debug("map connected");
                         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                                 .findFragmentById(R.id.map);
                         mapFragment.getMapAsync(ActivityMap.this);
@@ -76,7 +76,7 @@ public class ActivityMap extends ActivitySlideMenu implements OnMapReadyCallback
 
                     @Override
                     public void onConnectionSuspended(int i) {
-                        LogUtils.debug("map connect supspended");
+//                        LogUtils.debug("map connect supspended");
                     }
                 })
                 .addApi(LocationServices.API)
@@ -200,7 +200,7 @@ public class ActivityMap extends ActivitySlideMenu implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LogUtils.debug("map ready...");
+//        LogUtils.debug("map ready...");
         mMap = googleMap;
         mMap.setOnCameraMoveListener(this);
         mMap.setOnCameraIdleListener(this);
@@ -211,9 +211,9 @@ public class ActivityMap extends ActivitySlideMenu implements OnMapReadyCallback
 
     @Override
     public void onCameraIdle() {
-        LogUtils.debug("camra idle");
+//        LogUtils.debug("camra idle");
         mDefaultLocation = mMap.getCameraPosition().target;
-        LogUtils.debug("center:"+mDefaultLocation.latitude + "," + mDefaultLocation.longitude);
+//        LogUtils.debug("center:"+mDefaultLocation.latitude + "," + mDefaultLocation.longitude);
     }
 
     @Override

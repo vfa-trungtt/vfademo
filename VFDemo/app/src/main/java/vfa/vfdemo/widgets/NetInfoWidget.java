@@ -12,7 +12,6 @@ import android.os.Handler;
 import android.widget.RemoteViews;
 
 import vfa.vfdemo.R;
-import vfa.vflib.utils.LogUtils;
 
 public class NetInfoWidget extends AppWidgetProvider {
 
@@ -30,14 +29,14 @@ public class NetInfoWidget extends AppWidgetProvider {
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,int[] appWidgetIds) {
 		super.onUpdate(context, appWidgetManager, appWidgetIds);
-        LogUtils.info("Widget count 1:"+appWidgetIds.length);
+//        LogUtils.info("Widget count 1:"+appWidgetIds.length);
 
 		_context = context;		
 		ComponentName thisWidget = new ComponentName(context,NetInfoWidget.class);
 	    int[] allWidgetIds = appWidgetManager.getAppWidgetIds(thisWidget);
 
-        LogUtils.info("Widget onUpdate");
-        LogUtils.info("Widget count:"+allWidgetIds.length);
+//        LogUtils.info("Widget onUpdate");
+//        LogUtils.info("Widget count:"+allWidgetIds.length);
 
 	    for (int widgetId : allWidgetIds) {
 
@@ -72,9 +71,9 @@ public class NetInfoWidget extends AppWidgetProvider {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		super.onReceive(context, intent);
-		LogUtils.debug("onReceive:"+intent.getAction());
+//		LogUtils.debug("onReceive:"+intent.getAction());
 		if (AC_SETTING_CLICKED.equals(intent.getAction())) {
-			LogUtils.info("click setting...");
+//			LogUtils.info("click setting...");
             updateWidgets(context);
         }else if("android.net.wifi.STATE_CHANGE".equals(intent.getAction())){
             updateWidgets(context);

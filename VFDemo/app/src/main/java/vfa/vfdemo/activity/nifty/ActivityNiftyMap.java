@@ -14,7 +14,7 @@ import vfa.vfdemo.fragments.map.ActivityMap;
 import vfa.vfdemo.fragments.nifty.FragListSchoolByDistance;
 import vfa.vfdemo.fragments.nifty.FragNiftySlideMenu;
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vflib.utils.LogUtils;
+
 
 
 public class ActivityNiftyMap extends ActivityMap {
@@ -55,7 +55,7 @@ public class ActivityNiftyMap extends ActivityMap {
 
     @Override
     public void onSlideMenuSelected(int menuItemIndex) {
-        LogUtils.debug("select menu :"+menuItemIndex);
+
 
         switch (menuItemIndex){
             case 0:

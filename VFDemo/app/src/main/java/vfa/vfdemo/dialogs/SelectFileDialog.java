@@ -28,7 +28,6 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.utils.LogUtils;
 
 /**
  * Created by Vitalify on 3/7/17.

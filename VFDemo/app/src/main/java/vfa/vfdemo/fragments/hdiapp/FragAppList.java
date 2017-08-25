@@ -12,10 +12,10 @@ import vfa.vflib.fragments.VFFragment;
  */
 
 public class FragAppList extends FragBaseListView<AppEntity> {
-    @Override
-    public int onGetRootLayoutId() {
-        return R.layout.frag_app_list;
-    }
+//    @Override
+//    public int onGetRootLayoutId() {
+//        return R.layout.frag_app_list;
+//    }
 
     @Override
     public void onViewLoaded() {

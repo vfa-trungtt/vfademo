@@ -13,7 +13,7 @@ import vfa.vfdemo.fragments.drawing.glObjects.*;
 import vfa.vfdemo.fragments.drawing.glObjects.MyGLRenderer;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
 
 /**
  * Created by Vitalify on 3/20/17.
@@ -37,13 +37,13 @@ public class Frag3DDraw extends VFFragment {
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 
-            LogUtils.info("VelocityX " + velocityX + " velocityY" + velocityY);
+//            LogUtils.info("VelocityX " + velocityX + " velocityY" + velocityY);
 
             if (e1.getY() - e2.getY() > SWIPE_MIN_DISTANCE && Math.abs(velocityY) > SWIPE_THRESHOLD_VELOCITY) {
-                LogUtils.info("Fling up.");
+//                LogUtils.info("Fling up.");
                 return true;
             } else if (e2.getY() - e1.getY() > SWIPE_MIN_DISTANCE && Math.abs(velocityY) > SWIPE_THRESHOLD_VELOCITY) {
-                LogUtils.info("Fling down.");
+//                LogUtils.info("Fling down.");
                 return true;
             }
             return false;
@@ -89,7 +89,7 @@ public class Frag3DDraw extends VFFragment {
         rootView.findViewById(R.id.btCamera).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtils.debug("camera");
+//                LogUtils.debug("camera");
 //                glRender.zoom += -1.0f;
             }
         });

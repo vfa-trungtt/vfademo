@@ -15,7 +15,7 @@ import vfa.vfdemo.data.ImageEntity;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
 import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
 
 /**
  * Created by Vitalify on 3/8/17.
@@ -52,7 +52,7 @@ public class FragPagerVertical extends VFFragment {
         rootView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
             @Override
             public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
-                LogUtils.debug("height:"+rootView.getHeight());
+//                LogUtils.debug("height:"+rootView.getHeight());
                 pageHeight = rootView.getHeight();
             }
         });

@@ -11,7 +11,7 @@ import vfa.vfdemo.fragments.FragSlideMenuListView;
 import vfa.vfdemo.fragments.files.FragFileBrowserListView;
 import vfa.vfdemo.fragments.files.FragSearchFile;
 import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
 
 
 public class ActivityFileBrowser extends ActivitySlideMenu {
