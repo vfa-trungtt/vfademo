@@ -1,4 +1,4 @@
-include ':golfscoreinput', ':app', ':vflib', ':library-calendar', ':hdilib', ':opencv', ':hdisoftui', ':hdidata'
+include ':golfscoreinput', ':app', ':vflib', ':library-calendar', ':hdilib', ':opencv', ':hdisoftui', ':hdidata', ':hdimages'
 project(':hdilib').projectDir = new File('./modules/hdilib')
 project(':hdisoftui').projectDir = new File('./modules/hdisoftui')
 

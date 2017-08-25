@@ -20,7 +20,6 @@ public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        testing();
 
         VFFragDemoList fg = new VFFragDemoList();
         fg.setDemoListData(getDemoList());
