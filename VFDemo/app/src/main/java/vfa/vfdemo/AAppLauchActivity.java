@@ -9,6 +9,7 @@ import com.asai24.golf.inputscore.ActivitySearchCourse;
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.activity.ActivityVideoDemo;
 import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
@@ -35,9 +36,9 @@ public class AAppLauchActivity extends BaseActivity {
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle  = "Nifty App Demo";
-        demo.DemoDescription    = "A demo about feature in NiftyApp";
-        demo.LaucherDemoClass = FindMyServerActivity.class;
+        demo.DemoTitle  = "Video Editor";
+        demo.DemoDescription    = "A demo about video Editor";
+        demo.LaucherDemoClass = ActivityVideoDemo.class;
         list.add(demo);
 
         demo = new DemoEntity();

@@ -47,6 +47,7 @@
         <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
         <activity android:name=".activity.nifty.ActivityNiftyMap"/>
 
+        <activity android:name=".activity.ActivityVideoDemo"/>
         <activity android:name=".activity.map.ActivityMapMarker"/>
 
         <activity android:name=".widgets.ActivityWifiSettings"></activity>
