@@ -12,10 +12,6 @@ import vfa.vfdemo.viewadapter.BaseArrayAdapter;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
-/**
- * Created by Vitalify on 3/2/17.
- */
-
 public class FragCalendarDemo extends VFFragment {
     public GridView gridCalendar;
     List<String> listDate = new ArrayList<>();
