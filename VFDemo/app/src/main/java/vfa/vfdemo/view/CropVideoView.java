@@ -40,7 +40,7 @@ public class CropVideoView extends VideoView {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        LogUtils.info("width:"+getWidth()+",height:"+getHeight());
+//        LogUtils.info("width:"+getWidth()+",height:"+getHeight());
 
     }
 

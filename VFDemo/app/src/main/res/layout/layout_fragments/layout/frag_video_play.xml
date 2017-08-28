@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <vfa.vfdemo.view.CropVideoView
-        android:id="@+id/videoView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal" />
+        android:layout_height="match_parent">
+
+        <vfa.vfdemo.view.CropVideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:minHeight="200dp" />
+
+        <vfa.vfdemo.view.FixedCropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cropImageScoreCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/screen_background_light_transparent"
+            custom:scv_guide_show_mode="show_on_touch"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_handle_size="5dp"
+            custom:scv_initial_frame_scale="0.75"
+            custom:scv_touch_padding="10dp" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/buttonCrop"
