@@ -39,9 +39,14 @@ public class ActivitySlideMenu extends VFActivity {
         setUpLayout();
     }
 
+    /*lua chon menu la 1 fragment*/
     public void setSlideMenuFagment(Fragment fg){
         fragmentSlideMenu = fg;
         startFragment(fg,R.id.fragMenuContainer);
+    }
+    /*lua chon menu la 1 menu,icon,item text,header,footer,pin footer,header*/
+    public void setSlieMenu(){
+
     }
 
     public void onSlideMenuOpen(){

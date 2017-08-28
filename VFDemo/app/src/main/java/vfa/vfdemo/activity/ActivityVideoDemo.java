@@ -1,11 +1,15 @@
 package vfa.vfdemo.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
+import vfa.vfdemo.dialogs.DialogActionSheet;
+import vfa.vfdemo.dialogs.DialogMovieActionSheet;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
@@ -16,29 +20,31 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
         setRootFragment(new FragVideoRoot());
     }
 
-    public void recordVideo(){
+    public void recordMovie(){
 
     }
 
-    public void selectVideo(){
+    int REQUEST_TAKE_GALLERY_VIDEO = 1011;
 
+    public void chooseMovie(){
+        try {
+            Intent intent = new Intent();
+            intent.setType("video/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Video"), REQUEST_TAKE_GALLERY_VIDEO);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    @SuppressLint("ValidFragment")
-    class FragVideoRoot extends VFFragment{
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == REQUEST_TAKE_GALLERY_VIDEO){
+            if(resultCode == RESULT_OK){
 
-        public FragVideoRoot(){
-//            R.layout.frag_spliter_vertical
-        }
-
-        @Override
-        public int onGetRootLayoutId() {
-            return R.layout.frag_spliter_vertical;
-        }
-
-        @Override
-        public void onViewLoaded() {
-
+            }
+            return;
         }
     }
 }

@@ -89,4 +89,10 @@ public abstract class VFFragment extends Fragment{
 
     }
 
+    public void setClickListener(int viewId, View.OnClickListener onClick){
+        View v = rootView.findViewById(viewId);
+        if(v != null){
+            v.setOnClickListener(onClick);
+        }
+    }
 }

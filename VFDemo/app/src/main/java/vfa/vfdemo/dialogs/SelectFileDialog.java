@@ -190,6 +190,7 @@ public class SelectFileDialog extends Dialog {
                 }
             }
 
+
             tv.setText(""+getItem(pos));
         }
 

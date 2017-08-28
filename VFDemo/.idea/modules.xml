@@ -8,8 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/hdidata/hdidata.iml" filepath="$PROJECT_DIR$/hdidata/hdidata.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/hdilib/hdilib.iml" filepath="$PROJECT_DIR$/modules/hdilib/hdilib.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdimages/hdimages.iml" filepath="$PROJECT_DIR$/hdimages/hdimages.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hdimages/hdimages.iml" filepath="$PROJECT_DIR$/hdimages/hdimages.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hdimovie/hdimovie.iml" filepath="$PROJECT_DIR$/hdimovie/hdimovie.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdimovie/hdimovie.iml" filepath="$PROJECT_DIR$/hdimovie/hdimovie.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/hdisoftui/hdisoftui.iml" filepath="$PROJECT_DIR$/modules/hdisoftui/hdisoftui.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-cal/library-calendar.iml" filepath="$PROJECT_DIR$/library-cal/library-calendar.iml" />

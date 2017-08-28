@@ -28,13 +28,14 @@ android {
         main {
             res.srcDirs =
                     [
-                            'src/main/res/layout',
+
                             'src/main/res/layout/layout_demo',
                             'src/main/res/layout/layout_activity',
                             'src/main/res/layout/layout_fragments',
                             'src/main/res/layout/layout_items',
                             'src/main/res/drawable/drawable_xml',
                             'src/main/res/drawable/golf_images',
+                            'src/main/res/layout',
                             'src/main/res'
                     ]
         }
