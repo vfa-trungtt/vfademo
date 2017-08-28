@@ -20,7 +20,6 @@
             android:id="@+id/cropImageScoreCardView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:drawable/screen_background_light_transparent"
             custom:scv_guide_show_mode="show_on_touch"
             custom:scv_handle_show_mode="show_always"
             custom:scv_handle_size="5dp"
