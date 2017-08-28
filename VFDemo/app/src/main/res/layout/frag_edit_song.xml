@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/viewNotePad"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:background="@drawable/bg_round_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <view
+        class="vfa.vfdemo.fragments.music.ViewMusicSheet"
+        id="@+id/view"
+        layout_alignParentTop="true"
+        layout_centerHorizontal="true"
+        layout_marginTop="54dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+</RelativeLayout>
