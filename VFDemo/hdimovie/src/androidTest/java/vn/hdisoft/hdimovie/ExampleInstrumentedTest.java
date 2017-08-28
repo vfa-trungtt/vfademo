@@ -1,4 +1,4 @@
-package vn.hdisoft.hdimovi;
+package vn.hdisoft.hdimovie;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package vn.hdisoft.hdimovi;
+package vn.hdisoft.hdimovie;
 
 import org.junit.Test;
 

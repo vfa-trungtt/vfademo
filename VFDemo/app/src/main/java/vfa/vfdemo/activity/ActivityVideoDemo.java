@@ -2,6 +2,7 @@ package vfa.vfdemo.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -11,9 +12,12 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.dialogs.DialogActionSheet;
 import vfa.vfdemo.dialogs.DialogMovieActionSheet;
 import vn.hdisoft.hdilib.fragments.VFFragment;
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class ActivityVideoDemo extends ActivitySlideMenu {
+    private Uri selectedVideoUri;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +46,12 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == REQUEST_TAKE_GALLERY_VIDEO){
             if(resultCode == RESULT_OK){
+                selectedVideoUri = data.getData();
+                LogUtils.info("movie path:"+selectedVideoUri.toString());
+                FragVideoPlay fg = new FragVideoPlay();
+                fg.movieUri = selectedVideoUri;
 
+                pushFragment(fg);
             }
             return;
         }
