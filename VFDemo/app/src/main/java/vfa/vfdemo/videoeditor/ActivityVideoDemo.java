@@ -1,17 +1,11 @@
-package vfa.vfdemo.activity;
+package vfa.vfdemo.videoeditor;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.View;
 
 import vfa.vfdemo.ActivitySlideMenu;
-import vfa.vfdemo.R;
-import vfa.vfdemo.dialogs.DialogActionSheet;
-import vfa.vfdemo.dialogs.DialogMovieActionSheet;
-import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 

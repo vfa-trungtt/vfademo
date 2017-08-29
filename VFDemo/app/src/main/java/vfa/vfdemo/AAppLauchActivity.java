@@ -4,33 +4,31 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.asai24.golf.inputscore.ActivityGolf;
-import com.asai24.golf.inputscore.ActivitySearchCourse;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.activity.ActivityVideoDemo;
+import vfa.vfdemo.videoeditor.ActivityVideoDemo;
 import vfa.vfdemo.activity.FindMyServerActivity;
-import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.drawing.Frag3DDraw;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
 
 public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        VFFragDemoList fg = new VFFragDemoList();
-        fg.setDemoListData(getDemoList());
-        setRootFragment(fg);
-
+        launchTesting(true);
     }
-    private boolean testing(){
-        startActivity(ActivityOpenCVDemo.class);
-        finish();
-        return true;
+    private void launchTesting(boolean istest){
+        if(istest){
+            startActivity(ActivityVideoDemo.class);
+            finish();
+        }else {
+            VFFragDemoList fg = new VFFragDemoList();
+            fg.setDemoListData(getDemoList());
+            setRootFragment(fg);
+        }
     }
 
     public List<DemoEntity> getDemoList() {

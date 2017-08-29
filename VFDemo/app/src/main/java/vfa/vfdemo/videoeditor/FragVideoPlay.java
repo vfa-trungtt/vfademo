@@ -1,4 +1,4 @@
-package vfa.vfdemo.activity;
+package vfa.vfdemo.videoeditor;
 
 import android.net.Uri;
 import android.widget.VideoView;

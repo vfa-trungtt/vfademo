@@ -1,4 +1,4 @@
-package vfa.vfdemo.view;
+package vfa.vfdemo.videoeditor;
 
 import android.content.Context;
 import android.graphics.Canvas;

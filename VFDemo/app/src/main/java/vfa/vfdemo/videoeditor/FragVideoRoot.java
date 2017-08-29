@@ -1,11 +1,11 @@
-package vfa.vfdemo.activity;
+package vfa.vfdemo.videoeditor;
 
-import android.content.Intent;
 import android.view.View;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.dialogs.DialogActionSheet;
 import vfa.vfdemo.dialogs.DialogMovieActionSheet;
+import vfa.vfdemo.videoeditor.ActivityVideoDemo;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
