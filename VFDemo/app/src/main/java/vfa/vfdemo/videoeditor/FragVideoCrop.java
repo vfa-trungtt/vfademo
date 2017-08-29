@@ -8,11 +8,8 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.view.FixedCropImageView;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
-/**
- * Created by trungtt on 8/28/17.
- */
 
-public class FragVideoPlay extends VFFragment {
+public class FragVideoCrop extends VFFragment {
     private VideoView videoView;
     public String filePath;
     public Uri movieUri;
@@ -20,14 +17,13 @@ public class FragVideoPlay extends VFFragment {
 
     @Override
     public int onGetRootLayoutId() {
-        return R.layout.frag_video_play;
+        return R.layout.frag_video_crop;
     }
 
     @Override
     public void onViewLoaded() {
         videoView = (VideoView) rootView.findViewById(R.id.videoView);
         videoView.setVideoURI(movieUri);
-//        videoView.setLo
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
@@ -37,8 +33,8 @@ public class FragVideoPlay extends VFFragment {
         videoView.start();
 
 
-        cropImageView = (FixedCropImageView)rootView.findViewById(R.id.cropImageScoreCardView);
-        cropImageView.setMinFrameSizeInDp(100);
+//        cropImageView = (FixedCropImageView)rootView.findViewById(R.id.cropImageScoreCardView);
+//        cropImageView.setMinFrameSizeInDp(100);
     }
 
     public void setMovieFilePath(String path){
@@ -46,10 +42,6 @@ public class FragVideoPlay extends VFFragment {
     }
 
     public void cropMovie(){
-
-    }
-
-    public void drawWatermark(){
 
     }
 }

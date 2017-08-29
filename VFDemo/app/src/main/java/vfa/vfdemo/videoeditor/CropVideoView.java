@@ -11,9 +11,6 @@ import android.widget.VideoView;
 
 import vn.hdisoft.hdilib.utils.LogUtils;
 
-/**
- * Created by trungtt on 8/28/17.
- */
 
 public class CropVideoView extends VideoView {
     public CropVideoView(Context context) {
@@ -40,8 +37,6 @@ public class CropVideoView extends VideoView {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-//        LogUtils.info("width:"+getWidth()+",height:"+getHeight());
-
     }
 
     Paint paint;

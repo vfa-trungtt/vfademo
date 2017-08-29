@@ -14,6 +14,8 @@ import vn.hdisoft.hdilib.activities.VFActivity;
 
 
 public class ActivitySlideMenu extends VFActivity {
+    public String title = "Android Demo -";
+
     private DrawerLayout drawerLayout;
     private View viewMenuContainer;
 
@@ -23,8 +25,13 @@ public class ActivitySlideMenu extends VFActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        onBeforeSetupActionBar();
         setContentView(R.layout.activity_slide_menu);
         setHomeActionBar();
+    }
+
+    public void onBeforeSetupActionBar(){
+
     }
 
     public void setUpLayout(){
@@ -71,6 +78,10 @@ public class ActivitySlideMenu extends VFActivity {
 
     }
 
+    public void setActionBarTitle(){
+
+    }
+
     public void setHomeActionBar(){
         viewActionBar = ViewHelper.getViewGroup(this,R.layout.actionbar_root);
         viewActionBar.findViewById(R.id.buttonMenu).setOnClickListener(new View.OnClickListener() {
@@ -80,6 +91,7 @@ public class ActivitySlideMenu extends VFActivity {
             }
         });
 
+        ((TextView)viewActionBar.findViewById(R.id.tvActionBarText)).setText(title);
         setupActionBarView(viewActionBar);
         setActionBarViewContent(R.id.viewActionBarContent);
     }
