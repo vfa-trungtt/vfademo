@@ -8,7 +8,6 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 
-
 public class VFFragDemoList extends FragBaseListView<DemoEntity> {
 
     List<DemoEntity> listDemo = new ArrayList<>();
@@ -26,7 +25,6 @@ public class VFFragDemoList extends FragBaseListView<DemoEntity> {
     public List<DemoEntity> getDataSource() {
         return listDemo;
     }
-
 
     @Override
     public void onClickItemList(int pos, DemoEntity entity) {
