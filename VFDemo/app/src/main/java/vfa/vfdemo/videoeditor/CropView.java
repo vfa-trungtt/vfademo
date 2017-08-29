@@ -89,13 +89,8 @@ public class CropView extends ImageView {
     private Uri mSourceUri = null;
     private Uri mSaveUri = null;
     private int mExifRotation = 0;
-    private int mOutputMaxWidth;
-    private int mOutputMaxHeight;
-    private int mOutputWidth = 0;
-    private int mOutputHeight = 0;
+
     private boolean mIsDebug = false;
-    private Bitmap.CompressFormat mCompressFormat = Bitmap.CompressFormat.PNG;
-    private int mCompressQuality = 100;
     private int mInputImageWidth = 0;
     private int mInputImageHeight = 0;
     private int mOutputImageWidth = 0;
