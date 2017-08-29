@@ -1,27 +1,44 @@
-package vfa.vfdemo.activity;
+package vfa.vfdemo.videoeditor;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.AdapterView;
 
 import vfa.vfdemo.ActivitySlideMenu;
-import vfa.vfdemo.R;
-import vfa.vfdemo.dialogs.DialogActionSheet;
-import vfa.vfdemo.dialogs.DialogMovieActionSheet;
-import vn.hdisoft.hdilib.fragments.VFFragment;
+import vfa.vfdemo.fragments.images.FragGallery;
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class ActivityVideoDemo extends ActivitySlideMenu {
     private Uri selectedVideoUri;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRootFragment(new FragVideoRoot());
+//        FragGallery fgGallery = new FragGallery();
+//        setRootFragment(fgGallery);
+
+//        setRootFragment(new FragVideoRoot());
+        setRootFragment(new FragVideoCrop());
+
+//        FragGalleryVideo fg = new FragGalleryVideo();
+//        fg.setOnSelectMovie(new FragGalleryVideo.OnSelectMovieListener() {
+//            @Override
+//            public void onSelectMovie(FragGalleryVideo.MovieEntity movie) {
+//                FragVideoCrop fg = new FragVideoCrop();
+//                fg.setMovieFilePath(movie.path);
+//                pushFragment(fg);
+//            }
+//        });
+//        setRootFragment(fg);
+    }
+
+
+    @Override
+    public void onBeforeSetupActionBar() {
+        this.title += "VideoEditor";
     }
 
     public void recordMovie(){

@@ -101,31 +101,6 @@ public class FragGallery extends VFFragment {
         }
     }
 
-//    public  String getThumbnailPath(Cursor cursor, String path)
-//    {
-//        long imageId = -1;
-//
-//        String[] projection = new String[] { MediaStore.MediaColumns._ID };
-//        String selection = MediaStore.MediaColumns.DATA + "=?";
-//        String[] selectionArgs = new String[] { path };
-//        cursor = context.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, projection, selection, selectionArgs, null);
-//        if (cursor != null && cursor.moveToFirst())
-//        {
-//            imageId = cursor.getInt(cursor.getColumnIndex(MediaStore.MediaColumns._ID));
-//            cursor.close();
-//        }
-//
-//        String result = null;
-//        cursor = MediaStore.Images.Thumbnails.queryMiniThumbnail(context.getContentResolver(), imageId, MediaStore.Images.Thumbnails.MINI_KIND, null);
-//        if (cursor != null && cursor.getCount() > 0)
-//        {
-//            cursor.moveToFirst();
-//            result = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.Thumbnails.DATA));
-//            cursor.close();
-//        }
-//
-//        return result;
-//    }
 
     public  String getThumbnailPath(Context context, String path)
     {

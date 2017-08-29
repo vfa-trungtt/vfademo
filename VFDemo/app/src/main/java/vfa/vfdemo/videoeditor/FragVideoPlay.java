@@ -1,5 +1,6 @@
-package vfa.vfdemo.activity;
+package vfa.vfdemo.videoeditor;
 
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.widget.VideoView;
 
@@ -26,10 +27,22 @@ public class FragVideoPlay extends VFFragment {
     public void onViewLoaded() {
         videoView = (VideoView) rootView.findViewById(R.id.videoView);
         videoView.setVideoURI(movieUri);
+//        videoView.setLo
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
         videoView.start();
+
 
         cropImageView = (FixedCropImageView)rootView.findViewById(R.id.cropImageScoreCardView);
         cropImageView.setMinFrameSizeInDp(100);
+    }
+
+    public void setMovieFilePath(String path){
+        movieUri = Uri.parse(path);
     }
 
     public void cropMovie(){

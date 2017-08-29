@@ -1,7 +1,7 @@
 general:
   branches:
     # Build only these branchs
-    only: [master, develop, /release\/.*/, /hotfix\/.*/]
+    only: [master, develop]
 # The following environment variables must be set in advance in the Circle CI management page (at Project Settings > Environment variables).
 # - DEPLOYGATE_TOKEN - deploygate token (To be used in deploygate.sh)
 machine:
