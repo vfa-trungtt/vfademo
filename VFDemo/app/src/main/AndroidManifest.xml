@@ -29,21 +29,9 @@
         </activity>
         <!--***ACTIVITIES*** -->
         <activity android:name=".ActivitySlideMenu"/>
-        <activity android:name=".ActivityFileBrowser"/>
-        <activity android:name=".ActivityReminder"/>
         <activity android:name=".ActivitySQLiteManager"/>
-        <activity android:name=".ActivityBookReader"/>
-        <activity android:name=".ActivityFireBase"/>
         <activity android:name=".fragments.map.ActivityMap"/>
-        <activity android:name=".ActivityDrawing"/>
-        <activity android:name=".ActivityHDiApp"/>
-        <activity android:name=".ActivityCreateIcon"/>
-        <activity android:name=".ActivityUIDesign"/>
-        <activity android:name=".ActivityMusic"/>
-        <activity android:name=".Activity3DDraw"/>
-        <activity android:name=".ActivityOpenCVDemo"/>
 
-        <activity android:name=".activity.FindMyServerActivity"/>
         <activity android:name=".activity.nifty.ActivityNiftyDemo"/>
         <activity android:name=".activity.nifty.ActivityNiftyMap"/>
 
@@ -71,16 +59,7 @@
 
         </receiver>
 
-        <activity
-            android:name="com.asai24.golf.inputscore.ActivitySelectRound"
-            android:configChanges="orientation|keyboardHidden"
-            android:label="@string/yourgolf_account_title"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-            </intent-filter>
-        </activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

@@ -27,7 +27,7 @@
         android:layout_height="match_parent"
         android:visibility="visible"
         android:layout_weight="1"
-        android:background="@color/current_day_of_month">
+        >
 
     </FrameLayout>
 

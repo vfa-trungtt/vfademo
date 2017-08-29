@@ -14,7 +14,7 @@
         custom:scv_handle_size="5dp"
         custom:scv_initial_frame_scale="0.75"
         custom:scv_touch_padding="10dp"
-        custom:srcCompat="@drawable/mini_controller_img_placeholder" />
+         />
     <!--<vfa.vfdemo.ui.TouchImageView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->

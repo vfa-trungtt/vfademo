@@ -6,7 +6,6 @@
               android:paddingBottom="5dp"
               android:paddingTop="8dp"
               android:id="@+id/menu_bottom_score"
-              android:background="@color/menu_golf_top"
               android:layout_height="wrap_content"
               android:baselineAligned="false">
 
