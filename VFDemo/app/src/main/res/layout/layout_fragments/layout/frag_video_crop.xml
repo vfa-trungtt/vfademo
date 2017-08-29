@@ -13,24 +13,20 @@
         android:layout_gravity="center"
         android:minHeight="216dp">
 
-        <VideoView
+        <vfa.vfdemo.videoeditor.CropView xmlns:custom="http://schemas.android.com/apk/res-auto"
             android:id="@+id/videoView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal" />
-
-        <vfa.vfdemo.view.FixedCropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cropImageScoreCardView"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/image_watermark"
+            android:gravity="center_horizontal"
+            android:src="@drawable/image1"
             custom:scv_guide_show_mode="show_on_touch"
             custom:scv_handle_show_mode="show_always"
             custom:scv_handle_size="5dp"
             custom:scv_initial_frame_scale="0.75"
             custom:scv_touch_padding="10dp" />
+
+
     </FrameLayout>
 
     <Button

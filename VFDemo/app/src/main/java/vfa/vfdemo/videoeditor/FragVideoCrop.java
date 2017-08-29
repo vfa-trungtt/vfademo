@@ -22,7 +22,15 @@ public class FragVideoCrop extends VFFragment {
 
     @Override
     public void onViewLoaded() {
-        videoView = (VideoView) rootView.findViewById(R.id.videoView);
+//        videoView = (VideoView) rootView.findViewById(R.id.videoView);
+//        videoView.set
+
+        if(movieUri != null){
+            playRepeatMovie();
+        }
+    }
+
+    public void playRepeatMovie(){
         videoView.setVideoURI(movieUri);
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
@@ -31,10 +39,6 @@ public class FragVideoCrop extends VFFragment {
             }
         });
         videoView.start();
-
-
-//        cropImageView = (FixedCropImageView)rootView.findViewById(R.id.cropImageScoreCardView);
-//        cropImageView.setMinFrameSizeInDp(100);
     }
 
     public void setMovieFilePath(String path){

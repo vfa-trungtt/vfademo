@@ -21,17 +21,18 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
 //        setRootFragment(fgGallery);
 
 //        setRootFragment(new FragVideoRoot());
-//        setRootFragment(new FragVideoList());
-        FragGalleryVideo fg = new FragGalleryVideo();
-        fg.setOnSelectMovie(new FragGalleryVideo.OnSelectMovieListener() {
-            @Override
-            public void onSelectMovie(FragGalleryVideo.MovieEntity movie) {
-                FragVideoCrop fg = new FragVideoCrop();
-                fg.setMovieFilePath(movie.path);
-                pushFragment(fg);
-            }
-        });
-        setRootFragment(fg);
+        setRootFragment(new FragVideoCrop());
+
+//        FragGalleryVideo fg = new FragGalleryVideo();
+//        fg.setOnSelectMovie(new FragGalleryVideo.OnSelectMovieListener() {
+//            @Override
+//            public void onSelectMovie(FragGalleryVideo.MovieEntity movie) {
+//                FragVideoCrop fg = new FragVideoCrop();
+//                fg.setMovieFilePath(movie.path);
+//                pushFragment(fg);
+//            }
+//        });
+//        setRootFragment(fg);
     }
 
 
