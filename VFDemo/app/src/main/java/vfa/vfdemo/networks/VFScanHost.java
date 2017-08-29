@@ -5,7 +5,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class VFScanHost {

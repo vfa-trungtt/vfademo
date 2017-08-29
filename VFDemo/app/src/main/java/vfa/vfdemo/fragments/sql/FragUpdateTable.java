@@ -3,7 +3,8 @@ package vfa.vfdemo.fragments.sql;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/14/17.

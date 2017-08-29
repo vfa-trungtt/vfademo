@@ -9,11 +9,8 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
-/**
- * Created by Vitalify on 3/2/17.
- */
 
 public class FragCalendarDemo extends VFFragment {
     public GridView gridCalendar;

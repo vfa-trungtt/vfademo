@@ -5,17 +5,17 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.fragments.FragBaseListView;
-import vfa.vflib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/10/17.
  */
 
 public class FragAppList extends FragBaseListView<AppEntity> {
-    @Override
-    public int onGetRootLayoutId() {
-        return R.layout.frag_app_list;
-    }
+//    @Override
+//    public int onGetRootLayoutId() {
+//        return R.layout.frag_app_list;
+//    }
 
     @Override
     public void onViewLoaded() {

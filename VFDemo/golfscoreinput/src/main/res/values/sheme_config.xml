@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_host">ygo</string>
+    <string name="tv_campaign_shceme">tv.campaign</string>
+    <string name="score500_campaign_shceme">score500.campaign</string>
+    <string name="campaign_register_param">regist</string>
+    <string name="drill_list">drill_list</string>
+    <string name="drill_detail">drill_detail</string>
+    <string name="regist">regist</string>
+    <string name="reserve">reserve</string>
+
+    <string name="pickup">pickup</string>
+    <string name="golfmovie">golfmovie</string>
+    <string name="golfmovie_2">golfmovie2</string>
+    <string name="golfmovie_3">golfmovie3</string>
+    <string name="campaign">campaign</string>
+    <string name="playhistory_host">playhistory</string>
+
+    <string name ="top_host">top</string>
+    <string name ="drill_top_host">drill_top</string>
+    <string name ="rounds_host">rounds</string>
+    <string name ="live_host">live.join</string>
+    <string name ="gnplus_scheme">gnplus</string>
+    <string name ="ygo_repro_scheme">ygo-repro</string>
+    <string name ="webview_16109_scheme">webview_16109</string>
+    <string name ="webview">webview</string>
+    <string name ="major">major</string>
+    <string name ="news">news</string>
+    <string name ="live_scheme">live</string>
+
+</resources>

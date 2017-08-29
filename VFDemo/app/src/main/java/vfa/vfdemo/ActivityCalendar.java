@@ -3,7 +3,8 @@ package vfa.vfdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import vfa.vflib.activity.VFActivity;
+import vn.hdisoft.hdilib.activities.VFActivity;
+
 
 public class ActivityCalendar extends VFActivity{
     @Override

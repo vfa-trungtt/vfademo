@@ -10,8 +10,7 @@ import java.util.List;
 import vfa.vfdemo.fragments.FragSlideMenuListView;
 import vfa.vfdemo.fragments.files.FragFileBrowserListView;
 import vfa.vfdemo.fragments.files.FragSearchFile;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class ActivityFileBrowser extends ActivitySlideMenu {

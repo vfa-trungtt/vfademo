@@ -17,14 +17,14 @@ dependencies:
   pre:
     # Install required components.
     # pre-install packages is here) https://circleci.com/docs/android
-    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository
+    # - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository
     # - echo yes | android update sdk --filter addon-google_apis-google-24 --no-ui --force > /dev/null
     # Android SDK Platform 24
-    - if [ ! -d "/usr/local/android-sdk-linux/platforms/android-24" ]; then echo y | android update sdk --no-ui --all --filter "android-24"; fi
+    # - if [ ! -d "/usr/local/android-sdk-linux/platforms/android-25" ]; then echo y | android update sdk --no-ui --all --filter "android-25"; fi
     # Android SDK Build-tools, revision 24.0.2
-    - if [ ! -d "/usr/local/android-sdk-linux/build-tools/24.0.2" ]; then echo y | android update sdk --no-ui --all --filter "build-tools-24.0.2"; fi
+    # - if [ ! -d "/usr/local/android-sdk-linux/build-tools/25.0.0" ]; then echo y | android update sdk --no-ui --all --filter "build-tools-25.0.0"; fi
     # Android Support Repository, revision 35 / Local Maven repository for Support Libraries
-    - if [ ! -d "/usr/local/android-sdk-linux/extras/android/m2repository/com/android/support/design/24.1.0" ]; then echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"; fi
+    # - if [ ! -d "/usr/local/android-sdk-linux/extras/android/m2repository/com/android/support/design/24.1.0" ]; then echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"; fi
 
     - echo "sdk.dir=${ANDROID_HOME}" >> local.properties
     - git submodule init && git submodule update
@@ -32,12 +32,13 @@ dependencies:
     
 test:
   override:
-    - ./gradlew assembleFreeStagingRelease -PdisablePreDex:
-        timeout: 1500
+    - ./gradlew assembleDebug
+    # - ./gradlew assembleFreeStagingRelease -PdisablePreDex:
+        # timeout: 1500
 deployment:
   # Deploy apk to deploygate
   staging:
-    branch: [develop, /release\/.*/, /hotfix\/.*/]
+    branch: [develop]
     commands:
-      - ./gradlew uploadDeployGateFreeStaging -Dorg.gradle.project.deploygate_token=$DEPLOYGATE_TOKEN -PdisablePreDex
+      - ./gradlew app:uploadDeployGateDebug -Dorg.gradle.project.deploygate_token=$DEPLOYGATE_TOKEN -PdisablePreDex
   

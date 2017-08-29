@@ -1,17 +1,50 @@
 apply plugin: 'com.android.application'
 
+repositories {
+    flatDir {
+        dirs "libs"
+    }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'http://cdn.repro.io/android' }
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+
 android {
-    compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
     defaultConfig {
+        multiDexEnabled true
         applicationId "vfa.vfdemo"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+
+                            'src/main/res/layout/layout_demo',
+                            'src/main/res/layout/layout_activity',
+                            'src/main/res/layout/layout_fragments',
+                            'src/main/res/layout/layout_items',
+                            'src/main/res/drawable/drawable_xml',
+                            'src/main/res/drawable/golf_images',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
+        }
+    }
+
     buildTypes {
+        debug{
+
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -26,11 +59,26 @@ android {
             storePassword 'android'
         }
         release {
-            keyAlias 'おたよりBOX'
-            keyPassword 'D07KBCs'
-            storeFile file('keystore/アプリ名.keystore')
-            storePassword 'D07KBCs'
+            storeFile file('keystore/vfdemo.jks')
+            storePassword project.properties.storePassword
+            keyAlias project.properties.keyAlias
+            keyPassword project.properties.keyPassword
         }
+    }
+    productFlavors {
+        staging {
+            dimension "env"
+        }
+        production {
+            dimension "env"
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        abortOnError false
     }
 
 }
@@ -40,11 +88,11 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     testCompile 'junit:junit:4.12'
-    compile project(':vflib')
+    compile project(':golfscoreinput')
     compile project(':library-calendar')
     compile 'com.google.firebase:firebase-core:10.2.0'
     compile 'com.google.firebase:firebase-database:10.2.0'
@@ -52,7 +100,11 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:10.2.0'
     compile 'com.google.android.gms:play-services-location:10.2.0'
     compile files('libs/NCMB.jar')
-    compile project(':opencv')
     compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+    compile project(':opencv')
+    compile project(':hdilib')
 }
 apply plugin: 'com.google.gms.google-services'

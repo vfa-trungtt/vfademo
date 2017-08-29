@@ -28,8 +28,8 @@ import vfa.vfdemo.ActivityFileBrowser;
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.RootUtils;
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragFileBrowserListView extends VFFragment {
@@ -60,11 +60,11 @@ public class FragFileBrowserListView extends VFFragment {
         tvStatus    = (TextView) rootView.findViewById(R.id.tvStatus);
         tvStatus.setText(textCount);
 
-        LogUtils.debug("==getDataDirectory          :"+Environment.getDataDirectory());
-        LogUtils.debug("==getExternalStorageState   :"+Environment.getExternalStorageState());
-        LogUtils.debug("==getDownloadCacheDirectory :"+Environment.getDownloadCacheDirectory());
-        LogUtils.debug("==getExternalStorageDirectory       :"+Environment.getExternalStorageDirectory());
-        LogUtils.debug("==getExternalStoragePublicDirectory :"+Environment.getExternalStoragePublicDirectory(Environment.MEDIA_SHARED));
+//        LogUtils.debug("==getDataDirectory          :"+Environment.getDataDirectory());
+//        LogUtils.debug("==getExternalStorageState   :"+Environment.getExternalStorageState());
+//        LogUtils.debug("==getDownloadCacheDirectory :"+Environment.getDownloadCacheDirectory());
+//        LogUtils.debug("==getExternalStorageDirectory       :"+Environment.getExternalStorageDirectory());
+//        LogUtils.debug("==getExternalStoragePublicDirectory :"+Environment.getExternalStoragePublicDirectory(Environment.MEDIA_SHARED));
 
         if(!RootUtils.isDeviceRooted()){
             rootPath        = Environment.getExternalStorageDirectory().getAbsolutePath();
@@ -96,7 +96,7 @@ public class FragFileBrowserListView extends VFFragment {
         getVFActivity().setActionBarOnClick(R.id.btSearch, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtils.debug("search file...");
+//                LogUtils.debug("search file...");
                 pushFragment(new FragSearchFile());
             }
         });
@@ -104,7 +104,7 @@ public class FragFileBrowserListView extends VFFragment {
         getVFActivity().setActionBarOnClick(R.id.btSelect, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtils.debug("search file...");
+//                LogUtils.debug("search file...");
                 isSelectMode = !isSelectMode;
                 adapterFile.notifyDataSetChanged();
 
@@ -154,7 +154,7 @@ public class FragFileBrowserListView extends VFFragment {
     }
 
     private void displayData(){
-        LogUtils.debug("data size:"+ _data.size());
+//        LogUtils.debug("data size:"+ _data.size());
         adapterFile = new FileDataAdapter(getContext(),0,_data);
         listView.setAdapter(adapterFile);
 

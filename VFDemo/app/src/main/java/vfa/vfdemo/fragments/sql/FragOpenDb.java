@@ -19,8 +19,8 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.data.VFSqliteDB;
 import vfa.vfdemo.dialogs.SelectFileDialog;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/7/17.
@@ -102,7 +102,7 @@ public class FragOpenDb extends VFFragment {
     private void loadTableName(){
         File file = new File(dbPath);
         if(file.exists()){
-            LogUtils.info("File exist.");
+
             listTables = VFSqliteDB.getListTables(getContext(),dbPath);
         }
 

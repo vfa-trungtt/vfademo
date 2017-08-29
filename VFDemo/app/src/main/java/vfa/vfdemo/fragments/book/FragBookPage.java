@@ -3,7 +3,8 @@ package vfa.vfdemo.fragments.book;
 import android.webkit.WebView;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/9/17.

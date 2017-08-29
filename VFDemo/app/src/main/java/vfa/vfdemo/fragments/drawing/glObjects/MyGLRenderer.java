@@ -35,7 +35,7 @@ import android.util.Log;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     private static final String TAG = "MyGLRenderer";
-    private Triangle mTriangle;
+    private TriAngle mTriangle;
     private Square   mSquare;
 
     // mMVPMatrix is an abbreviation for "Model View Projection Matrix"
@@ -52,7 +52,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // Set the background frame color
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-        mTriangle = new Triangle();
+        mTriangle = new TriAngle();
         mSquare   = new Square();
     }
 

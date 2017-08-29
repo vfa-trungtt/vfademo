@@ -7,7 +7,7 @@ import java.util.List;
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.R;
 import vfa.vfdemo.viewadapter.VFSimpleItemListView;
-import vfa.vflib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/8/17.

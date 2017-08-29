@@ -1,7 +1,8 @@
 package vfa.vfdemo.fragments.iconapp;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 /**
  * Created by Vitalify on 3/15/17.

@@ -4,6 +4,19 @@ android {
     compileSdkVersion 22
     buildToolsVersion '25.0.0'
 
+
+    task deleteJar(type: Delete) {
+        delete 'libs/calendar-lib.jar'
+    }
+
+    task createJar(type: Copy) {
+        from('build/intermediates/bundles/release/')
+        into('libs/jars/')
+        include('classes.jar')
+        rename('classes.jar', 'calendar-lib.jar')
+    }
+
+    createJar.dependsOn(deleteJar, build)
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'

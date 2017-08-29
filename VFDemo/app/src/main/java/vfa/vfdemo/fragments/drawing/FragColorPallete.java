@@ -6,8 +6,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.fragments.VFFragment;
+
 
 /**
  * Created by Vitalify on 3/16/17.
@@ -56,7 +56,7 @@ public class FragColorPallete extends VFFragment {
         seekBarRed.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                LogUtils.debug("value red:"+progress);
+//                LogUtils.debug("value red:"+progress);
                 redValue = progress;
                 edtRedValue.setText(""+redValue);
 
@@ -81,7 +81,7 @@ public class FragColorPallete extends VFFragment {
         seekBarGreen.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                LogUtils.debug("value red:"+progress);
+//                LogUtils.debug("value red:"+progress);
                 greenValue = progress;
                 edtGreenValue.setText(""+greenValue);
 
@@ -106,7 +106,7 @@ public class FragColorPallete extends VFFragment {
         seekBarBlue.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                LogUtils.debug("value red:"+progress);
+//                LogUtils.debug("value red:"+progress);
                 blueValue = progress;
                 edtBlueValue.setText(""+blueValue);
 
@@ -131,7 +131,7 @@ public class FragColorPallete extends VFFragment {
         seekBarAlpha.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                LogUtils.debug("value red:"+progress);
+//                LogUtils.debug("value red:"+progress);
                 alphaValue = progress;
                 edtAlphaValue.setText(""+alphaValue);
 

@@ -27,7 +27,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.List;
 
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class VFCameraView extends SurfaceView implements SurfaceHolder.Callback, PreviewCallback {
@@ -359,20 +359,20 @@ public class VFCameraView extends SurfaceView implements SurfaceHolder.Callback,
 						o3.inSampleSize = 3;
 					}
 				}
-				LogUtils.memoryUsedInfo("before");
+//				LogUtils.memoryUsedInfo("before");
 				bitmap = BitmapFactory.decodeByteArray(source, 0, source.length, o3);
-				LogUtils.memoryUsedInfo("after");
+//				LogUtils.memoryUsedInfo("after");
 				System.gc();
 			}
 			Matrix matrix = new Matrix();
 			matrix.postRotate(angle);
 			System.gc();
 
-			LogUtils.memoryUsedInfo("after decode:");
+//			LogUtils.memoryUsedInfo("after decode:");
 			return Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
 
 		} catch (Exception e) {
-			LogUtils.memoryUsedInfo("crash:");
+//			LogUtils.memoryUsedInfo("crash:");
 			e.printStackTrace();
 		}
 		return null;

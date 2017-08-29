@@ -1,7 +1,8 @@
 package vfa.vfdemo.fragments.calendar;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 public class FragCalendarPage extends VFFragment {
 

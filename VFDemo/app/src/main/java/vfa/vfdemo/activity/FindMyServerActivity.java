@@ -16,7 +16,7 @@ import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.hdiapp.FragHost;
 import vfa.vfdemo.networks.VolleyHelper;
 import vfa.vfdemo.utils.VFTask;
-import vfa.vflib.utils.LogUtils;
+
 
 
 public class FindMyServerActivity extends ActivitySlideMenu {
@@ -56,7 +56,7 @@ public class FindMyServerActivity extends ActivitySlideMenu {
                     InetAddress serverAddr = InetAddress.getByName(hostip);
                     clientSocket = new Socket(serverAddr, hostPort);
                     String hostName = serverAddr.getHostName();
-                    LogUtils.debug("found server:"+hostip+" ,name:"+hostName);
+//                    LogUtils.debug("found server:"+hostip+" ,name:"+hostName);
                     listHost.add(hostip);
 
                     final String host = "http://"+hostip+"/apk";
@@ -82,7 +82,7 @@ public class FindMyServerActivity extends ActivitySlideMenu {
                 }
 
                 if(countThread >= 254){
-                    LogUtils.info("Scan completed.");
+//                    LogUtils.info("Scan completed.");
                 }
             }
         });
@@ -110,7 +110,7 @@ public class FindMyServerActivity extends ActivitySlideMenu {
                     InetAddress serverAddr = InetAddress.getByName(SERVER_IP);
                     clientSocket = new Socket(serverAddr, 80);
                     String host = serverAddr.getHostName();
-                    LogUtils.debug("found server:"+SERVER_IP+" ,name:"+host);
+//                    LogUtils.debug("found server:"+SERVER_IP+" ,name:"+host);
 
 
                     clientSocket.close();

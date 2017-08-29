@@ -8,14 +8,14 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
-import vfa.vflib.utils.LogUtils;
+
 
 public class MapHelper {
 
     public static void getCurrentLocation(Context context){
         int permissionCheck = ContextCompat.checkSelfPermission(context,
                 Manifest.permission.ACCESS_COARSE_LOCATION);
-        LogUtils.debug("permisson check:"+permissionCheck);
+//        LogUtils.debug("permisson check:"+permissionCheck);
         if(permissionCheck  == PackageManager.PERMISSION_GRANTED){
 
         }else {
@@ -29,9 +29,9 @@ public class MapHelper {
         if(location != null){
             double longitude    = location.getLongitude();
             double latitude     = location.getLatitude();
-            LogUtils.debug("long:"+longitude+",lat:"+latitude);
+//            LogUtils.debug("long:"+longitude+",lat:"+latitude);
         }else {
-            LogUtils.error("NULL location");
+//            LogUtils.error("NULL location");
         }
 
     }

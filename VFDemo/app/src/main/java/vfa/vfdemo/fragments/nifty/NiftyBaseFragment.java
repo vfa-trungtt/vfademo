@@ -19,7 +19,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.utils.LogUtils;
+
 
 public abstract class NiftyBaseFragment extends Fragment implements OnClickListener{
 

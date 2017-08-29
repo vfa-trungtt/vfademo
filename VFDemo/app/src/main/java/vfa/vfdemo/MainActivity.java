@@ -13,7 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import vfa.vflib.activity.VFActivity;
+
+import vn.hdisoft.hdilib.activities.VFActivity;
 
 public class MainActivity extends VFActivity
         implements NavigationView.OnNavigationItemSelectedListener {

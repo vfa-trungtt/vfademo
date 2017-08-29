@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import vfa.vfdemo.fragments.sql.RowEntity;
-import vfa.vflib.utils.LogUtils;
+
 
 
 public class VFSqliteDB {
@@ -67,7 +67,7 @@ public class VFSqliteDB {
 
             if( cursor != null && cursor.moveToFirst() ) {
                 do {
-                    LogUtils.info("table:"+cursor.getString(0));
+
                     list.add(cursor.getString(0));
 
                 }while(cursor.moveToNext());
@@ -198,7 +198,7 @@ public class VFSqliteDB {
                 }
             }
         } catch (Exception e) {
-            LogUtils.error(e.getMessage());
+//            LogUtils.error(e.getMessage());
         }
     }
 }

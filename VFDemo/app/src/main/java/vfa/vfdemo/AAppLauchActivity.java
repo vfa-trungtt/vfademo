@@ -3,9 +3,13 @@ package vfa.vfdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.asai24.golf.inputscore.ActivityGolf;
+import com.asai24.golf.inputscore.ActivitySearchCourse;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.activity.ActivityVideoDemo;
 import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
@@ -13,12 +17,10 @@ import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.drawing.Frag3DDraw;
 import vfa.vfdemo.fragments.map.FragMapDemoList;
 
-
 public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        testing();
 
         VFFragDemoList fg = new VFFragDemoList();
         fg.setDemoListData(getDemoList());
@@ -26,19 +28,23 @@ public class AAppLauchActivity extends BaseActivity {
 
     }
     private boolean testing(){
-//        startActivity(Activity3DDraw.class);
         startActivity(ActivityOpenCVDemo.class);
         finish();
-//        setRootFragment(new Frag3DDraw());
         return true;
     }
 
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle  = "Nifty App Demo";
-        demo.DemoDescription    = "A demo about feature in NiftyApp";
-        demo.LaucherDemoClass = FindMyServerActivity.class;
+        demo.DemoTitle  = "Video Editor";
+        demo.DemoDescription    = "A demo about video Editor";
+        demo.LaucherDemoClass = ActivityVideoDemo.class;
+        list.add(demo);
+
+        demo = new DemoEntity();
+        demo.DemoTitle  = "Input GolfScore";
+        demo.DemoDescription    = "A demo for scan network";
+        demo.LaucherDemoClass = ActivityGolf.class;
         list.add(demo);
 
         demo = new DemoEntity();

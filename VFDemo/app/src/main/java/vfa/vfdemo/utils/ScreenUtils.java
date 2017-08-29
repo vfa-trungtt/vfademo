@@ -8,7 +8,6 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
-import vfa.vflib.utils.LogUtils;
 
 public class ScreenUtils {
 	
@@ -89,11 +88,11 @@ public class ScreenUtils {
         Resources resources = context.getResources();
         DisplayMetrics metrics = resources.getDisplayMetrics();
 
-        LogUtils.debug("=== SCREEN INFO ===");
-        LogUtils.info("Width:"+width + ",Height:"+height);
-        LogUtils.info("Desity dpi:"+metrics.densityDpi + ",density:" + metrics.density +
-                ",Scale desisty:"+metrics.scaledDensity);
-
-        LogUtils.debug("=== SCREEN INFO ===");
+//        LogUtils.debug("=== SCREEN INFO ===");
+//        LogUtils.info("Width:"+width + ",Height:"+height);
+//        LogUtils.info("Desity dpi:"+metrics.densityDpi + ",density:" + metrics.density +
+//                ",Scale desisty:"+metrics.scaledDensity);
+//
+//        LogUtils.debug("=== SCREEN INFO ===");
 	}
 }

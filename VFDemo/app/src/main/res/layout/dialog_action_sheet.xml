@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:text="Camera" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/totalscore_bg_gray_focus">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/light_white_transparent"
+            android:text="Gallery" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/light_white_transparent"
+            android:text="Cancel" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -11,8 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.Vector;
 
 import vfa.vfdemo.R;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
 public class FragDetectRectangle extends VFFragment{
@@ -57,7 +56,7 @@ public class FragDetectRectangle extends VFFragment{
 
         }
         if(originBmp == null){
-            LogUtils.error("null bitmap...");
+//            LogUtils.error("null bitmap...");
             return;
         }
 
@@ -67,7 +66,7 @@ public class FragDetectRectangle extends VFFragment{
         mBuffer = stream.toByteArray();
 
         if(mBuffer == null){
-            LogUtils.error("no data dectect...");
+//            LogUtils.error("no data dectect...");
             return;
         }
         mDetector = new ImageDetectorLib(originBmp.getWidth(),originBmp.getHeight());
@@ -77,16 +76,16 @@ public class FragDetectRectangle extends VFFragment{
     public byte[] mBuffer;
 
     private void detectRect(){
-        LogUtils.debug("start detect..");
+//        LogUtils.debug("start detect..");
         mLastFrame = mDetector.detectOnLastFrame(mBuffer);
         if(mLastFrame == null){
-            LogUtils.debug("detect not found...");
+//            LogUtils.debug("detect not found...");
             return;
         }
-        LogUtils.debug("detect end...size:"+mLastFrame.size());
+//        LogUtils.debug("detect end...size:"+mLastFrame.size());
 
         for(PointF pt:mLastFrame){
-            LogUtils.info("("+pt.x+","+pt.y+")");
+//            LogUtils.info("("+pt.x+","+pt.y+")");
         }
     }
 }

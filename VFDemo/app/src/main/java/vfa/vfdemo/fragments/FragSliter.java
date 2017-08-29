@@ -9,8 +9,9 @@ import android.widget.RelativeLayout;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.ScreenUtils;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class FragSliter extends VFFragment {

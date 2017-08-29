@@ -2,6 +2,7 @@ package vfa.vfdemo.widgets;
 
 import java.util.List;
 
+import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import vfa.vfdemo.R;
-import vfa.vflib.utils.LogUtils;
 
 public class ActivityWifiSettings extends FragmentActivity{
 
@@ -53,7 +53,8 @@ public class ActivityWifiSettings extends FragmentActivity{
 	}
 	
 	public void scanWifi(){
-		wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+
+		wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if (wifi.isWifiEnabled() == false)
         {
             Toast.makeText(getApplicationContext(), "wifi is disabled..making it enabled", Toast.LENGTH_LONG).show();
@@ -65,15 +66,15 @@ public class ActivityWifiSettings extends FragmentActivity{
 			@Override
 			public void onReceive(Context context, Intent intent) {
 				// TODO Auto-generated method stub
-				LogUtils.info("onReceive:"+intent.getAction());
+//				LogUtils.info("onReceive:"+intent.getAction());
 				String action = intent.getAction();
 
 				if(action.equalsIgnoreCase("android.net.wifi.SCAN_RESULTS")){
 					results = wifi.getScanResults();
 					for(ScanResult result:results){
-						LogUtils.debug(""+result.SSID);
+//						LogUtils.debug(""+result.SSID);
 						if(result.SSID.equalsIgnoreCase(wifiName)){
-							LogUtils.info("Found target:"+wifiName);
+//							LogUtils.info("Found target:"+wifiName);
 							connectWifi(wifiName, wifiPass);
 							break;
 						}
@@ -99,7 +100,7 @@ public class ActivityWifiSettings extends FragmentActivity{
 	}
 	
 	public void connectWifi(String ssid,String pass){
-		LogUtils.debug("connect to :"+ssid);
+//		LogUtils.debug("connect to :"+ssid);
 		String networkSSID = ssid;
 		String networkPass = pass;
 
@@ -112,7 +113,7 @@ public class ActivityWifiSettings extends FragmentActivity{
 		conf.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.NONE);
 		conf.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.WEP40); 
 		
-		WifiManager wifiManager = (WifiManager)getSystemService(Context.WIFI_SERVICE); 
+		WifiManager wifiManager = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		wifiManager.addNetwork(conf);
 		
 		List<WifiConfiguration> list = wifiManager.getConfiguredNetworks();

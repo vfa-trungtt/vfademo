@@ -13,8 +13,10 @@ import java.util.List;
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.VFSqliteDB;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
-import vfa.vflib.fragments.VFFragment;
-import vfa.vflib.utils.LogUtils;
+
+
+import vn.hdisoft.hdilib.fragments.VFFragment;
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 public class FragBrowseTable extends VFFragment {
