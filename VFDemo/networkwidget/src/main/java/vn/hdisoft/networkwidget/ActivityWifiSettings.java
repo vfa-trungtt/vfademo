@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import vfa.vfdemo.R;
+
 
 public class ActivityWifiSettings extends FragmentActivity{
 
@@ -90,12 +90,10 @@ public class ActivityWifiSettings extends FragmentActivity{
 	
 	@Override
 	protected void onStop() {
-		// TODO Auto-generated method stub
 		super.onStop();
 		if(_receiver != null){
 			unregisterReceiver(_receiver);
 		}
-		
 	}
 	
 	public void connectWifi(String ssid,String pass){
