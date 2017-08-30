@@ -1,17 +1,5 @@
 apply plugin: 'com.android.application'
 
-repositories {
-    flatDir {
-        dirs "libs"
-    }
-    maven { url 'https://maven.fabric.io/public' }
-    maven { url 'http://cdn.repro.io/android' }
-    maven {
-        url "https://jitpack.io"
-    }
-}
-
-
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.3'
@@ -42,37 +30,13 @@ android {
     }
 
     buildTypes {
-        debug{
 
-        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
-    signingConfigs {
-        debug {
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
-            storeFile file('keystore/release.keystore')
-            storePassword 'android'
-        }
-        release {
-            storeFile file('keystore/vfdemo.jks')
-            storePassword project.properties.storePassword
-            keyAlias project.properties.keyAlias
-            keyPassword project.properties.keyPassword
-        }
-    }
-    productFlavors {
-        staging {
-            dimension "env"
-        }
-        production {
-            dimension "env"
-        }
-    }
     dexOptions {
         preDexLibraries = false
         javaMaxHeapSize "4g"
@@ -87,9 +51,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.volley:volley:1.0.0'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.isseiaoki:simplecropview:1.1.4'
     compile project(':hdilib')
