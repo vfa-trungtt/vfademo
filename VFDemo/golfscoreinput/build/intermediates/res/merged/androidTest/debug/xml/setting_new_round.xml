@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBoxPreference
+            android:key="@string/input_putt_for_friend_key"
+            android:layout="@xml/preference_checkbox_new"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:title="@string/input_putt_for_friend_title" />
+
+        <CheckBoxPreference
+            android:key="@string/setting_category_app_setting_use_game_point_key"
+            android:layout="@xml/preference_checkbox_new"
+            android:summary="@string/setting_category_app_setting_use_game_point_summary"
+            android:title="@string/setting_category_app_setting_use_game_point" />
+
+        <CheckBoxPreference
+            android:key="@string/setting_category_app_setting_measurement_unit_key"
+            android:layout="@xml/preference_checkbox_new"
+            android:summary="@string/setting_category_app_setting_measurement_unit_summary"
+            android:title="@string/setting_category_app_setting_measurement_unit" />
+
+        <PreferenceScreen
+            android:key="@string/key_owner_club"
+            android:layout="@xml/preference_screen_setting_new"
+            android:title="@string/setting_category_app_setting_club" />
+
+        <CheckBoxPreference
+            android:key="@string/key_owner_stableford"
+            android:layout="@xml/preference_checkbox_new"
+            android:title="@string/setting_category_app_setting_stableford_pro_scoring" />
+
+</PreferenceScreen>

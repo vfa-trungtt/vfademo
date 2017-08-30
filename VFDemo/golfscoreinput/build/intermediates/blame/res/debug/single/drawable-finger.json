@@ -1,0 +1,450 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_use_contact.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_use_contact.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/fairway_text_color_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/fairway_text_color_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/browser_btn_forward_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/browser_btn_forward_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_counter_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_counter_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_submit_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_submit_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/icon_duplicate_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/icon_duplicate_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_live_blue_submit_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_live_blue_submit_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_back_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_back_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/square_btn2.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/square_btn2.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/change_sf_btn_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/change_sf_btn_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_backarrow_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_backarrow_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_walkthrough_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_walkthrough_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gradation_score_entry_top_menu_btn.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gradation_score_entry_top_menu_btn.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_purchase_score_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_purchase_score_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/ic_btn_round_more_normal.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/ic_btn_round_more_normal.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_signup_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_signup_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_delete_shape_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_delete_shape_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_fcenter_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_fcenter_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_circle_pressed.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_circle_pressed.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/fairway_center_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/fairway_center_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/history_gift_item_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/history_gift_item_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/change_sf_btn.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/change_sf_btn.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/tab_b_selected_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/tab_b_selected_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gradation_analysis_menu_selected.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gradation_analysis_menu_selected.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/circle_btn_clicked.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/circle_btn_clicked.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_history_period_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_history_period_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_filter_all_course_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_filter_all_course_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_back_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_back_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/upload_btn_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/upload_btn_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_circle.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_circle.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/browser_btn_browser_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/browser_btn_browser_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_top_setting_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_top_setting_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/fairway_left_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/fairway_left_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_normal_total_score_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_normal_total_score_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_fleft_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_fleft_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_round_detail_weather_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_round_detail_weather_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_walkthrough_signup_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_walkthrough_signup_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/not_upload_btn_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/not_upload_btn_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/birthday_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/birthday_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/played_course_right_item_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/played_course_right_item_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gnp_analysis_button_list_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gnp_analysis_button_list_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_live_top_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_live_top_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_round_detail_date_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_round_detail_date_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/square_club_icon_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/square_club_icon_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_edit_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_edit_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/bg_score_guest_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/bg_score_guest_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_history_score_entry_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_history_score_entry_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/sand_check_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/sand_check_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_purchase_yearly_tv_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_purchase_yearly_tv_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/ic_btn_round_more_disabled.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/ic_btn_round_more_disabled.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/played_course_left_item_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/played_course_left_item_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_recommend_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_recommend_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_charge_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_charge_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/ic_btn_round_more.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/ic_btn_round_more.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_tv_new_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_tv_new_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_counter_mode_goal_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_counter_mode_goal_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_counter_total_score_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_counter_total_score_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_circle_disable_focused.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_circle_disable_focused.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/browser_btn_reload_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/browser_btn_reload_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_home_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_home_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/square_btn2_clicked.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/square_btn2_clicked.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/score_card_me_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/score_card_me_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_circle_normal.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_circle_normal.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_live_big_blue_submit_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_live_big_blue_submit_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_top_analysis_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_top_analysis_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/tab_player_text_color_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/tab_player_text_color_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_clear_select_player.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_clear_select_player.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_live_red_submit_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_live_red_submit_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/change_sf_btn_clicked.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/change_sf_btn_clicked.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_counter_mode_help_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_counter_mode_help_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_live_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_live_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gradation_analysis_menu.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gradation_analysis_menu.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_top_play_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_top_play_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gnp_analysis_button_graph_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gnp_analysis_button_graph_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_text_color_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_text_color_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/shape_checked_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/shape_checked_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/mark.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/mark.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/circle_btn.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/circle_btn.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/bg_score_you_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/bg_score_you_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/toggle_off_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/toggle_off_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_purchase_tv_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_purchase_tv_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_analysis_filter_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_analysis_filter_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_history_more_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_history_more_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_top_tv_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_top_tv_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/tab_player_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/tab_player_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gradation_analysis_menu_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gradation_analysis_menu_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_circle_selected.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_circle_selected.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/link_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/link_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_agency_choose_image_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_agency_choose_image_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_walkthrough_signin_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_walkthrough_signin_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_mode_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_mode_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_campaign_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_campaign_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_circle_disable.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_circle_disable.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_vod_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_vod_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/browser_btn_back_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/browser_btn_back_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_top_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_top_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/toggle_on_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/toggle_on_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_counter_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_counter_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/about_list_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/about_list_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/square_btn3_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/square_btn3_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_suvt_search_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_suvt_search_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/circle_btn_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/circle_btn_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_history_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_history_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/slide_total_score_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/slide_total_score_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/simple_input_score_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/simple_input_score_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/fairway_right_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/fairway_right_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_fright_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_fright_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_gender_bg_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_gender_bg_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gradation_score_entry_top_menu_btn_clicked.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gradation_score_entry_top_menu_btn_clicked.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/gradation_score_entry_top_menu_btn_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/gradation_score_entry_top_menu_btn_selector.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-finger/btn_history_score_agency_selector.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-finger/btn_history_score_agency_selector.xml"
+    }
+]

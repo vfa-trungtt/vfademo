@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/io_repro_android_fragment_message_page.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/4760516e996f29eb8a677c7c65524bad1205df1b/output/res/layout-land/io_repro_android_fragment_message_page.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/io_repro_android_fragment_message_overlay.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/4760516e996f29eb8a677c7c65524bad1205df1b/output/res/layout-land/io_repro_android_fragment_message_overlay.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/com_mixpanel_android_activity_notification_full.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/85fdc188af679c33046fd56ff0eda9894dd2649d/output/res/layout-land/com_mixpanel_android_activity_notification_full.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/io_repro_android_fragment_message_full_image.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/4760516e996f29eb8a677c7c65524bad1205df1b/output/res/layout-land/io_repro_android_fragment_message_full_image.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/cast_activity.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/31811f26e839c5d81bf989550b0ca613da6fd439/output/res/layout-land/cast_activity.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/io_repro_android_fragment_message_full_pager_no_viewpager.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/4760516e996f29eb8a677c7c65524bad1205df1b/output/res/layout-land/io_repro_android_fragment_message_full_pager_no_viewpager.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/layout-land/io_repro_android_fragment_message_full_pager.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/4760516e996f29eb8a677c7c65524bad1205df1b/output/res/layout-land/io_repro_android_fragment_message_full_pager.xml"
+    }
+]

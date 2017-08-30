@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--GROUP 2-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:id="@+id/group2">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/gray9" />
+        <LinearLayout
+            android:id="@+id/list_menu_layout_add_play"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dateItem"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lableDatePlay"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/round_date_select"
+                    android:textColor="@color/gray3"
+                    style="@style/background_text_new_group_360_480" />
+
+                <ImageView
+                    android:id="@+id/clickDate"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_listview" />
+
+                <TextView
+                    android:id="@+id/datePlay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/clickDate"
+                    android:layout_toRightOf="@+id/lableDatePlay"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:textColor="@color/preparation_text_color_selector"
+                    android:textStyle="bold"
+                    style="@style/background_text_new_group_360_480" />
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/gray9" />
+            <RelativeLayout
+                android:id="@+id/sunnyItem"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+
+                android:orientation="horizontal"
+
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/lableSunny"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/round_sunny_select"
+                    android:textColor="@color/gray3"
+                    android:layout_marginLeft="5dp"
+                    style="@style/background_text_new_group_360_480" />
+
+                <LinearLayout
+                    android:id="@+id/lv_Wearther"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/lableSunny"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:duplicateParentState="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ln_sunny"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/btn_round_detail_weather_selector"
+
+                            android:padding="0dp"
+                            android:src="@drawable/round_detail_wether_sunny" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/ln_cloud"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:padding="0dp"
+                            android:src="@drawable/round_detail_wether_cloud_not_select" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ln_umbrella"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:padding="0dp"
+                            android:src="@drawable/round_detail_wether_rainny_not_select" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ln_snow"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:padding="0dp"
+                            android:src="@drawable/round_detail_wether_snowing_not_select" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/ln_rainny"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:padding="0dp"
+                            android:src="@drawable/round_detail_wether_foggy_not_select" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/gray9" />
+            <RelativeLayout
+                android:id="@+id/courseItem"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lableCourse"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/round_course_select"
+                    android:textColor="@color/gray3"
+                    style="@style/background_text_new_group_360_480" />
+
+                <ImageView
+                    android:id="@+id/clickCourse"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_listview"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_course"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/clickCourse"
+                    android:layout_toRightOf="@+id/lableCourse"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/preparation_text_color_selector"
+                    android:textStyle="bold"
+                    style="@style/background_text_new_group_360_480" />
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/gray9" />
+            <RelativeLayout
+                android:id="@+id/hallItem"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lableHall"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:duplicateParentState="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/round_hall_select"
+                    android:textColor="@color/gray3"
+                    android:layout_marginLeft="5dp"
+                    style="@style/background_text_new_group_360_480" />
+
+                <ImageView
+                    android:id="@+id/clickhall"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_listview" />
+
+                <TextView
+                    android:id="@+id/tv_hall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/clickhall"
+                    android:layout_toRightOf="@+id/lableHall"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/preparation_text_color_selector"
+                    android:textStyle="bold"
+                    style="@style/background_text_new_group_360_480" />
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/gray9" />
+            <RelativeLayout
+                android:id="@+id/teaItem"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labletea"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/round_tea_select"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray3"
+                    android:layout_marginLeft="5dp"
+                    style="@style/background_text_new_group_360_480" />
+
+                <ImageView
+                    android:id="@+id/clicktea"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow_listview" />
+
+                <TextView
+                    android:id="@+id/tv_tea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/clicktea"
+                    android:layout_toRightOf="@+id/labletea"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/preparation_text_color_selector"
+                    android:textStyle="bold"
+                    style="@style/background_text_new_group_360_480" />
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/gray9" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

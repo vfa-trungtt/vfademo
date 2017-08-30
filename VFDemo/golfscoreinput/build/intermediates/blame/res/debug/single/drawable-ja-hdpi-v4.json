@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/tv_free_trial.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/tv_free_trial.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/iv_bg_campaign_trial.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/iv_bg_campaign_trial.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/golfnavi_message_cmpgn.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/golfnavi_message_cmpgn.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/golfnavi_message_normal.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/golfnavi_message_normal.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/scoreinputproxy.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/scoreinputproxy.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/icon_camera_live.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/icon_camera_live.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/icon_description_campaigncode.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/icon_description_campaigncode.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/score_free_trial.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/score_free_trial.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/icon_scorecard_small.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/icon_scorecard_small.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/icon_start_round_new.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/icon_start_round_new.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/debug/drawable-ja-hdpi-v4/icon_now_playing.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-ja-hdpi/icon_now_playing.png"
+    }
+]

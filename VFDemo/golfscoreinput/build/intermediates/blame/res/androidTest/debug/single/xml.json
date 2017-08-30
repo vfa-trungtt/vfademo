@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_title.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_title.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/settings_oobgolf.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/settings_oobgolf.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/caption_preference.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/31811f26e839c5d81bf989550b0ca613da6fd439/output/res/xml/caption_preference.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_checkbox_new.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_checkbox_new.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/settings.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/settings.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_checkbox.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_checkbox.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_screen_version.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_screen_version.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_screen_setting_new.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_screen_setting_new.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_screen_setting.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_screen_setting.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/oob_info.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/oob_info.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_category.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_category.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/setting_new_round.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/setting_new_round.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_noaction.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_noaction.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/oob_title_hidden.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/oob_title_hidden.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference_screen.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference_screen.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/androidTest/debug/xml/preference.xml",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/bundles/debug/res/xml/preference.xml"
+    }
+]

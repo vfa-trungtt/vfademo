@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-sw600dp-v13/round_detail_item.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-sw600dp/round_detail_item.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-sw600dp-v13/score_list_focus.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-sw600dp/score_list_focus.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-sw600dp-v13/score_list.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-sw600dp/score_list.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-sw600dp-v13/ic_mini_controller_upcoming_stop.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/31811f26e839c5d81bf989550b0ca613da6fd439/output/res/drawable-sw600dp-v13/ic_mini_controller_upcoming_stop.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-sw600dp-v13/ic_mini_controller_upcoming_play.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/31811f26e839c5d81bf989550b0ca613da6fd439/output/res/drawable-sw600dp-v13/ic_mini_controller_upcoming_play.xml"
+    }
+]

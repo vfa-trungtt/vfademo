@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="74.8dp"
+    android:background="@drawable/btn_history_more_bg_selector"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:id="@+id/rl_more_history"
+    android:nextFocusDown="@+id/top_edit"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/tvHistoryMore"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="right"
+        android:text="108"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnHistoryMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

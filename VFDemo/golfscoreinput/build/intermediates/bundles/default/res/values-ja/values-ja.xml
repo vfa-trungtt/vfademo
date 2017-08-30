@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bar_graph_size">200dp</dimen>
+    <dimen name="bar_graph_text_size">14dp</dimen>
+    <dimen name="club_select_btn_width">55dp</dimen>
+    <dimen name="gir_pie_graph_size">140dp</dimen>
+    <dimen name="golf_top_button_to_button_margin">25dp</dimen>
+    <dimen name="golf_top_button_to_window_margin">30dp</dimen>
+    <dimen name="item_sliding_scoreinput_height">45dp</dimen>
+    <dimen name="live_new_button_width">72dp</dimen>
+    <dimen name="logo_padding">15dp</dimen>
+    <dimen name="pie_graph_area_width">310dp</dimen>
+    <dimen name="pie_graph_size">150dp</dimen>
+    <dimen name="request_score_top_textsize">16sp</dimen>
+    <dimen name="round_detail_button_height">90dp</dimen>
+    <dimen name="round_detail_button_text_margin_bottom">5dp</dimen>
+    <dimen name="score_analysis_button_show_graph_margin_right">35dp</dimen>
+    <dimen name="score_analysis_player_name_width">50dp</dimen>
+    <dimen name="score_analysis_player_width">46dp</dimen>
+    <dimen name="score_card_column_length">30dp</dimen>
+    <dimen name="score_card_footer_height">30dp</dimen>
+    <dimen name="score_card_header_height">85dp</dimen>
+    <dimen name="score_card_header_title_height">35dp</dimen>
+    <dimen name="shot_no_select_btn_width">55dp</dimen>
+    <dimen name="shot_result_select_btn_width">100dp</dimen>
+    <dimen name="sliding_scoreinput_behind_offset">60dp</dimen>
+    <dimen name="sliding_scoreinput_shadow_width">15dp</dimen>
+    <dimen name="top_arrow_height">110dp</dimen>
+    <dimen name="top_arrow_width">30dp</dimen>
+    <dimen name="top_gallery_padding_top_bottom">15dp</dimen>
+    <dimen name="top_smart_image_view_margin_left_right">10dp</dimen>
+    <dimen name="total_bar_graph_size">300dp</dimen>
+    <dimen name="yourgolf_account_list_height">80dp</dimen>
+    <dimen name="yourgolf_account_list_margin">5dp</dimen>
+    <string name="Google_No_Account">課金処理を開始できません。ご使用の端末で Google Account が正しくセットアップされていない可能性があります。確認後、再度お試しください。</string>
+    <string name="Gora_registration_is_not_done_yet">Gora registration is not done yet.  </string>
+    <string name="Login_Error_E0153">認証に失敗しました。しばらくしてから再度お試し下さい。</string>
+    <string name="Push_Notification">プッシュ通知</string>
+    <string name="Rakuten_username_password_is_wrong">Rakuten username/password is wrong. </string>
+    <string name="The_authentication_token_is_invalid">The authentication token is invalid</string>
+    <string name="about_button_description"><font fgcolor="#FF450000"><b>設定/ヘルプ</b></font></string>
+    <string name="about_label">About（PCサイトへ遷移します）</string>
+    <string name="about_title">YourGolf - ヘルプ</string>
+    <string name="accept">同意する</string>
+    <string name="add_friends_text">スコアカードに含まれている同伴者を友達に追加する事ができます。追加したい人を選択し、追加ボタンを押して下さい。</string>
+    <string name="add_player_email">メール（オプション）</string>
+    <string name="add_player_name">名前を直接入力</string>
+    <string name="add_player_text">メールアドレスを登録すると友達に\n 招待メールを送ることができます。\n ゴルフ仲間みんなにこのアプリを紹介して、ゴルフを一緒に楽しみましょう。</string>
+    <string name="add_players">同伴者を追加\:</string>
+    <string name="address">アドレス</string>
+    <string name="admaker_setUrl">http://images.ad-maker.info/apps/knx9ydfkbk4a.html</string>
+    <string name="admaker_siteId">1903</string>
+    <string name="admaker_zoneId">4973</string>
+    <string name="adsense_channel_id">9250690176</string>
+    <string name="agency_cancel_confirmation_title">依頼をキャンセルしてよろしいですか\n※この操作は取り消せません</string>
+    <string name="agency_request_date_format">yyyy年M月d日　HH時mm分</string>
+    <string name="alart_data_management">申し訳ございません。\nバックアップ・復元サービスは一時停止中です。\n\n
+	ただし、履歴画面からのスコアカードアップロード機能で、スコアデータをバックアップする事はできます。\n\n
+	アップロードしたスコアデータは、YourGolf Online(YGO)サイトでご覧いただく事ができます。\n
+	YGO (yourgolf-online.com)は、無料のスコア分析サービスですので、ぜひこちらもご利用ください。</string>
+    <string name="all">全期間</string>
+    <string name="analysis_button_description"><font fgcolor="#FF450000"><b>スコア\n 分 析</b></font></string>
+    <string name="analysis_title">スコア分析</string>
+    <string name="app_name">ゴルフネットワークプラス</string>
+    <string name="asai_description">亜才株式会社は、スマートフォン（Android/iPhone/OPhone/WM）を活用したソリューションで、お客様のビジネスをバリューアップしています。</string>
+    <string name="asai_home">http://www.yourgolf-online.com/m/index_ja.html</string>
+    <string name="asai_title">Asai,Inc.</string>
+    <string name="au_analysis_all_course_text">全コース</string>
+    <string name="au_analysis_avg_putt_text_1">平均パット数／1Ｈ</string>
+    <string name="au_analysis_avg_putt_text_2">パーオン時の平均パット数</string>
+    <string name="au_analysis_avg_stroke_text">平均ストローク数</string>
+    <string name="au_analysis_avg_total_score_text_1">平均トータルスコア</string>
+    <string name="au_analysis_avg_total_score_text_2">18ホール記録済みのみ</string>
+    <string name="au_analysis_course_text">対象コース</string>
+    <string name="au_analysis_fairway_hit_text">フェアウェイキープ</string>
+    <string name="au_analysis_gir_1_text">パーオン率</string>
+    <string name="au_analysis_gir_2_text">パーオン数</string>
+    <string name="au_analysis_gir_plus1_1_text">ボギーオン率</string>
+    <string name="au_analysis_gir_plus1_2_text">ボギーオン数</string>
+    <string name="au_analysis_missed_left_text">左ミス</string>
+    <string name="au_analysis_missed_right_text">右ミス</string>
+    <string name="au_analysis_period_text">対象期間</string>
+    <string name="au_analysis_recovery_text">リカバリー率</string>
+    <string name="au_analysis_reset_text">リセット</string>
+    <string name="au_analysis_sand_saves_text">サンドセーブ率</string>
+    <string name="au_analysis_score_analysis_text">スコア分析</string>
+    <string name="au_analysis_score_birdie_text">バーディ</string>
+    <string name="au_analysis_score_bogey_text">ボギー</string>
+    <string name="au_analysis_score_double_bogey_text">ダブルボギー</string>
+    <string name="au_analysis_score_eagle_and_under_text">イーグル以上</string>
+    <string name="au_analysis_score_par_text">パー</string>
+    <string name="au_analysis_score_triple_bogey_and_over_text">トリプルボギー以上</string>
+    <string name="au_analysis_share_button_text">シェア</string>
+    <string name="au_analysis_total_hole_text">総ホール合計</string>
+    <string name="au_analysis_total_round_text">ラウンド数合計</string>
+    <string name="au_analysis_total_score_text_1">トータルスコア</string>
+    <string name="au_share_analysis_header_static_text">ゴルフネットワークプラス >> http://www.gn-plus.com</string>
+    <string name="back">戻る</string>
+    <string name="back_jp">戻る</string>
+    <string name="back_to_main">戻る</string>
+    <string name="back_to_score_enter">戻る</string>
+    <string name="backup_error_e0105">アカウントの認証に失敗しました。再度お試しください。 失敗が続く場合は端末内のアカウントデータを一度消去し、再度ログインしてからお試しください。</string>
+    <string name="backup_error_unkonwn">不明なエラーにより、バックアップ処理が失敗しました。</string>
+    <string name="backup_success">バックアップ処理が成功しました。</string>
+    <string name="birdie_point">バーディなう！#GNPLUS #Birdie %1$s at %2$s %3$sH</string>
+    <string name="bogey_point">ボギーなう！#GNPLUS #Bogey %1$s at %2$s %3$sH</string>
+    <string name="bottom_bar_gofl_movie">ゴルフ動画</string>
+    <string name="bottom_bar_scroe">スコア</string>
+    <string name="bottom_bar_setting">設定</string>
+    <string name="bottome_bar_close">とじる</string>
+    <string name="browserAct_btn_browser">ブラウザ</string>
+    <string name="btn_add">追加</string>
+    <string name="btn_add_player">追加</string>
+    <string name="btn_add_player_selectplayerhistory">新規追加</string>
+    <string name="btn_call_new_ground">発信</string>
+    <string name="btn_cancel_dialog_custom">閉じる</string>
+    <string name="btn_cancel_dialog_custom_round">閉じる</string>
+    <string name="btn_cancel_entry">このLIVE参加をキャンセルする</string>
+    <string name="btn_change">更新</string>
+    <string name="btn_change2">変更</string>
+    <string name="btn_change_image_camera_live">編集</string>
+    <string name="btn_close">閉じる</string>
+    <string name="btn_club_new_ground">スコア平均</string>
+    <string name="btn_course_new_ground">コースレイアウト</string>
+    <string name="btn_create_live">コンペを作成</string>
+    <string name="btn_crop_live_image">次へ</string>
+    <string name="btn_delete_live">このLIVEを削除する</string>
+    <string name="btn_done">追加しない</string>
+    <string name="btn_enter_score">スコア入力</string>
+    <string name="btn_generate_share">シェア画像を作成する</string>
+    <string name="btn_get_contact">アドレス帳からコピーする</string>
+    <string name="btn_get_history">履歴</string>
+    <string name="btn_get_phone_book">電話帳</string>
+    <string name="btn_go_to_history">Go to history</string>
+    <string name="btn_invite_new_member">招待</string>
+    <string name="btn_new_round_hide_group_1">詳細</string>
+    <string name="btn_new_round_hide_group_3">同伴者追加</string>
+    <string name="btn_new_round_hide_group_4">その他設定</string>
+    <string name="btn_next">次へ</string>
+    <string name="btn_open">移動して見る</string>
+    <string name="btn_place_new_ground">ナビ</string>
+    <string name="btn_plan">空枠数</string>
+    <string name="btn_receive">受け取る</string>
+    <string name="btn_request_agency_new_ground">スコア入力代行画面へ</string>
+    <string name="btn_score_entry_100_counter_mode">カウンター</string>
+    <string name="btn_score_entry_course_map">コースガイド</string>
+    <string name="btn_score_entry_normal_mode">通常モード</string>
+    <string name="btn_scoregift_get_contact">電話帳からもコピーできます</string>
+    <string name="btn_send">送信</string>
+    <string name="btn_shuffle_secret_holes">ホール自動選択</string>
+    <string name="btn_signin_dialog_custom">ログイン</string>
+    <string name="btn_signin_dialog_custom_round">ログイン</string>
+    <string name="btn_to_score_gift">スコアギフト</string>
+    <string name="btn_top_analysis">プレー予約</string>
+    <string name="btn_top_campaign">キャンペーン</string>
+    <string name="btn_top_coupon">クーポン</string>
+    <string name="btn_top_history">履歴</string>
+    <string name="btn_top_live">練習ドリル</string>
+    <string name="btn_top_news">ニュース</string>
+    <string name="btn_top_playgolf">PLAY GOLF</string>
+    <string name="btn_top_playing_history">スコア入力／履歴</string>
+    <string name="btn_top_search">コース検索</string>
+    <string name="btn_top_settting">設定</string>
+    <string name="btn_top_tv">ゴルフ動画</string>
+    <string name="btn_use_this">選択</string>
+    <string name="bug_report">バグレポート</string>
+    <string name="bug_report_message">申し訳ございません。前回の操作時に想定外のエラーが発生しました。よろしければ、品質向上のためにログファイルを送信してください。</string>
+    <string name="bug_report_positive_button">報告する</string>
+    <string name="button_back_score_image">キャンセル</string>
+    <string name="button_choose_guest_guest">そのまま始める</string>
+    <string name="button_choose_guest_sign_in">ログインする</string>
+    <string name="button_choose_guest_sign_up">いますぐ無料登録する</string>
+    <string name="button_special_page">視聴する</string>
+    <string name="button_submit_campaign_enter_experience">今すぐ無料で試してみる</string>
+    <string name="campaign_code_enter_button_purchase_text">毎月継続利用をご希望の方は \n お得なスコアアッププランがオススメ \n <u>詳しくはこちらをタップ</u> </string>
+    <string name="campaign_code_enter_button_purchase_text_use_experience_true">スコアアッププランに申し込む</string>
+    <string name="campaign_code_enter_explain_text">ギフトコードを入力し\n「登録」ボタンを押して下さい。</string>
+    <string name="campaign_code_enter_hint_text">ギフトコード</string>
+    <string name="campaign_code_enter_link_text">キャンペーンコードを確認する</string>
+    <string name="campaign_code_enter_submit_btn_text">登録</string>
+    <string name="campaign_code_enter_title_text">利用登録</string>
+    <string name="cancel">キャンセル</string>
+    <string name="cannnot_add_member">最低一人以上削除してから追加する必要があります。
+</string>
+    <string name="cannnot_edit_owner_name">オーナープレイヤー名を変更することはできません。</string>
+    <string name="cannnot_remove_member">自分自身を削除することはできません。</string>
+    <string name="cannnot_set_name_of_length_zero">1文字以上入力してください。</string>
+    <string name="charge_confirm_message">新ペリア機能は有料オプションです。OKを押すと購入手続きへ進みます。この有料オプションを購入しない場合はキャンセルを押してください。</string>
+    <string name="charge_successful_message">購入手続きが正常に完了し、新ペリア機能が有効になりました。今回のLIVEでは自動的に新ペリア方式でハンディキャップ計算されたスコアがNETスコアに表示されます。</string>
+    <string name="check_gps_message">GPSが有効になっていないため、一部の機能が使用できません。\n\n設定画面からGPSを有効にしますか？</string>
+    <string name="check_gps_title">GPSが無効です</string>
+    <string name="checkin">foursquare</string>
+    <string name="choose_from_contacts_title">アドレス帳から選択</string>
+    <string name="choose_from_history">履歴から選択</string>
+    <string name="close">閉じる</string>
+    <string name="cloudy">曇</string>
+    <string name="club_gw_s">AW</string>
+    <string name="club_h2_s">U2</string>
+    <string name="club_h3_s">U3</string>
+    <string name="club_h4_s">U4</string>
+    <string name="club_h5_s">U5</string>
+    <string name="club_h6_s">U6</string>
+    <string name="club_label">クラブ: </string>
+    <string name="club_name">クラブ名: </string>
+    <string name="club_setting_summary">あなたの使用するクラブを設定します。</string>
+    <string name="club_setting_text"> 初期設定では全クラブが選択されています。 \n使用しないクラブをクリックしてください。</string>
+    <string name="club_setting_title">クラブ設定</string>
+    <string name="code_txt">コンペコード</string>
+    <string name="confirm_not_now">本当によろしいですか？</string>
+    <string name="confirmation">確認</string>
+    <string name="contact_us_description">YourGolfをご利用頂きありがとうございます。 ご要望、お問い合わせ等はfacebookまたはtwitterで絶賛受付中です！\n\nメールの場合は、事前に、以下のドメインからのメールを受信できるように設定を変更してください。\n<u>yourgolf-online.com</u></string>
+    <string name="contact_us_title">お問合わせ</string>
+    <string name="content_mail_text_play_date">- プレー日：</string>
+    <string name="continues">続ける</string>
+    <string name="counter_goal_text">目標スコア</string>
+    <string name="counter_over_par_text">オーバーパー数</string>
+    <string name="counter_remain_par_text">残オーバー</string>
+    <string name="course">コース</string>
+    <string name="course_detail_title">YourGolf - ティーを選択</string>
+    <string name="course_last_downloaded">前回ダウンロード日:</string>
+    <string name="course_map_txt">コースガイド</string>
+    <string name="course_search_help_message">oobgolf.com.　にてコースを作成することができます。\n
+    お気に入りのコースを登録して友人と共有しましょう！！</string>
+    <string name="course_search_help_title">コースがみつかりませんか?</string>
+    <string name="data_management_no_account_msg">YourGolf-Onlineアカウントにログインすると、スコアなど端末に記録したデータのバックアップや復元が可能になります。</string>
+    <string name="data_management_no_account_title">YourGolf-Onlineに登録しましょう！</string>
+    <string name="data_management_title">ﾊﾞｯｸｱｯﾌﾟ／復元</string>
+    <string name="date_format1">yyyy年M月d日</string>
+    <string name="day">日</string>
+    <string name="delete">削除</string>
+    <string name="delete_confirmation_message">レコードを削除する場合はOKを選択してください。</string>
+    <string name="delete_confirmation_title">本当によろしいですか?</string>
+    <string name="delete_live_has_member_confirm">このLIVEを削除するまえに、メンバー管理画面にて、このLIVEに参加しているメンバー全員の参加設定を解除してください。</string>
+    <string name="detail_edit">ショット履歴編集</string>
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_checkin">チェックイン</string>
+    <string name="dialog_checkin_msg">このゴルフ場にチェックインしますか？（foursquareを使用します）\n\n*foursquareアプリを端末にインストールしていると手軽にチェックインできます。検索後、Venuが見つからない場合は、foursquareアプリ内でMenuからVenueを追加してください。</string>
+    <string name="dialog_club_select_title">ショットクラブを選択してください</string>
+    <string name="dialog_course_history_update_msg">前回ダウンロードしたコースデータを使用してよろしいですか？ \n\n※サーバーから最新のコースデータを再取得する場合は、[ダウンロード]ボタンをタップしてください。</string>
+    <string name="dialog_delete_text">本当に削除してもよろしいですか？</string>
+    <string name="dialog_delete_title">確認</string>
+    <string name="dialog_edit_date">ラウンドの日付を編集する</string>
+    <string name="dialog_edit_hole_hole_number">ホール </string>
+    <string name="dialog_edit_hole_par">パー</string>
+    <string name="dialog_edit_hole_title">ホール情報を編集</string>
+    <string name="dialog_edit_hole_yard">距離</string>
+    <string name="dialog_edit_name_note">\n※初めの同伴者選択でこのプレイヤーを履歴から選択した場合は、このラウンド以外でも対象者の名前が変更されます。\n</string>
+    <string name="dialog_edit_score">スコアを編集する</string>
+    <string name="dialog_finish_round_msg">このラウンドを終了してもよろしいですか？\n※終了しても、記録したスコアは後から編集可能です。\n\n再編集する場合は履歴画面からこのスコアカードを選択してください。</string>
+    <string name="dialog_gps_explaination">*ショット位置を記録したい場合のみ、\nチェックボックスをONにしてください。</string>
+    <string name="dialog_gps_not_location">位置情報の取得に失敗しました</string>
+    <string name="dialog_gps_off_msg">GPSが有効でない場合は、設定画面からGPSを有効にしてから、再度お試しください。</string>
+    <string name="dialog_gps_off_title">ショット位置取得失敗</string>
+    <string name="dialog_gps_setting">GPS設定画面</string>
+    <string name="dialog_gps_status">ショット位置保存設定</string>
+    <string name="dialog_input_mode_title">入力方法を選択</string>
+    <string name="dialog_jcom_open_cancel"> キャンセル </string>
+    <string name="dialog_jcom_open_content"> J:COM認証を行うため、J:COMオンデマンドアプリが必要です。 </string>
+    <string name="dialog_jcom_open_install"> インストール </string>
+    <string name="dialog_jcom_open_title"> J:COM認証 </string>
+    <string name="dialog_map_warn_text">Androidのバグのため、一部の端末(端末のAndroidバージョン2.0以下）では航空写真モードで地図を拡大し続けると強制終了する場合があります。その場合は拡大し過ぎないようにするか、通常地図モードでお楽しみください。</string>
+    <string name="dialog_map_warn_title">ご注意ください</string>
+    <string name="dialog_message_disable_gps">現在、開発中です。\n今までよりも、よりパワフルに、より便利な機能になる予定です。\n楽しみに待っていて下さい。</string>
+    <string name="dialog_putt_warning">パット数としてカウントしますか？</string>
+    <string name="dialog_result_select_title">ショット結果を選択してください。</string>
+    <string name="dialog_review_message">皆さんがゴルフをもっと面白く、ゴルフをもっと楽しんでいただけるサービスを目指しています。\nぜひ、☆5つの応援レビューを書いてください。</string>
+    <string name="dialog_review_text_btn_1">応援レビューを書く！</string>
+    <string name="dialog_review_text_btn_2">あとで応援レビューを書く</string>
+    <string name="dialog_review_text_btn_3">改善の要望などを投稿する</string>
+    <string name="dialog_review_title">ゴルフネットワークプラスを\nご利用いただきまして、\nありがとうございます！</string>
+    <string name="dialog_set_birthday_title">生年月日</string>
+    <string name="dialog_set_date">ラウンド日変更</string>
+    <string name="dialog_shot_no_select_title">ショットNoを選択してください。</string>
+    <string name="dialog_title_disable_gps">お知らせ</string>
+    <string name="dialog_view_scorcard">スコアカードを見る</string>
+    <string name="dialog_view_scoreanalysis">スコア分析を見る</string>
+    <string name="display_settings">表示設定</string>
+    <string name="done">完了</string>
+    <string name="dont_show_dialog_golf_day">今後このメッセージを表示しない</string>
+    <string name="double_bogey_point">ダボなう！#GNPLUS #DBogey %1$s at %2$s %3$sH</string>
+    <string name="double_par_cut_txt">ダブルパーカット</string>
+    <string name="download">ダウンロード</string>
+    <string name="download_course">ダウンロード </string>
+    <string name="drill_memo_hint">この練習ドリルについて自分だけのメモを残せます。\n他人には公開されません。</string>
+    <string name="drill_vote_title_text">タップで投票</string>
+    <string name="e0139">E0139</string>
+    <string name="e0140">E0140</string>
+    <string name="eagle_point">イーグルなう！#GNPLUS #Eagle %1$s at %2$s %3$sH</string>
+    <string name="edit">編集</string>
+    <string name="edit_hdcp_title">ハンディキャップ編集</string>
+    <string name="edit_scores_title">YourGolf - スコア編集画面</string>
+    <string name="edit_shot_detail_description">ショット内容を入力</string>
+    <string name="edit_shot_detail_title">YourGolf - ショット詳細編集画面</string>
+    <string name="email_dialog_title">メールクライアントの選択</string>
+    <string name="email_request_search_dialog_title">メールクライアントの選択</string>
+    <string name="email_request_search_subject">コースリクエスト</string>
+    <string name="empty_date_from_server">データを取得出来ませんでした</string>
+    <string name="enter_name">名前入力</string>
+    <string name="error">エラー</string>
+    <string name="error_can_open_webview">申し訳ございません。予期せぬエラーが発生しました。しばらくしてから再度お試しください。</string>
+    <string name="error_connect_timeout">サーバーに接続できません。通信状態のよいところで再度お試しください。</string>
+    <string name="error_e0001">申し訳ございません。予期せぬエラーが発生しました。しばらくしてから再度お試しください。</string>
+    <string name="error_e0105">ご不便をおかけして申し訳ございません。サーバーとの通信が一時的に行えなくなっているため、設定画面から一度ログアウトし、同じアカウントで再ログインしてください。\n
+        このメッセージが繰り返し表示される場合は、設定画面のお問合せボタンよりYOUR GOLFサポートチームへご連絡ください。</string>
+    <string name="error_e0117">そのプレーヤは既に削除されています。</string>
+    <string name="error_e0138">登録されているコース情報が更新されています。再度コース検索し最新データをダウンロードしてください。</string>
+    <string name="error_e0139">ユーザIDまたはパスワードに誤りがあります</string>
+    <string name="error_e0140">楽天GORAのMyPageからログインを行ってください</string>
+    <string name="error_general">申し訳ございません。予期せぬエラーが発生しました。しばらくしてから再度お試しください。</string>
+    <string name="error_internal_server">サーバ内部エラー\nしばらくしてから再度お試しください。</string>
+    <string name="error_no_email_application">メールアプリケーションが端末に設定されていません</string>
+    <string name="error_purchase_plan_tv_charge_member">既に有料会員です</string>
+    <string name="error_purchase_plan_tv_out_of_jp">TVへの課金は国内からのみ行えます</string>
+    <string name="error_socket_timeout">処理がタイムアウトしました。しばらくしてから再度お試しください。</string>
+    <string name="error_token">ログインセッションが切れてしまいました。\n再度ログインしてください。\nログイン画面に移動します</string>
+    <string name="facebook_description">お問い合わせやフィードバック等はfacebookページから絶賛受付中です！お気軽にコメントしてください。ページをご覧いただきました是非「いいね！」ボタンをお願いします！</string>
+    <string name="facebook_title">facebook</string>
+    <string name="facebook_title_post">ウォールに投稿する</string>
+    <string name="finish">終了</string>
+    <string name="finish_round">中断</string>
+    <string name="foggy">霧</string>
+    <string name="follow">Twitter</string>
+    <string name="frag_reserver_tab_rakuten">楽天GORAで検索</string>
+    <string name="game_score_title">YourGolf - ゲームスコア編集画面</string>
+    <string name="gender_dialogtitle">性別</string>
+    <string name="gender_female">女性</string>
+    <string name="gender_male">男性</string>
+    <string name="gender_summary">ハンディキャップの計算に使用します。</string>
+    <string name="gender_title">性別</string>
+    <string name="golf_course_hint_txt">ゴルフ場の選択</string>
+    <string name="golf_course_txt">ゴルフ場設定</string>
+    <string name="golf_detail_golf_day_txt_1">コースマップ表示</string>
+    <string name="golf_detail_website_txt">コースガイド</string>
+    <string name="golf_select_player_input_score_txt">スコア入力</string>
+    <string name="golf_select_player_start_txt">スコア入力</string>
+    <string name="golf_settings_title">YourGolf - 設定</string>
+    <string name="golfnavi_market">Androidマーケット</string>
+    <string name="golfnavi_menu">[全国ゴルフ場ナビ]\nから検索</string>
+    <string name="golfnavi_msg">無料アプリ「全国ゴルフ場ナビ」では、国内のゴルフ場をマップから視覚的に検索することができます。ゴルフ場までのナビゲーションや予約も可能です。ぜひお試しください。\n\n既にインストールしていても、バージョンが古い場合は、このメッセージが表示されます。マーケットから「全国ゴルフ場ナビ」のアップデートをしてください。</string>
+    <string name="golfnavi_title">全国ゴルフ場ナビ</string>
+    <string name="golfnetwork_text">ゴルフネットワーク</string>
+    <string name="google_map_not_found">有効なGoogleマップアプリケーションが見つかりませんでした。</string>
+    <string name="gora_account_auth_token_key">gora_account_autu_token_key</string>
+    <string name="gora_error">GORA に接続できませんでした。しばらくしてから再度お試しください。</string>
+    <string name="gora_extra_register_hint1">・楽天会員連携した時点から、保存したスコアデータは楽天GORAにも登録されます。</string>
+    <string name="gora_extra_register_hint2">・楽天GORAに存在しないコース組み合わせの場合、スコアは楽天GORAには反映されません。</string>
+    <string name="gora_extra_register_hint3">・楽天GORAへの登録が正常に行われなかった場合でも、アプリ側にエラーメッセージは表示されません。正常に登録されたデータにのみ、楽天GORAアイコンが表示されます。</string>
+    <string name="gora_extra_register_hint4">・セキュリティのため、楽天会員連携の有効期間は6ヶ月間となっております。6ヶ月以上を経過しますとスコアデータが連携できなくなりますので、その際はお手数ですが、一旦、連携を解除し再度連携の手続きをお願い致します。</string>
+    <string name="gora_login_btn">ログイン </string>
+    <string name="gora_login_logout_title">	楽天会員連携</string>
+    <string name="gora_login_title">楽天会員連携 </string>
+    <string name="gora_logout_btn">連携を解除する</string>
+    <string name="gora_logout_hint">楽天会員情報と連携しています。記録したスコアデータは楽天GORAにも登録されます。\n\n※セキュリティのため、楽天会員連携の有効期間は6ヶ月間となっております。6ヶ月を経過しますとスコアデータは連携できなくなりますので、その際はお手数ですが、一旦、連携を解除し再度同じアカウントで連携のお手続きをお願い致します。</string>
+    <string name="gora_password">パスワード </string>
+    <string name="gora_register_btn">初めての方は会員登録 </string>
+    <string name="gora_register_hint">楽天連携に登録（無料）して対象サービスを利用すると、楽天スーパーポイントが貯まります。</string>
+    <string name="gora_user_id">ユーザID </string>
+    <string name="got_gps_loc">位置情報の取得準備ができました。\nショット位置の記録が可能です。</string>
+    <string name="goto_history_page">スコアデータ\nアップロード</string>
+    <string name="goto_ygo">YGOでスコア確認</string>
+    <string name="gps_not_function">現在、機能改善のため、一時的に利用中止しています。</string>
+    <string name="graph_average_stroke_par3"><u>平均ストローク数 (Par3)</u></string>
+    <string name="graph_average_stroke_par4"><u>平均ストローク数 (Par4)</u></string>
+    <string name="graph_average_stroke_par5"><u>平均ストローク数 (Par5)</u></string>
+    <string name="graph_birdie_analysis"><u>バーディー(%)</u></string>
+    <string name="graph_bogey_analysis"><u>ボギー(%)</u></string>
+    <string name="graph_double_bogey_analysis"><u>ダブルボギー(%)</u></string>
+    <string name="graph_eagle_under_analysis"><u>イーグル以下(%)</u></string>
+    <string name="graph_par_analysis"><u>パー(%)</u></string>
+    <string name="graph_total_putts">トータルパット数</string>
+    <string name="graph_total_strokes">トータルストローク数</string>
+    <string name="graph_triple_bogey_analysis"><u>トリプルボギー以上(%)</u></string>
+    <string name="group_entry_note_msg">※既にスコア詳細データがある状態で保存を行うと、詳細データは削除されます。\n削除せずにスコアを編集したい場合は[編集]ボタンをクリックし、スコア編集画面からデータを編集してください。</string>
+    <string name="group_entry_note_msg_check">このメッセージをもう表示しない</string>
+    <string name="group_play_title">YourGolf - グループプレイ</string>
+    <string name="group_score">グループ スコア</string>
+    <string name="group_score_title">グループのスコア</string>
+    <string name="hallout_card">カード</string>
+    <string name="hallout_save_round">ラウンドを保存</string>
+    <string name="hallout_title">ホールアウト</string>
+    <string name="hallout_title_2">プレイお疲れさまでした。</string>
+    <string name="handicap_alert_message">このラウンドでのHDCPは、スコア入力画面の左上にあるメニューから設定する事ができます。</string>
+    <string name="header_tab_campaign">キャンペーン</string>
+    <string name="header_tab_drill">練習ドリル</string>
+    <string name="header_tab_golf_movie">無料動画</string>
+    <string name="header_tab_golf_movie_2">無料動画2</string>
+    <string name="header_tab_golf_movie_3">無料動画3</string>
+    <string name="header_tab_live">LIVE</string>
+    <string name="header_tab_news">ニュース</string>
+    <string name="header_tab_pick_up">ホーム</string>
+    <string name="header_tab_play_history">履歴</string>
+    <string name="header_tab_reserve_plan">予約</string>
+    <string name="hint_content_sendgift">%1$sさん、こんにちは。%2$sです。\n\nGOLF NETWORK PLUSのスコアギフトサービスを使ってスコアカードを送ります。\nいっしょにGOLF NETWORK PLUSを使ってゴルフをもっと楽しみましょう！\n\n</string>
+    <string name="hint_edit_name">名前</string>
+    <string name="hint_mail_address">（ここに相手のメールアドレスを入力）</string>
+    <string name="history_agency_button_text">スコア登録代行</string>
+    <string name="history_analysis_button_text">分析</string>
+    <string name="history_edit_note">※[編集]ボタンからラウンドデータの削除、プレイ日の変更が行えます。</string>
+    <string name="history_editing">編集中...</string>
+    <string name="history_live_button_text">コンペ</string>
+    <string name="history_menu">コース検索履歴</string>
+    <string name="history_play_button_text">スコア入力</string>
+    <string name="history_score_best_score">ベストスコア</string>
+    <string name="history_score_button_done_upload">未バックアップ</string>
+    <string name="history_score_button_upload">バックアップ済み</string>
+    <string name="history_score_header_average">平均スコア</string>
+    <string name="history_score_header_title">入力＆履歴</string>
+    <string name="history_score_total_round">総ラウンド数</string>
+    <string name="history_title_choice">期間:</string>
+    <string name="hole_map_title">ホールマップ</string>
+    <string name="hole_one">1ホール</string>
+    <string name="hole_tab_host_title">スコアを入力</string>
+    <string name="hole_ten">10 ホール</string>
+    <string name="info">YourGolfユーザー専用のオンラインサービス <b>YourGolf Online</b> がスタート。ここをタッチして今すぐアクセス！</string>
+    <string name="input_putt_for_friend_title">同伴者のパット数も記録する</string>
+    <string name="input_score_card">スコアカード</string>
+    <string name="input_score_confirm_pause_no">いいえ</string>
+    <string name="input_score_confirm_pause_text">本当によろしいですか？</string>
+    <string name="input_score_confirm_pause_yes">はい</string>
+    <string name="input_score_gps_tab">GPS</string>
+    <string name="input_score_putts_tab">パット</string>
+    <string name="input_score_score_tab">スコア</string>
+    <string name="input_score_title">ホール</string>
+    <string name="input_text_title">Input your title</string>
+    <string name="insert_score_btn">新規追加</string>
+    <string name="instruction_button">HISTORYへ。</string>
+    <string name="instruction_text_1">すべてのデータはクラウドに。\n安心・安全にスコアデータを\nお預かりします。</string>
+    <string name="instruction_text_2">複数端末からのアクセスや\nスマホの買い替えも楽々！！</string>
+    <string name="instruction_text_3">新しく追加されたスコアギフト機能で、ゴルフ友達にスコアカードをプレゼント出来ます。</string>
+    <string name="instruction_text_4">サンプルデータ（Your Golf Club Sample）を含むすべてのデータをバックアップしてください。\nサンプルデータは後から削除できます。</string>
+    <string name="interrupt_and_backtop">中断してTOPへ戻る</string>
+    <string name="interrupt_cancel">キャンセル</string>
+    <string name="invalid_input_no_value">名前は必ず入力してください。</string>
+    <string name="invalid_input_not_number">有効な数値を入力してください。</string>
+    <string name="invalid_scores">保存に失敗しました。\nパット数にはストローク数以下の数字を入力してください。</string>
+    <string name="invalid_session">ユーザ名とパスワードが正しく設定されているか確認してください。</string>
+    <string name="key_gora_encrypted">key_gora_encripted</string>
+    <string name="key_gora_password">key_gora_password</string>
+    <string name="key_gora_username">key_gora_username</string>
+    <string name="keyword_label">キーワード（コース名の一部でも検索可能。英語のみ対応）</string>
+    <string name="larger_db_bogey_point">ゴルフって最高！#GNPLUS #golf %1$s at %2$s %3$sH</string>
+    <string name="leaderboard_button">リーダボード</string>
+    <string name="leaderboard_share">フォトスコアカード</string>
+    <string name="link_after_send_gift">/public/gift_ad.ja.html</string>
+    <string name="linker_drill">もっと見る</string>
+    <string name="live_banner_text">ゴルフ専門チャンネル「ゴルフネットワーク」LIVE配信中</string>
+    <string name="live_code">LIVEコードを入力</string>
+    <string name="live_create">新たにLIVEを作成</string>
+    <string name="live_delete_member_msg">You have no permission for this live entry.</string>
+    <string name="live_detail">詳細</string>
+    <string name="live_detail_count_members">members</string>
+    <string name="live_detail_manage_members">参加者</string>
+    <string name="live_detail_members">メンバー</string>
+    <string name="live_double_peoria_charged_no">未購入</string>
+    <string name="live_double_peoria_charged_status">購入ステータス</string>
+    <string name="live_double_peoria_charged_yes">購入済み</string>
+    <string name="live_double_peoria_system">新ペリア機能</string>
+    <string name="live_enter_live_code_hint">Liveコード</string>
+    <string name="live_golfdetail_title">ゴルフ場詳細</string>
+    <string name="live_golfsearch_title">ゴルフ場検索</string>
+    <string name="live_golftee_button_start">同伴者設定</string>
+    <string name="live_golftee_title">ラウンド詳細設定</string>
+    <string name="live_handicapping_system">ハンディキャップ</string>
+    <string name="live_invite_member_format_dev">「 %2$s 」へのご招待です。\n\n
+        ゴルフネットワークの無料スコア管理アプリ GN+（ゴルフネットワークプラス）を使うと、コンペのスコアや順位がリアルタイムで共有できます。\n\n
+        コンペ名： %2$s\n
+        開催日：%3$s\n
+        ゴルフ場：%5$s\n\n
+        コンペコード：%1$s\n\n
+        順位表（リアルタイム更新）\n
+        https://live-stage.golfnetwork.co.jp/lives/%6$s/leader_board\n\n
+        参加方法：\n
+        ゴルフネットワークのアプリをインストールしているスマートフォンから下記のURLへアクセスしてください。\n\n
+        https://live-stage.yourgolf-online.com/lives/open?live_code=%1$s\n\n
+        ※このコンペの参加には、ゴルフネットワークの無料スコア管理アプリが必要です。\n
+        ダウンロードはこちら\n
+        http://j.mp/golfnetworkapp\n\n
+        %4$s
+	 </string>
+    <string name="live_invite_member_format_real">「 %2$s 」へのご招待です。\n\n
+        ゴルフネットワークの無料スコア管理アプリ GN+（ゴルフネットワークプラス）を使うと、コンペのスコアや順位がリアルタイムで共有できます。\n\n
+        コンペ名： %2$s\n
+        開催日：%3$s\n
+        ゴルフ場：%5$s\n\n
+        コンペコード：%1$s\n\n
+        順位表（リアルタイム更新）\n
+        https://live.golfnetwork.co.jp/lives/%6$s/leader_board\n\n
+        参加方法：\n
+        ゴルフネットワークのアプリをインストールしているスマートフォンから下記のURLへアクセスしてください。\n\n
+        https://live.golfnetwork.co.jp/lives//open?live_code=%1$s\n\n
+        ※このコンペの参加には、ゴルフネットワークの無料スコア管理アプリが必要です。\n
+        ダウンロードはこちら\n
+        http://j.mp/golfnetworkapp\n\n
+        %4$s
+	 </string>
+    <string name="live_invite_member_format_twitter_dev">「 %1$s 」への招待です。 GN+アプリのコンペ画面でコンペコード：%2$s を入力すると参加できます。\n
+         コンペ順位表\n
+         https://live-stage.golfnetwork.co.jp/lives/%3$s/leader_board
+	 </string>
+    <string name="live_invite_member_format_twitter_real">「 %1$s 」への招待です。 GN+アプリのコンペ画面でコンペコード：%2$s を入力すると参加できます。\n
+         コンペ順位表\n
+         https://live.golfnetwork.co.jp/lives/%3$s/leader_board
+	 </string>
+    <string name="live_invite_member_subject">【GN+ LIVE SCORE】招待メール</string>
+    <string name="live_join_btn">参加</string>
+    <string name="live_join_check_validate_code">Live コードは 半角英数 8 文字で入力して下さい。</string>
+    <string name="live_join_dialog">参加する</string>
+    <string name="live_join_img">LIVEに参加する</string>
+    <string name="live_join_live">コンペコード:</string>
+    <string name="live_join_not_found_msg">指定された Live が見つかりませんでした。コードが間違っているか、Live が既に削除されています。ご確認の上、再度お試し下さい。</string>
+    <string name="live_list_member_title">参加者リスト</string>
+    <string name="live_list_no_result">参加設定となっているLIVEはありません。</string>
+    <string name="live_list_title">コンペ</string>
+    <string name="live_net_score_ranking">NETランキング</string>
+    <string name="live_new_button">コンペを作成する</string>
+    <string name="live_score_flag_out_title">Finish Live</string>
+    <string name="live_score_out_title">Live Score Out Input</string>
+    <string name="live_score_title">Live-Hole</string>
+    <string name="live_settings">Live Settings</string>
+    <string name="live_update_no_permission">You have no permission for this Live.</string>
+    <string name="live_update_param_invalid">Some parameters for live are not valid.</string>
+    <string name="live_your_live">参加コンペ一覧</string>
+    <string name="loading">処理中..</string>
+    <string name="location_undetermined_message">現在の位置情報を取得できませんでした。\n
+GPSが利用可能な場所で再度ご利用ください。</string>
+    <string name="location_undetermined_title">場所が特定できませんでした。</string>
+    <string name="login_email_gora">Email address</string>
+    <string name="login_header_titles"> ログイン </string>
+    <string name="login_password_gora">Password</string>
+    <string name="login_yourgolf_email">メールアドレス</string>
+    <string name="login_yourgolf_forgot_pass">パスワードを忘れた方は</string>
+    <string name="login_yourgolf_here"><a href="">こちら</a></string>
+    <string name="login_yourgolf_here_dot">。</string>
+    <string name="login_yourgolf_info">既にYOUR GOLF アカウントを持っている方はそのままログインできます\n（新規登録不要）</string>
+    <string name="login_yourgolf_login">ログイン</string>
+    <string name="login_yourgolf_password">パスワード</string>
+    <string name="login_yourgolf_request_dot">から。</string>
+    <string name="login_yourgolf_request_register">初めてご利用する方はこちらへ\n（新規登録）</string>
+    <string name="login_yourgolf_request_signup"><a href="">こちら</a></string>
+    <string name="login_yourgolf_symbol">※</string>
+    <string name="login_yourgolf_yourgolf">GOLF NETWORK PLUS</string>
+    <string name="long_touch_note">長押し</string>
+    <string name="mail">メール</string>
+    <string name="mail_contact_your_golf">support.a.ja@yourgolf.zendesk.com</string>
+    <string name="mail_support_your_golf">course.a.ja@yourgolf.zendesk.com</string>
+    <string name="map_btn_text">ホールマップを表示</string>
+    <string name="map_cur_loc_text">現在地からの距離表示</string>
+    <string name="map_rotate_mode">コンパスモード</string>
+    <string name="map_view_map">マップ表示</string>
+    <string name="map_view_satellite">サテライト表示</string>
+    <string name="max_length_warning">入力可能文字数の最大値を超えたため、\n一部の文字が削られました</string>
+    <string name="measure_unit_dialogtitle">距離単位選択</string>
+    <string name="measure_unit_meter">メートル</string>
+    <string name="measure_unit_summary">ヤード、メートル表示のいずれかを選択してください。</string>
+    <string name="measure_unit_title">距離単位選択</string>
+    <string name="measure_unit_yard">ヤード</string>
+    <string name="menu_about">YourGolfについて</string>
+    <string name="menu_analysis">スコア分析</string>
+    <string name="menu_disable_stableford">Stableford非表示モード</string>
+    <string name="menu_edit_hole">ホールを編集</string>
+    <string name="menu_enable_stableford">Stableford表示モード</string>
+    <string name="menu_help">ヘルプ</string>
+    <string name="menu_input_mode">入力方法変更</string>
+    <string name="menu_score_card">スコアカード</string>
+    <string name="menu_send_server">サーバーに\n送信</string>
+    <string name="menu_specify_term_title">期間指定</string>
+    <string name="message_call_google_map">このゴルフ場までナビゲーションします。MAPアプリを起動しますか？</string>
+    <string name="message_dialog_custom">アカウントをお持ちでない方は会員登録（無料）が必要となります</string>
+    <string name="message_dialog_custom_round">ログインすることで複数のスコアを保管出来ます。更に、とても便利なスコア分析も行えます</string>
+    <string name="month">月</string>
+    <string name="more_info">もっと詳しく見る </string>
+    <string name="more_info_extra">※PCサイトへ遷移します</string>
+    <string name="more_info_none">このコースについての詳細情報は登録されておりません。</string>
+    <string name="more_results">もっと見る</string>
+    <string name="msg_choose_course">コースの選択</string>
+    <string name="msg_choose_tee">ティーの選択</string>
+    <string name="msg_max_14_clubs">クラブは14本までしか選択できません。他のクラブを OFF にしてから再度選択してください。</string>
+    <string name="msg_now_get_location">現在地取得中...</string>
+    <string name="msg_now_loading">処理中..</string>
+    <string name="msg_restore_error">購入履歴が取得できませんでした。AppStore（Playストア）のアカウント情報より購入状態を確認してください</string>
+    <string name="msg_restore_success">復元が完了しました</string>
+    <string name="msg_score_alredy_deleted">以前消去してしまったので、登録できませんでした。再登録しますか？</string>
+    <string name="msg_select_tee">ティーを選択してください。</string>
+    <string name="msg_successfully_updated">変更しました。</string>
+    <string name="msg_suvt_failure">セッションが切れたためアプリトップに戻ります。再度開いてください。</string>
+    <string name="mssg_confirmation_has_gps_data">※既にスコア詳細データがある状態で本画面においてスコア編集を行うと、詳細データは削除されます。</string>
+    <string name="mssg_error_e0116">その名前は既に登録されています。別の名前を入力してください。</string>
+    <string name="mssg_error_e0117">The player id was not found.</string>
+    <string name="mssg_error_e0133">その名前は既に登録されています。別の名前を入力してください。</string>
+    <string name="mssg_error_e0163">既に商品を購入済みです。</string>
+    <string name="mssg_error_e0164">商品を購入できません。</string>
+    <string name="mssg_error_e0173">入力されたコードは無効です。</string>
+    <string name="mssg_error_e0174">入力されたコードは既に登録済みです。</string>
+    <string name="mssg_register_campaign_code_success">登録完了！！</string>
+    <string name="my_play">マイ スコア</string>
+    <string name="my_play_title">あなたのスコア</string>
+    <string name="name">名前</string>
+    <string name="name_dialog_title">同伴者の名前を入力してください。</string>
+    <string name="nav_partner">スコア入力</string>
+    <string name="nav_round">ラウンド準備</string>
+    <string name="nav_search_course">コース検索</string>
+    <string name="network_erro_or_not_connet">サーバーに接続できません。通信状態のよいところで再度お試しください。</string>
+    <string name="network_unavailable_message">ネットワークに繋がっていることを確認してください。</string>
+    <string name="network_unavailable_title">ネットワーク接続エラー</string>
+    <string name="new_live_title">コンペ新規作成</string>
+    <string name="news_conf_summary">ニュース配信の通知を有効にする場合はチェックしてください。</string>
+    <string name="news_conf_title">ニュース通知設定</string>
+    <string name="news_url">http://ygo-production.s3-website-us-east-1.amazonaws.com/public/news.html</string>
+    <string name="next">次へ</string>
+    <string name="no">いいえ</string>
+    <string name="no_foursquare_app">foursquareアプリが見つかりませんでした。インストールされていることを確認してください。</string>
+    <string name="no_login_message">Please login YourGofl</string>
+    <string name="no_login_title">No Login</string>
+    <string name="no_owner_informatino">名前が設定されていません。\n設定画面で入力してください。 </string>
+    <string name="no_tees_message">コース情報が存在しないためプレーできません。oobgolf.comからコース情報を登録してください。</string>
+    <string name="notnow">Not now</string>
+    <string name="notsave_and_back">保存せずに終了する</string>
+    <string name="now_playing_process_agency_text">ラウンド中のため、スコアカードの入力できません。\nラウンドを終了させてから、スコアを入力してください。</string>
+    <string name="now_playing_process_text">ラウンド中のため、新規ラウンドを開始できません。ラウンドを終了させてから、新規ラウンドを開始してください。</string>
+    <string name="now_playing_process_title">ラウンド中</string>
+    <string name="ntf_demo">0</string>
+    <string name="ntf_pg_click_count_img_url">http://www.yourgolf-online.com/ntf/count_pargolf_ja.png</string>
+    <string name="ntf_pg_default_time_hh">12</string>
+    <string name="ntf_pg_default_time_mm">15</string>
+    <string name="ntf_pg_flg">1</string>
+    <string name="ntf_pg_url_json">http://www.yourgolf-online.com/ntf/ja_notice_pg.json</string>
+    <string name="ntf_url_json">http://www.yourgolf-online.com/ntf/ja_notice_as.json</string>
+    <string name="off_gps_loc">ショット位置を記録しないモードに変更されました。</string>
+    <string name="ok">OK</string>
+    <string name="oob_course_limit_over">oobgolf.comからの要請により、 YourGolfでは１０コースを超える海外コースのスコアデータは閲覧不可となっております。\n\n閲覧不可なスコアデータは、サーバーに送信後、oobgolf.comのサイトにてご確認ください。</string>
+    <string name="oob_credit">oobgolf.comのデータベースから検索します。 <a href="http://www.oobgolf.com/">oobgolf.com</a></string>
+    <string name="oob_credit_title"> クレジット &amp; リンク </string>
+    <string name="oob_description">アカウントをお持ちでない方は <a href="http://www.oobgolf.com/">oobgolf.com</a> にて無料で新規アカウントを作成できます。</string>
+    <string name="oob_menu">海外ゴルフ場の検索 \n(oobgolf.com)</string>
+    <string name="oobgolf_description">oobgolf.comはゴルファーのための最高のオンラインサービスです。 次URLから無料登録をご利用いただけます。\n http://www.oobgolf.com </string>
+    <string name="oobgolf_title">oobgolf</string>
+    <string name="oobgolf_upload_no_accounts">スコアをアップロードするには oobgolf のアカウントが必要です。\n\n
+すでにアカウントをお持ちの場合は、設定してください。\n\n
+お持ちでない場合は、oobgolf にて無料登録を行ってください。\n\n
+ショット履歴のアップロードも行いたい場合は、設定画面からYourGolf-Onlineの無料ユーザー登録を行ってください。</string>
+    <string name="oobgolf_upload_no_oobgolf_account">スコアを保存するのには oobgolf のアカウントが必要です。\n\n
+すでにアカウントをお持ちの場合は、設定してください。\n\n
+お持ちでない場合は、oobgolf にて無料登録を行ってください。\n\n
+位置情報付のショット履歴データは、YourGolf-Onlineにアップロードされます。</string>
+    <string name="oobgolf_upload_no_yourgolf_account">oobgolf ではショット履歴データのアップロードは対応しておりません。\n\n
+スコアデータのみアップロードされます。\n\n
+ショット履歴のアップロードも行いたい場合は、設定画面からYourGolf-Onlineの無料ユーザー登録を行ってください。</string>
+    <string name="oops">おや..</string>
+    <string name="open_site">訪問する</string>
+    <string name="org_ad_TOP_NEWS_url">http://www.yourgolf-online.com/ad/landing_top_bottom_ja.php</string>
+    <string name="org_ad_img_SCORE_GROUP_url">http://www.yourgolf-online.com/ad/banner_score_group_ja.png</string>
+    <string name="org_ad_img_SCORE_SINGLE_url">http://www.yourgolf-online.com/ad/banner_score_single_ja.png</string>
+    <string name="org_ad_img_TOP_BOTTOM_url_hvga">http://www.yourgolf-online.com/ad/banner_top_bottom_ja_hvga.png</string>
+    <string name="org_ad_img_TOP_BOTTOM_url_qvga">http://www.yourgolf-online.com/ad/banner_top_bottom_ja_qvga.png</string>
+    <string name="org_ad_img_TOP_BOTTOM_url_wvga">http://www.yourgolf-online.com/ad/banner_top_bottom_ja_wvga.png</string>
+    <string name="org_ad_img_TOP_TITLE_url">http://www.yourgolf-online.com/ad/banner_top_title_ja.png</string>
+    <string name="org_ad_img_TOP_TOP_default_url">banner01_android_ja.png</string>
+    <string name="org_ad_img_TOP_TOP_url">http://www.yourgolf-online.com/ad/banner_top_top_ja.png</string>
+    <string name="org_ad_landing_SCORE_GROUP_url">http://www.yourgolf-online.com/ad/landing_score_group_ja.php</string>
+    <string name="org_ad_landing_SCORE_SINGLE_url">http://www.yourgolf-online.com/ad/landing_score_single_ja.php</string>
+    <string name="org_ad_landing_TOP_BOTTOM_url">http://www.yourgolf-online.com/ad/landing_top_bottom_ja.php</string>
+    <string name="org_ad_landing_TOP_TITLE_url">http://www.yourgolf-online.com/ad/landing_top_title_ja.php</string>
+    <string name="org_ad_landing_TOP_TOP_url">http://www.yourgolf-online.com/ad/landing_top_top_ja.php</string>
+    <string name="par_point">パーなう！#GNPLUS #Par %1$s at %2$s %3$sH</string>
+    <string name="phone">電話</string>
+    <string name="pick_up_show_more_text">続きを読む</string>
+    <string name="pickup_item_text">ピックアップニュース</string>
+    <string name="play_button_description"><font fgcolor="#FF450000"><b>Play Golf</b></font></string>
+    <string name="play_date">プレイ日    </string>
+    <string name="play_date_dialog_msg">プレイ日を入力してください。</string>
+    <string name="play_date_dialog_title">プレイ日の変更</string>
+    <string name="play_history_message_receive_gift_1">%1$sさんからスコアカードが届いています。\nここをタッチして確認しましょう。</string>
+    <string name="play_history_message_receive_gift_2">%1$sさん（他%2$d人）からスコアギフトがきています。</string>
+    <string name="played_courses_title">コース別履歴</string>
+    <string name="player_history">履歴から選択</string>
+    <string name="player_select_history">履歴</string>
+    <string name="player_select_history_confirm_delete">本当によろしいですか？</string>
+    <string name="player_select_history_no_player">誰も登録されていません。</string>
+    <string name="playing_histories_button_description"><font fgcolor="#FF450000"><b>履 歴</b></font></string>
+    <string name="playing_histories_title">YourGolf - プレー履歴</string>
+    <string name="please_input">を入力して下さい </string>
+    <string name="point">ポイント</string>
+    <string name="point_summary">各ホールにてポイントを記録したい場合はチェックしてください。</string>
+    <string name="point_title">ポイント表示</string>
+    <string name="preview_create_button">決定</string>
+    <string name="preview_share_photo_bonchan">ぼんちゃん</string>
+    <string name="preview_share_photo_fashion">ファッション</string>
+    <string name="preview_share_photo_joybon">エンジョイぼん</string>
+    <string name="preview_share_photo_numeric">数字表記</string>
+    <string name="preview_share_photo_paper">ペーパー</string>
+    <string name="preview_share_photo_symbol">記号表記</string>
+    <string name="profile_header_title">プロフィール設定</string>
+    <string name="profile_info_erro">端末内に保存されている承認証明書が有効ではありません。一度アカウントデータの消去を行い、再度ログインしてからお試しください。</string>
+    <string name="profile_info_frist">メールアドレス変更、パスワード変更の方は</string>
+    <string name="profile_link">こちら</string>
+    <string name="profile_location_hint">お住まいの国</string>
+    <string name="profile_message_no_location">現在お住まいの国をお選びください</string>
+    <string name="profile_message_no_prefecture">現在お住まいの都道府県をお選びください</string>
+    <string name="profile_prefecture_hint">都道府県</string>
+    <string name="profile_submit_btn">登録</string>
+    <string name="profile_update_btn">更新</string>
+    <string name="puma_setting_title_password">パスワード</string>
+    <string name="puma_setting_title_username">アカウント</string>
+    <string name="purchase_button_text">有料プランを購入する</string>
+    <string name="purchase_button_text_from_drill">手続きを進める（確認画面が開きます)</string>
+    <string name="purchase_item_1_title">有料プラン購入</string>
+    <string name="purchase_item_2_title">有料プラン購入</string>
+    <string name="purchase_item_2_title_drill">スコアアッププラン</string>
+    <string name="purchase_item_annual_subtitle">年額 %s（税込み)</string>
+    <string name="purchase_item_subtitle">月額 %s（税込み）</string>
+    <string name="purchase_menu_item_1">スコアアッププラン</string>
+    <string name="purchase_menu_item_2">ゴルフネットワーク\n見放題プラン月払コース</string>
+    <string name="purchase_menu_item_3">ゴルフネットワーク\n見放題プラン年払コース</string>
+    <string name="purchase_menu_screen_title">有料プラン選択</string>
+    <string name="purchase_with_google_error_message">Google Play の問題により購入を完了出来ませんでした。支払いは行われていません。しばらくしてから再度お試し下さい。</string>
+    <string name="putt">パット</string>
+    <string name="rainy">雨</string>
+    <string name="refresh">更新</string>
+    <string name="regis_yourgolf_url">http://www.google.com</string>
+    <string name="request_score_btnCamera">写真撮影</string>
+    <string name="request_score_btnCancel">キャンセル</string>
+    <string name="request_score_btnDigRequest">履歴</string>
+    <string name="request_score_btnGallery">写真の選択</string>
+    <string name="request_score_btnRequest">依頼する</string>
+    <string name="request_score_dialog_message">ご依頼をお受けいたしました\n登録完了後、履歴画面にスコアが反映されます。\nいましばらくお待ちください。\n※お送りいただいたスコアカード画像の詳細や混雑状況にもよりますが、通常は１〜２営業日ほどで反映されます。</string>
+    <string name="request_score_label10">ご依頼を\nお受けいたしました</string>
+    <string name="request_score_label11">登録完了後、履歴画面にスコアが反映されます。\nいましばらくお待ちください。</string>
+    <string name="request_score_label12">※お送りいただいたスコアカード画像の詳細や混雑状況にもよりますが、通常は１〜２営業日ほどで反映されます。</string>
+    <string name="request_score_label4">いつでも、どのコースのスコアでも簡単に\nスコア入力代行をリクエスト！</string>
+    <string name="request_score_label7">ここをタッチして、入力代行を依頼する\nスコアカード画像を登録してください。</string>
+    <string name="request_score_label8">緊急連絡先</string>
+    <string name="request_score_label9">※お送りいただきました画像について、弊社サポートより確認のお電話を差し上げても良い方はこちらにご入力ください</string>
+    <string name="request_score_title">スコア入力代行</string>
+    <string name="resend_list_btn">再送信</string>
+    <string name="reserve_by_gora">予約プランを見る</string>
+    <string name="restore_button_text">アプリ内課金の状態を確認する</string>
+    <string name="restore_error_e0105">アカウントの認証に失敗しました。再度お試しください。 失敗が続く場合は端末内のアカウントデータを一度消去し、再度ログインしてからお試しください。</string>
+    <string name="restore_error_e0201">バックアップデータが見つからないため、復元できません。設定しているアカウントでバックアップを行ってください。</string>
+    <string name="restore_error_unkonwn">不明なエラーにより、復元処理が失敗しました。</string>
+    <string name="restore_success">復元処理が成功しました。</string>
+    <string name="review_app_cancel">あとで</string>
+    <string name="review_app_message">アプリの使用感をお聞かせください。星（☆）を付けていただくだけも結構です。</string>
+    <string name="review_app_ok">レビューする</string>
+    <string name="review_app_title">お願い</string>
+    <string name="round_button_play">同伴者を追加</string>
+    <string name="round_button_request">スコア入力代行を依頼する</string>
+    <string name="round_button_request_or_campaign">スコア入力代行を依頼する方はこちら</string>
+    <string name="round_button_start">スタート</string>
+    <string name="round_course_select">コース</string>
+    <string name="round_date_select">プレイ日 </string>
+    <string name="round_detail_cancel_button_text">依頼をキャンセルする</string>
+    <string name="round_detail_date_format">yyyy年M月d日</string>
+    <string name="round_detail_header_title">履歴</string>
+    <string name="round_detail_menu_analysis_more_detail">詳しい分析を見る</string>
+    <string name="round_detail_menu_avg_stroke">平均ストローク数</string>
+    <string name="round_detail_menu_change_round_date">日付変更</string>
+    <string name="round_detail_menu_delete">この履歴を削除する</string>
+    <string name="round_detail_menu_edit_score">スコア編集</string>
+    <string name="round_detail_menu_memo">メモ</string>
+    <string name="round_detail_menu_score_gift">スコアカードギフト</string>
+    <string name="round_detail_menu_view_analysis">分析</string>
+    <string name="round_detail_menu_view_scorecard">スコアカード</string>
+    <string name="round_detail_menu_weather">天気編集</string>
+    <string name="round_detail_request_date_text">依頼日時</string>
+    <string name="round_detail_text1_1">ステータス</string>
+    <string name="round_detail_text1_2">スコア入力依頼中</string>
+    <string name="round_hall_select">スタート</string>
+    <string name="round_sunny_select"> 天気</string>
+    <string name="round_tea_select">ティー</string>
+    <string name="round_title_page">ラウンド準備</string>
+    <string name="sa_analysis_term">分析対象期間: </string>
+    <string name="sa_average_putts">平均パット数</string>
+    <string name="sa_average_putts_round">平均ホールパット数</string>
+    <string name="sa_average_stroke_par3">平均ストローク数 (Par3)</string>
+    <string name="sa_average_stroke_par4">平均ストローク数 (Par4)</string>
+    <string name="sa_average_stroke_par5">平均ストローク数 (Par5)</string>
+    <string name="sa_birdie_analysis">バーディー(%)</string>
+    <string name="sa_bogey_analysis">ボギー(%)</string>
+    <string name="sa_double_bogey_analysis">ダブルボギー(%)</string>
+    <string name="sa_driving_accuracy_center">フェアウェイキープ率(%)</string>
+    <string name="sa_driving_accuracy_left">左ミス(%) </string>
+    <string name="sa_driving_accuracy_right">右ミス(%)</string>
+    <string name="sa_driving_accuracy_title">フェアウェイキープ</string>
+    <string name="sa_eagle_under_analysis">イーグル以下(%)</string>
+    <string name="sa_gir_analysis">GIR分析</string>
+    <string name="sa_gir_bogey_analysis">ボギーオン率(%)</string>
+    <string name="sa_gir_par_analysis">パーオン率(%)</string>
+    <string name="sa_par_analysis">パー(%)</string>
+    <string name="sa_progress_message">計算中...</string>
+    <string name="sa_progress_title">スコア分析</string>
+    <string name="sa_putt_analysis">パット分析</string>
+    <string name="sa_sand_saves_text">セーブ率(%)</string>
+    <string name="sa_sand_saves_title">サンドセーブ </string>
+    <string name="sa_score_analysis">スコア分析</string>
+    <string name="sa_score_avg_total">平均トータルスコア\n※18H記録されているラウンドのみ対象</string>
+    <string name="sa_show_graph">グラフ表示</string>
+    <string name="sa_stroke_analysis">ストローク分析</string>
+    <string name="sa_target_hole">ホール数合計</string>
+    <string name="sa_target_round">ラウンド数合計</string>
+    <string name="sa_target_title">分析対象</string>
+    <string name="sa_total_putts">トータルパット数</string>
+    <string name="sa_total_strokes">トータル\nストローク数</string>
+    <string name="sa_triple_bogey_analysis">トリプルボギー以上(%)</string>
+    <string name="save">保存</string>
+    <string name="save_and_back">保存して終了する</string>
+    <string name="save_memo_button">メモ</string>
+    <string name="save_memo_title">メモ</string>
+    <string name="save_msg">入力データが保存されました。</string>
+    <string name="save_script_error_message">Google Play での支払いが完了しましたが、ネットワークの問題により購入した機能が有効化されていません。Retry、または Dismiss 後に 再度 Create LIVE を行なって機能を有効化して下さい。</string>
+    <string name="score">Score</string>
+    <string name="score_address">住所</string>
+    <string name="score_analysis_title">YourGolf - このラウンドのスコア分析</string>
+    <string name="score_call_cancel">キャンセル</string>
+    <string name="score_call_ok">発信</string>
+    <string name="score_card_img_date_format">yyyy.MM.dd</string>
+    <string name="score_card_play_date">プレイ日: </string>
+    <string name="score_card_progress_message">少々お待ちください...</string>
+    <string name="score_card_progress_title">スコアカード</string>
+    <string name="score_card_title">YourGolf - スコアカード</string>
+    <string name="score_clear">クリア</string>
+    <string name="score_detail_edit_head">レコードの編集: Shot# </string>
+    <string name="score_gift">スコアギフト</string>
+    <string name="score_history_round_process_text">ラウンド中のため、スコアカードの編集ができません。\nラウンドを終了させてから、スコア編集してください。</string>
+    <string name="score_history_round_process_title">ラウンド中</string>
+    <string name="score_round_info">ラウンド情報</string>
+    <string name="score_tel">電話</string>
+    <string name="score_title">ラウンド準備</string>
+    <string name="score_trial_campaign_code_enter_button_purchase_text">月額プラン加入の方は\n<u>こちらをタップ</u> </string>
+    <string name="scorecard_OB">OB</string>
+    <string name="scorecard_email">スコアカードをシェア</string>
+    <string name="scorecard_email_btn">シェア</string>
+    <string name="scorecard_fairway_hit">フェアウェイキープ</string>
+    <string name="scorecard_gir">パーオン</string>
+    <string name="scorecard_my_email">詳細なスコア分析やショット履歴はパソコンのブラウザでご覧いただけます。</string>
+    <string name="scorecard_my_email_1">You can see in the browser of your PC.</string>
+    <string name="scorecard_my_email_btn">メールで URL を送る</string>
+    <string name="scorecard_my_email_subject">YourGolf パソコンWeb ページの URL</string>
+    <string name="scorecard_popup_analysis">分析</string>
+    <string name="scorecard_popup_close">閉じる</string>
+    <string name="scorecard_popup_handicaps">ハンディキャップ</string>
+    <string name="scorecard_popup_memo">メモ</string>
+    <string name="scorecard_popup_scorecard_gift">スコアカードギフト </string>
+    <string name="scorecard_popup_share">スコアカードシェア </string>
+    <string name="scorecard_popup_stableford">ステーブルフォード</string>
+    <string name="scorecard_sand_shot">ガードバンカー</string>
+    <string name="scorecard_sendgift_text">いっしょにラウンドした友達にスコアカードをプレゼントできます。</string>
+    <string name="scorecard_stableford">ステイブルフォード</string>
+    <string name="scorecard_stableford_off">オフ</string>
+    <string name="scorecard_stableford_on">オン</string>
+    <string name="scorecard_tee_off_club">ティーオフ クラブ</string>
+    <string name="scorecard_water_hazard">ウォーターハザード・PN</string>
+    <string name="scoregift_message">メッセージ本文：</string>
+    <string name="scoregift_more">... &amp; %s more...</string>
+    <string name="scoregift_more_nodot">&amp; %s more...</string>
+    <string name="scoregift_no_player">スコアギフトできるスコアカードがありません。ラウンドするときに、同伴者のスコアをいっしょに記録してスコアカードをプレゼントしましょう。</string>
+    <string name="scoregift_receive_sender_text">スコアカードを取り込みます。送ってくれた友人を選択してください。</string>
+    <string name="scoregift_selectplayer_text">一緒にラウンドした人へスコアカードを送る事ができます。アプリ仲間を増やしましょう。</string>
+    <string name="scoregift_text">一緒にラウンドした友達にスコアカードを送りましょう。</string>
+    <string name="scoregift_to">to</string>
+    <string name="scoreinput_sliding_item_analysis">このラウンドのスコア分析</string>
+    <string name="scoreinput_sliding_item_backtop">中断してTOPへ戻る</string>
+    <string name="scoreinput_sliding_item_checkpastnote">過去のラウンドメモを見る</string>
+    <string name="scoreinput_sliding_item_comingsoon">(coming soon)</string>
+    <string name="scoreinput_sliding_item_dontsave">保存せずに閉じる</string>
+    <string name="scoreinput_sliding_item_gamethiscourse">このコースでのスコア分析</string>
+    <string name="scoreinput_sliding_item_gift">ギフト</string>
+    <string name="scoreinput_sliding_item_handicaps">ハンディキャップ設定</string>
+    <string name="scoreinput_sliding_item_leaderboard">リーダボード</string>
+    <string name="scoreinput_sliding_item_memo">ラウンドメモ</string>
+    <string name="scoreinput_sliding_item_notethisgame">このラウンドのメモ</string>
+    <string name="scoreinput_sliding_item_savefinish">保存して閉じる</string>
+    <string name="scoreinput_sliding_item_scorecard">スコアカード</string>
+    <string name="scoreinput_sliding_item_totalgame">前データでのスコア分析</string>
+    <string name="scoreinput_sliding_title_avg_10">平均スコア（直近10ラウンド）</string>
+    <string name="scoreinput_sliding_title_avg_3">平均スコア（直近３ラウンド）</string>
+    <string name="scoreinput_sliding_title_avg_all">平均スコア（総ラウンド）</string>
+    <string name="scoreinput_sliding_title_avg_year">平均スコア（今年）</string>
+    <string name="scoreinput_sliding_title_best">ベストスコア</string>
+    <string name="scoreinput_sliding_title_last">前回スコア</string>
+    <string name="scoreinput_sliding_title_total">ラウンド数</string>
+    <string name="search">検索</string>
+    <string name="search_done_button">完了</string>
+    <string name="search_edit_button">編集</string>
+    <string name="search_history">履歴</string>
+    <string name="search_input_key_text">※名称の一部からでも検索できます。\n 例えば、\n \t「川奈」というキーワードで検索すると \n \t 「川奈ホテルゴルフコース」をみつける \n \t ことができます。\n \n ※海外のコースは英語名称で検索してください。\n 例えば、\n \t 「Ko Olina」というキーワードで検索すると \n	\t ハワイの「Ko Olina Golf Club」をみつける \n 	ことができます。</string>
+    <string name="search_input_keywords">ゴルフ場名を入力し検索してください。</string>
+    <string name="search_nearby">地図</string>
+    <string name="search_no_result">該当結果なし</string>
+    <string name="search_online">検索</string>
+    <string name="search_request_mail_btn">リクエスト</string>
+    <string name="search_request_mail_text">希望のコースが見つからない場合は追加リクエストをお送りください。</string>
+    <string name="search_title">ラウンド準備</string>
+    <string name="searching_gps_loc">位置情報を取得中です...ランプがブルーに変わるまでしばらくお待ち下さい。\n屋内など見晴らしの良くない場所では取得できません。</string>
+    <string name="secret_holes_txt">隠しホール設定</string>
+    <string name="select_club_penalty">PENALTY</string>
+    <string name="select_club_putt">PUTT</string>
+    <string name="select_club_text">ショットクラブを選択して下さい。\n	GPSで取得したショット位置を記録します。</string>
+    <string name="select_course_title">YourGolf - コース検索</string>
+    <string name="select_live_player_title">同伴プレーヤー登録</string>
+    <string name="select_player_name">同伴者追加</string>
+    <string name="select_players_play">開始</string>
+    <string name="select_players_title">YourGolf - 同伴者を追加</string>
+    <string name="select_tee">ティーを選択</string>
+    <string name="selection_dialog_delete">レコード削除</string>
+    <string name="selection_dialog_modify_play_date">プレイ日変更</string>
+    <string name="selection_dialog_msg">実行したいメニューを以下ボタンから選択してください。</string>
+    <string name="selection_dialog_title">選択してください</string>
+    <string name="send">送る</string>
+    <string name="send_success">送信に成功しました</string>
+    <string name="sent_at_text">送信日:</string>
+    <string name="setting">設定</string>
+    <string name="setting_app_contact">問い合わせ</string>
+    <string name="setting_app_news">お知らせ</string>
+    <string name="setting_app_request_add_golf">ゴルフ場追加依頼</string>
+    <string name="setting_app_terms">利用規約</string>
+    <string name="setting_app_user_guide">アプリの使い方</string>
+    <string name="setting_app_version_info">バージョン情報</string>
+    <string name="setting_category_account">アカウント</string>
+    <string name="setting_category_app">アプリについて</string>
+    <string name="setting_category_app_setting">アプリの設定</string>
+    <string name="setting_category_app_setting_club">クラブ設定</string>
+    <string name="setting_category_app_setting_measurement_unit">距離単位</string>
+    <string name="setting_category_app_setting_measurement_unit_summary">メートルを利用する</string>
+    <string name="setting_category_app_setting_stableford_pro_scoring">ステイブルフォードプロモード</string>
+    <string name="setting_category_app_setting_use_game_point">ポイントを記録する</string>
+    <string name="setting_category_app_setting_use_game_point_summary">スコア入力画面のホール番号をタッチするとポイントが入力できます。</string>
+    <string name="setting_category_gora_account"> 	楽天会員連携</string>
+    <string name="setting_category_oobgolf_account">oob アカウント</string>
+    <string name="setting_category_owner_info">あなたの情報</string>
+    <string name="setting_category_title">設定</string>
+    <string name="setting_category_upgrade">有料会員メニュー</string>
+    <string name="setting_category_yourgolf_account">YourGolf アカウント</string>
+    <string name="setting_category_yourgolf_setting">アプリケーション設定</string>
+    <string name="setting_club_11w">11W</string>
+    <string name="setting_club_1w">1W</string>
+    <string name="setting_club_2i">2i</string>
+    <string name="setting_club_3i">3i</string>
+    <string name="setting_club_3w">3W</string>
+    <string name="setting_club_4i">4i</string>
+    <string name="setting_club_4w">4W</string>
+    <string name="setting_club_5i">5i</string>
+    <string name="setting_club_5w">5W</string>
+    <string name="setting_club_6i">6i</string>
+    <string name="setting_club_7i">7i</string>
+    <string name="setting_club_7w">7W</string>
+    <string name="setting_club_8i">8i</string>
+    <string name="setting_club_9i">9i</string>
+    <string name="setting_club_9w">9W</string>
+    <string name="setting_club_dr">ドライバー</string>
+    <string name="setting_club_gw">AW</string>
+    <string name="setting_club_h2">U2</string>
+    <string name="setting_club_h3">U3</string>
+    <string name="setting_club_h4">U4</string>
+    <string name="setting_club_h5">U5</string>
+    <string name="setting_club_h6">U6</string>
+    <string name="setting_club_hy">ハイブリッド</string>
+    <string name="setting_club_irons">アイアン</string>
+    <string name="setting_club_lw">LW</string>
+    <string name="setting_club_pt">PT</string>
+    <string name="setting_club_ptt">Putter(no search_count)</string>
+    <string name="setting_club_putter">Putter</string>
+    <string name="setting_club_pw">PW</string>
+    <string name="setting_club_sw">SW</string>
+    <string name="setting_club_wedges">ウェッジ</string>
+    <string name="setting_club_woods">ウッド</string>
+    <string name="setting_gora_category_key">gora_category</string>
+    <string name="setting_gora_key">gora</string>
+    <string name="setting_gora_title">設定 </string>
+    <string name="setting_label">Setting</string>
+    <string name="setting_oob_confirm_logout">本当によろしいですか？</string>
+    <string name="setting_oob_login">ログイン</string>
+    <string name="setting_oob_logout">ログアウト</string>
+    <string name="setting_oobgolf_summary">oobgolfを使用するユーザーは、oobgolfアカウントの設定を行ってください。</string>
+    <string name="setting_oobgolf_title">oobgolfアカウント設定</string>
+    <string name="setting_profile_passport_category_title">お得情報</string>
+    <string name="setting_profile_passport_title">クーポン情報一覧</string>
+    <string name="setting_summary_password">oobgolfのPasswordです。スコアをoobgolf.comへアップロード時に使用します。</string>
+    <string name="setting_summary_username">oobgolfのUsernameです。スコアをoobgolf.comへアップロード時に使用します。</string>
+    <string name="setting_summary_your_name">名前を入力してください</string>
+    <string name="setting_title">設定</string>
+    <string name="setting_title_password">パスワード(Password)</string>
+    <string name="setting_title_username">アカウント(Username)</string>
+    <string name="setting_title_your_name">あなたのお名前</string>
+    <string name="setting_yourgolf_account_summary">アカウント名、パスワード変更。</string>
+    <string name="setting_yourgolf_account_title">アカウント編集</string>
+    <string name="setting_yourgolf_agency_enter_campaign_title">スコア入力代行 利用登録</string>
+    <string name="setting_yourgolf_agency_request_limit_summary_charge">%1$d 回</string>
+    <string name="setting_yourgolf_agency_request_limit_summary_free">%1$d 回</string>
+    <string name="setting_yourgolf_agency_request_limit_title_charge">今月依頼可能な回数</string>
+    <string name="setting_yourgolf_agency_request_limit_title_free">現在依頼可能な回数</string>
+    <string name="setting_yourgolf_confirm_logout">プレイ中のラウンドデータがある場合は一度保存してください。保存せずにログアウトすると未保存のデータが失われます。よろしいでしょうか？</string>
+    <string name="setting_yourgolf_login">ログイン</string>
+    <string name="setting_yourgolf_logout">ログアウト</string>
+    <string name="setting_yourgolf_purchase_menu">有料プラン詳細 / 購入</string>
+    <string name="setting_yourgolf_register">プロフィール設定</string>
+    <string name="setting_yourgolf_score_trial_campaign_title">スコアアッププラン 利用登録</string>
+    <string name="setting_yourgolf_signup"> 会員登録</string>
+    <string name="setting_yourgolf_summary">YourGolfで使用する各種設定を行ってください</string>
+    <string name="setting_yourgolf_title">YourGolf設定</string>
+    <string name="setting_yourgolf_tv_activation">リモートログイン</string>
+    <string name="setting_yourgolf_tv_trial_campaign_title">見放題プラン 利用登録</string>
+    <string name="setting_yourgolf_update_player_name">友達</string>
+    <string name="share_btn_txt">シェア</string>
+    <string name="share_score_card_subtitle_1">シェアするカードタイプを選ぶ</string>
+    <string name="share_score_card_subtitle_2">［シェア用画像の作成］</string>
+    <string name="shot">ショット</string>
+    <string name="shot_club_label">クラブ</string>
+    <string name="shot_detail_add_new">ショットレコード新規追加</string>
+    <string name="shot_loc_label">ショット位置: </string>
+    <string name="shot_loc_lat">緯度: </string>
+    <string name="shot_loc_lon">経度: </string>
+    <string name="shot_loc_rec_label">ｼｮｯﾄ\n位置</string>
+    <string name="shot_no_label">ｼｮｯﾄ\nNO</string>
+    <string name="shot_no_lable">ショットNo: </string>
+    <string name="shot_result_label">ショット結果: </string>
+    <string name="shot_results_label">結果</string>
+    <string name="show_your_current_location">現在位置を表示します。</string>
+    <string name="signout_note">ログアウト</string>
+    <string name="signup_birthday_alert">誕生日を入力してください</string>
+    <string name="signup_birthday_string">誕生日</string>
+    <string name="signup_female_string">女性</string>
+    <string name="signup_fristname_alert">名を入力してください </string>
+    <string name="signup_fristname_string">名</string>
+    <string name="signup_header_titles">会員登録 </string>
+    <string name="signup_info_after">に同意して登録する。</string>
+    <string name="signup_info_frist"/>
+    <string name="signup_lastname_alert">姓を入力してください </string>
+    <string name="signup_lastname_string">姓</string>
+    <string name="signup_link"><a href="">利用規約</a></string>
+    <string name="signup_male_string">男性</string>
+    <string name="signup_password">パスワード</string>
+    <string name="signup_title">YourGolf</string>
+    <string name="signup_username">メールアドレス</string>
+    <string name="single_play_title">YourGolf - シングルプレイ</string>
+    <string name="six_month">直近６ヶ月</string>
+    <string name="snowing">雪</string>
+    <string name="sort_reser_1">評価順</string>
+    <string name="sort_reser_2">ラウンド履歴順</string>
+    <string name="sort_round_reserver">表示順序</string>
+    <string name="stable_ford_btn_txt">ステーブル\nフォード</string>
+    <string name="stableford_summary">ステーブルフォードのスコア計算をプロトーナメントで使用されている計算方式にしたい場合はチェックしてください。</string>
+    <string name="stableford_title">ステーブルフォード</string>
+    <string name="status_send_error">予期しないエラーが発生しました。後ほどお試しください。</string>
+    <string name="status_send_no_permission">以前消去したスコアは送信できません。</string>
+    <string name="status_send_with_zero_score">コースすべてをプレーするまでは送信できません。</string>
+    <string name="sub_bottom_bar_average">Average</string>
+    <string name="sub_bottom_bar_drill">練習ドリル</string>
+    <string name="sub_bottom_bar_history">プレー履歴</string>
+    <string name="sub_bottom_bar_live_score">コンペ</string>
+    <string name="sub_bottom_bar_putt">Putt</string>
+    <string name="sub_bottom_bar_score">Score</string>
+    <string name="sub_bottom_bar_start_round">スコア登録</string>
+    <string name="sub_bottom_bar_stats">分析</string>
+    <string name="subtitle_history_player">選択してください</string>
+    <string name="success">成功</string>
+    <string name="sunny">晴れ</string>
+    <string name="support_label">Support（PCサイトへ遷移します）</string>
+    <string name="tee_alert_submit">コースを選択して下さい</string>
+    <string name="tee_contains_temp_data_alert"> 選択したティーのホール情報（パー、距離）が一部欠けています。　該当のホールには初期値（par=4, yard=0）を設定します。</string>
+    <string name="tee_contains_temp_data_alert_title">備考</string>
+    <string name="temp_warning_url">http://www.yourgolf-online.com/alart/guide_ja.txt</string>
+    <string name="test_radio_two">既に登録されている友達と区別するため、登録する名前を変更します。</string>
+    <string name="text_fairway">フェアウェイキープ </string>
+    <string name="text_gb">バンカー</string>
+    <string name="text_input_directly">または以下に直接入力</string>
+    <string name="text_ob">OB</string>
+    <string name="text_radio_one">既に登録されている友達と同じ人です。</string>
+    <string name="text_thumb_photo">お気に入りの写真</string>
+    <string name="text_thumb_photo_score">フォトスコアカード</string>
+    <string name="text_thumb_score">スコア</string>
+    <string name="text_thumb_score_card">GN+スコアカード</string>
+    <string name="text_time_plan_screen">プレー日 \t %1$s年 %2$s月 %3$s日 (%4$s)</string>
+    <string name="text_wh">池1ペナ</string>
+    <string name="three_month">直近３ヶ月</string>
+    <string name="time_calendar_day_moth">%1$s月 %2$s日 (%3$s)</string>
+    <string name="time_calendar_year_moth">%1$s年 %2$s月</string>
+    <string name="title_add_friends">友達追加</string>
+    <string name="title_choose_guest">あなたのゴルフライフを \n もっと楽しく</string>
+    <string name="title_dialog_custom">ここからはログインが必要です</string>
+    <string name="title_dialog_custom_round">ここから先はログインがおすすめ</string>
+    <string name="title_drill_detail">ドリル</string>
+    <string name="title_drill_home">練習ドリル</string>
+    <string name="title_drill_list">閲覧履歴</string>
+    <string name="title_drill_search">検索</string>
+    <string name="title_drill_view_history">閲覧履歴</string>
+    <string name="title_drill_view_recommand">	おすすめレッスン動画</string>
+    <string name="title_friends_layer">友達</string>
+    <string name="title_game_point">ポイント入力</string>
+    <string name="title_golf_day_select">クラブを選択ください</string>
+    <string name="title_golf_score_card_img">プレビュー</string>
+    <string name="title_plan_screen">プレー予約</string>
+    <string name="title_score"> スコア入力 </string>
+    <string name="title_score_card_gift">スコアカードギフト</string>
+    <string name="title_select_club">ティーオフクラブを選択してください</string>
+    <string name="title_share_score_card">スコアカードシェア</string>
+    <string name="title_take_image_dialog">お気に入り写真設定</string>
+    <string name="title_take_image_dialog_from_camera">写真撮影</string>
+    <string name="title_take_image_dialog_from_galery">写真の選択</string>
+    <string name="title_tee_course">コースを選択 </string>
+    <string name="title_tee_playdate">プレイ日を選択</string>
+    <string name="title_tee_select">ティーを選択 </string>
+    <string name="title_tee_start">スタートを選択 </string>
+    <string name="title_tee_weather">天気を選択 </string>
+    <string name="title_terms">利用規約にご同意のうえ \n
+「同意する」ボタンを押してから\n
+ ご利用ください</string>
+    <string name="title_txt">Title</string>
+    <string name="title_update_dialog">同じ名前が既に友達リストに存在しています。</string>
+    <string name="title_update_player">友達情報編集</string>
+    <string name="today">今日</string>
+    <string name="top_banner_more_text">続きを読む</string>
+    <string name="top_wait_text">ラウンド中</string>
+    <string name="total_analysis_title">YourGolf - スコア分析</string>
+    <string name="tv_check_following_history1">オススメ！</string>
+    <string name="tv_check_following_history2">ナルホド！</string>
+    <string name="tv_check_following_history3">価値アリ！</string>
+    <string name="tv_club_name_plan">Club name</string>
+    <string name="tv_description_new_ground">紙のスコアカードなどから簡単にスコア登録できます。ぜひ便利な入力代行機能もご利用ください。（初回無料）\n ※ご同伴者のスコアは登録されません。</string>
+    <string name="tv_drill_detail_expand">もっと見る </string>
+    <string name="tv_drill_detail_memo">メモ</string>
+    <string name="tv_drill_detail_title_view_end">おすすめレッスン動画</string>
+    <string name="tv_drill_detail_title_view_second">おすすめ練習ドリル</string>
+    <string name="tv_drill_frag_guest_user">ゴルフネットワークプラスへのログインが必要です。\nまだアカウントをお持ちでない方は、画面下部の「設定」ボタンから会員登録へお進みください。</string>
+    <string name="tv_drill_guidance_search">以下のタグをタップしても検索できます</string>
+    <string name="tv_drill_header_share">シェア</string>
+    <string name="tv_drill_loading_error">データを取得出来ませんでした.</string>
+    <string name="tv_golf_club_item_list_live">ゴルフ場</string>
+    <string name="tv_hint_create_new_live">コンペコード入力</string>
+    <string name="tv_img_plan">おすすめプラン</string>
+    <string name="tv_input_score_after_play_new_ground"><u>ラウンド後にスコアを登録される方へ</u></string>
+    <string name="tv_loading_plan_error">お客さまのラウンド履歴情報を元におすすめのプランが表示されます。\n \n画面上部の楽天GORA検索メニューより自由に検索頂くことも可能です！</string>
+    <string name="tv_no_have_item">データを取得出来ませんでした。</string>
+    <string name="tv_no_image_create_new_live">ここにお好きな写真を \n設定できます</string>
+    <string name="tv_play_date_item_list_live">開催日</string>
+    <string name="tv_price_plan">円 \t (税込)</string>
+    <string name="tv_rakute">おすすめプランをもっと見る</string>
+    <string name="tv_setting_add_player_new_ground">同伴者の設定</string>
+    <string name="tv_special_page_1">ゴルフネットワーク見放題プラン \n 加入者限定コンテンツです</string>
+    <string name="tv_special_page_2">ご視聴権限のない方は購入画面へ遷移します</string>
+    <string name="tv_title_item_list_live">コンペ名</string>
+    <string name="tv_title_live_list_screen">コンペに参加する</string>
+    <string name="tv_title_menu_choose_image">コンペカバー写真設定</string>
+    <string name="tv_title_of_live_crop">トリミング</string>
+    <string name="tv_title_of_score_card_crop">トリミング</string>
+    <string name="tv_trial_campaign_code_enter_button_purchase_monthly_text">毎月継続をご希望の方は\nゴルフネットワーク見放題プラン\nがオススメ <u>詳しくはこちらをタップ</u> </string>
+    <string name="tv_trial_campaign_code_enter_button_purchase_yearly_text">ゴルフネットワーク見放題プランを\nさらにお得に楽しみたい方には\n年払コース <u>詳しくはこちらをタップ</u> </string>
+    <string name="tv_trial_campaign_formatdate_text">yyyy年 MM月 dd日（EEE）H:mm</string>
+    <string name="tv_tv_menu_choose_image_from_gall">写真を選択</string>
+    <string name="twitter_your_golf">http://twitter.com/YourGolf_JP</string>
+    <string name="txt_expalain1_campaign_enter_experience">次の画面で、紙のスコアカードを撮影しスコア入力代行を依頼できます。</string>
+    <string name="txt_expalain1_campaign_enter_experience_true">スコアアッププランに加入すると、スコア入力代行が毎月200回までご利用可能！\n 過去のスコアカードもまとめて管理。\n あなたのゴルフライフをスマートにデジタル化しましょう。</string>
+    <string name="txt_expalain1_tv_trial_campaign_valid_text">ギフトコード利用による無料視聴期間は\n以下の通りです。\n\n%1$sまで</string>
+    <string name="txt_expalain2_campaign_enter_experience">	※スコア入力代行が無料でお試し頂けます \n（無料お試しのご利用は１回限りとなります)</string>
+    <string name="unsaved_msg">変更したデータは保存されていません。保存しますか？</string>
+    <string name="unsent_list_btn">未送信</string>
+    <string name="upload_alert_bottom_button">upload_alert_bottom_button</string>
+    <string name="upload_alert_message">待望の新機能等が追加された最新バージョンの「YourGolf」が
+										リリースされております。是非、最新版アプリへの移行をお願い
+										します。
+										\n\nまた、未アップロードのスコアデータがある場合、スコアデータのアップロードをお願いします。</string>
+    <string name="upload_alert_title">お知らせ</string>
+    <string name="upload_alert_top_button">次のステップへ進む。</string>
+    <string name="upload_all_message">すべてのデータのバックアップが終了しました。アプリを最新の状態にします。</string>
+    <string name="upload_coming_soon">準備中</string>
+    <string name="upload_date">アップロード日時</string>
+    <string name="upload_request_button_later">後で</string>
+    <string name="upload_request_button_no">いいえ</string>
+    <string name="upload_request_button_yes">はい</string>
+    <string name="upload_request_login_oob">oobgolf にスコアをアップロードする場合は oobgolf にログインしてください。\nログイン画面へ移動しますか？</string>
+    <string name="upload_request_login_yourgolf">お客様のスコアデータを大切にお預かりするため、バックアップをお願いしております。\nバックアップにはログインが必要です。ログイン画面へ移動しますか？</string>
+    <string name="upload_result">アップロード結果</string>
+    <string name="user_guide">ユーザーガイド</string>
+    <string name="user_guide_url">http://www.yourgolf-online.com/guide/v4/userguide_ja.html</string>
+    <string name="video_load_more_text">もっと見る</string>
+    <string name="walkthrough_btn_next">次へ</string>
+    <string name="walkthrough_text_btn_signin">ログイン</string>
+    <string name="walkthrough_text_btn_signup">新規登録</string>
+    <string name="warning">警告</string>
+    <string name="warning_double_billing_dialog_message">既に購入済みの商品は忘れずに\nご解約願います。\n※決済プラットフォームの制約により\n解約の操作はお客さまご自身で\nおこなって頂く必要が御座います。</string>
+    <string name="warning_double_billing_dialog_title">二重課金にご注意下さい！</string>
+    <string name="warning_max_shot">追加可能なレコードは最大15までです。</string>
+    <string name="warning_shot_no_empty">ショットNoを指定して下さい</string>
+    <string name="warning_using_different_account_dialog_message">異なるアカウントでログイン中のため該当のスコアが表示できません。\n\n「ゴルフネットワークプラス」アプリをログアウトします。\nよろしいでしょうか？\n\n（ お問い合わせの方は [こちら] ）</string>
+    <string name="year">年</string>
+    <string name="yes">はい</string>
+    <string name="ygo_button_description"><font fgcolor="#FF450000"><b/></font></string>
+    <string name="ygo_url">http://www.yourgolf-online.com/m/index_ja.html</string>
+    <string name="yourgolf_account_auth_token_e0103">Emailアドレス、またはパスワードが不正です。</string>
+    <string name="yourgolf_account_auth_token_e0104">アカウントが有効になっていません。\nメールを確認して、アカウントを有効にしてください。</string>
+    <string name="yourgolf_account_auth_token_error">不明なエラーにより認証処理が失敗しました。</string>
+    <string name="yourgolf_account_auth_token_success">ログインに成功しました。</string>
+    <string name="yourgolf_account_check_activation_error">アカウントが有効になっていません。\nメールを確認して、アカウントを有効にしてください。</string>
+    <string name="yourgolf_account_check_activation_msg"> 承認メール内のリンクをクリックをした方は、ログインしてください。</string>
+    <string name="yourgolf_account_check_activation_title">アカウントの確認</string>
+    <string name="yourgolf_account_clear_data">YourGolf-Onlineアカウントデータの消去</string>
+    <string name="yourgolf_account_clear_data_complete">YourGolf-Onlineのデータがこの端末から消去されました。</string>
+    <string name="yourgolf_account_clear_data_summary">YourGolf-Onlineのデータをこの端末から消去する場合は選択してください。</string>
+    <string name="yourgolf_account_clear_dialog_msg">YourGolf-Onlineアカウントデータがこの端末から削除されます。 \n※再度アカウントを有効にする場合はアカウントデータを再入力し、ログインを行ってください。</string>
+    <string name="yourgolf_account_clear_dialog_title">YourGolf-Onlineアカウントデータの消去</string>
+    <string name="yourgolf_account_clear_label">YourGolf-Onlineアカウントデータの消去</string>
+    <string name="yourgolf_account_domain_warning">■ご注意\nご使用のメールアドレス設定で、PCメールからの受信を拒否にしている方は、確認メールが届きませんので、登録前に下記ドメインからのメールを受信できるように、設定を変更してください：\n<u>yourgolf-online.com</u></string>
+    <string name="yourgolf_account_email_unmatch">Emailアドレスと再入力された値が違います。再度入力してください。</string>
+    <string name="yourgolf_account_invalid_email">アカウントは、有効なEmailアドレスではありません。再入力してください。</string>
+    <string name="yourgolf_account_invalid_password">パスワードは、6-32文字で\'a-zA-Z0-9\'と\'_.-\'が利用可能です。</string>
+    <string name="yourgolf_account_label">YourGolf-Onlineアカウント</string>
+    <string name="yourgolf_account_language">ja</string>
+    <string name="yourgolf_account_login_btn">ログイン</string>
+    <string name="yourgolf_account_lost_password_e0101">パスワードは6-32文字で\'a-zA-Z0-9\'と\'_.-\'が利用可能です。</string>
+    <string name="yourgolf_account_lost_password_e0102">無効なEmailアドレスです。正しいEmailアドレスを入力してください。</string>
+    <string name="yourgolf_account_lost_password_e0104">アカウントが有効になっていません。\nメールを確認して、アカウントを有効にしてください。</string>
+    <string name="yourgolf_account_lost_password_error">不明なエラーによりパスワード上書き処理が失敗しました。</string>
+    <string name="yourgolf_account_lost_password_success">承認メールを送信しました。\nメールを確認してアカウントを有効にしてください。</string>
+    <string name="yourgolf_account_note">上記全てを入力し、初めて登録する方は登録ボタン、既に登録済みの型はログインボタンを押してください。\n\n※パスワードを忘れた方は、使用しているEmailアドレスと新しいパスワードを入力し、上書きボタンを押してください。</string>
+    <string name="yourgolf_account_overwirte_password_new_item_label">新しいパスワード</string>
+    <string name="yourgolf_account_overwirte_password_note">新しいパスワードを入力し、OKボタンを押してください。 登録されているEmailアドレスに承認メールが送られます。 承認メール内のリンクをクリックして承認するまで、新しいパスワードは利用できません。</string>
+    <string name="yourgolf_account_overwrite_password">パスワード上書き</string>
+    <string name="yourgolf_account_overwrite_password_btn">パスワード上書き</string>
+    <string name="yourgolf_account_overwrite_password_summary">YourGolf-Onlineに登録されているパスワードを忘れた場合は選択してください。</string>
+    <string name="yourgolf_account_password">パスワード</string>
+    <string name="yourgolf_account_password_confirm">パスワード再入力</string>
+    <string name="yourgolf_account_password_confirm_summary">パスワードを再入力してください。</string>
+    <string name="yourgolf_account_password_summary">パスワードを入力してください。パスワードは6-32文字で\'a-zA-Z0-9\'と\'_.-\'が利用可能です。</string>
+    <string name="yourgolf_account_password_unmatch">パスワードと再入力された値が違います。再度入力してください。</string>
+    <string name="yourgolf_account_profile_e0101">不正な値が入力されています。再度入力してください。.</string>
+    <string name="yourgolf_account_profile_e0105">ご不便をおかけして申し訳ございません。サーバーとの通信が一時的に行えなくなっているため、設定画面から一度ログアウトし、同じアカウントで再ログインしてください。\nこのメッセージが繰り返し表示される場合は、設定画面のお問合せボタンよりサポートチームへご連絡ください。</string>
+    <string name="yourgolf_account_profile_success">確認のためメールを送信しました。メールを確認してユーザ登録処理を完了してください。.</string>
+    <string name="yourgolf_account_register_btn">登録する</string>
+    <string name="yourgolf_account_registration_e0101">入力されたEmailアドレスは既に登録されています。（YOUR GOLFのアカウントをお持ちの方は新規登録ではなく、YOUR GOLFアカウントでログインしてください。YOUR GOLFで保存したデータをこのアプリでもご利用いただけます）</string>
+    <string name="yourgolf_account_registration_error">不明なエラーにより登録処理が失敗しました。</string>
+    <string name="yourgolf_account_registration_success">承認メールを送信しました。\nメールを確認してアカウントを有効にしてください。</string>
+    <string name="yourgolf_account_signup_btn">登録</string>
+    <string name="yourgolf_account_signup_error">Update profile transaction has been failed for some reason.</string>
+    <string name="yourgolf_account_title">YourGolf-Onlineアカウント登録／変更</string>
+    <string name="yourgolf_account_update_e0101">入力されたEmailアドレスは既に登録されています。（YOUR GOLFのアカウントをお持ちの方は新規登録ではなく、YOUR GOLFアカウントでログインしてください。YOUR GOLFで保存したデータをこのアプリでもご利用いただけます）</string>
+    <string name="yourgolf_account_update_e0105">ご不便をおかけして申し訳ございません。サーバーとの通信が一時的に行えなくなっているため、設定画面から一度ログアウトし、同じアカウントで再ログインしてください。\n
+        このメッセージが繰り返し表示される場合は、設定画面のお問合せボタンよりYOUR GOLFサポートチームへご連絡ください。</string>
+    <string name="yourgolf_account_update_e111">ラウンドが既に削除されています。</string>
+    <string name="yourgolf_account_update_email">Emailアドレス変更</string>
+    <string name="yourgolf_account_update_email_current_item_label">パスワード</string>
+    <string name="yourgolf_account_update_email_label_email">旧Emailアドレス</string>
+    <string name="yourgolf_account_update_email_new_item_label">新しいEmailアドレス</string>
+    <string name="yourgolf_account_update_email_note">新しいEmailアドレスと既存のパスワードを入力し、OKボタンを押してください。入力された新しいEmailアドレスに承認メールが送られます。 承認メール内のリンクをクリックして承認するまで、新しいEmailアドレスでは利用できません。</string>
+    <string name="yourgolf_account_update_email_summary">YourGolf-Onlineに登録されているEmailアドレスを変更する場合は選択してください。</string>
+    <string name="yourgolf_account_update_error">不明なエラーにより更新処理が失敗しました。</string>
+    <string name="yourgolf_account_update_label">YourGolf-Onlineアカウントの編集</string>
+    <string name="yourgolf_account_update_password">パスワード変更</string>
+    <string name="yourgolf_account_update_password_current_item_label">現在使用中のパスワード</string>
+    <string name="yourgolf_account_update_password_new_item_label">新しいパスワード</string>
+    <string name="yourgolf_account_update_password_note">新しいパスワードの現在使用中のパスワードを入力し、OKボタンを押してください。 変更が成功した場合は、自動的に新しいパスワードが保存され、以後このパスワードが使用されます。</string>
+    <string name="yourgolf_account_update_password_summary">YourGolf-Onlineに登録されているパスワードを変更する場合は選択してください。</string>
+    <string name="yourgolf_account_update_success">更新処理が完了しました。</string>
+    <string name="yourgolf_account_user_agreement">「GOLF NETWORK PLUS」利用規約
+\nゴルフネットワークプラス株式会社（以下、「当社」といいます）が提供する「GOLF NETWORK PLUS」（以下「当サービス」といいます）は、以下の「GOLF NETWORK PLUS」利用規約（以下「本規約」といいます）に従って提供されます。お客様は、当サービスの利用にあたり、本規約を十分に確認いただき、すべての内容に同意いただく必要があります。お客様が未成年者である場合には、法定代理人の同意を得たうえで当サービスをご利用ください。お客様が本規約に同意されない場合、当サービスをご利用いただくことはできません。
+\n\n第１条【本規約の適用】
+\n当サービスの利用を希望するお客様が、本規約を遵守することに同意し、かつ当社の定める一定の情報を当社に提供することをもって、お客様と当社の間に、本規約を内容とする当サービスの利用契約（以下「当サービス利用契約」といいます）が成立します。
+\n\n第２条【IDおよびパスワードの管理等】
+\n１．お客様は、自己の責任において、当サービスに関するIDおよびパスワードを適切に管理および保管するものとし、これを第三者に利用させ、または貸与、譲渡、名義変更、売買等をしてはならないものとします。
+\n２．お客様のIDを利用して行われた当サービスの利用は、お客様による利用とみなされるものとし、当該利用により生じた利用料金その他一切の債務は、お客様が負担するものとします。
+\n３．お客様のIDまたはパスワードの管理不十分、使用上の過誤、第三者の使用等によって生じた損害に関する責任はお客様が負うものとし、当社に故意または重過失がある場合を除き、当社は一切の責任を負いません。
+\n\n第３条【利用料金等】
+\n１．当サービスの利用にかかる通信料は、お客様のご負担となります。
+\n２．当サービスは、一部有料サービスを含みます。有料サービスの利用料金、支払期日、および支払方法については、別途当サービス上で定めるものとします。
+\n３．お客様は、当社が支払方法として指定する決済手段について、その取扱事業者（以下「決済事業者」といいます）が別途定める支払条件等に従い、利用料金を支払うものとします。
+\n４．お客様は、お客様と決済事業者との間で利用料金の支払いに関して紛争が発生した場合、当該決済事業者との間で当該紛争を処理解決するものとします。当社は、当社に故意または重過失がある場合を除き、当該紛争について一切の責任を負わないものとします。
+\n５．お客様が一度支払われた利用料金は、当社が別途案内した場合、または当社に故意もしくは重過失がある場合を除いて、一切返金されません。お客様が利用している通信サービスやインターネット接続サービスの中断または瑕疵によって、当サービスが利用できない場合も、同様とします。
+\n６．当サービスのうち、有料サービスに関する特定商取引法に基づく表記については、こちら（https://www.golfnetwork.plus/legal.html）をご確認ください。
+\n\n第４条【著作権等】
+\n当サービス及び当サービスにおいて提供される各コンテンツに関する著作権、商標権、その他の知的財産権は、当社またはコンテンツ提供会社に帰属します。当サービス及び当サービスにおいて提供される各コンテンツは、お客様が本規約に従って非商業的かつ私的に使用する目的でのみ提供・利用許諾されるものです。
+\n\n第５条【禁止事項】
+\n当社は、以下のいずれかに該当する行為を禁止します。
+\n\n\t①\t\t当社もしくは第三者の著作権、商標権その他の知的財産権、プライバシー、名誉、肖像権もしくはパブリシティ権を侵害する行為
+\n\t②\t\t当サービスを解析、逆コンパイル、逆アセンブル、リバースエンジニアリング、改変する行為
+\n\t③\t\t当サービスと接続するサイト上に掲載されたコンテンツその他の情報を改ざん、消去または第三者によるアクセスを不可能・困難にする行為
+\n\t④\t\t当サービスと接続するサーバその他の設備（通信設備、コンピュータその他のハードウェア機器およびソフトウェアを含みます。）に不正アクセスする行為
+\n\t⑤\t\t無断で他のお客様のIDまたはパスワードを使用するなど、他者になりすまして当サービスまたは当サービスを通じて提供されるサービスを利用する行為
+\n\t⑥\t\t本サービスへの会員登録において、真実に反する内容を入力する行為
+\n\t⑦\t\t法令に違反する行為または違反する恐れのある行為
+\n\t⑧\t\t当サービスまたは当サービスを通じて提供されるサービスを使用した営業活動（準備行為を含みます）、その他営利を目的とする行為
+\n\t⑨\t\tその他、当サービスまたは当サービスを通じて提供されるサービスの利用もしくは運営に支障を与える行為
+\n\n第６条【個人情報の取り扱い】
+\n当社は、当サービスにおいて、お客様からいただいたお客様の個人情報を当社の「個人情報に関する基本方針」（https://score.golfnetwork.co.jp/policy）に従って取り扱うものとします。
+\n\n第７条【利用者情報の取り扱い】
+\n１．お客様は、以下各号に従って当社がお客様の利用者情報を当サービスのアプリケーション経由で自動的に取得し取り扱うことについて同意します。
+\n\t①\t\t取得する利用者情報
+\n\t・スマートフォンまたはPC端末OS
+\n\t・機種情報
+\n\t・位置情報
+\n\t②\t\t取得方法 当サービスの利用に際して、アプリケーション経由で自動的に取得します。
+\n\t③\t\t利用目的
+\n\t・当社または当社の指定する企業のサービスに関する情報その他広告の表示のため
+\n\t・当サービス向上に向けたデータ集計や分析および新規サービスの提供のため
+\n\t④\t\t利用者関与の方法 お客様が利用者情報を取得されることを希望されない場合は、当サービスの設定画面から、利用者情報の提供を停止することができます。その際、お客様は当サービスが提供する機能について、一部制限がかかることを同意するものとします。
+\n\t⑤\t\t外部送信、第三者提供、情報収集モジュール 以下の情報収集モジュールによりお客様の利用者情報を自動で取得し、当該情報モジュール提供事業者に提供します。なお、提供する利用者情報には、お客様個人を識別することができる情報は含まれておりません。
+\n\t・情報収集モジュール提供事業者：株式会社ブログウォッチャー
+\n\t・情報収集モジュール名称：Profile Passport
+\n\t・取得する利用者情報、利用目的、第三者提供等につきましては、以下に記載されている株式会社ブログウォッチャー「取得した利用情報の取り扱いについて」（http://www.blogwatcher.co.jp/sp/l_information.html）をご確認ください。なお、お客様は、株式会社ブログウォッチャー「取得した利用情報の取り扱いについて」の方針に同意したものとみなします。
+\n\t⑥\t\t問い合わせ窓口
+\n\t・ゴルフネットワークプラス株式会社　(https://score.golfnetwork.co.jp/contact)
+\n\t⑦\t\t本項の定めを変更する場合の手続き
+\n\t・本規約第１２条に従います。
+\n２．当社は、お客様が当社に提供した情報、データ等を、個人を特定できない形での統計的な情報として、当社の裁量で、利用および公開できるものとし、お客様はこれに異議を唱えないものとします。
+\n\n第８条【お客様の登録抹消等】
+\n１．当社は、お客様が、以下の各号のいずれかの事由に該当する場合は、事前に通知または催告することなく、登録されたデータを削除しもしくは当該お客様について当サービスの利用を一時的に停止し、またはお客様の登録を抹消、もしくは当サービス利用契約を解除することができます。
+\n\t①\t\t本規約のいずれかの条項に違反した場合または違反する恐れがある場合
+\n\t②\t\t支払停止もしくは支払不能となり、または破産手続開始、民事再生手続開始、会社更生手続開始、特別清算開始もしくはこれらに類する手続の開始の申立てがあった場合
+\n\t③\t\t法定代理人から当サービス利用契約の取り消しその他請求、主張があった場合
+\n\t④\t\tその他、当社が当サービスの利用、お客様の登録、または当サービス利用契約の継続を適当でないと判断した場合
+\n２．前項各号のいずれかの事由に該当した場合、お客様は、当社に対して負っている債務の一切について当然に期限の利益を失い、直ちに当社に対して全ての債務の支払いを行わなければなりません。
+\n３．当社は、本条に基づき当社が行った行為によりお客様に生じた損害について一切の責任を負いません。
+\n\n第９条【当サービスの停止】
+\n１．当社は、当サービスにかかるコンピューター・システムの点検または保守、通信回線等の事故その他の理由により、お客様に事前に通知することなく、当サービスの全部または一部を停止することができるものとします。
+\n２．当社は、本条に基づき当社が行った措置に基づきお客様に生じた損害について一切の責任を負いません。
+\n\n第１０条【当サービスの内容の変更、終了】
+\n１．当社は、当社の都合により、当サービスの内容を変更し、または提供を終了することができます。当社が当サービスの提供を終了する場合、当社はお客様に事前に通知するものとします。
+\n２．当社は、本条に基づき当社が行った措置に基づきお客様に生じた損害について一切の責任を負いません。
+\n\n第１１条【責任の制限】
+\n１．当サービスは、現状有姿での提供となります。当社は、当サービスの性能、正確性、完全性、適用性、有用性等に関して一切の保証をしません。
+\n２．当社は、当サービスの使用または使用不能によってお客様または第三者に発生する損害およびお客様のデータ等の消失・破損・第三者による改ざん等について、一切の責任を負いません。
+\n３．当サービスに関連して何らかの理由により当社が賠償責任を負う場合であっても、当社は、付随的損害、間接損害、特別損害および逸失利益にかかる損害については、賠償する責任を負わないものとします。
+\n４．当サービスに関連してお客様と他のお客様または第三者との間において生じた取引、連絡、紛争等については、当社は一切責任を負いません。
+\n\n第１２条【本規約の変更】
+\n当社は、本規約を変更することができるものとします。当社は、本規約および当サービスの契約条件を変更した場合には、お客様に当該変更内容を当社の定める方法で連絡又は通知するものとし、当該変更内容の通知後、お客様が当サービスを利用した場合、お客様は、本規約の変更に同意したものとみなします。
+\n\n第１３条【連絡・通知】
+\n当サービスに関する問い合わせその他お客様から当社に対する連絡または通知、および本規約の変更に関する通知その他当社からお客様に対する連絡または通知は、当社の定める方法で行うものとします。
+\n\n第１４条【地位の譲渡】
+\n当社は、当サービスにかかる事業を他社に譲渡した場合には、当該事業譲渡に伴い本規約上の地位、本規約に基づく権利および義務並びにお客様の登録事項その他のお客様情報を当該事業譲渡の譲受人に譲渡することができるものとし、お客様は、かかる譲渡につき本条において予め同意したものとします。なお、本条に定める事業譲渡には、通常の事業譲渡のみならず、会社分割その他事業が移転するあらゆる場合を含むものとします。
+\n\n第１５条【分離可能性】
+\n本規約のいずれかの条項またはその一部が、消費者契約法その他の法令等により無効または執行不能と判断された場合であっても、本規約の残りの規定および一部が無効または執行不能と判断された規定の残りの部分は、継続して完全に効力を有するものとします。
+\n\n第１６条【準拠法および管轄裁判所】
+\n本規約は日本語を正文とし、日本法に準拠し、日本法に従って解釈されるものとします。お客様と当社の間で訴訟の必要が生じた場合、東京地方裁判所を第一審の専属的合意管轄裁判所とします。
+\n\n附則
+\n2015年2月1日制定
+\n2015年4月1日改訂
+\n2017年6月13日改訂
+</string>
+    <string name="yourgolf_account_username">Emailアドレス</string>
+    <string name="yourgolf_account_username_confirm">Emailアドレス再入力</string>
+    <string name="yourgolf_account_username_confirm_summary">あなたのEmailアドレスを再入力してください。</string>
+    <string name="yourgolf_account_username_summary">あなたのEmailアドレスを入力してください。</string>
+    <string name="yourgolf_account_wrong_password">入力されたパスワードが正しくありません。</string>
+    <string name="yourgolf_agency_detail_e0156">スコア入力代行依頼は既にキャンセルされています。</string>
+    <string name="yourgolf_credit"><a href="http://www.yourgolf-online.com/m/">YourGolf Online</a>から検索します。</string>
+    <string name="yourgolf_data_management">データ管理</string>
+    <string name="yourgolf_data_management_backup">バックアップ</string>
+    <string name="yourgolf_data_management_backup_dialog">YourGolf-Onlineへスコアデータをバックアップします。</string>
+    <string name="yourgolf_data_management_backup_summary">この端末に記録されている全データをYourGolf-Onlineへバックアップします。\n\nバックアップしたデータはいつでも復元できます。\n※データのバックアップには、通信状態やデータ量により数分かかる場合があります。</string>
+    <string name="yourgolf_data_management_dialog_title">本当によろしいですか？</string>
+    <string name="yourgolf_data_management_restore">復元</string>
+    <string name="yourgolf_data_management_restore_dialog">YourGolf-Onlineにバックアップしているデータで復元します。</string>
+    <string name="yourgolf_data_management_restore_summary">登録済みアカウントでバックアップしたデータをこの端末に復元します。\n\n※現在この端末に記録されているスコアデータは全て削除され、復元するデータに置き換えられますのでご注意ください。\n※データの復元には、通信状態やデータ量により数分かかる場合があります。</string>
+    <string name="yourgolf_error_image_not_use">指定のスコア画像が読み読み込めませんでした、再度撮影してお試しください</string>
+    <string name="yourgolf_interact_data_process_msg">データをコピー中です。\n少々お待ちください。。。</string>
+    <string name="yourgolf_menu">国内ゴルフ場の検索\n(YourGolf-Online)</string>
+    <string name="yourgolf_online_signup_msg">YourGolf-Onlineアカウントを作成すると、あなたのスコアデータをバックアップできるようになります。バックアップデータは、使用する端末が変わっても復元できます。また、アカウントを持っているユーザーにはショット履歴を活用した新しいサービスを提供していく予定です。</string>
+    <string name="yourgolf_online_signup_title">YourGolf-Onlineに参加しましょう！</string>
+    <string name="yourgolf_request_score_e0158">この機能は有料会員のみ利用できます.</string>
+    <string name="yourgolf_request_score_e0160">画像のアップロードに失敗しました。しばらくしてから再度お試し下さい.	</string>
+    <string name="yourgolf_request_score_e0161">月毎の利用回数上限に達しているため利用できません.</string>
+    <string name="yourgolf_request_score_e0162">このスコア入力代行は完了しているためキャンセルできません。History から入力代行の結果を再度ご確認下さい。</string>
+    <string name="yourgolf_request_upload_image_fail">通信の問題により画像のアップロードに失敗しました。お手数ですが再度お試し下さい。</string>
+    <string name="yourgolf_round_id_dont_permission">ラウンド作成者のみ、ラウンド情報を変更出来ます。</string>
+    <string name="yourgolf_score_card_content">SENDERさんからスコアカードが届いています。受け取るスコアカードを選択し、受け取るボタンを押してください。</string>
+    <string name="yourgolf_score_card_title">スコアカードギフト</string>
+    <string name="yourgolf_term_tile">利用規約</string>
+    <string name="yourgolf_upload_no_yourgolf_account">スコアをアップロードするには YourGolf-Online のアカウントが必要です。\n\n
+すでにアカウントをお持ちの場合は、設定画面からログイン（初回のみ）してください。\n\n
+お持ちでない場合は、設定画面からYourGolf-Onlineの無料ユーザー登録を行ってください。</string>
+    <string name="yourgolf_warning">※<a href="http://www.yourgolf-online.com/m/">YourGolf Online</a>へのみスコア送信されます。</string>
+    <string name="yourolf_upload_unexpected_error">YourGolf Onlineサーバーにて不明なエラーが発生しました。後ほどお試しください。</string>
+</resources>

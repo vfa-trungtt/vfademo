@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/io_repro_android_activity_message_mini_popup_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/io_repro_android_activity_message_mini_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/io_repro_android_message_image"
+            android:layout_width="@dimen/io_repro_android_banner_image_view_side_size"
+            android:layout_height="@dimen/io_repro_android_banner_image_view_side_size"
+            android:scaleType="centerInside" />
+        <TextView
+            android:id="@+id/io_repro_android_message_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/io_repro_android_text_size_banner"
+            android:maxLines="3"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

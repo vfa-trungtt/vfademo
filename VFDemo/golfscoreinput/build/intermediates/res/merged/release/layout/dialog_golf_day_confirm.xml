@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/llGolfDayMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvGolfDayMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/golf_day_confirm_dialog_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/golf_day_message"
+            android:textColor="@color/gray3"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGolfDayButtonsDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_above="@+id/llGolfDayMessage"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/golf_day_confirm_cancel_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_walkthrough_signup_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/golf_day_confirm_course_map_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_walkthrough_signin_selector"
+            android:text="@string/course_map_txt"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llGolfDayButtonsDialog"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/golf_day_show_dialog_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dont_show_dialog_golf_day"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.asai24.golf.view.ResizableImageView
+            android:id="@+id/golf_day_campaign_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/golf_day_show_dialog_cb"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/golfnavi_message_normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

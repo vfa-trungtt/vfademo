@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="InconsistentLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/io_repro_android_message_main_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/io_repro_android_fragment_message_page"
+                android:id="@+id/io_repro_android_message_no_pager" />
+
+        </LinearLayout>
+
+        <io.repro.android.message.PagerIndicatorView
+            android:id="@+id/io_repro_android_message_pager_indicator"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/io_repro_android_page_control_height_carousel" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/io_repro_android_message_close_button"
+        android:layout_width="@dimen/io_repro_android_close_button_side_size"
+        android:layout_height="@dimen/io_repro_android_close_button_side_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/io_repro_android_close_button_top_margin_carousel"
+        android:layout_marginRight="@dimen/io_repro_android_close_button_right_margin_carousel"
+        android:background="@drawable/io_repro_android_close" />
+
+</RelativeLayout>

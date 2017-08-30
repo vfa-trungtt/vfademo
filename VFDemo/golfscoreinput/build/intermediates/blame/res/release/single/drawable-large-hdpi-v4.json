@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-large-hdpi-v4/score_guest.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-large-hdpi/score_guest.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-large-hdpi-v4/score_guest_focus.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-large-hdpi/score_guest_focus.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-large-hdpi-v4/score_you_focus.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-large-hdpi/score_you_focus.png"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/drawable-large-hdpi-v4/score_you.png",
+        "source": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/src/main/res/drawable-large-hdpi/score_you.png"
+    }
+]

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_course_yourgolf"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/score_bg_repeat"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_menu_layout"
+        layout="@layout/header_layout" />
+    <!-- Navigator -->
+
+    <LinearLayout
+        android:id="@+id/step_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_background_left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/nav_search_course"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/nav_round"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/nav_partner"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warning_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text=""
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selected"
+            android:nextFocusUp="@+id/yourgolf_keyword"
+            android:paddingTop="3dp"
+            android:text="@string/search_online"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_nearby"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selected"
+            android:nextFocusUp="@+id/yourgolf_keyword"
+            android:paddingTop="3dp"
+            android:text="@string/search_nearby"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selected"
+            android:nextFocusUp="@+id/yourgolf_keyword"
+            android:paddingTop="3dp"
+            android:text="@string/search_history"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yourgolf_keyword_search_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/yourgolf_keyword"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/search_bar_search_round"
+                android:imeOptions="actionSearch"
+                android:maxLength="30"
+                android:nextFocusUp="@+id/top_edit"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/yourgolf_search"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_button_selector"
+
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/yourgolf_courses_history"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#666666"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:nextFocusLeft="@+id/btn_search"
+            android:nextFocusRight="@+id/btn_history"
+            android:nextFocusUp="@+id/btn_history"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <LinearLayout
+            android:id="@+id/yourgolf_courses_neighbor"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="5"
+            android:layout_marginTop="10dp">
+
+            <!--<com.asai24.golf.view.TapControlledMapView-->
+                <!--android:id="@+id/yourgolf_courses_neighbor_map"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="0dip"-->
+                <!--android:layout_weight="3"-->
+                <!--android:apiKey="@string/map_api_key"-->
+                <!--android:clickable="true"-->
+                <!--android:nextFocusLeft="@+id/btn_search"-->
+                <!--android:nextFocusRight="@+id/btn_history"-->
+                <!--android:nextFocusUp="@+id/btn_nearby"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp" />-->
+
+            <ListView
+                android:id="@+id/yourgolf_courses_neighbor_list"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#666666"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/yourgolf_courses_search_new"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#666666"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:nextFocusLeft="@+id/btn_search"
+            android:nextFocusRight="@+id/btn_history"
+            android:nextFocusUp="@+id/btn_search"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ygo_oob_banner" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

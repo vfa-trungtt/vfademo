@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/design_tint_password_toggle.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/4e4532c843da048d9375e9ed156d0ac6d691b854/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Volumes/Data/vfa_projects/VFADemo/vfademo/VFDemo/golfscoreinput/build/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/Volumes/Data/VFATrungTT/.android/build-cache/83b07f1b7450b90c9ab38fdab57ac095da862874/output/res/color-v23/abc_tint_edittext.xml"
+    }
+]
