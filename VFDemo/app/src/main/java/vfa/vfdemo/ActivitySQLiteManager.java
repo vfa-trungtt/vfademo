@@ -13,4 +13,9 @@ public class ActivitySQLiteManager extends ActivitySlideMenu {
         super.onCreate(savedInstanceState);
         setRootFragment(new FragOpenDb());
     }
+
+    @Override
+    public void onBeforeSetupActionBar() {
+        this.title += "SQLite Database";
+    }
 }

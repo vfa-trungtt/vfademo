@@ -99,10 +99,6 @@ public class ActivitySlideMenu extends VFActivity {
         ViewGroup viewRight = (ViewGroup) viewActionBar.findViewById(R.id.viewRightContent);
         viewRight.removeAllViews();
         viewRight.addView(viewContent);
-
-//        viewRight.setBackgroundColor(Color.CYAN);
-//        setupActionBarView(viewActionBar);
-//        setHomeActionBar();
     }
 
     public void setActionBarRightContent(int viewId){

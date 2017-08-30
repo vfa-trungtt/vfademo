@@ -26,33 +26,7 @@
             </intent-filter>
         </activity>
         <!--***ACTIVITIES*** -->
-        <activity android:name=".ActivitySlideMenu"/>
         <activity android:name=".ActivitySQLiteManager"/>
-
-
-        <activity android:name=".videoeditor.ActivityVideoDemo"/>
-
-
-        <activity android:name=".widgets.ActivityWifiSettings"></activity>
-
-
-        <receiver android:name=".widgets.NetInfoWidget" >
-            <intent-filter >
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="android.net.wifi.STATE_CHANGE" />
-                <action android:name="AC_SETTING_CLICKED" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/widget_netinfo" />
-        </receiver>
-        <receiver android:name=".widgets.WifiInfoReceiver" >
-            <intent-filter >
-                <action android:name="android.net.wifi.STATE_CHANGE" />
-            </intent-filter>
-
-        </receiver>
 
     </application>
 

@@ -33,7 +33,6 @@ public abstract class FragBaseListView<E> extends VFFragment{
             if(getListViewId() > 0){
                 listView = (ListView) rootView.findViewById(getListViewId());
             }
-
         }
 
         if(listView != null){
@@ -48,7 +47,6 @@ public abstract class FragBaseListView<E> extends VFFragment{
             reloadData();
             displayListView();
         }
-
 
     }
 

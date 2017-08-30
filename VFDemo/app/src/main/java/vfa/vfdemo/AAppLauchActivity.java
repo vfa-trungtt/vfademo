@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.videoeditor.ActivityVideoDemo;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
 
@@ -20,7 +19,7 @@ public class AAppLauchActivity extends BaseActivity {
     }
     private void launchTesting(boolean istest){
         if(istest){
-            startActivity(ActivityVideoDemo.class);
+            startActivity(ActivitySQLiteManager.class);
             finish();
         }else {
             VFFragDemoList fg = new VFFragDemoList();
@@ -34,7 +33,7 @@ public class AAppLauchActivity extends BaseActivity {
         DemoEntity demo = new DemoEntity();
         demo.DemoTitle  = "Video Editor";
         demo.DemoDescription    = "A demo about video Editor";
-        demo.LaucherDemoClass = ActivityVideoDemo.class;
+//        demo.LaucherDemoClass = ActivityVideoDemo.class;
         list.add(demo);
 
 //        demo = new DemoEntity();
