@@ -16,9 +16,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.AppSettings;
 import vfa.vfdemo.R;
-import vfa.vfdemo.fragments.images.FragEditImage;
+
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;

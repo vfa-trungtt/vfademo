@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import vfa.vfdemo.ActivitySlideMenu;
-import vfa.vfdemo.fragments.images.FragGallery;
+
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 

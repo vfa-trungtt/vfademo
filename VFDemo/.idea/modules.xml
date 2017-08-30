@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/hdilib/hdilib.iml" filepath="$PROJECT_DIR$/modules/hdilib/hdilib.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdimovie/hdimovie.iml" filepath="$PROJECT_DIR$/hdimovie/hdimovie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/hdisoftui/hdisoftui.iml" filepath="$PROJECT_DIR$/modules/hdisoftui/hdisoftui.iml" />
     </modules>
   </component>
 </project>

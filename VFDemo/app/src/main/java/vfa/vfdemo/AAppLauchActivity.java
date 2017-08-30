@@ -52,7 +52,7 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "SQLite Manager";
         demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
-        demo.LaucherDemoClass = ActivitySQLiteManager.class;
+//        demo.LaucherDemoClass = ActivitySQLiteManager.class;
         list.add(demo);
 
         demo = new DemoEntity();
