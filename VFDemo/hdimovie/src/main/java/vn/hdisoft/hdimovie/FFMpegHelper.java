@@ -3,6 +3,7 @@ package vn.hdisoft.hdimovie;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.os.Environment;
 import android.util.Log;
 
@@ -11,6 +12,8 @@ import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
 import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegCommandAlreadyRunningException;
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
+
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 public class FFMpegHelper {
     public interface OnProccessVideoListener{
@@ -39,6 +42,7 @@ public class FFMpegHelper {
 
                 @Override
                 public void onSuccess() {
+                    LogUtils.info("load ffmpeg successfull.");
                 }
             });
         } catch (FFmpegNotSupportedException e) {
@@ -130,7 +134,16 @@ public class FFMpegHelper {
     }
 
     public void cropVideo(String srcPath, String cropInfo,String destPath){
-        String[] complexCommand = { "-i", srcPath,"-filter:v", "crop=80:60:200:100", "-c:a","copy", destPath};
+        cropInfo = "crop=0:0:200:100";//
+//        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
+        String[] complexCommand = { "-i", srcPath,"-filter:v", "crop=80:60:400:600", "-c:a","copy", destPath};
+        execFFmpegBinary(complexCommand);
+    }
+    public void cropVideo(String srcPath, RectF rectF, String destPath){
+//        String cropInfo = "crop=0:0:200:100";
+//        rectF.ro
+        String cropInfo = "crop="+rectF.top+":"+rectF.left+":"+rectF.width()+":"+rectF.height()+"";
+        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
         execFFmpegBinary(complexCommand);
     }
 

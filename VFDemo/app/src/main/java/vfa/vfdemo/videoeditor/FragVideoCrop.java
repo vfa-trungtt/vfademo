@@ -3,7 +3,9 @@ package vfa.vfdemo.videoeditor;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -25,6 +27,12 @@ public class FragVideoCrop extends VFFragment {
     CropView cropView;
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ffHelper = new FFMpegHelper(getActivity());
+    }
+
+    @Override
     public void setUpActionBar() {
         ViewGroup viewActionBar = ViewHelper.getViewGroup(getActivity(),R.layout.actionbar_video_crop);
         viewActionBar.findViewById(R.id.buttonMenu).setOnClickListener(new View.OnClickListener() {
@@ -41,6 +49,7 @@ public class FragVideoCrop extends VFFragment {
             }
         });
         getVFActivity().setupActionBarView(viewActionBar);
+//        getVFActivity().setHomeActionBar();
     }
 
     @Override
@@ -100,14 +109,20 @@ public class FragVideoCrop extends VFFragment {
         movieUri = Uri.parse(path);
     }
 
-
+    FFMpegHelper ffHelper;
     String destPath;
     public void cropMovie(){
-        FFMpegHelper helper = new FFMpegHelper(getActivity());
-        helper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
+        LogUtils.info(""+cropView.getActualCropRect().toString());
+
+
+        ffHelper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
             @Override
             public void onProcessDone(int errorCode, String errorMessage) {
                 if(errorCode == 0){
+                    videoView.stopPlayback();
+                    FragVideoAddWatermark fg  = new FragVideoAddWatermark();
+                    fg.setMovieFilePath(destPath);
+                    pushFragment(fg);
 
                 }else {
 
@@ -116,7 +131,8 @@ public class FragVideoCrop extends VFFragment {
         });
         destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
         LogUtils.info("output:"+destPath);
-//        helper.cropVideo(filePath,"",destPath);
+//        ffHelper.cropVideo(filePath,"",destPath);
+        ffHelper.cropVideo(filePath,cropView.getActualCropRect(),destPath);
 
 
     }

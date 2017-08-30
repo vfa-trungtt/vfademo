@@ -8,45 +8,42 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.view.FixedCropImageView;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
-/**
- * Created by trungtt on 8/28/17.
- */
 
 public class FragVideoAddWatermark extends VFFragment {
     private VideoView videoView;
     public String filePath;
     public Uri movieUri;
-    FixedCropImageView cropImageView;
+
+    @Override
+    public void setUpActionBar() {
+//        super.setUpActionBar();
+        getVFActivity().setHomeActionBar();
+    }
 
     @Override
     public int onGetRootLayoutId() {
-        return R.layout.frag_video_crop;
+        return R.layout.frag_video_watermark;
     }
 
     @Override
     public void onViewLoaded() {
-        videoView = (VideoView) rootView.findViewById(R.id.videoView);
-        videoView.setVideoURI(movieUri);
-//        videoView.setLo
-        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.setLooping(true);
-            }
-        });
-        videoView.start();
+        if(movieUri != null){
+            videoView = (VideoView) rootView.findViewById(R.id.videoView);
+            videoView.setVideoURI(movieUri);
+            videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.setLooping(true);
+                }
+            });
+            videoView.start();
+        }
 
-
-        cropImageView = (FixedCropImageView)rootView.findViewById(R.id.cropImageScoreCardView);
-        cropImageView.setMinFrameSizeInDp(100);
     }
 
     public void setMovieFilePath(String path){
+        filePath = path;
         movieUri = Uri.parse(path);
-    }
-
-    public void cropMovie(){
-
     }
 
     public void drawWatermark(){
