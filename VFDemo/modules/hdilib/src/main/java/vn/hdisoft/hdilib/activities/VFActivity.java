@@ -84,6 +84,10 @@ public class VFActivity extends AppCompatActivity {
         View v = viewActionBar.findViewById(viewId);
         if(v != null) v.setOnClickListener(onClick);
     }
+
+    public void setHomeActionBar(){
+
+    }
     /*==== FRAGMENT METHODS=====*/
     public Fragment getCurrentFragment(){
 

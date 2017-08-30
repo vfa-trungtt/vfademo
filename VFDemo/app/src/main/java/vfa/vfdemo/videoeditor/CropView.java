@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
@@ -39,6 +40,8 @@ import com.isseiaoki.simplecropview.callback.Callback;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import vn.hdisoft.hdilib.utils.LogUtils;
 
 
 @SuppressLint("AppCompatCustomView")
@@ -90,7 +93,7 @@ public class CropView extends ImageView {
     private Uri mSaveUri = null;
     private int mExifRotation = 0;
 
-    private boolean mIsDebug = false;
+    private boolean mIsDebug = true;
     private int mInputImageWidth = 0;
     private int mInputImageHeight = 0;
     private int mOutputImageWidth = 0;
@@ -168,6 +171,16 @@ public class CropView extends ImageView {
 
         // handle Styleable
         handleStyleable(context, attrs, defStyle, density);
+
+//        setTempImage();
+    }
+
+    public void setTempImage(int w,int h){
+
+        Bitmap bm = Bitmap.createBitmap(w,h, Bitmap.Config.ALPHA_8);
+//        Bitmap bm = Bitmap.createBitmap(mViewWidth,mViewHeight, Bitmap.Config.ALPHA_8);
+        setImageBitmap(bm);
+        LogUtils.info("set tempo bitmap...("+w+","+h+")");
     }
 
     // Lifecycle methods ///////////////////////////////////////////////////////////////////////////
@@ -181,6 +194,8 @@ public class CropView extends ImageView {
 
         mViewWidth = viewWidth - getPaddingLeft() - getPaddingRight();
         mViewHeight = viewHeight - getPaddingTop() - getPaddingBottom();
+        LogUtils.info("layout:"+mViewWidth+","+mViewHeight);
+//        setTempImage();
     }
 
     @Override
@@ -196,7 +211,7 @@ public class CropView extends ImageView {
             setMatrix();
             Bitmap bm = getBitmap();
             if (bm != null) {
-                canvas.drawBitmap(bm, mMatrix, mPaintBitmap);
+//                canvas.drawBitmap(bm, mMatrix, mPaintBitmap);
                 // draw edit frame
                 drawCropFrame(canvas);
             }
@@ -218,6 +233,7 @@ public class CropView extends ImageView {
     private void handleStyleable(Context context, AttributeSet attrs, int defStyle, float mDensity) {
         TypedArray ta =
                 context.obtainStyledAttributes(attrs, com.isseiaoki.simplecropview.R.styleable.scv_CropImageView, defStyle, 0);
+
         Drawable drawable;
         mCropMode = CropMode.SQUARE;
         try {
@@ -444,6 +460,10 @@ public class CropView extends ImageView {
     private float calcScale(int viewW, int viewH, float angle) {
         mImgWidth = getDrawable().getIntrinsicWidth();
         mImgHeight = getDrawable().getIntrinsicHeight();
+
+//        mImgWidth = 1080;
+//        mImgHeight = 900;
+
         if (mImgWidth <= 0) mImgWidth = viewW;
         if (mImgHeight <= 0) mImgHeight = viewH;
         float viewRatio = (float) viewW / (float) viewH;

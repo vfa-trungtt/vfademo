@@ -54,21 +54,21 @@ public abstract class FragBaseListView<E> extends VFFragment{
 
 
     private void displayListView(){
-        if(_data == null) return;
+//        if(_data == null) return;{
+//            E entity = _data.get(pos);
+//            onBindItemList(pos,entity,v);
+//        }
 
-        adapter = new BaseArrayAdapter(getContext(),_data) {
-            @Override
-            public int onGetItemLayoutId() {
-                return getItemLayoutId();
-            }
-
-            @Override
-            public void bindItem(int pos, View v) {
-                E entity = _data.get(pos);
-                onBindItemList(pos,entity,v);
-            }
-        };
-        listView.setAdapter(adapter);
+//        adapter = new BaseArrayAdapter(getContext(),_data) {
+//            @Override
+//            public int onGetItemLayoutId() {
+//                return getItemLayoutId();
+//            }
+//
+//            @Override
+//            public void bindItem(int pos, View v)
+//        };
+//        listView.setAdapter(adapter);
     }
 
     public abstract List<E> getDataSource();

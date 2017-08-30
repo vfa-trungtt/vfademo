@@ -34,11 +34,23 @@ public class FragGalleryVideo extends VFFragment {
         public void onSelectMovie(MovieEntity movie);
     }
 
+    @Override
+    public void setUpActionBar() {
+        getVFActivity().setHomeActionBar();
+    }
+
     private OnSelectMovieListener _listener;
 
     public class MovieEntity{
         public String path;
         public Bitmap thumbnail;
+        public String resolutionString = "";
+
+        public int videoW;
+        public int videoH;
+        public long frameCount;
+        public long size;
+        public int duration;
     }
 
     public void setOnSelectMovie(OnSelectMovieListener listener){
@@ -88,13 +100,19 @@ public class FragGalleryVideo extends VFFragment {
         String[] projection = {MediaStore.MediaColumns.DATA, MediaStore.Video.Media.BUCKET_DISPLAY_NAME,
                 MediaStore.Video.Media._ID,MediaStore.Video.Thumbnails.DATA};
 
+        String[] video_query = new String[] {
+                MediaStore.Video.Media._ID, MediaStore.Video.Media.DATA,
+                MediaStore.Video.Media.TITLE, MediaStore.Video.Media.DATE_TAKEN,
+                MediaStore.Video.Media.MIME_TYPE, MediaStore.Video.Media.DURATION,
+                MediaStore.Video.Media.SIZE, MediaStore.Video.Media.RESOLUTION };
         final String orderBy = MediaStore.Images.Media.DATE_TAKEN;
-        cursor = getActivity().getContentResolver().query(uri, projection, null, null, orderBy + " DESC");
+//        cursor = getActivity().getContentResolver().query(uri, projection, null, null, orderBy + " DESC");
+        cursor = getActivity().getContentResolver().query(uri, video_query, null, null, orderBy + " DESC");
 
-        column_index_data = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATA);
-        column_index_folder_name = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.BUCKET_DISPLAY_NAME);
-        column_id = cursor.getColumnIndexOrThrow(MediaStore.Video.Media._ID);
-        thum = cursor.getColumnIndexOrThrow(MediaStore.Video.Thumbnails.DATA);
+//        column_index_data = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATA);
+//        column_index_folder_name = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.BUCKET_DISPLAY_NAME);
+//        column_id = cursor.getColumnIndexOrThrow(MediaStore.Video.Media._ID);
+//        thum = cursor.getColumnIndexOrThrow(MediaStore.Video.Thumbnails.DATA);
 
         while (cursor.moveToNext()) {
 
@@ -104,13 +122,20 @@ public class FragGalleryVideo extends VFFragment {
 
             MovieEntity entity = new MovieEntity();
             entity.path = imagePath;
-//            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
-            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.MINI_KIND);
+            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
+//            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.MINI_KIND);
             listMovie.add(entity);
 
+            String resolution = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.RESOLUTION));
+            entity.resolutionString = resolution;
+
+            String duration = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.DURATION));
             LogUtils.info("path:"+thumb);
+            LogUtils.info("resolution:"+resolution);
+            LogUtils.info("duration:"+duration);
         }
 
+        cursor.close();
     }
 
 //    private void queryImage(){
@@ -200,7 +225,7 @@ public class FragGalleryVideo extends VFFragment {
 
         @Override
         public int onGetItemLayoutId() {
-            return R.layout.item_gallery;
+            return R.layout.item_gallery_video;
         }
 
         @Override
@@ -208,9 +233,22 @@ public class FragGalleryVideo extends VFFragment {
             ImageView iv = (ImageView) v.findViewById(R.id.imageView);
             MovieEntity entity = getItem(pos);
 //            Bitmap bMap = ThumbnailUtils.createVideoThumbnail(path, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
-            iv.setImageBitmap(entity.thumbnail);
-//            AppSettings.imageLoader.displayImage("file:///"+getItem(pos),iv);
+            if(entity.thumbnail != null){
+                iv.setImageBitmap(entity.thumbnail);
+            }else {
+                LogUtils.info("null thumbnails");
+            }
+            ((TextView)v.findViewById(R.id.tvInfo)).setText(entity.resolutionString);
+
         }
+    }
+
+    public void showLoading(){
+
+    }
+
+    public void hideLoading(){
+
     }
 
 }
