@@ -133,6 +133,7 @@ public class FragFileBrowserListView extends VFFragment {
             protected Void doInBackground(Void... params) {
                 File f = new File(_currentPath);
                 if(f.exists()){
+                    if(f.list() == null) return null;
                     textCount ="Total:"+ f.list().length+"items.";
                     for(String filename:f.list()){
                         FileEntity file = new FileEntity();
@@ -154,7 +155,6 @@ public class FragFileBrowserListView extends VFFragment {
     }
 
     private void displayData(){
-//        LogUtils.debug("data size:"+ _data.size());
         adapterFile = new FileDataAdapter(getContext(),0,_data);
         listView.setAdapter(adapterFile);
 

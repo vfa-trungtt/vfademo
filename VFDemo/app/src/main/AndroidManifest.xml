@@ -27,13 +27,6 @@
         </activity>
         <!--***ACTIVITIES*** -->
         <activity android:name=".activity.ActivityFileBrowser"/>
-
-        <activity android:name=".activity.ActivityDrawing"/>
-        <activity android:name=".activity.ActivityCreateIcon"/>
-        <activity android:name=".activity.ActivityUIDesign"/>
-        <activity android:name=".activity.ActivityMusic"/>
-
-
     </application>
 
 </manifest>

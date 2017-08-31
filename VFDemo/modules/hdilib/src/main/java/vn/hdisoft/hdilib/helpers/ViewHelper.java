@@ -20,7 +20,6 @@ public final class ViewHelper {
 	
 	public ViewHelper() {
 	}
-
 	
 	@SuppressWarnings("unchecked")
 	public static <V extends View> V findView(View view, int viewId) {
@@ -173,11 +172,4 @@ public final class ViewHelper {
 		float px = dp * ((float)metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
 		return px;
 	}
-
-//    public static float convertPixelsToDp(float px, Context context) {
-//        Resources resources = context.getResources();
-//        DisplayMetrics metrics = resources.getDisplayMetrics();
-//        float dp = px / (metrics.densityDpi / 160f);
-//        return dp;
-//    }
 }
