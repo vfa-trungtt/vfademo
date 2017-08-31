@@ -1,0 +1,568 @@
+[
+    {
+        "outputFile": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 57,
+                        "endOffset": 108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 39,
+                    "endOffset": 148
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 113,
+                        "endColumn": 39,
+                        "endOffset": 148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 153,
+                    "endColumn": 54,
+                    "endOffset": 203
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 153,
+                        "endColumn": 54,
+                        "endOffset": 203
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 208,
+                    "endColumn": 65,
+                    "endOffset": 269
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 65,
+                        "endOffset": 269
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 274,
+                    "endColumn": 57,
+                    "endOffset": 327
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 274,
+                        "endColumn": 57,
+                        "endOffset": 327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 332,
+                    "endColumn": 57,
+                    "endOffset": 385
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 332,
+                        "endColumn": 57,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 390,
+                    "endColumn": 39,
+                    "endOffset": 425
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 390,
+                        "endColumn": 39,
+                        "endOffset": 425
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1077,
+                    "endColumn": 56,
+                    "endOffset": 1129
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1077,
+                        "endColumn": 56,
+                        "endOffset": 1129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1134,
+                    "endColumn": 53,
+                    "endOffset": 1183
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1134,
+                        "endColumn": 53,
+                        "endOffset": 1183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1188,
+                    "endColumn": 48,
+                    "endOffset": 1232
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1188,
+                        "endColumn": 48,
+                        "endOffset": 1232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1237,
+                    "endColumn": 55,
+                    "endOffset": 1288
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1237,
+                        "endColumn": 55,
+                        "endOffset": 1288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1293,
+                    "endColumn": 53,
+                    "endOffset": 1342
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1293,
+                        "endColumn": 53,
+                        "endOffset": 1342
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1347,
+                    "endColumn": 48,
+                    "endOffset": 1391
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1347,
+                        "endColumn": 48,
+                        "endOffset": 1391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1396,
+                    "endColumn": 59,
+                    "endOffset": 1451
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1396,
+                        "endColumn": 59,
+                        "endOffset": 1451
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1456,
+                    "endColumn": 47,
+                    "endOffset": 1499
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1456,
+                        "endColumn": 47,
+                        "endOffset": 1499
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1504,
+                    "endColumn": 37,
+                    "endOffset": 1537
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1504,
+                        "endColumn": 37,
+                        "endOffset": 1537
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1542,
+                    "endColumn": 54,
+                    "endOffset": 1592
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1542,
+                        "endColumn": 54,
+                        "endOffset": 1592
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1597,
+                    "endColumn": 43,
+                    "endOffset": 1636
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1597,
+                        "endColumn": 43,
+                        "endOffset": 1636
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1641,
+                    "endColumn": 46,
+                    "endOffset": 1683
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1641,
+                        "endColumn": 46,
+                        "endOffset": 1683
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1688,
+                    "endColumn": 46,
+                    "endOffset": 1730
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1688,
+                        "endColumn": 46,
+                        "endOffset": 1730
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1735,
+                    "endColumn": 52,
+                    "endOffset": 1783
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1735,
+                        "endColumn": 52,
+                        "endOffset": 1783
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1788,
+                    "endColumn": 49,
+                    "endOffset": 1833
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1788,
+                        "endColumn": 49,
+                        "endOffset": 1833
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1838,
+                    "endColumn": 61,
+                    "endOffset": 1895
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1838,
+                        "endColumn": 61,
+                        "endOffset": 1895
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1900,
+                    "endLine": 28,
+                    "endColumn": 12,
+                    "endOffset": 2055
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1900,
+                        "endLine": 28,
+                        "endColumn": 12,
+                        "endOffset": 2055
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2060,
+                    "endColumn": 32,
+                    "endOffset": 2088
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2060,
+                        "endColumn": 32,
+                        "endOffset": 2088
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2093,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 2321
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 2093,
+                        "endLine": 34,
+                        "endColumn": 12,
+                        "endOffset": 2321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2326,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 2661
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 2326,
+                        "endLine": 41,
+                        "endColumn": 12,
+                        "endOffset": 2661
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2666,
+                    "endLine": 46,
+                    "endColumn": 12,
+                    "endOffset": 2872
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2666,
+                        "endLine": 46,
+                        "endColumn": 12,
+                        "endOffset": 2872
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 2877,
+                    "endLine": 52,
+                    "endColumn": 12,
+                    "endOffset": 3135
+                },
+                "from": {
+                    "file": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/library-cal/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2877,
+                        "endLine": 52,
+                        "endColumn": 12,
+                        "endOffset": 3135
+                    }
+                }
+            }
+        ]
+    }
+]

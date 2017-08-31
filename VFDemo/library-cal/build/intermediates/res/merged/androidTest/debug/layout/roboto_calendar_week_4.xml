@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:tag="weekRow4"
+    android:weightSum="7" >
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText22"
+        android:text="22"
+        android:textColor="#ff726b" />
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText23"
+        android:text="23" />
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText24"
+        android:text="24" />
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText25"
+        android:text="25" />
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText26"
+        android:text="26" />
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText27"
+        android:text="27" />
+
+    <com.imanoweb.calendarview.DayView
+        style="@style/CalendarView.DayOfTheMonth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:tag="dayOfMonthText28"
+        android:text="28" />
+</LinearLayout>
