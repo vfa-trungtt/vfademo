@@ -9,8 +9,6 @@
       <module fileurl="file://$PROJECT_DIR$/hdimages/hdimages.iml" filepath="$PROJECT_DIR$/hdimages/hdimages.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdimages/hdimages.iml" filepath="$PROJECT_DIR$/hdimages/hdimages.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-cal/library-calendar.iml" filepath="$PROJECT_DIR$/library-cal/library-calendar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library-cal/library-calendar.iml" filepath="$PROJECT_DIR$/library-cal/library-calendar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" />
       <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" />
     </modules>
   </component>

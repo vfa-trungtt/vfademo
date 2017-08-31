@@ -23,7 +23,7 @@ public class AAppLauchActivity extends BaseActivity {
 
     }
     private boolean testing(){
-        startActivity(ActivityOpenCVDemo.class);
+//        startActivity(ActivityOpenCVDemo.class);
         finish();
         return true;
     }
@@ -57,7 +57,7 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "Open CVDemo";
         demo.DemoDescription    = "A demo about opencv library";
-        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
+//        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
         list.add(demo);
 
         demo = new DemoEntity();
