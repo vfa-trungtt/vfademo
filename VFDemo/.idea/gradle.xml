@@ -10,7 +10,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/hdidata" />
             <option value="$PROJECT_DIR$/library-cal" />
             <option value="$PROJECT_DIR$/modules/hdilib" />
             <option value="$PROJECT_DIR$/opencv" />
