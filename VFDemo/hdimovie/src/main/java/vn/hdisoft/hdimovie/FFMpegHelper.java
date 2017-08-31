@@ -150,7 +150,7 @@ public class FFMpegHelper {
     public void addWatermark(String srcMoviePath,String destMoviePath,String filePathWatermark){
 //./ffmpeg -i sample.mp4 -i water_mark.png -filter_complex "[1:v]scale=256:256 [ovrl]","[0:v][ovrl] overlay=0:0:" -c:a copy output_watermark.mp4
         String[] complexCommand = { "-i", srcMoviePath,"-i",filePathWatermark,
-                "-filter_complex","[1:v]scale=256:256 [ovrl]","[0:v][ovrl] overlay=0:0:", "-c:a","copy", destMoviePath};
+                "-filter_complex","[1:v]scale=256:256 [ovrl],[0:v][ovrl] overlay=0:0:", "-c:a","copy", destMoviePath};
         execFFmpegBinary(complexCommand);
     }
 }

@@ -17,6 +17,8 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import java.io.File;
+
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vfdemo.view.FixedCropImageView;
@@ -109,6 +111,7 @@ public class FragVideoCrop extends VFFragment {
     }
 
     public void playRepeatMovie(){
+//        movieUri = Uri.parse("/storage/emulated/0/Download/sample.mp4");
         videoView.setVideoURI(movieUri);
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
@@ -153,6 +156,13 @@ public class FragVideoCrop extends VFFragment {
     }
     public void cropMovie(){
         LogUtils.info(""+cropView.getActualCropRect().toString());
+//        File root = new File(Environment.getExternalStorageDirectory(), "Notes");
+//        if (!root.exists()) {
+//            root.mkdirs();
+//            return;
+//        }
+
+
         if (ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {

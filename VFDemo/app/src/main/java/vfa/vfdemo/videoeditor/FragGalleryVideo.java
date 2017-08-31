@@ -117,7 +117,7 @@ public class FragGalleryVideo extends VFFragment {
             entity.resolutionString = resolution;
 
             String duration = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.DURATION));
-            LogUtils.info("path:"+thumb);
+            LogUtils.info("path:"+imagePath);
             LogUtils.info("resolution:"+resolution);
             LogUtils.info("duration:"+duration);
         }

@@ -105,7 +105,7 @@ public class FragVideoAddWatermark extends VFFragment {
 //            int n = 10000;
 //            n = generator.nextInt(n);
             String fname = "watermark-"+ System.currentTimeMillis() +".png";
-            File file = new File (getActivity().getCacheDir(), fname);
+            File file = new File (Environment.getExternalStorageDirectory().getPath(), fname);
 
             FileOutputStream out = new FileOutputStream(file);
             b.compress(Bitmap.CompressFormat.PNG, 100, out);
@@ -123,20 +123,21 @@ public class FragVideoAddWatermark extends VFFragment {
     public void drawWatermark(){
         createWatermarkImage();
 
-        destPath = getActivity().getCacheDir().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
-//        destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
+//        destPath = getActivity().getCacheDir().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
+        destPath = Environment.getExternalStorageDirectory().getPath() + "/watermark_"+System.currentTimeMillis()+".mp4";
         LogUtils.info("output:"+destPath);
         ffHelper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
             @Override
             public void onProcessDone(int errorCode, String errorMessage) {
                 LogUtils.info("Done...");
+                getVFActivity().startActivity(ActivityPlayMovie.class);
             }
         });
         ffHelper.addWatermark(filePath,destPath,watermarkPath);
     }
 
     FFMpegHelper ffHelper;
-    String destPath;
+    public static String destPath;
     String watermarkPath;
 //
 //    public void cropMovie(){

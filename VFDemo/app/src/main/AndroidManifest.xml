@@ -26,6 +26,7 @@
         <!--***ACTIVITIES*** -->
         <activity android:name=".videoeditor.ActivityVideoDemo"/>
         <activity android:name=".videoeditor.ActivityAddWatermark"/>
+        <activity android:name=".videoeditor.ActivityPlayMovie"/>
     </application>
 
 </manifest>
