@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
 
@@ -45,7 +44,7 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "Find my server";
         demo.DemoDescription    = "A demo for scan network";
-        demo.LaucherDemoClass = FindMyServerActivity.class;
+//        demo.LaucherDemoClass = FindMyServerActivity.class;
         list.add(demo);
 
         demo = new DemoEntity();
@@ -112,7 +111,7 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "App Demo";
         demo.DemoDescription    = "A demo for HDiApp use FireBase";
-        demo.LaucherDemoClass = ActivityHDiApp.class;
+//        demo.LaucherDemoClass = ActivityHDiApp.class;
         list.add(demo);
         return list;
     }

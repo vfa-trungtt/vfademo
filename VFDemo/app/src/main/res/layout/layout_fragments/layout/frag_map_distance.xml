@@ -9,7 +9,6 @@
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
         android:text="Location 1"/>
 
     <LinearLayout
@@ -58,7 +57,6 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
         android:text="Location 2"/>
 
     <LinearLayout
