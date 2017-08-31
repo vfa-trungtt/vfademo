@@ -8,15 +8,9 @@ import com.nifty.cloud.mb.core.NCMB;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.ActivityBookReader;
-import vfa.vfdemo.ActivityDrawing;
-import vfa.vfdemo.ActivityFileBrowser;
-import vfa.vfdemo.ActivityHDiApp;
-import vfa.vfdemo.ActivitySQLiteManager;
 import vfa.vfdemo.ActivitySlideMenu;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.map.FragMapDemoList;
 import vfa.vfdemo.fragments.nifty.FragListPublicSchool;
 import vfa.vfdemo.fragments.nifty.FragListSchoolByDistance;
 

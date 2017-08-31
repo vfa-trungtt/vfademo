@@ -6,13 +6,9 @@ import android.support.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.drawing.Frag3DDraw;
 import vfa.vfdemo.fragments.drawing.opengles.FragTriAngle;
-import vfa.vfdemo.fragments.map.FragMapDemoList;
-
 
 
 public class Activity3DDraw extends BaseActivity {
