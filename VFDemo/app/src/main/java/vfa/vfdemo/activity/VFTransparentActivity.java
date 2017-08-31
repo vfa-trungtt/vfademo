@@ -9,10 +9,6 @@ import android.view.MotionEvent;
 
 
 
-/**
- * Created by Vitalify on 11/25/16.
- */
-
 public class VFTransparentActivity extends AppCompatActivity{
 
     @Override

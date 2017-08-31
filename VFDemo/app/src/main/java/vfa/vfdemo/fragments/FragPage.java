@@ -2,7 +2,7 @@ package vfa.vfdemo.fragments;
 
 import android.widget.ImageView;
 
-import vfa.vfdemo.activity.AppSettings;
+import vfa.vfdemo.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.ImageEntity;
 import vn.hdisoft.hdilib.fragments.VFFragment;

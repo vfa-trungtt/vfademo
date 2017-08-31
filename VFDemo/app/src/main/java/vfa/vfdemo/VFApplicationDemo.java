@@ -1,9 +1,10 @@
-package vfa.vfdemo.activity;
+package vfa.vfdemo;
 
 import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
+import vfa.vfdemo.AppSettings;
 import vfa.vfdemo.utils.ScreenUtils;
 import vfa.vfdemo.utils.VFImageLoader;
 

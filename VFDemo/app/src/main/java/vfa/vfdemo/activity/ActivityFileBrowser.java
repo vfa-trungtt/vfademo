@@ -9,6 +9,7 @@ import java.util.List;
 import vfa.vfdemo.R;
 import vfa.vfdemo.fragments.FragSlideMenuListView;
 import vfa.vfdemo.fragments.files.FragFileBrowserListView;
+import vn.hdisoft.hdilib.activities.ActivitySlideMenu;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 

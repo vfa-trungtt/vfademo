@@ -1,4 +1,4 @@
-package vfa.vfdemo.activity;
+package vn.hdisoft.hdilib.activities;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -9,9 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import vfa.vfdemo.R;
-import vfa.vfdemo.utils.ViewHelper;
-import vn.hdisoft.hdilib.activities.VFActivity;
+import vn.hdisoft.hdilib.R;
+import vn.hdisoft.hdilib.helpers.ViewHelper;
 
 
 public class ActivitySlideMenu extends VFActivity {

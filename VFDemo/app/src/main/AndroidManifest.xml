@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <application
-        android:name=".activity.VFApplicationDemo"
+        android:name=".VFApplicationDemo"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -26,17 +26,12 @@
             </intent-filter>
         </activity>
         <!--***ACTIVITIES*** -->
-        <activity android:name=".activity.ActivitySlideMenu"/>
         <activity android:name=".activity.ActivityFileBrowser"/>
-        <activity android:name=".activity.ActivityReminder"/>
-        <activity android:name=".activity.ActivityBookReader"/>
-        <activity android:name=".activity.ActivityFireBase"/>
 
         <activity android:name=".activity.ActivityDrawing"/>
         <activity android:name=".activity.ActivityCreateIcon"/>
         <activity android:name=".activity.ActivityUIDesign"/>
         <activity android:name=".activity.ActivityMusic"/>
-        <activity android:name=".activity.Activity3DDraw"/>
 
 
     </application>
