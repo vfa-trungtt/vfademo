@@ -25,6 +25,7 @@
         </activity>
         <!--***ACTIVITIES*** -->
         <activity android:name=".videoeditor.ActivityVideoDemo"/>
+        <activity android:name=".videoeditor.ActivityAddWatermark"/>
     </application>
 
 </manifest>

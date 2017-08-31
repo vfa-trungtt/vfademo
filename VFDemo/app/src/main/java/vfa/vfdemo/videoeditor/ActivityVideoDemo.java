@@ -19,15 +19,15 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
         super.onCreate(savedInstanceState);
 //        FragGallery fgGallery = new FragGallery();
 //        setRootFragment(fgGallery);
-
 //        setRootFragment(new FragVideoRoot());
 //        setRootFragment(new FragVideoCrop());
 
         FragGalleryVideo fg = new FragGalleryVideo();
         fg.setOnSelectMovie(new FragGalleryVideo.OnSelectMovieListener() {
             @Override
-            public void onSelectMovie(FragGalleryVideo.MovieEntity movie) {
+            public void onSelectMovie(MovieEntity movie) {
                 FragVideoCrop fg = new FragVideoCrop();
+//                FragVideoAddWatermark fg = new FragVideoAddWatermark();
                 fg.setMovieFilePath(movie.path);
                 pushFragment(fg);
             }

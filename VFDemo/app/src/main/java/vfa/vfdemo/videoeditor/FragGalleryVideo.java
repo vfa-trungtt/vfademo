@@ -13,6 +13,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,17 +43,7 @@ public class FragGalleryVideo extends VFFragment {
 
     private OnSelectMovieListener _listener;
 
-    public class MovieEntity{
-        public String path;
-        public Bitmap thumbnail;
-        public String resolutionString = "";
 
-        public int videoW;
-        public int videoH;
-        public long frameCount;
-        public long size;
-        public int duration;
-    }
 
     public void setOnSelectMovie(OnSelectMovieListener listener){
         _listener = listener;
@@ -108,12 +100,6 @@ public class FragGalleryVideo extends VFFragment {
         final String orderBy = MediaStore.Images.Media.DATE_TAKEN;
 //        cursor = getActivity().getContentResolver().query(uri, projection, null, null, orderBy + " DESC");
         cursor = getActivity().getContentResolver().query(uri, video_query, null, null, orderBy + " DESC");
-
-//        column_index_data = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATA);
-//        column_index_folder_name = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.BUCKET_DISPLAY_NAME);
-//        column_id = cursor.getColumnIndexOrThrow(MediaStore.Video.Media._ID);
-//        thum = cursor.getColumnIndexOrThrow(MediaStore.Video.Thumbnails.DATA);
-
         while (cursor.moveToNext()) {
 
             int dataColumnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA);
@@ -122,7 +108,8 @@ public class FragGalleryVideo extends VFFragment {
 
             MovieEntity entity = new MovieEntity();
             entity.path = imagePath;
-            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
+
+//            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
 //            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.MINI_KIND);
             listMovie.add(entity);
 
@@ -232,12 +219,15 @@ public class FragGalleryVideo extends VFFragment {
         public void bindItem(int pos, View v) {
             ImageView iv = (ImageView) v.findViewById(R.id.imageView);
             MovieEntity entity = getItem(pos);
+            Glide.with(getContext())
+                    .load(entity.path) // or URI/path
+                    .into(iv); //imageview to set thumbnail to
 //            Bitmap bMap = ThumbnailUtils.createVideoThumbnail(path, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
-            if(entity.thumbnail != null){
-                iv.setImageBitmap(entity.thumbnail);
-            }else {
-                LogUtils.info("null thumbnails");
-            }
+//            if(entity.thumbnail != null){
+//                iv.setImageBitmap(entity.thumbnail);
+//            }else {
+//                LogUtils.info("null thumbnails");
+//            }
             ((TextView)v.findViewById(R.id.tvInfo)).setText(entity.resolutionString);
 
         }

@@ -142,12 +142,15 @@ public class FFMpegHelper {
     public void cropVideo(String srcPath, RectF rectF, String destPath){
 //        String cropInfo = "crop=0:0:200:100";
 //        rectF.ro
-        String cropInfo = "crop="+rectF.top+":"+rectF.left+":"+rectF.width()+":"+rectF.height()+"";
+        String cropInfo = "crop="+rectF.width()+":"+rectF.height()+":"+rectF.top+":"+rectF.left+"";
         String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
         execFFmpegBinary(complexCommand);
     }
 
-    public void addWatermark(String filePath){
-
+    public void addWatermark(String srcMoviePath,String destMoviePath,String filePathWatermark){
+//./ffmpeg -i sample.mp4 -i water_mark.png -filter_complex "[1:v]scale=256:256 [ovrl]","[0:v][ovrl] overlay=0:0:" -c:a copy output_watermark.mp4
+        String[] complexCommand = { "-i", srcMoviePath,"-i",filePathWatermark,
+                "-filter_complex","[1:v]scale=256:256 [ovrl]","[0:v][ovrl] overlay=0:0:", "-c:a","copy", destMoviePath};
+        execFFmpegBinary(complexCommand);
     }
 }

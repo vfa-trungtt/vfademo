@@ -6,7 +6,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="top">
 
         <VideoView
@@ -16,6 +16,24 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal" />
 
+        <FrameLayout
+            android:id="@+id/viewWatermark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/v_watermark_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+        </FrameLayout>
+
+        <vfa.vfdemo.ui.HorizonBarView
+            android:id="@+id/waterMarkBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+        </vfa.vfdemo.ui.HorizonBarView>
     </FrameLayout>
 
 </LinearLayout>
