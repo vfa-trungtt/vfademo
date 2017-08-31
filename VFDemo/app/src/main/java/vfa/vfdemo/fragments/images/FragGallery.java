@@ -2,7 +2,6 @@ package vfa.vfdemo.fragments.images;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
 import android.view.View;
@@ -12,10 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import vfa.vfdemo.AppSettings;
+import vfa.vfdemo.activity.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
 import vn.hdisoft.hdilib.fragments.VFFragment;

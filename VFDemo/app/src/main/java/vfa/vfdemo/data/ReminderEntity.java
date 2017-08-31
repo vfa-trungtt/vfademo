@@ -5,7 +5,7 @@ import android.database.Cursor;
 
 import java.util.Date;
 
-import vfa.vfdemo.BaseActivity;
+import vfa.vfdemo.activity.BaseActivity;
 import vfa.vfdemo.fragments.reminder.ReminderEnity;
 
 

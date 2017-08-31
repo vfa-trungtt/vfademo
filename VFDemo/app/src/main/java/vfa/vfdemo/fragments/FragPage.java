@@ -1,14 +1,10 @@
 package vfa.vfdemo.fragments;
 
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import vfa.vfdemo.AppSettings;
+import vfa.vfdemo.activity.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.ImageEntity;
-import vfa.vfdemo.ui.drawable.BubbleDrawable;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 

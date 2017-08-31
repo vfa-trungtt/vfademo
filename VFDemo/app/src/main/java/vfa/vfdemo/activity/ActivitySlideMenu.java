@@ -1,4 +1,4 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import vfa.vfdemo.R;
 import vfa.vfdemo.utils.ViewHelper;
 import vn.hdisoft.hdilib.activities.VFActivity;
 

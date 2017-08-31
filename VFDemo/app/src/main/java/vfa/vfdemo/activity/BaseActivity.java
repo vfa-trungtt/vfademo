@@ -1,4 +1,4 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.ViewGroup;
 
+import vfa.vfdemo.R;
 import vfa.vfdemo.utils.ViewHelper;
 import vn.hdisoft.hdilib.activities.VFActivity;
 

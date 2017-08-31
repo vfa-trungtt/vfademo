@@ -1,18 +1,15 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import vfa.vfdemo.fragments.music.FragEditSong;
-
 /**
- * Created by Vitalify on 3/16/17.
+ * Created by Vitalify on 3/9/17.
  */
 
-public class ActivityMusic extends ActivitySlideMenu {
+public class ActivityComic extends ActivitySlideMenu {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRootFragment(new FragEditSong());
     }
 }

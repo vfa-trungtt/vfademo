@@ -2,7 +2,7 @@ package vfa.vfdemo.fragments.images;
 
 import android.text.TextUtils;
 
-import vfa.vfdemo.AppSettings;
+import vfa.vfdemo.activity.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.ui.TouchImageView;
 import vn.hdisoft.hdilib.fragments.VFFragment;

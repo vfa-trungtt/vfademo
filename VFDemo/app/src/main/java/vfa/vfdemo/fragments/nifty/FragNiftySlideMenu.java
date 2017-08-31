@@ -6,7 +6,7 @@ import android.widget.AbsListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.ActivitySlideMenu;
+import vfa.vfdemo.activity.ActivitySlideMenu;
 import vfa.vfdemo.fragments.FragBaseListView;
 import vfa.vfdemo.viewadapter.VFSimpleItemListView;
 

@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.AppSettings;
+import vfa.vfdemo.activity.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.VFSqliteDB;
 import vfa.vfdemo.dialogs.SelectFileDialog;

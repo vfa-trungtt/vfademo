@@ -1,4 +1,4 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,36 +8,35 @@ import java.util.List;
 
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.uidesign.FragButton;
-import vfa.vfdemo.fragments.uidesign.FragShapedButton;
+import vfa.vfdemo.fragments.drawing.opengles.FragTriAngle;
 
-/**
- * Created by Vitalify on 3/17/17.
- */
 
-public class ActivityUIDesign extends ActivitySlideMenu {
-
+public class Activity3DDraw extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         VFFragDemoList fg = new VFFragDemoList();
         fg.setDemoListData(getDemoList());
         setRootFragment(fg);
+
+//        getSupportActionBar().hide();
+//        setRootFragment(new Frag3DDraw());
     }
 
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle          = "Android UI design";
-        demo.DemoDescription    = "A demo about Button style";
-        demo.LaucherDemoClass = FragButton.class;
+        demo.DemoTitle  = "Draw TriAngle";
+        demo.DemoDescription    = "A demo about draw 3D shape in openGLES 2.0";
         demo.LauchType          = 1;
+        demo.LaucherDemoClass = FragTriAngle.class;
         list.add(demo);
 
         demo = new DemoEntity();
-        demo.DemoTitle  = "Shaped Button";
-        demo.DemoDescription    = "A demo about shaped button.";
-        demo.LaucherDemoClass = FragShapedButton.class;
+        demo.DemoTitle  = "Draw Image";
+        demo.DemoDescription    = "A demo about draw image in openGLES 2.0.";
+//        demo.LaucherDemoClass = ActivitySQLiteManager.class;
         demo.LauchType          = 1;
         list.add(demo);
 //
@@ -48,9 +47,9 @@ public class ActivityUIDesign extends ActivitySlideMenu {
 //        list.add(demo);
 //
 //        demo = new DemoEntity();
-//        demo.DemoTitle  = "Android UI Design";
+//        demo.DemoTitle          = "Android UI Design";
 //        demo.DemoDescription    = "A demo about UI component.";
-//        demo.LaucherDemoClass = ActivityFileBrowser.class;
+//        demo.LaucherDemoClass   = ActivityUIDesign.class;
 //        list.add(demo);
 //
 //        demo = new DemoEntity();

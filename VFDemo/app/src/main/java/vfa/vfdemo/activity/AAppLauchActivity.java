@@ -1,17 +1,17 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.drawing.opengles.FragTriAngle;
 
-
-public class Activity3DDraw extends BaseActivity {
+public class AAppLauchActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,25 +20,44 @@ public class Activity3DDraw extends BaseActivity {
         fg.setDemoListData(getDemoList());
         setRootFragment(fg);
 
-//        getSupportActionBar().hide();
-//        setRootFragment(new Frag3DDraw());
+    }
+    private boolean testing(){
+//        startActivity(ActivityOpenCVDemo.class);
+        finish();
+        return true;
     }
 
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle  = "Draw TriAngle";
-        demo.DemoDescription    = "A demo about draw 3D shape in openGLES 2.0";
-        demo.LauchType          = 1;
-        demo.LaucherDemoClass = FragTriAngle.class;
+        demo.DemoTitle  = "List View";
+        demo.DemoDescription    = "A demo about ListView class";
+//        demo.LaucherDemoClass = ActivityVideoDemo.class;
         list.add(demo);
 
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Draw Image";
-        demo.DemoDescription    = "A demo about draw image in openGLES 2.0.";
-        demo.LaucherDemoClass = ActivitySQLiteManager.class;
-        demo.LauchType          = 1;
-        list.add(demo);
+//        demo = new DemoEntity();
+//        demo.DemoTitle  = "Input GolfScore";
+//        demo.DemoDescription    = "A demo for scan network";
+////        demo.LaucherDemoClass = ActivityGolf.class;
+//        list.add(demo);
+//
+//        demo = new DemoEntity();
+//        demo.DemoTitle  = "Find my server";
+//        demo.DemoDescription    = "A demo for scan network";
+////        demo.LaucherDemoClass = FindMyServerActivity.class;
+//        list.add(demo);
+//
+//        demo = new DemoEntity();
+//        demo.DemoTitle  = "SQLite Manager";
+//        demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
+////        demo.LaucherDemoClass = ActivitySQLiteManager.class;
+//        list.add(demo);
+//
+//        demo = new DemoEntity();
+//        demo.DemoTitle  = "Open CVDemo";
+//        demo.DemoDescription    = "A demo about opencv library";
+////        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
+//        list.add(demo);
 //
 //        demo = new DemoEntity();
 //        demo.DemoTitle  = "File Browser";
@@ -73,7 +92,7 @@ public class Activity3DDraw extends BaseActivity {
 //        demo = new DemoEntity();
 //        demo.DemoTitle  = "Map Demo";
 //        demo.DemoDescription    = "A demo about map,location.";
-//        demo.LaucherDemoClass   = FragMapDemoList.class;
+////        demo.LaucherDemoClass   = FragMapDemoList.class;
 //        demo.LauchType          = 1;
 //        list.add(demo);
 //
@@ -92,7 +111,7 @@ public class Activity3DDraw extends BaseActivity {
 //        demo = new DemoEntity();
 //        demo.DemoTitle  = "App Demo";
 //        demo.DemoDescription    = "A demo for HDiApp use FireBase";
-//        demo.LaucherDemoClass = ActivityHDiApp.class;
+////        demo.LaucherDemoClass = ActivityHDiApp.class;
 //        list.add(demo);
         return list;
     }

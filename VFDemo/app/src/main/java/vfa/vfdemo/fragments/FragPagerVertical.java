@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import java.util.List;
 
-import vfa.vfdemo.AppSettings;
+import vfa.vfdemo.activity.AppSettings;
 import vfa.vfdemo.R;
 import vfa.vfdemo.data.ImageEntity;
 import vfa.vfdemo.utils.ViewHelper;

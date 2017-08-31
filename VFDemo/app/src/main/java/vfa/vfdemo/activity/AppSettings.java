@@ -1,4 +1,4 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.content.Context;
 
