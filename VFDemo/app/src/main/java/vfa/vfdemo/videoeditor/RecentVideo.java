@@ -28,6 +28,10 @@ public class RecentVideo {
     }
 
     public void add(String path){
+        if(getList().contains(path)){
+            LogUtils.info("this path has exist...");
+            return;
+        }
         try{
             JSONArray arrRecent = new JSONArray();
             JSONObject entry = new JSONObject();
@@ -69,8 +73,6 @@ public class RecentVideo {
             String json = AppSettings.getString(_context,"crecent_movies");
             JSONArray arrRecent = new JSONArray(json);
             for(int i = 0;i < arrRecent.length();i++){
-                JSONObject entry = arrRecent.getJSONObject(i);
-                String moviePath = entry.getString("path_movie");
                 if(i == index){
                     arrRecent.remove(i);
                     break;

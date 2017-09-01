@@ -14,6 +14,8 @@ import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegCommandAlreadyRunningException;
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
 
+import java.util.Map;
+
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 public class FFMpegHelper {
@@ -32,6 +34,9 @@ public class FFMpegHelper {
     }
 
     public  FFMpegHelper(Context context){
+        ProcessBuilder pb = new ProcessBuilder();
+        Map<String, String> envMap = pb.environment();
+        envMap.put("LD_LIBRARY_PATH", "/data/user/0/vfa.vfdemo/files/ffmpeg");
         try {
             if (ffmpeg == null) {
                 ffmpeg = FFmpeg.getInstance(context);
@@ -58,7 +63,8 @@ public class FFMpegHelper {
             ffmpeg.execute(command, new ExecuteBinaryResponseHandler() {
                 @Override
                 public void onFailure(String s) {
-//                    Log.d(TAG, "FAILED with output : " + s);
+                    Log.d("ffmpeg", "FAILED with output : " + s);
+                    errorCode = 1;
                 }
 
                 @Override
@@ -90,7 +96,7 @@ public class FFMpegHelper {
 
                 @Override
                 public void onFinish() {
-//                    Log.d(TAG, "Finished command : ffmpeg " + command);
+                    Log.d("ffmpeg", "Finished command : ffmpeg " + command);
 //                    if (choice != 8 && choice != 9 && choice != 10) {
 //                        progressDialog.dismiss();
 //                    }

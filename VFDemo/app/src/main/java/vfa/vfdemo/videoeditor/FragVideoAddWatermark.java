@@ -18,8 +18,6 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.ui.HorizonBarView;
 import vfa.vfdemo.utils.FileUtis;
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vfdemo.view.FixedCropImageView;
-import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;
 import vn.hdisoft.hdimovie.FFMpegHelper;
 

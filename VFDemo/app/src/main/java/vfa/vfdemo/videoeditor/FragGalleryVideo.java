@@ -44,7 +44,6 @@ public class FragGalleryVideo extends VFFragment {
     private OnSelectMovieListener _listener;
 
 
-
     public void setOnSelectMovie(OnSelectMovieListener listener){
         _listener = listener;
     }

@@ -1,4 +1,4 @@
-package vfa.vfdemo.dialogs;
+package vn.hdisoft.hdimovie;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -12,18 +12,20 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 
-import vfa.vfdemo.R;
-
 
 public class DialogMovieActionSheet extends Dialog{
+    public interface DialogActionSheetListener{
+        public void onSelectAction(int action);
+    }
+
     public static final int ACTION_SHEET_CAMERA = 1;
     public static final int ACTION_SHEET_GALLERY = 2;
     public static final int ACTION_SHEET_CANCEL = 3;
 
     private int _selectAction = 3;
 
-
-    private DialogActionSheet.DialogActionSheetListener _listener;
+    
+    private DialogActionSheetListener _listener;
 
     public DialogMovieActionSheet(@NonNull Context context) {
         super(context);
@@ -75,7 +77,7 @@ public class DialogMovieActionSheet extends Dialog{
         });
     }
 
-    public void show(DialogActionSheet.DialogActionSheetListener listener){
+    public void show(DialogActionSheetListener listener){
         _listener = listener;
         show();
     }

@@ -43,4 +43,12 @@ public class FileUtis {
             }
         }.execute();
     }
+
+    public static boolean isValidMovieFile(String filePath){
+        File f = new File(filePath);
+        if(!f.exists()){
+            return false;
+        }
+        return true;
+    }
 }

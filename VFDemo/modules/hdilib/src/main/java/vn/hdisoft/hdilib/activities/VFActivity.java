@@ -25,6 +25,8 @@ public class VFActivity extends AppCompatActivity {
 
     private static Bundle bundleParams = new Bundle();
 
+    public boolean hasParams = false;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,7 @@ public class VFActivity extends AppCompatActivity {
             }
 
         });
+
     }
 
     @Override
@@ -170,6 +173,11 @@ public class VFActivity extends AppCompatActivity {
 
     /*==== ACTIVITY METHODS=====*/
     public void startActivity(Class<?> act){
+        Intent intent = new Intent(this,act);
+        startActivity(intent);
+    }
+
+    public void startActivityWithString(Class<?> act,String params){
         Intent intent = new Intent(this,act);
         startActivity(intent);
     }

@@ -14,18 +14,15 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.VideoView;
 
-import java.io.File;
 
 import vfa.vfdemo.R;
+import vfa.vfdemo.utils.FileUtis;
 import vfa.vfdemo.utils.ViewHelper;
-import vfa.vfdemo.view.FixedCropImageView;
-import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;
 import vn.hdisoft.hdimovie.FFMpegHelper;
-import vn.hdisoft.hdimovie.MovieHelper;
 
 
 public class FragVideoCrop extends BaseMovieFragment {
@@ -91,13 +88,28 @@ public class FragVideoCrop extends BaseMovieFragment {
             }
 
             //adjust layout with small,video
-            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
-            lp.gravity = Gravity.CENTER;
-            videoView.setLayoutParams(lp);
+
+
+//            if(h > )
 
 //            rootView.requestLayout();
             cropView.setTempImage(w,h);
-            playRepeatMovieWithDelay(500);
+            cropView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+                @Override
+                public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+                    FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(cropView.mViewWidth, cropView.mViewHeight);
+                    lp.gravity = Gravity.CENTER;
+                    videoView.setLayoutParams(lp);
+
+                    playRepeatMovieWithDelay(500);
+                }
+            });
+
+//            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(cropView.getLayoutParams().width, cropView.getLayoutParams().height);
+//            lp.gravity = Gravity.CENTER;
+//            videoView.setLayoutParams(lp);
+//
+//            playRepeatMovieWithDelay(500);
         }
     }
 
@@ -186,9 +198,15 @@ public class FragVideoCrop extends BaseMovieFragment {
             public void onProcessDone(int errorCode, String errorMessage) {
                 if(errorCode == 0){
                     videoView.stopPlayback();
-                    FragVideoAddWatermark fg  = new FragVideoAddWatermark();
-                    fg.setMovieFilePath(destPath);
-                    pushFragment(fg);
+//                    FragVideoAddWatermark fg  = new FragVideoAddWatermark();
+//                    fg.setMovieFilePath(destPath);
+//                    pushFragment(fg);
+                    if(FileUtis.isValidMovieFile(destPath)){
+                        getVFActivity().setPublicString("movie_path",destPath);
+                        getVFActivity().startActivity(ActivityPlayMovie.class);
+                    }else {
+                        Toast.makeText(getContext(),"Error file:"+destPath,Toast.LENGTH_LONG).show();
+                    }
 
                 }else {
 
@@ -197,7 +215,6 @@ public class FragVideoCrop extends BaseMovieFragment {
         });
         destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
         LogUtils.info("output:"+destPath);
-//        ffHelper.cropVideo(filePath,"",destPath);
         ffHelper.cropVideo(srcPath,cropView.getActualCropRect(),destPath);
 
 

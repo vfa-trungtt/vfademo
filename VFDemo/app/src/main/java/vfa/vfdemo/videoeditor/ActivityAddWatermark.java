@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import vfa.vfdemo.R;
 
-/**
- * Created by trungtt on 8/31/17.
- */
 
 public class ActivityAddWatermark extends AppCompatActivity {
     @Override

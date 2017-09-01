@@ -65,8 +65,9 @@ public class CropView extends ImageView {
 
     // Member variables ////////////////////////////////////////////////////////////////////////////
 
-    private int mViewWidth = 0;
-    private int mViewHeight = 0;
+    public int mViewWidth = 0;
+    public int mViewHeight = 0;
+
     private float mScale = 1.0f;
     private float mAngle = 0.0f;
     private float mImgWidth = 0.0f;
@@ -194,7 +195,7 @@ public class CropView extends ImageView {
 
         mViewWidth = viewWidth - getPaddingLeft() - getPaddingRight();
         mViewHeight = viewHeight - getPaddingTop() - getPaddingBottom();
-        LogUtils.info("layout:"+mViewWidth+","+mViewHeight);
+        LogUtils.info("onMeasure layout:"+mViewWidth+","+mViewHeight);
 //        setTempImage();
     }
 
