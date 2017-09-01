@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+
+import java.util.List;
 
 import vfa.vfdemo.utils.ViewHelper;
 
@@ -93,6 +98,19 @@ public class HorizonBarView extends HorizontalScrollView {
                 lastItem.setSelected(true);
             }
         }
+    }
 
+    public void setItemByVideoFiles(List<String> listFiles){
+        int index = 0;
+        for(String filePath:listFiles){
+            ImageView iv = new ImageView(getContext());
+            Glide.with(getContext())
+                    .load(filePath)
+                    .into(iv);
+            iv.setTag(""+index);
+            iv.setOnClickListener(onItemClick);
+            viewContainer.addView(iv);
+            index++;
+        }
     }
 }

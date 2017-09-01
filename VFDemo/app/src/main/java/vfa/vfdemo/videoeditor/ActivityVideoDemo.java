@@ -14,6 +14,7 @@ import vn.hdisoft.hdilib.utils.LogUtils;
 
 public class ActivityVideoDemo extends ActivitySlideMenu {
     private Uri selectedVideoUri;
+    RecentVideo recentList;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,13 +22,15 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
 //        setRootFragment(fgGallery);
 //        setRootFragment(new FragVideoRoot());
 //        setRootFragment(new FragVideoCrop());
+        recentList = new RecentVideo(this);
 
         FragGalleryVideo fg = new FragGalleryVideo();
         fg.setOnSelectMovie(new FragGalleryVideo.OnSelectMovieListener() {
             @Override
             public void onSelectMovie(MovieEntity movie) {
-//                FragVideoCrop fg = new FragVideoCrop();
-                FragVideoAddWatermark fg = new FragVideoAddWatermark();
+                recentList.add(movie.path);
+                FragVideoCrop fg = new FragVideoCrop();
+//                FragVideoAddWatermark fg = new FragVideoAddWatermark();
                 fg.setMovieFilePath(movie.path);
                 pushFragment(fg);
             }

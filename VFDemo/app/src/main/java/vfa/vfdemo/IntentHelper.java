@@ -21,4 +21,20 @@ public class IntentHelper  {
 
         return intent;
     }
+
+    public static Intent getImageFromCamera(){
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        return intent;
+    }
+
+    public static Intent getMovieFromCamera(){
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        return intent;
+    }
 }

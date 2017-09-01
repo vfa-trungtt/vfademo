@@ -19,6 +19,7 @@ import java.util.List;
 
 import vfa.vfdemo.R;
 
+import vfa.vfdemo.ui.HorizonBarView;
 import vfa.vfdemo.viewadapter.BaseArrayAdapter;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;
@@ -29,6 +30,7 @@ public class FragGalleryVideo extends VFFragment {
     private TextView tvTotal;
     private GridView gridView;
 
+    RecentVideo recentVideo;
     List<MovieEntity> listMovie = new ArrayList<>();
     public interface OnSelectMovieListener{
         public void onSelectMovie(MovieEntity movie);
@@ -56,6 +58,9 @@ public class FragGalleryVideo extends VFFragment {
     public void onViewLoaded() {
         gridView = (GridView) rootView.findViewById(R.id.gridGallery);
         tvTotal  = (TextView)rootView.findViewById(R.id.tvTotal);
+        recentVideo = new RecentVideo(getContext());
+        HorizonBarView viewRecents = (HorizonBarView) rootView.findViewById(R.id.viewRecents);
+        viewRecents.setItemByVideoFiles(recentVideo.getList());
 
         loadGallery();
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

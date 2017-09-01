@@ -16,6 +16,7 @@ import java.io.FileOutputStream;
 
 import vfa.vfdemo.R;
 import vfa.vfdemo.ui.HorizonBarView;
+import vfa.vfdemo.utils.FileUtis;
 import vfa.vfdemo.utils.ViewHelper;
 import vfa.vfdemo.view.FixedCropImageView;
 import vn.hdisoft.hdilib.fragments.VFFragment;
@@ -27,6 +28,9 @@ public class FragVideoAddWatermark extends BaseMovieFragment {
 
     String watermarkPath;
     HorizonBarView waterMarkBar;
+
+    int[] barItem = {R.drawable.takanotsume_thumb,R.drawable.fashion_thumb};
+    int[] arrWatermarkRes = {R.layout.v_watermark_1,R.layout.v_watermark_2};
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -65,8 +69,6 @@ public class FragVideoAddWatermark extends BaseMovieFragment {
         playRepeatMovieWithDelay(500);
 
         //create horizon bar
-        int[] barItem = {R.drawable.takanotsume_thumb,R.drawable.fashion_thumb};
-
         waterMarkBar = (HorizonBarView) rootView.findViewById(R.id.waterMarkBar);
         waterMarkBar.setItemLayoutResId(R.layout.item_bar);
         waterMarkBar.setItemByImageResArray(barItem,R.id.imageView);
@@ -77,28 +79,39 @@ public class FragVideoAddWatermark extends BaseMovieFragment {
             }
         });
         addWatermark(0);
+
+        prepareWatermark();
     }
 
     public void createWatermarkImage(){
         View v = rootView.findViewById(R.id.viewWatermark);
         v.setDrawingCacheEnabled(true);
         Bitmap b = v.getDrawingCache();
-        try {
-            String fname = "watermark-"+ System.currentTimeMillis() +".png";
-            File file = new File (Environment.getExternalStorageDirectory().getPath(), fname);
+//        try {
+//            String fname = "watermark-"+ System.currentTimeMillis() +".png";
+//            File file = new File (Environment.getExternalStorageDirectory().getPath(), fname);
+//
+//            FileOutputStream out = new FileOutputStream(file);
+//            b.compress(Bitmap.CompressFormat.PNG, 100, out);
+//            out.flush();
+//            out.close();
+//
+//            watermarkPath = file.getAbsolutePath();
+//            v.setDrawingCacheEnabled(false);
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
-            FileOutputStream out = new FileOutputStream(file);
-            b.compress(Bitmap.CompressFormat.PNG, 100, out);
-            out.flush();
-            out.close();
-
-            watermarkPath = file.getAbsolutePath();
-            v.setDrawingCacheEnabled(false);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        LogUtils.info("");
+        String fname = "watermark-"+ System.currentTimeMillis() +".png";
+        File file = new File (Environment.getExternalStorageDirectory().getPath(), fname);
+        FileUtis.createFileFromBitmap(b,file.getAbsolutePath(), new FileUtis.OnCreateImageFileListener() {
+            @Override
+            public void onCreateFileDone(String filePath) {
+                watermarkPath = filePath;
+            }
+        });
+        v.setDrawingCacheEnabled(false);
     }
 
     public void drawWatermark(){
@@ -120,16 +133,12 @@ public class FragVideoAddWatermark extends BaseMovieFragment {
         ffHelper.addWatermark(srcPath,destPath,watermarkPath);
     }
 
+    private void prepareWatermark(){
+
+    }
     public void addWatermark(int watermarkIndex){
-        int watermarkViewId = R.layout.v_watermark_1;
-        switch (watermarkIndex){
-            case 0:
-                watermarkViewId = R.layout.v_watermark_1;
-                break;
-            case 1:
-                watermarkViewId = R.layout.v_watermark_2;
-                break;
-        }
+        int watermarkViewId = arrWatermarkRes[watermarkIndex];
+
         ViewGroup watermarkContainer = (ViewGroup) rootView.findViewById(R.id.viewWatermark);
         ViewGroup watermarkView = ViewHelper.getViewGroup(getActivity(),watermarkViewId);
         watermarkContainer.removeAllViews();
