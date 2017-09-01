@@ -1,9 +1,8 @@
 package vfa.vfdemo.videoeditor;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
@@ -29,7 +28,6 @@ public class FragGalleryVideo extends VFFragment {
 
     private TextView tvTotal;
     private GridView gridView;
-//    private List<String> listGallery = new ArrayList<>();
 
     List<MovieEntity> listMovie = new ArrayList<>();
     public interface OnSelectMovieListener{
@@ -64,7 +62,6 @@ public class FragGalleryVideo extends VFFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 MovieEntity entity = listMovie.get(position);
-//                _listener.onSelectMovie(entity);
                 if(entity!= null && _listener != null){
                     _listener.onSelectMovie(entity);
                 }
@@ -74,43 +71,28 @@ public class FragGalleryVideo extends VFFragment {
 
 
     private void loadGallery(){
-//        listGallery.clear();
         listMovie.clear();
+        showLoading();
         new GalleryTask().execute();
     }
 
     public void queryVideo() {
-
-        int int_position = 0;
-        Uri uri;
-        Cursor cursor;
-        int column_index_data, column_index_folder_name,column_id,thum;
-
-        String absolutePathOfImage = null;
-        uri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
-
-        String[] projection = {MediaStore.MediaColumns.DATA, MediaStore.Video.Media.BUCKET_DISPLAY_NAME,
-                MediaStore.Video.Media._ID,MediaStore.Video.Thumbnails.DATA};
-
         String[] video_query = new String[] {
                 MediaStore.Video.Media._ID, MediaStore.Video.Media.DATA,
                 MediaStore.Video.Media.TITLE, MediaStore.Video.Media.DATE_TAKEN,
                 MediaStore.Video.Media.MIME_TYPE, MediaStore.Video.Media.DURATION,
                 MediaStore.Video.Media.SIZE, MediaStore.Video.Media.RESOLUTION };
         final String orderBy = MediaStore.Images.Media.DATE_TAKEN;
-//        cursor = getActivity().getContentResolver().query(uri, projection, null, null, orderBy + " DESC");
-        cursor = getActivity().getContentResolver().query(uri, video_query, null, null, orderBy + " DESC");
+
+        Uri uri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+        Cursor cursor = getActivity().getContentResolver().query(uri, video_query, null, null, orderBy + " DESC");
         while (cursor.moveToNext()) {
 
             int dataColumnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA);
             String imagePath = cursor.getString(dataColumnIndex);
-            String thumb    = getThumbnailPath(getContext(),imagePath);
-
             MovieEntity entity = new MovieEntity();
             entity.path = imagePath;
 
-//            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
-//            entity.thumbnail = ThumbnailUtils.createVideoThumbnail(imagePath, MediaStore.Video.Thumbnails.MINI_KIND);
             listMovie.add(entity);
 
             String resolution = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.RESOLUTION));
@@ -125,38 +107,6 @@ public class FragGalleryVideo extends VFFragment {
         cursor.close();
     }
 
-//    private void queryImage(){
-//        Cursor imagecursor = null;
-//        try {
-//            final String[] columns = {  MediaStore.Images.Media.DATA,
-//                    MediaStore.Images.Media._ID ,
-//                    MediaStore.Images.Media.ORIENTATION};
-//
-//            final String orderBy = MediaStore.Images.Media._ID;
-//
-//
-//            imagecursor = getActivity().getContentResolver().query(
-//                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI, columns,
-//                    null, null, orderBy);
-//
-//
-//            if (imagecursor != null && imagecursor.getCount() > 0) {
-//                while (imagecursor.moveToNext()) {
-//
-//                    int dataColumnIndex = imagecursor.getColumnIndex(MediaStore.Images.Media.DATA);
-//                    String imagePath = imagecursor.getString(dataColumnIndex);
-//                    String thumb    = getThumbnailPath(getContext(),imagePath);
-//                    listGallery.add(imagePath);
-//
-//                }
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        } finally {
-//            if(imagecursor != null)	imagecursor.close();
-//        }
-//    }
-
     private class GalleryTask extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... params) {
@@ -170,6 +120,7 @@ public class FragGalleryVideo extends VFFragment {
             GaleryImageAdapter adapter = new GaleryImageAdapter(getActivity(),listMovie);
             gridView.setAdapter(adapter);
             tvTotal.setText("Total:"+listMovie.size());
+            hideLoading();
         }
     }
 
@@ -201,11 +152,6 @@ public class FragGalleryVideo extends VFFragment {
     }
 
     class GaleryImageAdapter extends BaseArrayAdapter<MovieEntity>{
-
-        public GaleryImageAdapter(Context context, MovieEntity[] objects) {
-            super(context, objects);
-        }
-
         public GaleryImageAdapter(Context context, List<MovieEntity> objects) {
             super(context, objects);
         }
@@ -220,25 +166,24 @@ public class FragGalleryVideo extends VFFragment {
             ImageView iv = (ImageView) v.findViewById(R.id.imageView);
             MovieEntity entity = getItem(pos);
             Glide.with(getContext())
-                    .load(entity.path) // or URI/path
-                    .into(iv); //imageview to set thumbnail to
-//            Bitmap bMap = ThumbnailUtils.createVideoThumbnail(path, MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
-//            if(entity.thumbnail != null){
-//                iv.setImageBitmap(entity.thumbnail);
-//            }else {
-//                LogUtils.info("null thumbnails");
-//            }
+                    .load(entity.path)
+                    .into(iv);
             ((TextView)v.findViewById(R.id.tvInfo)).setText(entity.resolutionString);
 
         }
     }
-
+    //handle loading dialog...
+    ProgressDialog progressDialog;
     public void showLoading(){
-
+        if(progressDialog == null){
+            progressDialog = ProgressDialog.show(getContext(),"","Process...",true);
+        }
     }
 
     public void hideLoading(){
-
+        if (progressDialog != null){
+            progressDialog.dismiss();
+        }
     }
 
 }

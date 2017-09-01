@@ -23,6 +23,8 @@ public class VFActivity extends AppCompatActivity {
     private ViewGroup viewActionBar;
     private ViewGroup viewActionBarRoot;
 
+    private static Bundle bundleParams = new Bundle();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,9 +173,18 @@ public class VFActivity extends AppCompatActivity {
         Intent intent = new Intent(this,act);
         startActivity(intent);
     }
+
+
     public void pushActivity(Class<?> act){
         Intent intent = new Intent(this,act);
         startActivity(intent);
 //        overridePendingTransition(R.anim.push_in_right,R.anim.nothing);
+    }
+
+    public void setPublicString(String key,String value){
+        bundleParams.putString(key,value);
+    }
+    public String getPublicString(String key){
+        return bundleParams.getString(key,"");
     }
 }

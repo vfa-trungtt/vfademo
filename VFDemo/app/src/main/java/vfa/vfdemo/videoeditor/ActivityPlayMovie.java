@@ -17,7 +17,8 @@ public class ActivityPlayMovie extends ActivitySlideMenu {
         super.onCreate(savedInstanceState);
 
         FragVideoPlay fg = new FragVideoPlay();
-        fg.setMovieFilePath(FragVideoAddWatermark.destPath);
+
+        fg.setMovieFilePath(getPublicString("movie_path"));
         setRootFragment(fg);
     }
 }

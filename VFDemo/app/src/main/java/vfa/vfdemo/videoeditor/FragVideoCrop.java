@@ -28,11 +28,8 @@ import vn.hdisoft.hdimovie.FFMpegHelper;
 import vn.hdisoft.hdimovie.MovieHelper;
 
 
-public class FragVideoCrop extends VFFragment {
-    private VideoView videoView;
-    public String filePath;
-    public Uri movieUri;
-    CropView cropView;
+public class FragVideoCrop extends BaseMovieFragment {
+    private CropView cropView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -74,7 +71,7 @@ public class FragVideoCrop extends VFFragment {
         if(movieUri != null){
 
             MediaMetadataRetriever metaRetriever = new MediaMetadataRetriever();
-            metaRetriever.setDataSource(filePath);
+            metaRetriever.setDataSource(srcPath);
             String height = metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT);
             String width = metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH);
             String rotation =  metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_ROTATION);
@@ -99,10 +96,8 @@ public class FragVideoCrop extends VFFragment {
             videoView.setLayoutParams(lp);
 
 //            rootView.requestLayout();
-
             cropView.setTempImage(w,h);
-
-            playRepeatMovie();
+            playRepeatMovieWithDelay(500);
         }
     }
 
@@ -122,13 +117,7 @@ public class FragVideoCrop extends VFFragment {
         videoView.start();
     }
 
-    public void setMovieFilePath(String path){
-        filePath = path;
-        movieUri = Uri.parse(path);
-    }
 
-    FFMpegHelper ffHelper;
-    String destPath;
     final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 2011;
     @Override
     public void onRequestPermissionsResult(int requestCode,
@@ -209,7 +198,7 @@ public class FragVideoCrop extends VFFragment {
         destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
         LogUtils.info("output:"+destPath);
 //        ffHelper.cropVideo(filePath,"",destPath);
-        ffHelper.cropVideo(filePath,cropView.getActualCropRect(),destPath);
+        ffHelper.cropVideo(srcPath,cropView.getActualCropRect(),destPath);
 
 
     }

@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,11 +23,9 @@ import vn.hdisoft.hdilib.utils.LogUtils;
 import vn.hdisoft.hdimovie.FFMpegHelper;
 
 
-public class FragVideoAddWatermark extends VFFragment {
-    private VideoView videoView;
-    public String filePath;
-    public Uri movieUri;
+public class FragVideoAddWatermark extends BaseMovieFragment {
 
+    String watermarkPath;
     HorizonBarView waterMarkBar;
 
     @Override
@@ -61,19 +60,11 @@ public class FragVideoAddWatermark extends VFFragment {
 
     @Override
     public void onViewLoaded() {
-        if(movieUri != null){
-//            movieUri = Uri.parse("/data/user/0/vfa.vfdemo/files/crop_1504169909795.mp4");
-            videoView = (VideoView) rootView.findViewById(R.id.videoView);
-            videoView.setVideoURI(movieUri);
-            videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(MediaPlayer mp) {
-                    mp.setLooping(true);
-                }
-            });
-            videoView.start();
-        }
+        super.onViewLoaded();
+        videoView = (VideoView) rootView.findViewById(R.id.videoView);
+        playRepeatMovieWithDelay(500);
 
+        //create horizon bar
         int[] barItem = {R.drawable.takanotsume_thumb,R.drawable.fashion_thumb};
 
         waterMarkBar = (HorizonBarView) rootView.findViewById(R.id.waterMarkBar);
@@ -88,22 +79,11 @@ public class FragVideoAddWatermark extends VFFragment {
         addWatermark(0);
     }
 
-    public void setMovieFilePath(String path){
-        filePath = path;
-        movieUri = Uri.parse(path);
-    }
-
     public void createWatermarkImage(){
         View v = rootView.findViewById(R.id.viewWatermark);
         v.setDrawingCacheEnabled(true);
         Bitmap b = v.getDrawingCache();
         try {
-//            String root = Environment.getExternalStorageDirectory().toString();
-//            File myDir = new File(root + "/saved_images");
-//            myDir.mkdirs();
-//            Random generator = new Random();
-//            int n = 10000;
-//            n = generator.nextInt(n);
             String fname = "watermark-"+ System.currentTimeMillis() +".png";
             File file = new File (Environment.getExternalStorageDirectory().getPath(), fname);
 
@@ -113,6 +93,7 @@ public class FragVideoAddWatermark extends VFFragment {
             out.close();
 
             watermarkPath = file.getAbsolutePath();
+            v.setDrawingCacheEnabled(false);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -121,8 +102,9 @@ public class FragVideoAddWatermark extends VFFragment {
     }
 
     public void drawWatermark(){
+        videoView.stopPlayback();
+        showLoading();
         createWatermarkImage();
-
 //        destPath = getActivity().getCacheDir().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
         destPath = Environment.getExternalStorageDirectory().getPath() + "/watermark_"+System.currentTimeMillis()+".mp4";
         LogUtils.info("output:"+destPath);
@@ -130,40 +112,13 @@ public class FragVideoAddWatermark extends VFFragment {
             @Override
             public void onProcessDone(int errorCode, String errorMessage) {
                 LogUtils.info("Done...");
+                hideLoading();
+                getVFActivity().setPublicString("movie_path",destPath);
                 getVFActivity().startActivity(ActivityPlayMovie.class);
             }
         });
-        ffHelper.addWatermark(filePath,destPath,watermarkPath);
+        ffHelper.addWatermark(srcPath,destPath,watermarkPath);
     }
-
-    FFMpegHelper ffHelper;
-    public static String destPath;
-    String watermarkPath;
-//
-//    public void cropMovie(){
-////        LogUtils.info(""+cropView.getActualCropRect().toString());
-//
-//
-//        ffHelper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
-//            @Override
-//            public void onProcessDone(int errorCode, String errorMessage) {
-//                if(errorCode == 0){
-//                    videoView.stopPlayback();
-//                    FragVideoAddWatermark fg  = new FragVideoAddWatermark();
-//                    fg.setMovieFilePath(destPath);
-//                    pushFragment(fg);
-//
-//                }else {
-//
-//                }
-//            }
-//        });
-//        destPath = Environment.getExternalStorageDirectory().getPath() + "/watermark_"+System.currentTimeMillis()+".mp4";
-//        LogUtils.info("output:"+destPath);
-////        ffHelper.cropVideo(filePath,"",destPath);
-////        ffHelper.cropVideo(filePath,cropView.getActualCropRect(),destPath);
-//
-//    }
 
     public void addWatermark(int watermarkIndex){
         int watermarkViewId = R.layout.v_watermark_1;

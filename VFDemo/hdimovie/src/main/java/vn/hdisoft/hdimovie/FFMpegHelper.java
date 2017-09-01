@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.media.MediaMetadataRetriever;
 import android.os.Environment;
 import android.util.Log;
 
@@ -62,45 +63,13 @@ public class FFMpegHelper {
 
                 @Override
                 public void onSuccess(String s) {
-//                    Log.d(TAG, "SUCCESS with output : " + s);
-//                    if (choice == 1 || choice == 2 || choice == 5 || choice == 6 || choice == 7) {
-//                        Intent intent = new Intent(MainActivity.this, PreviewActivity.class);
-//                        intent.putExtra(FILEPATH, filePath);
-//                        startActivity(intent);
-//                    } else if (choice == 3) {
-//                        Intent intent = new Intent(MainActivity.this, PreviewImageActivity.class);
-//                        intent.putExtra(FILEPATH, filePath);
-//                        startActivity(intent);
-//                    } else if (choice == 4) {
-//                        Intent intent = new Intent(MainActivity.this, AudioPreviewActivity.class);
-//                        intent.putExtra(FILEPATH, filePath);
-//                        startActivity(intent);
-//                    } else if (choice == 8) {
-//                        choice = 9;
-//                        reverseVideoCommand();
-//                    } else if (Arrays.equals(command, lastReverseCommand)) {
-//                        choice = 10;
-//                        concatVideoCommand();
-//                    } else if (choice == 10) {
-//                        File moviesDir = Environment.getExternalStoragePublicDirectory(
-//                                Environment.DIRECTORY_MOVIES
-//                        );
-//                        File destDir = new File(moviesDir, ".VideoPartsReverse");
-//                        File dir = new File(moviesDir, ".VideoSplit");
-//                        if (dir.exists())
-//                            deleteDir(dir);
-//                        if (destDir.exists())
-//                            deleteDir(destDir);
-//                        choice = 11;
-//                        Intent intent = new Intent(MainActivity.this, PreviewActivity.class);
-//                        intent.putExtra(FILEPATH, filePath);
-//                        startActivity(intent);
-//                    }
+                    Log.d("ffmpeg", "SUCCESS with output : " + s);
+                    errorCode = 0;
                 }
 
                 @Override
                 public void onProgress(String s) {
-//                    Log.d(TAG, "Started command : ffmpeg " + command);
+                    Log.d("ffmpeg", "Started command : ffmpeg " + command);
 //                    if (choice == 8)
 //                        progressDialog.setMessage("progress : splitting video " + s);
 //                    else if (choice == 9)
@@ -114,7 +83,7 @@ public class FFMpegHelper {
 
                 @Override
                 public void onStart() {
-//                    Log.d(TAG, "Started command : ffmpeg " + command);
+                    Log.d("ffmpeg", "Started command : ffmpeg " + command);
 //                    progressDialog.setMessage("Processing...");
 //                    progressDialog.show();
                 }
@@ -125,23 +94,21 @@ public class FFMpegHelper {
 //                    if (choice != 8 && choice != 9 && choice != 10) {
 //                        progressDialog.dismiss();
 //                    }
-                    if(_listener != null) _listener.onProcessDone(0,"");
+                    if(_listener != null) _listener.onProcessDone(errorCode,"");
                 }
             });
         } catch (FFmpegCommandAlreadyRunningException e) {
-            // do nothing for now
+            errorCode = 1;
+            Log.e("ffmpeg", "exception :" + e.toString());
         }
     }
 
     public void cropVideo(String srcPath, String cropInfo,String destPath){
-        cropInfo = "crop=0:0:200:100";//
-//        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
-        String[] complexCommand = { "-i", srcPath,"-filter:v", "crop=80:60:400:600", "-c:a","copy", destPath};
+//        cropInfo = "crop=0:0:200:100";
+        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
         execFFmpegBinary(complexCommand);
     }
     public void cropVideo(String srcPath, RectF rectF, String destPath){
-//        String cropInfo = "crop=0:0:200:100";
-//        rectF.ro
         String cropInfo = "crop="+rectF.width()+":"+rectF.height()+":"+rectF.top+":"+rectF.left+"";
         String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
         execFFmpegBinary(complexCommand);
@@ -149,8 +116,15 @@ public class FFMpegHelper {
 
     public void addWatermark(String srcMoviePath,String destMoviePath,String filePathWatermark){
 //./ffmpeg -i sample.mp4 -i water_mark.png -filter_complex "[1:v]scale=256:256 [ovrl]","[0:v][ovrl] overlay=0:0:" -c:a copy output_watermark.mp4
+        MediaMetadataRetriever metaRetriever = new MediaMetadataRetriever();
+        metaRetriever.setDataSource(srcMoviePath);
+        String height = metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT);
+        String width = metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH);
+        String scaleWatermark = width+":"+height;
+//        String[] complexCommand = { "-i", srcMoviePath,"-i",filePathWatermark,
+//                "-filter_complex","[1:v]scale=256:256 [ovrl],[0:v][ovrl] overlay=0:0:", "-c:a","copy", destMoviePath};
         String[] complexCommand = { "-i", srcMoviePath,"-i",filePathWatermark,
-                "-filter_complex","[1:v]scale=256:256 [ovrl],[0:v][ovrl] overlay=0:0:", "-c:a","copy", destMoviePath};
+                "-filter_complex","[1:v]scale="+scaleWatermark+" [ovrl],[0:v][ovrl] overlay=0:0:", "-c:a","copy", destMoviePath};
         execFFmpegBinary(complexCommand);
     }
 }
