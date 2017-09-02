@@ -1,4 +1,3 @@
-include ':app', ':library-calendar', ':hdilib', ':opencv'
+include ':app', ':hdilib'
 project(':hdilib').projectDir = new File('./modules/hdilib')
 
-project(':library-calendar').projectDir = new File('library-cal')

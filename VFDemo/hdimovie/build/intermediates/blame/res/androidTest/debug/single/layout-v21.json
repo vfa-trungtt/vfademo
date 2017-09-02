@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_action.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/layout-v21/notification_action.xml"
+    }
+]

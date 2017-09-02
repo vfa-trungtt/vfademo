@@ -3,12 +3,9 @@ package vfa.vfdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-
-
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
 
@@ -23,7 +20,7 @@ public class AAppLauchActivity extends BaseActivity {
 
     }
     private boolean testing(){
-        startActivity(ActivityOpenCVDemo.class);
+//        startActivity(ActivityOpenCVDemo.class);
         finish();
         return true;
     }
@@ -45,19 +42,19 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "Find my server";
         demo.DemoDescription    = "A demo for scan network";
-        demo.LaucherDemoClass = FindMyServerActivity.class;
+//        demo.LaucherDemoClass = FindMyServerActivity.class;
         list.add(demo);
 
         demo = new DemoEntity();
         demo.DemoTitle  = "SQLite Manager";
         demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
-        demo.LaucherDemoClass = ActivitySQLiteManager.class;
+//        demo.LaucherDemoClass = ActivitySQLiteManager.class;
         list.add(demo);
 
         demo = new DemoEntity();
         demo.DemoTitle  = "Open CVDemo";
         demo.DemoDescription    = "A demo about opencv library";
-        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
+//        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
         list.add(demo);
 
         demo = new DemoEntity();
@@ -69,19 +66,19 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle          = "Android UI Design";
         demo.DemoDescription    = "A demo about UI component.";
-        demo.LaucherDemoClass   = ActivityUIDesign.class;
+//        demo.LaucherDemoClass   = ActivityUIDesign.class;
         list.add(demo);
 
         demo = new DemoEntity();
         demo.DemoTitle  = "Android Icon";
         demo.DemoDescription    = "A demo create icon for app";
-        demo.LaucherDemoClass = ActivityCreateIcon.class;
+//        demo.LaucherDemoClass = ActivityCreateIcon.class;
         list.add(demo);
 
         demo = new DemoEntity();
         demo.DemoTitle  = "Musics";
         demo.DemoDescription    = "A demo about some feature in music.";
-        demo.LaucherDemoClass = ActivityMusic.class;
+//        demo.LaucherDemoClass = ActivityMusic.class;
         list.add(demo);
 
         demo = new DemoEntity();
@@ -112,7 +109,7 @@ public class AAppLauchActivity extends BaseActivity {
         demo = new DemoEntity();
         demo.DemoTitle  = "App Demo";
         demo.DemoDescription    = "A demo for HDiApp use FireBase";
-        demo.LaucherDemoClass = ActivityHDiApp.class;
+//        demo.LaucherDemoClass = ActivityHDiApp.class;
         list.add(demo);
         return list;
     }

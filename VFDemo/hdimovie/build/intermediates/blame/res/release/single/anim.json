@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_out_right.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/act_fadeout.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/act_fadeout.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_up.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_up.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/ani_rotate.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/ani_rotate.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/drop_out.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/drop_out.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_in_right.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/fade_in.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/fade_in.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_out_up.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_out_up.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_down_up.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_down_up.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_in_bottom.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/push_in_right.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/push_in_right.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/enter.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/enter.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_in_left.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/push_out_right.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/push_out_right.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/exit.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/exit.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/end_page.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/end_page.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/start_page.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/start_page.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/push_in_bottom.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/push_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/drop_in.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/drop_in.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/act_fadein_delay.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/act_fadein_delay.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_down.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_down.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/TrungTT/.android/build-cache/fc9be9bf7df8302c8c8f6862b7b1602f1ee79f43/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/nothing.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/nothing.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/push_out_bottom.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/push_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/hdimovie/build/intermediates/res/merged/release/anim/slide_out_left.xml",
+        "source": "/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/modules/hdilib/build/intermediates/bundles/default/res/anim/slide_out_left.xml"
+    }
+]
