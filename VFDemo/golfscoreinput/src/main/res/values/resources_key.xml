@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <item type="id" name="key_sender_id"/>
-    <item type="id" name="key_index"/>
-    <item type="id" name="layout_add_new" />
-    
-</resources>
