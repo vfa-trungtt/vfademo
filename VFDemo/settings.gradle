@@ -1,3 +1,3 @@
-include  ':app',  ':hdilib',  ':hdimovie'
+include ':app', ':hdilib', ':hdimovie'
 project(':hdilib').projectDir = new File('./modules/hdilib')
 

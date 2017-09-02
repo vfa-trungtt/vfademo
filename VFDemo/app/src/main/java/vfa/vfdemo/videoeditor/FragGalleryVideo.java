@@ -76,7 +76,7 @@ public class FragGalleryVideo extends VFFragment {
 
     private void loadGallery(){
         listMovie.clear();
-        showLoading();
+//        showLoading();
         new GalleryTask().execute();
     }
 
@@ -121,6 +121,7 @@ public class FragGalleryVideo extends VFFragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
+
             GaleryImageAdapter adapter = new GaleryImageAdapter(getActivity(),listMovie);
             gridView.setAdapter(adapter);
             tvTotal.setText("Total:"+listMovie.size());
@@ -188,6 +189,10 @@ public class FragGalleryVideo extends VFFragment {
         if (progressDialog != null){
             progressDialog.dismiss();
         }
+    }
+
+    private void checkPermission(){
+
     }
 
 }
