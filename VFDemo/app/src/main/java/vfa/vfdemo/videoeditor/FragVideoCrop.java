@@ -2,6 +2,7 @@ package vfa.vfdemo.videoeditor;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.RectF;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -10,6 +11,7 @@ import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,10 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 
+import processing.ffmpeg.videokit.AsyncCommandExecutor;
+import processing.ffmpeg.videokit.Command;
+import processing.ffmpeg.videokit.ProcessingListener;
+import processing.ffmpeg.videokit.VideoKit;
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.FileUtis;
 import vfa.vfdemo.utils.ViewHelper;
@@ -25,9 +31,9 @@ import vn.hdisoft.hdilib.utils.LogUtils;
 import vn.hdisoft.hdimovie.FFMpegHelper;
 
 
-public class FragVideoCrop extends BaseMovieFragment {
+public class FragVideoCrop extends BaseMovieFragment implements  ProcessingListener {
     private CropView cropView;
-
+    private VideoKit videoKit = new VideoKit();
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -193,6 +199,7 @@ public class FragVideoCrop extends BaseMovieFragment {
             LogUtils.info("has permission...");
         }
 
+
         ffHelper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
             @Override
             public void onProcessDone(int errorCode, String errorMessage) {
@@ -213,10 +220,33 @@ public class FragVideoCrop extends BaseMovieFragment {
                 }
             }
         });
+
         destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
         LogUtils.info("output:"+destPath);
-        ffHelper.cropVideo(srcPath,cropView.getActualCropRect(),destPath);
+//        ffHelper.cropVideo(srcPath,cropView.getActualCropRect(),destPath);
+        RectF rectF = cropView.getActualCropRect();
+        String cropInfo = "crop="+rectF.width()+":"+rectF.height()+":"+rectF.top+":"+rectF.left+"";
 
+        final Command command = videoKit.createCommand()
+                .overwriteOutput()
+                .inputPath(srcPath)
+                .outputPath(destPath)
+                .customCommand("-filter:v "+cropInfo)
+                .copyVideoCodec()
+                .experimentalFlag()
+                .build();
 
+        new AsyncCommandExecutor(command, this).execute();
+
+    }
+
+    @Override
+    public void onSuccess(String path) {
+        LogUtils.debug("onSuccess");
+    }
+
+    @Override
+    public void onFailure(int returnCode) {
+        LogUtils.debug("onFailure");
     }
 }

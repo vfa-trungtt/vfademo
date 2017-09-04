@@ -10,7 +10,11 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
     }
     sourceSets {
         main {
@@ -36,6 +40,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
 
     dexOptions {
         preDexLibraries = false
@@ -48,11 +57,12 @@ android {
 }
 
 dependencies {
-
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.github.bumptech.glide:glide:4.0.0'
     compile 'com.isseiaoki:simplecropview:1.1.4'
     compile project(':hdilib')
     compile project(':hdimovie')
+    //    compile 'com.infullmobile.android:videokit-release:1.1.2'
+    compile project(':videokit')
 }

@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/modules/hdilib/hdilib.iml" filepath="$PROJECT_DIR$/modules/hdilib/hdilib.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdimovie/hdimovie.iml" filepath="$PROJECT_DIR$/hdimovie/hdimovie.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdimovie/hdimovie.iml" filepath="$PROJECT_DIR$/hdimovie/hdimovie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hdimovie/hdimovie.iml" filepath="$PROJECT_DIR$/hdimovie/hdimovie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videokit/videokit.iml" filepath="$PROJECT_DIR$/videokit/videokit.iml" />
     </modules>
   </component>
 </project>

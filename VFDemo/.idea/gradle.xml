@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/hdimovie" />
             <option value="$PROJECT_DIR$/modules/hdilib" />
+            <option value="$PROJECT_DIR$/videokit" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
