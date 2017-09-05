@@ -43,7 +43,8 @@ public class FragSqliteListDb extends VFFragment {
 
     @Override
     public int onGetRootLayoutId() {
-        return R.layout.frag_sql_list;
+//        return R.layout.frag_sql_list;
+        return 0;
     }
 
     @Override
@@ -82,27 +83,27 @@ public class FragSqliteListDb extends VFFragment {
             dbPath = AppSettings.getCurrentDBPath(getContext());
         }
 
-        rootView.findViewById(R.id.buttonDate).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DatePickerDialog mDatePickerDialog = new DatePickerDialog(getActivity(), null, 2017, 8, 14);
-                try {
-                    Field nameField = AlertDialog.class.getDeclaredField("mAlert");
-                    nameField.setAccessible(true);
-                    Object alert = nameField.get(mDatePickerDialog);
-                    Field nameFieldText = alert.getClass().getDeclaredField("mButtonPositiveText");
-                    nameFieldText.setAccessible(true);
-                    nameFieldText.set(alert, "Set");
-                    nameFieldText = alert.getClass().getDeclaredField("mButtonNegativeText");
-                    nameFieldText.setAccessible(true);
-                    nameFieldText.set(alert,"Cancel");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-                mDatePickerDialog.show();
-            }
-        });
+//        rootView.findViewById(R.id.buttonDate).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                DatePickerDialog mDatePickerDialog = new DatePickerDialog(getActivity(), null, 2017, 8, 14);
+//                try {
+//                    Field nameField = AlertDialog.class.getDeclaredField("mAlert");
+//                    nameField.setAccessible(true);
+//                    Object alert = nameField.get(mDatePickerDialog);
+//                    Field nameFieldText = alert.getClass().getDeclaredField("mButtonPositiveText");
+//                    nameFieldText.setAccessible(true);
+//                    nameFieldText.set(alert, "Set");
+//                    nameFieldText = alert.getClass().getDeclaredField("mButtonNegativeText");
+//                    nameFieldText.setAccessible(true);
+//                    nameFieldText.set(alert,"Cancel");
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//                mDatePickerDialog.show();
+//            }
+//        });
         loadTableName();
     }
 
