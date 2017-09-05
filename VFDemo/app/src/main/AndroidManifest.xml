@@ -22,10 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!--***ACTIVITIES*** -->
-        <activity android:name=".ActivitySlideMenu"/>
-        <activity android:name=".ActivitySQLiteManager"/>
-        <activity android:name=".videoeditor.ActivityVideoDemo"/>
+
     </application>
 
 </manifest>

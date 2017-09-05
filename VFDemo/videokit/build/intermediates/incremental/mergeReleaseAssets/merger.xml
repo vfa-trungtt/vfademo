@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/videokit/src/main/assets"/><source path="/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/videokit/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/TrungTT/Documents/android_development/HDiSoft-Libraries/VFDemo/videokit/src/release/assets"/></dataSet></merger>

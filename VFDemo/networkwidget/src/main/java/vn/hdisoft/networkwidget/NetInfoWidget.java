@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.widget.RemoteViews;
 
 
-
 public class NetInfoWidget extends AppWidgetProvider {
 
 	public static final String AC_SETTING_CLICKED    = "AC_SETTING_CLICKED";

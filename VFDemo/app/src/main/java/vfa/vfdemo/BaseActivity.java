@@ -6,8 +6,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.ViewGroup;
 
-import vfa.vfdemo.utils.ViewHelper;
+
 import vn.hdisoft.hdilib.activities.VFActivity;
+import vn.hdisoft.hdilib.helpers.ViewHelper;
 
 
 public class BaseActivity extends VFActivity {
@@ -25,6 +26,6 @@ public class BaseActivity extends VFActivity {
     }
 
     public void setHomeActionBar(){
-        setupActionBarView(ViewHelper.getViewGroup(this,R.layout.actionbar_root));
+//        setupActionBarView(ViewHelper.getViewGroup(this,R.layout.actionbar_root));
     }
 }
