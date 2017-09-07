@@ -115,8 +115,15 @@ public class FFMpegHelper {
         execFFmpegBinary(complexCommand);
     }
     public void cropVideo(String srcPath, RectF rectF, String destPath){
-        String cropInfo = "crop="+rectF.width()+":"+rectF.height()+":"+rectF.top+":"+rectF.left+"";
-        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
+        //ffmpeg -i movie.mp4 -vf "crop=640:256:0:400" -strict -2 YourCroppedMovie.mp4 slow
+        //ffmpeg -i movie.mp4 -vf "crop=640:256:0:400" -threads 5 -preset ultrafast -strict -2 YourCroppedMovie.mp4 (fast)
+
+        Rect rect = new Rect();
+        rectF.round(rect);
+        String cropInfo = "crop="+rect.width()+":"+rect.height()+":"+rect.left+":"+rect.top+"";
+        LogUtils.debug("cropinfo:"+cropInfo);
+//        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
+        String[] complexCommand = { "-i", srcPath,"-vf", cropInfo,"-threads","15","-preset","ultrafast","-strict","-2", destPath};
         execFFmpegBinary(complexCommand);
     }
 

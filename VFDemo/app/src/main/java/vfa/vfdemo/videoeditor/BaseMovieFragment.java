@@ -63,7 +63,7 @@ public class BaseMovieFragment extends VFFragment {
     ProgressDialog progressDialog;
     public void showLoading(){
         if(progressDialog == null){
-            progressDialog = ProgressDialog.show(getContext(),"","Process...",true);
+            progressDialog = ProgressDialog.show(getActivity(),"","Process...",true);
         }
     }
 

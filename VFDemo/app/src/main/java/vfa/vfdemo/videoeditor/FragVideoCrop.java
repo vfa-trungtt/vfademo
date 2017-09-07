@@ -161,7 +161,53 @@ public class FragVideoCrop extends BaseMovieFragment implements  ProcessingListe
             // permissions this app might request
         }
     }
+    long startTime = 0;
     public void cropMovie(){
+        LogUtils.info(""+cropView.getActualCropRect().toString());
+        ffHelper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
+            @Override
+            public void onProcessDone(int errorCode, String errorMessage) {
+                hideLoading();
+                long current = System.currentTimeMillis();
+                LogUtils.debug("Time spent:"+(current-startTime)/1000+" seconds.");
+                if(errorCode == 0){
+                    videoView.stopPlayback();
+                    if(FileUtis.isValidMovieFile(destPath)){
+                        getVFActivity().setPublicString("movie_path",destPath);
+                        getVFActivity().startActivity(ActivityPlayMovie.class);
+                    }else {
+                        Toast.makeText(getContext(),"Error file:"+destPath,Toast.LENGTH_LONG).show();
+                    }
+
+                }else {
+
+                }
+            }
+        });
+
+        destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
+        LogUtils.info("output:"+destPath);
+        ffHelper.cropVideo(srcPath,cropView.getActualCropRect(),destPath);
+        startTime = System.currentTimeMillis();
+
+        showLoading();
+//        RectF rectF = cropView.getActualCropRect();
+
+//        String cropInfo = "crop="+rectF.width()+":"+rectF.height()+":"+rectF.top+":"+rectF.left+"";
+//        final Command command = videoKit.createCommand()
+//                .overwriteOutput()
+//                .inputPath(srcPath)
+//                .outputPath(destPath)
+//                .customCommand("-filter:v "+cropInfo)
+//                .copyVideoCodec()
+//                .experimentalFlag()
+//                .build();
+//
+//        new AsyncCommandExecutor(command, this).execute();
+
+    }
+
+    public void checkPermission(){
         LogUtils.info(""+cropView.getActualCropRect().toString());
 //        File root = new File(Environment.getExternalStorageDirectory(), "Notes");
 //        if (!root.exists()) {
@@ -199,44 +245,6 @@ public class FragVideoCrop extends BaseMovieFragment implements  ProcessingListe
             LogUtils.info("has permission...");
         }
 
-
-        ffHelper.setOnProcessVideo(new FFMpegHelper.OnProccessVideoListener() {
-            @Override
-            public void onProcessDone(int errorCode, String errorMessage) {
-                if(errorCode == 0){
-                    videoView.stopPlayback();
-//                    FragVideoAddWatermark fg  = new FragVideoAddWatermark();
-//                    fg.setMovieFilePath(destPath);
-//                    pushFragment(fg);
-                    if(FileUtis.isValidMovieFile(destPath)){
-                        getVFActivity().setPublicString("movie_path",destPath);
-                        getVFActivity().startActivity(ActivityPlayMovie.class);
-                    }else {
-                        Toast.makeText(getContext(),"Error file:"+destPath,Toast.LENGTH_LONG).show();
-                    }
-
-                }else {
-
-                }
-            }
-        });
-
-        destPath = Environment.getExternalStorageDirectory().getPath() + "/crop_"+System.currentTimeMillis()+".mp4";
-        LogUtils.info("output:"+destPath);
-//        ffHelper.cropVideo(srcPath,cropView.getActualCropRect(),destPath);
-        RectF rectF = cropView.getActualCropRect();
-        String cropInfo = "crop="+rectF.width()+":"+rectF.height()+":"+rectF.top+":"+rectF.left+"";
-
-        final Command command = videoKit.createCommand()
-                .overwriteOutput()
-                .inputPath(srcPath)
-                .outputPath(destPath)
-                .customCommand("-filter:v "+cropInfo)
-                .copyVideoCodec()
-                .experimentalFlag()
-                .build();
-
-        new AsyncCommandExecutor(command, this).execute();
 
     }
 
