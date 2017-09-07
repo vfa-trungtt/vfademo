@@ -31,11 +31,6 @@ public class FragVideoAddWatermark extends BaseMovieFragment {
     int[] arrWatermarkRes = {R.layout.v_watermark_1,R.layout.v_watermark_2};
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ffHelper = new FFMpegHelper(getActivity());
-    }
-    @Override
     public void setUpActionBar() {
 
         ViewGroup viewActionBar = ViewHelper.getViewGroup(getActivity(),R.layout.actionbar_video_watermark);

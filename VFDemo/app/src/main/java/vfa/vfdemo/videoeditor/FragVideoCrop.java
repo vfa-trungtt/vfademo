@@ -2,8 +2,6 @@ package vfa.vfdemo.videoeditor;
 
 import android.graphics.Rect;
 import android.media.MediaMetadataRetriever;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,18 +13,14 @@ import vfa.vfdemo.R;
 import vfa.vfdemo.utils.FileUtis;
 import vfa.vfdemo.utils.ViewHelper;
 import vn.hdisoft.hdilib.utils.LogUtils;
-import vn.hdisoft.hdimovie.FFMpegHelper;
 
-import static android.media.MediaMetadataRetriever.*;
+import static android.media.MediaMetadataRetriever.METADATA_KEY_VIDEO_HEIGHT;
+import static android.media.MediaMetadataRetriever.METADATA_KEY_VIDEO_ROTATION;
+import static android.media.MediaMetadataRetriever.METADATA_KEY_VIDEO_WIDTH;
 
 
 public class FragVideoCrop extends BaseMovieFragment {
     private CropView cropView;
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ffHelper = new FFMpegHelper(getActivity());
-    }
 
     @Override
     public void setUpActionBar() {

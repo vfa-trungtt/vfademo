@@ -95,6 +95,10 @@ public abstract class BaseMovieFragment extends VFFragment {
         showLoading();
     }
 
+    public void addWaterMark(String imagePath){
+
+    }
+
     public void onProcessVideoFinish(){
 
     }
