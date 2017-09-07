@@ -127,6 +127,16 @@ public class FFMpegHelper {
         execFFmpegBinary(complexCommand);
     }
 
+    public void cropVideo(String srcPath, Rect rect, String destPath){
+        //ffmpeg -i movie.mp4 -vf "crop=640:256:0:400" -strict -2 YourCroppedMovie.mp4 slow
+        //ffmpeg -i movie.mp4 -vf "crop=640:256:0:400" -threads 5 -preset ultrafast -strict -2 YourCroppedMovie.mp4 (fast)
+        String cropInfo = "crop="+rect.width()+":"+rect.height()+":"+rect.left+":"+rect.top+"";
+        LogUtils.debug("cropinfo:"+cropInfo);
+//        String[] complexCommand = { "-i", srcPath,"-filter:v", cropInfo, "-c:a","copy", destPath};
+        String[] complexCommand = { "-i", srcPath,"-vf", cropInfo,"-threads","15","-preset","ultrafast","-strict","-2", destPath};
+        execFFmpegBinary(complexCommand);
+    }
+
     public void addWatermark(String srcMoviePath,String destMoviePath,String filePathWatermark){
 //./ffmpeg -i sample.mp4 -i water_mark.png -filter_complex "[1:v]scale=256:256 [ovrl]","[0:v][ovrl] overlay=0:0:" -c:a copy output_watermark.mp4
         MediaMetadataRetriever metaRetriever = new MediaMetadataRetriever();
