@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/VFDemo.iml" filepath="$PROJECT_DIR$/VFDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/hdidata/hdidata.iml" filepath="$PROJECT_DIR$/hdidata/hdidata.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hdidata/hdidata.iml" filepath="$PROJECT_DIR$/hdidata/hdidata.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/hdilib/hdilib.iml" filepath="$PROJECT_DIR$/modules/hdilib/hdilib.iml" />
     </modules>
   </component>

@@ -22,10 +22,6 @@ import vfa.vfdemo.viewadapter.BaseArrayAdapter;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 
-/**
- * Created by Vitalify on 3/7/17.
- */
-
 public class FragOpenDb extends VFFragment {
 
     ListView lvTables;

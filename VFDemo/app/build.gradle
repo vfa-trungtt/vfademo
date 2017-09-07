@@ -1,16 +1,5 @@
 apply plugin: 'com.android.application'
 
-repositories {
-    flatDir {
-        dirs "libs"
-    }
-    maven { url 'https://maven.fabric.io/public' }
-    maven { url 'http://cdn.repro.io/android' }
-    maven {
-        url "https://jitpack.io"
-    }
-}
-
 
 android {
     compileSdkVersion 25
@@ -22,13 +11,11 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     sourceSets {
         main {
             res.srcDirs =
                     [
-
                             'src/main/res/layout/layout_demo',
                             'src/main/res/layout/layout_activity',
                             'src/main/res/layout/layout_fragments',
@@ -68,7 +55,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    testCompile 'junit:junit:4.12'
     compile 'com.android.support:multidex:1.0.1'
     compile project(':hdilib')
 }

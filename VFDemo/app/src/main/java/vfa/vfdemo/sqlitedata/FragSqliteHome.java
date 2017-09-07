@@ -7,6 +7,7 @@ import vn.hdisoft.hdilib.fragments.VFFragment;
  * +List recent db file
  * +Open db file,browse file
  * +Create new db sqlite
+ * +sample sqlite db file
  */
 
 public class FragSqliteHome extends VFFragment {
