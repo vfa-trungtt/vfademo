@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import vfa.vfdemo.ActivitySlideMenu;
 
 import vn.hdisoft.hdilib.utils.LogUtils;
+import vn.hdisoft.hdimovie.fragments.FragGalleryMovies;
 
 
 public class ActivityVideoDemo extends ActivitySlideMenu {
@@ -24,10 +25,10 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
 //        setRootFragment(new FragVideoCrop());
         recentList = new RecentVideo(this);
 
-        FragGalleryVideo fg = new FragGalleryVideo();
-        fg.setOnSelectMovie(new FragGalleryVideo.OnSelectMovieListener() {
+        FragGalleryMovies fg = new FragGalleryMovies();
+        fg.setOnSelectMovie(new FragGalleryMovies.OnSelectMovieListener() {
             @Override
-            public void onSelectMovie(MovieEntity movie) {
+            public void onSelectMovie(vn.hdisoft.hdimovie.MovieEntity movie) {
                 recentList.add(movie.path);
                 FragVideoCrop fg = new FragVideoCrop();
 //                FragVideoAddWatermark fg = new FragVideoAddWatermark();

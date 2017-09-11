@@ -2,6 +2,7 @@ package vn.hdisoft.hdilib.helpers;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.text.Spanned;
@@ -9,6 +10,7 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -155,4 +157,20 @@ public final class ViewHelper {
         View v = inflator.inflate(layoutId, null);
         return v;
     }
+	public static View getView(Context context, int layoutId){
+		LayoutInflater inflator = (LayoutInflater) context .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		return inflator.inflate(layoutId, null);
+	}
+
+	public static ViewGroup getViewGroup(Context context, int layoutId){
+		LayoutInflater inflator = (LayoutInflater) context .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		return (ViewGroup) inflator.inflate(layoutId, null);
+	}
+
+	public static float convertDpToPixel(int dp, Context context) {
+		Resources resources = context.getResources();
+		DisplayMetrics metrics = resources.getDisplayMetrics();
+		float px = dp * ((float)metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
+		return px;
+	}
 }

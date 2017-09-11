@@ -91,9 +91,9 @@ public abstract class HDiListViewFragment<E> extends HDiFragment {
         _data = onGetDataList();
 
         if(_itemLayoutId > 0){
-            adapter= new BaseAdapterList<>(getContext(),_data,_itemLayoutId);
+//            adapter= new BaseAdapterList(getContext(),_data,_itemLayoutId);
         }else {
-            adapter = new BaseAdapterList<E>(this,_data);
+            adapter = new BaseAdapterList<E>(getActivity(),_data);
         }
 
         listView.setAdapter(adapter);
@@ -109,22 +109,39 @@ public abstract class HDiListViewFragment<E> extends HDiFragment {
     }
 
     class BaseAdapterList<T> extends BaseArrayAdapter<T> {
-
-        public BaseAdapterList(Fragment fg, List<T> list){
-            super(fg.getContext(),list,0);
+        public BaseAdapterList(Context context, T[] objects) {
+            super(context, objects);
         }
 
-        public BaseAdapterList(Context context, List<T> list){
-            super(context,list,0);
+        public BaseAdapterList(Context context, List<T> objects) {
+            super(context, objects);
         }
 
-        public BaseAdapterList(Context context, List<T> objects, int itemLayoutRes) {
-            super(context, objects, itemLayoutRes);
+//        public BaseAdapterList(Fragment fg, List<T> list){
+//            super(fg.getContext(),list,0);
+//        }
+
+        @Override
+        public int onGetItemLayoutId() {
+            return 0;
         }
 
         @Override
-        public void onBindItem(View v, int pos) {
-            onDisplayViewItem(v,pos);
+        public void bindItem(int pos, View v) {
+
         }
+
+//        public BaseAdapterList(Context context, List<T> list){
+//            super(context,list,0);
+//        }
+//
+//        public BaseAdapterList(Context context, List<T> objects, int itemLayoutRes) {
+//            super(context, objects, itemLayoutRes);
+//        }
+//
+//        @Override
+//        public void onBindItem(View v, int pos) {
+//            onDisplayViewItem(v,pos);
+//        }
     }
 }
