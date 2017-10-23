@@ -12,7 +12,6 @@ import vfa.vfdemo.activity.ActivityDrawing;
 import vfa.vfdemo.activity.ActivityFileBrowser;
 import vfa.vfdemo.activity.ActivitySQLiteManager;
 import vfa.vfdemo.activity.ActivityUIDesign;
-import vfa.vfdemo.activity.ActivityVideoDemo;
 import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
@@ -31,14 +30,10 @@ public class AAppLauchActivity extends BaseActivity {
 
     public List<DemoEntity> getDemoList() {
         List<DemoEntity> list = new ArrayList<>();
+
+
+
         DemoEntity demo = new DemoEntity();
-        demo.DemoTitle  = "Video Editor";
-        demo.DemoDescription    = "A demo about video Editor";
-        demo.LaucherDemoClass = ActivityVideoDemo.class;
-        list.add(demo);
-
-
-        demo = new DemoEntity();
         demo.DemoTitle  = "Find my server";
         demo.DemoDescription    = "A demo for scan network";
         demo.LaucherDemoClass = FindMyServerActivity.class;
@@ -49,7 +44,6 @@ public class AAppLauchActivity extends BaseActivity {
         demo.DemoDescription    = "A demo about Sqlite database,insert,delete,update.";
         demo.LaucherDemoClass = ActivitySQLiteManager.class;
         list.add(demo);
-
 
         demo = new DemoEntity();
         demo.DemoTitle  = "File Browser";

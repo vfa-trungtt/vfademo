@@ -6,12 +6,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.activity.map.*;
+import vfa.vfdemo.R;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.FragBaseListView;
-import vfa.vfdemo.fragments.map.ActivityMap;
-import vfa.vfdemo.R;
-import vfa.vfdemo.fragments.map.FragGetLastLocation;
 
 public class FragMapDemoList extends FragBaseListView<DemoEntity> {
 
@@ -43,7 +40,7 @@ public class FragMapDemoList extends FragBaseListView<DemoEntity> {
         demo = new DemoEntity();
         demo.DemoTitle  = "Marker Map";
         demo.DemoDescription    = "A demo marker location";
-        demo.LaucherDemoClass = vfa.vfdemo.activity.map.ActivityMapMarker.class;
+//        demo.LaucherDemoClass = vfa.vfdemo.activity.map.ActivityMapMarker.class;
         list.add(demo);
 
         return list;
