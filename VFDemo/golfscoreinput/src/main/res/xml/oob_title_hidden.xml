@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+android:id/title"
-    android:layout_width="fill_parent"
-    android:layout_height="1dp"
-    android:background="@color/transparent"
-    android:textColor="@color/setting_link_text"
-    android:visibility="gone" />

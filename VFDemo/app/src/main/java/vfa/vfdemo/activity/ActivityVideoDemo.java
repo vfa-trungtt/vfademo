@@ -1,17 +1,11 @@
 package vfa.vfdemo.activity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.View;
 
 import vfa.vfdemo.ActivitySlideMenu;
-import vfa.vfdemo.R;
-import vfa.vfdemo.dialogs.DialogActionSheet;
-import vfa.vfdemo.dialogs.DialogMovieActionSheet;
-import vn.hdisoft.hdilib.fragments.VFFragment;
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 
@@ -21,7 +15,7 @@ public class ActivityVideoDemo extends ActivitySlideMenu {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRootFragment(new FragVideoRoot());
+//        setRootFragment(new FragVideoRoot());
     }
 
     public void recordMovie(){

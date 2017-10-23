@@ -8,7 +8,6 @@ import java.util.List;
 
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.opencvdemo.FragDetectRectangle;
 
 public class ActivityOpenCVDemo extends ActivitySlideMenu {
     @Override
@@ -26,7 +25,7 @@ public class ActivityOpenCVDemo extends ActivitySlideMenu {
         demo.DemoTitle          = "Rectangle Detect";
         demo.DemoDescription    = "A demo about opencv library";
         demo.LauchType          = 1;
-        demo.LaucherDemoClass = FragDetectRectangle.class;
+//        demo.LaucherDemoClass = FragDetectRectangle.class;
         list.add(demo);
 
 //        demo = new DemoEntity();
