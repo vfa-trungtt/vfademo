@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import vfa.vfdemo.ActivitySlideMenu;
 import vn.hdisoft.hdilib.utils.LogUtils;
 
 

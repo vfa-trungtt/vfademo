@@ -1,18 +1,13 @@
 package vfa.vfdemo.activity;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.text.TextUtils;
 
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 
-import vfa.vfdemo.ActivitySlideMenu;
-import vfa.vfdemo.fragments.VFFragDemoList;
 import vfa.vfdemo.fragments.hdiapp.FragHost;
 import vfa.vfdemo.networks.VolleyHelper;
 import vfa.vfdemo.utils.VFTask;

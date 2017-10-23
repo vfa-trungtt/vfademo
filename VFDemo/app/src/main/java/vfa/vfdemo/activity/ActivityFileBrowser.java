@@ -1,15 +1,14 @@
-package vfa.vfdemo;
+package vfa.vfdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.R;
 import vfa.vfdemo.fragments.FragSlideMenuListView;
 import vfa.vfdemo.fragments.files.FragFileBrowserListView;
-import vfa.vfdemo.fragments.files.FragSearchFile;
 import vn.hdisoft.hdilib.fragments.VFFragment;
 
 

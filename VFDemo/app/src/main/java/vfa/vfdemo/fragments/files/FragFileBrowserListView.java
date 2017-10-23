@@ -24,7 +24,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.ActivityFileBrowser;
+import vfa.vfdemo.activity.ActivityFileBrowser;
 import vfa.vfdemo.R;
 import vfa.vfdemo.utils.RootUtils;
 import vfa.vfdemo.utils.ViewHelper;

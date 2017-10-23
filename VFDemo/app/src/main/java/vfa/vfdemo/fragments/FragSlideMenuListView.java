@@ -2,10 +2,7 @@ package vfa.vfdemo.fragments;
 
 import android.view.View;
 
-import java.util.List;
-
-import vfa.vfdemo.ActivitySlideMenu;
-import vfa.vfdemo.R;
+import vfa.vfdemo.activity.ActivitySlideMenu;
 import vfa.vfdemo.viewadapter.VFSimpleItemListView;
 
 

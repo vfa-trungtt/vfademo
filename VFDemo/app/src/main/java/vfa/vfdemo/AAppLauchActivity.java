@@ -3,10 +3,15 @@ package vfa.vfdemo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
+import vfa.vfdemo.activity.ActivityBookReader;
+import vfa.vfdemo.activity.ActivityCreateIcon;
+import vfa.vfdemo.activity.ActivityDrawing;
+import vfa.vfdemo.activity.ActivityFileBrowser;
+import vfa.vfdemo.activity.ActivitySQLiteManager;
+import vfa.vfdemo.activity.ActivityUIDesign;
 import vfa.vfdemo.activity.ActivityVideoDemo;
 import vfa.vfdemo.activity.FindMyServerActivity;
 import vfa.vfdemo.fragments.DemoEntity;
@@ -22,11 +27,6 @@ public class AAppLauchActivity extends BaseActivity {
         fg.setDemoListData(getDemoList());
         setRootFragment(fg);
 
-    }
-    private boolean testing(){
-        startActivity(ActivityOpenCVDemo.class);
-        finish();
-        return true;
     }
 
     public List<DemoEntity> getDemoList() {
@@ -50,11 +50,6 @@ public class AAppLauchActivity extends BaseActivity {
         demo.LaucherDemoClass = ActivitySQLiteManager.class;
         list.add(demo);
 
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Open CVDemo";
-        demo.DemoDescription    = "A demo about opencv library";
-        demo.LaucherDemoClass = ActivityOpenCVDemo.class;
-        list.add(demo);
 
         demo = new DemoEntity();
         demo.DemoTitle  = "File Browser";
@@ -72,12 +67,6 @@ public class AAppLauchActivity extends BaseActivity {
         demo.DemoTitle  = "Android Icon";
         demo.DemoDescription    = "A demo create icon for app";
         demo.LaucherDemoClass = ActivityCreateIcon.class;
-        list.add(demo);
-
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Musics";
-        demo.DemoDescription    = "A demo about some feature in music.";
-        demo.LaucherDemoClass = ActivityMusic.class;
         list.add(demo);
 
         demo = new DemoEntity();
@@ -105,11 +94,6 @@ public class AAppLauchActivity extends BaseActivity {
         demo.LaucherDemoClass = ActivityDrawing.class;
         list.add(demo);
 
-        demo = new DemoEntity();
-        demo.DemoTitle  = "App Demo";
-        demo.DemoDescription    = "A demo for HDiApp use FireBase";
-        demo.LaucherDemoClass = ActivityHDiApp.class;
-        list.add(demo);
         return list;
     }
 }

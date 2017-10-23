@@ -1,19 +1,12 @@
 package vfa.vfdemo.fragments;
 
-import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.ActivityBookReader;
-import vfa.vfdemo.ActivityDrawing;
-import vfa.vfdemo.ActivityFileBrowser;
-import vfa.vfdemo.ActivityHDiApp;
-import vfa.vfdemo.ActivitySQLiteManager;
 import vfa.vfdemo.R;
-import vfa.vfdemo.fragments.map.FragMapDemoList;
 
 
 public class VFFragDemoList extends FragBaseListView<DemoEntity> {

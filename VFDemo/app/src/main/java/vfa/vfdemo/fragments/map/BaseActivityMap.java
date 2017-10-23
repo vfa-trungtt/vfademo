@@ -26,7 +26,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 
-import vfa.vfdemo.ActivitySlideMenu;
+import vfa.vfdemo.activity.ActivitySlideMenu;
 import vfa.vfdemo.R;
 
 
