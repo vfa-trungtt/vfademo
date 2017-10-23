@@ -6,16 +6,11 @@ import android.support.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import vfa.vfdemo.activity.nifty.ActivityNiftyDemo;
 import vfa.vfdemo.fragments.DemoEntity;
 import vfa.vfdemo.fragments.VFFragDemoList;
-import vfa.vfdemo.fragments.map.FragMapDemoList;
 import vfa.vfdemo.fragments.uidesign.FragButton;
 import vfa.vfdemo.fragments.uidesign.FragShapedButton;
 
-/**
- * Created by Vitalify on 3/17/17.
- */
 
 public class ActivityUIDesign extends ActivitySlideMenu {
 

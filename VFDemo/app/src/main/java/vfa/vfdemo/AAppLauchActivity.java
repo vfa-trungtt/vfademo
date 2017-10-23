@@ -37,11 +37,6 @@ public class AAppLauchActivity extends BaseActivity {
         demo.LaucherDemoClass = ActivityVideoDemo.class;
         list.add(demo);
 
-        demo = new DemoEntity();
-        demo.DemoTitle  = "Input GolfScore";
-        demo.DemoDescription    = "A demo for scan network";
-//        demo.LaucherDemoClass = ActivityGolf.class;
-        list.add(demo);
 
         demo = new DemoEntity();
         demo.DemoTitle  = "Find my server";
